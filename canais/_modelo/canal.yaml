@@ -1,0 +1,51 @@
+# MODELO — copie com: ./scripts/novo-canal.sh <id> "<Nome do canal>"
+# Tudo que for __ASSIM__ precisa ser preenchido.
+
+id: __ID__
+nome: __NOME__
+descricao: __Uma frase: do que o canal fala.__
+idioma: pt-BR                 # fr-FR, en-US, es-ES, de-DE…
+publico: __Quem assiste (idade, interesses, dor principal).__
+
+formato:
+  largura: 1920
+  altura: 1080
+  fps: 30
+
+roteiro:
+  guia: roteiro.md
+  duracao_minima_min: 12
+  palavras_por_minuto: 150
+  cta_final: __Ação pedida no fim do vídeo.__
+  despedida: __Frase fixa de despedida (ou deixe vazio).__
+
+narracao:
+  provedor: gemini
+  modelo: gemini-2.5-pro-preview-tts
+  modelo_reserva: gemini-2.5-flash-preview-tts
+  voz: Kore                   # python ferramentas/narracao/testar_vozes.py --canal __ID__
+  direcao: >-
+    __Descreva o narrador como se fosse um ator: idade, calor da voz, ritmo, intenção.__
+  bloco_segundos: 60
+  pausa_paragrafo_ms: 550
+  pausa_bloco_ms: 400
+  verificacao:
+    similaridade_minima: 0.93
+    desvio_duracao_max: 0.35
+    tentativas: 4
+
+visual:
+  guia: visual.md
+  tema: tema.json
+  legendas: true
+  bancos: [pexels, pixabay, wikimedia, openverse, archive]
+  idioma_busca: en
+  plano_medio_segundos: 4
+
+musica:
+  estilo: __Estilo da trilha (sem letra).__
+  volume_sob_voz_db: -20
+
+publicacao:
+  titulos_formula: __Fórmula de título que funciona no nicho.__
+  tags_base: []

@@ -1,0 +1,14 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(.venv/bin/python ferramentas/:*)",
+      "Bash(python ferramentas/:*)",
+      "Bash(python3 ferramentas/:*)",
+      "Bash(./scripts/:*)",
+      "Bash(ffmpeg:*)",
+      "Bash(ffprobe:*)",
+      "Bash(npx remotion:*)",
+      "Bash(npm run typecheck:*)"
+    ]
+  }
+}

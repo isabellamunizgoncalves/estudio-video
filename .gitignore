@@ -1,0 +1,34 @@
+# Segredos
+.env
+.env.*
+!.env.exemplo
+
+# Projetos de vídeo: ficam fora do git (só o README da pasta é versionado)
+projetos/*
+!projetos/README.md
+
+# Python
+.venv*/
+venv/
+__pycache__/
+*.pyc
+
+# Node / Remotion
+node_modules/
+estudio-remotion/out/
+estudio-remotion/public/_projeto
+*.log
+
+# Mídia pesada
+*.wav
+*.mp3
+*.mp4
+*.mov
+*.webm
+*.m4a
+
+# Lixo
+*.tmp
+*.bak
+*~
+.DS_Store

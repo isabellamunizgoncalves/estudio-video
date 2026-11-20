@@ -1,0 +1,54 @@
+# Configuração do canal. Agentes, ferramentas e o Remotion leem SÓ este arquivo
+# (e os .md/.json ao lado) para saber o estilo do canal.
+
+id: retrovisage
+nome: Rétrovisage
+descricao: Histórias e memórias sensoriais do cotidiano da França no século XX (anos 50, 60, 70, 80).
+idioma: fr-FR                 # idioma padrão da narração e dos textos na tela
+publico: Francófonos de 60+ anos, nostálgicos da França de antigamente.
+
+formato:
+  largura: 1920
+  altura: 1080
+  fps: 30
+
+roteiro:
+  guia: roteiro.md            # estrutura e regras editoriais do canal
+  duracao_minima_min: 16
+  palavras_por_minuto: 140    # voz calma
+  cta_final: Comentar o ano de nascimento e a memória que faltou; inscrever-se no canal.
+  despedida: "À très bientôt… dans la France d'autrefois."
+
+narracao:
+  provedor: gemini
+  modelo: gemini-2.5-pro-preview-tts       # melhor qualidade
+  modelo_reserva: gemini-2.5-flash-preview-tts  # se o pro falhar ou estourar a cota
+  voz: Charon                 # teste outras com: python ferramentas/narracao/testar_vozes.py --canal retrovisage
+  direcao: >-
+    Tu es un narrateur français d'environ soixante ans, à la voix chaude et posée.
+    Tu racontes des souvenirs d'enfance à de vieux amis, au coin du feu : lentement,
+    avec tendresse, en laissant respirer les points de suspension. Jamais théâtral,
+    jamais commercial. Prononciation française naturelle et soignée.
+  bloco_segundos: 60          # cada bloco de narração tem ~1 minuto
+  pausa_paragrafo_ms: 650     # silêncio entre parágrafos dentro do bloco
+  pausa_bloco_ms: 450         # silêncio entre blocos
+  verificacao:
+    similaridade_minima: 0.93 # texto transcrito x roteiro (0–1)
+    desvio_duracao_max: 0.35  # duração real x esperada (±35%)
+    tentativas: 4
+
+visual:
+  guia: visual.md             # identidade visual, regras de imagem
+  tema: tema.json             # cores, fontes e movimentos usados pelo Remotion
+  legendas: false             # Rétrovisage não usa legenda; só destaques
+  bancos: [wikimedia, archive, openverse, pexels, pixabay]
+  idioma_busca: en            # buscas nos bancos funcionam melhor em inglês (+ termos em francês)
+  plano_medio_segundos: 5     # duração média de cada plano
+
+musica:
+  estilo: Accordéon, chanson française instrumentale, piano doux, années 50–60. Jamais de paroles.
+  volume_sob_voz_db: -22
+
+publicacao:
+  titulos_formula: "<número> souvenirs que seuls les enfants des années <década> comprendront"
+  tags_base: [nostalgie, France d'autrefois, souvenirs, années 60, années 70, rétro]

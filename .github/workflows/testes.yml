@@ -1,0 +1,15 @@
+name: testes
+on: [push, pull_request]
+jobs:
+  ponta-a-ponta:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.12" }
+      - uses: actions/setup-node@v4
+        with: { node-version: "22" }
+      - run: sudo apt-get update && sudo apt-get install -y ffmpeg
+      - run: pip install pyyaml requests pillow
+      - run: python testes/teste_ponta_a_ponta.py --sem-render
+      - run: cd estudio-remotion && npm ci && npm run typecheck

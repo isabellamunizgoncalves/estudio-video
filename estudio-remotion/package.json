@@ -1,0 +1,23 @@
+{
+  "name": "estudio-remotion",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Motor de edição do estúdio: transforma timeline.json em vídeo com motion graphics.",
+  "scripts": {
+    "studio": "remotion studio src/index.ts",
+    "render": "remotion render src/index.ts Video",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@remotion/cli": "4.0.540",
+    "@remotion/google-fonts": "4.0.540",
+    "@remotion/media-utils": "4.0.540",
+    "react": "19.2.9",
+    "react-dom": "19.2.9",
+    "remotion": "4.0.540"
+  },
+  "devDependencies": {
+    "@types/react": "19.2.7",
+    "typescript": "5.9.3"
+  }
+}

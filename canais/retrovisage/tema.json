@@ -1,0 +1,38 @@
+{
+  "cores": {
+    "fundo": "#4A2C1D",
+    "fundoAlt": "#5A3522",
+    "destaque": "#D9622B",
+    "quente": "#E8A33D",
+    "papel": "#F3E7CF",
+    "detalhe": "#60ACA5",
+    "texto": "#F3E7CF",
+    "textoEscuro": "#4A2C1D"
+  },
+  "fontes": {
+    "titulo": "Fascinate",
+    "rotulo": "Anton",
+    "documento": "Special Elite",
+    "corpo": "Josefin Sans"
+  },
+  "movimento": {
+    "zoomPorPlano": 0.06,
+    "transicao": "fade",
+    "duracaoTransicaoQuadros": 15
+  },
+  "efeitos": {
+    "grao": 0.12,
+    "vinheta": 0.55,
+    "papel": true,
+    "sunburst": true,
+    "faixas": ["#D9622B", "#E8A33D", "#60ACA5"]
+  },
+  "legendas": {
+    "ativas": false,
+    "fonte": "Josefin Sans",
+    "tamanho": 54,
+    "cor": "#F3E7CF",
+    "contorno": "#4A2C1D"
+  },
+  "logo": "identidade-visual/selo-redondo.png"
+}

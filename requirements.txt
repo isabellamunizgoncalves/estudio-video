@@ -1,0 +1,8 @@
+google-genai>=1.30
+yt-dlp>=2025.10.0
+youtube-transcript-api>=1.2
+faster-whisper>=1.1
+requests>=2.32
+pyyaml>=6.0
+python-dotenv>=1.0
+pillow>=10.0
