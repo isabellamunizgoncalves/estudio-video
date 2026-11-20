@@ -1,22 +1,29 @@
-import tema from "../../canais/retrovisage/tema.json";
-import type { Timeline } from "./tipos";
+import type { Tema, Timeline } from "./tipos";
+import retrovisage from "../../canais/retrovisage/tema.json";
+import modelo from "../../canais/_modelo/tema.json";
 
-// Demonstração para o Remotion Studio: só motion graphics, sem mídia nem narração.
-export const timelineExemplo: Timeline = {
-  canal: "retrovisage",
+// Temas que aparecem como "Exemplo-<canal>" no Remotion Studio, para ver o design de cada
+// canal sem mídia nem voz. Canal novo: acrescente uma linha (o /novo-canal faz isso).
+export const TEMAS_EXEMPLO: Record<string, Tema> = {
+  retrovisage: retrovisage as Tema,
+  modelo: modelo as Tema,
+};
+
+export const timelineExemplo = (tema: Tema, nome = "exemplo"): Timeline => ({
+  canal: nome,
   slug: "exemplo",
   titulo: "Exemplo",
   fps: 30,
   largura: 1920,
   altura: 1080,
   duracaoQuadros: 450,
-  tema: tema as Timeline["tema"],
+  tema,
   audio: { narracao: "", musica: [], sfx: [] },
   legendas: [],
   cenas: [
-    { id: "c001", inicio: 0, duracao: 120, tipo: "titulo", titulo: "La France d'autrefois", subtitulo: "ANNÉES 60" },
-    { id: "c002", inicio: 120, duracao: 120, tipo: "cartela", fundo: "#E8A33D", textoTela: { tipo: "numero", texto: "NUMÉRO 1", subtexto: "L'odeur de l'encre violette" } },
-    { id: "c003", inicio: 240, duracao: 90, tipo: "cartela", fundo: "#D9622B", transicao: "slide", textoTela: { tipo: "data", texto: "1962", subtexto: "Paris" } },
-    { id: "c004", inicio: 330, duracao: 120, tipo: "citacao", transicao: "wipe", titulo: "C'était presque rien.\nEt c'était tout.", subtitulo: "RÉTROVISAGE" },
+    { id: "c001", inicio: 0, duracao: 120, tipo: "titulo", titulo: "Título do capítulo", subtitulo: "Capítulo 1" },
+    { id: "c002", inicio: 120, duracao: 120, tipo: "cartela", fundo: tema.cores.fundoAlt, textoTela: { tipo: "numero", texto: "Nº 1", subtexto: "Um destaque na tela" } },
+    { id: "c003", inicio: 240, duracao: 90, tipo: "cartela", transicao: "slide", textoTela: { tipo: "lugar", texto: "Paris, 1962", subtexto: "rótulo de lugar e data" } },
+    { id: "c004", inicio: 330, duracao: 120, tipo: "citacao", transicao: "wipe", titulo: "Uma frase de impacto, dita devagar.", subtitulo: "Citação" },
   ],
-};
+});

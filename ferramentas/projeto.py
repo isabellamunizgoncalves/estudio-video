@@ -64,6 +64,8 @@ def status(args) -> None:
     for nome, sub, prefixo, ext in ENTREGAS:
         pasta = proj.pasta / sub
         achado = ultima_versao(pasta, prefixo, ext) if pasta.exists() else None
+        if achado is None and nome == "roteiro" and pasta.exists():
+            achado = ultima_versao(pasta, "roteiro", ".txt")  # roteiro próprio, sem .md
         if achado is None and (pasta / f"{prefixo}{ext}").exists():
             achado = pasta / f"{prefixo}{ext}"
         marca = "✔" if achado else "·"

@@ -7,6 +7,8 @@ Você manda **tema + link de um vídeo de referência + idioma**; o estúdio lê
 /estudio retrovisage "20 souvenirs des enfants des années 60" https://youtu.be/XXXX fr-FR
 ```
 
+O roteiro é escrito pelo estúdio. Se você já tiver um roteiro pronto, é só colar no `/estudio`: ele pula a escrita e segue para revisão (opcional), humanização e narração.
+
 ```
 comentários ─► mapa emocional ─► roteiro ⇄ revisão ─► humanização ─► narração Gemini (blocos de 1 min, verificados)
                                                                               │
@@ -39,6 +41,8 @@ Cada canal é só uma pasta de configuração em `canais/<canal>/` — **nenhum 
 
 Novo canal: `/novo-canal` ou `./scripts/novo-canal.sh meu-canal "Meu Canal"`.
 
+**Cada canal tem o seu design.** O visual retrô (raios de sol, fita adesiva, três faixas) é um pacote **exclusivo do Rétrovisage** (`estudio-remotion/src/estilos/retrovisage/`). Canais novos começam no estilo `padrao` (documentário moderno) com as próprias cores e fontes, ou ganham um pacote de design próprio em `estudio-remotion/src/estilos/<canal>/`.
+
 ## Instalação
 
 Precisa de Python 3.10+, Node.js 18+, ffmpeg e o Claude Code.
@@ -58,7 +62,7 @@ Chaves gratuitas: [Google AI Studio](https://aistudio.google.com/apikey) · [Pex
 .claude/skills/        /estudio, /roteiro, /narracao, /video, /novo-canal
 canais/                um canal por pasta (+ _modelo/ para copiar)
 ferramentas/           Python: comentarios/, roteiro/, narracao/, midia/, edicao/, publicacao/, comum/
-estudio-remotion/      projeto Remotion (React) que transforma timeline.json em vídeo
+estudio-remotion/      Remotion: src/base/ (motor comum) + src/estilos/<estilo>/ (design de cada canal)
 projetos/              um vídeo por pasta: projetos/<canal>/<slug>/ (fora do git)
 docs/                  ARQUITETURA.md, FLUXO.md (contrato entre etapas), roteiro/ (retenção, estrutura, comentários)
 scripts/               instalar, novo-video, novo-canal, status

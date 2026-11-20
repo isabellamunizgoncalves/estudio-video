@@ -42,13 +42,24 @@ Bloco curto = o modelo tem menos chance de se perder; se errar, refaz só 1 minu
 
 ## Edição com Remotion
 
-`timeline.json` → componente `Video` → cenas (`midia` com Ken Burns, `moldura` com fita adesiva, `colagem`, `titulo` com sunburst e faixas, `citacao` datilografada) + textos na tela + grão + vinheta + logo + narração + música com fade. As transições entram por cima da cena anterior, então o vídeo nunca desincroniza da voz. Cores, fontes e efeitos vêm do `tema.json` do canal.
+`timeline.json` → componente `Video`, em duas partes:
+
+- **`src/base/` (motor, igual para todos):** mídia em tela cheia com movimento de câmera, colagem e moldura como *estrutura*, transições por cima da cena anterior (o vídeo nunca desincroniza da voz), narração, música com fade, efeitos sonoros, legendas.
+- **`src/estilos/<estilo>/` (design de cada canal):** implementa o contrato de `src/estilos/tipos.ts` — `Fundo`, `Moldura`, `CenaTitulo`, `CenaCitacao`, `TextoNaTela`, `Acabamento`. O canal escolhe com `"estilo"` no `tema.json`; cores, fontes e `opcoes` também vêm de lá.
+
+| Estilo | De quem | Cara |
+|---|---|---|
+| `retrovisage` | **exclusivo do Rétrovisage** | colagem editorial retrô: raios de sol, papel, fita adesiva, três faixas, máquina de escrever |
+| `padrao` | ponto de partida de canais novos | documentário moderno: gradiente, cartões com cantos arredondados, tipografia cinética, lower thirds |
+
+Design novo = copiar `src/estilos/padrao/` para `src/estilos/<canal>/`, redesenhar e registrar em `src/estilos/index.ts`. O Studio mostra cada canal em `Exemplo-<canal>`.
 
 ## Escalar
 
 - **Novo canal:** `/novo-canal` (ou `scripts/novo-canal.sh`). Nada no código muda.
 - **Nova voz/provedor:** implemente `sintetizar(texto, destino, voz=, modelo=, direcao=, tom=, idioma=, temperatura=)` em `ferramentas/narracao/<provedor>.py`; a verificação e o resto continuam iguais.
 - **Novo banco de mídia:** uma função em `ferramentas/midia/bancos.py` que devolve o formato padrão + registro em `BANCOS`.
-- **Novo efeito de motion:** componente em `estudio-remotion/src/`, ligado por um campo novo na decupagem/timeline e no tema.
+- **Novo design de canal:** pacote em `estudio-remotion/src/estilos/<canal>/` (o motor não muda).
+- **Novo recurso de motion para todos:** em `estudio-remotion/src/base/`, ligado por um campo novo na decupagem/timeline.
 - **Vários vídeos em paralelo:** cada projeto é independente; rode `/estudio` em sessões diferentes.
 - **Shorts/vertical:** `formato` do canal (1080×1920) — o Remotion se adapta; revise tamanhos de texto no editor.

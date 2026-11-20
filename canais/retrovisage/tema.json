@@ -1,4 +1,5 @@
 {
+  "estilo": "retrovisage",
   "cores": {
     "fundo": "#4A2C1D",
     "fundoAlt": "#5A3522",
@@ -20,13 +21,6 @@
     "transicao": "fade",
     "duracaoTransicaoQuadros": 15
   },
-  "efeitos": {
-    "grao": 0.12,
-    "vinheta": 0.55,
-    "papel": true,
-    "sunburst": true,
-    "faixas": ["#D9622B", "#E8A33D", "#60ACA5"]
-  },
   "legendas": {
     "ativas": false,
     "fonte": "Josefin Sans",
@@ -34,5 +28,16 @@
     "cor": "#F3E7CF",
     "contorno": "#4A2C1D"
   },
-  "logo": "identidade-visual/selo-redondo.png"
+  "logo": "identidade-visual/selo-redondo.png",
+  "opcoes": {
+    "grao": 0.12,
+    "vinheta": 0.55,
+    "papel": true,
+    "sunburst": true,
+    "faixas": [
+      "#D9622B",
+      "#E8A33D",
+      "#60ACA5"
+    ]
+  }
 }

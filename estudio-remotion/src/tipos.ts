@@ -2,6 +2,8 @@
 // Todos os tempos em QUADROS; caminhos relativos à pasta do projeto (--public-dir).
 
 export type Tema = {
+  /** pacote de design em src/estilos/<estilo>/ (padrão: "padrao") */
+  estilo?: string;
   cores: {
     fundo: string;
     fundoAlt: string;
@@ -14,7 +16,8 @@ export type Tema = {
   };
   fontes: { titulo: string; rotulo: string; documento: string; corpo: string };
   movimento: { zoomPorPlano: number; transicao: Transicao; duracaoTransicaoQuadros: number };
-  efeitos: { grao: number; vinheta: number; papel: boolean; sunburst: boolean; faixas: string[] };
+  /** opções livres lidas só pelo pacote de estilo do canal */
+  opcoes?: Record<string, unknown>;
   legendas: { ativas: boolean; fonte: string; tamanho: number; cor: string; contorno: string };
   logo?: string;
 };

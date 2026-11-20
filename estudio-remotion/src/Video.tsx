@@ -1,28 +1,29 @@
 import React from "react";
 import { AbsoluteFill, Audio, Img, interpolate, Sequence, staticFile, useCurrentFrame, useVideoConfig } from "remotion";
 import type { Cena, Musica, Tema, Timeline, Transicao } from "./tipos";
-import { CenaCartela, CenaCitacao, CenaColagem, CenaMidia, CenaTitulo } from "./cenas/Cenas";
-import { Legendas, TextoNaTela } from "./overlays/Textos";
-import { Grao, Vinheta } from "./componentes/Decoracao";
+import type { EstiloVisual } from "./estilos/tipos";
+import { escolherEstilo } from "./estilos";
+import { CenaCartela, CenaColagem, CenaMidia } from "./base/Cenas";
+import { Legendas } from "./base/Legendas";
 import { useFontesDoTema } from "./fontes";
 
-const ConteudoCena: React.FC<{ cena: Cena; tema: Tema }> = ({ cena, tema }) => {
+const ConteudoCena: React.FC<{ cena: Cena; tema: Tema; estilo: EstiloVisual }> = ({ cena, tema, estilo }) => {
   switch (cena.tipo) {
     case "titulo":
-      return <CenaTitulo cena={cena} tema={tema} />;
+      return <estilo.CenaTitulo cena={cena} tema={tema} />;
     case "citacao":
-      return <CenaCitacao cena={cena} tema={tema} />;
+      return <estilo.CenaCitacao cena={cena} tema={tema} />;
     case "colagem":
-      return <CenaColagem cena={cena} tema={tema} />;
+      return <CenaColagem cena={cena} tema={tema} estilo={estilo} />;
     case "cartela":
-      return <CenaCartela cena={cena} tema={tema} />;
+      return <CenaCartela cena={cena} tema={tema} estilo={estilo} />;
     default:
-      return <CenaMidia cena={cena} tema={tema} />;
+      return <CenaMidia cena={cena} tema={tema} estilo={estilo} />;
   }
 };
 
-/** Envolve a cena com a transição de ENTRADA. A cena anterior continua por baixo,
- *  então a voz nunca sai de sincronia (as cenas não encurtam o vídeo). */
+/** Transição de ENTRADA por cima da cena anterior: as cenas não encurtam o vídeo,
+ *  então a imagem nunca sai de sincronia com a voz. */
 const ComTransicao: React.FC<{ tipo: Transicao; quadros: number; children: React.ReactNode }> = ({ tipo, quadros, children }) => {
   const frame = useCurrentFrame();
   const { width } = useVideoConfig();
@@ -45,11 +46,7 @@ const TrilhaMusical: React.FC<{ m: Musica; fps: number }> = ({ m, fps }) => {
         loop={m.loop}
         trimBefore={m.inicioNoArquivo || undefined}
         volume={(f) =>
-          m.volume *
-          interpolate(f, [0, fade, m.duracao - fade, m.duracao], [0, 1, 1, 0], {
-            extrapolateLeft: "clamp",
-            extrapolateRight: "clamp",
-          })
+          m.volume * interpolate(f, [0, fade, m.duracao - fade, m.duracao], [0, 1, 1, 0], { extrapolateLeft: "clamp", extrapolateRight: "clamp" })
         }
       />
     </Sequence>
@@ -59,6 +56,7 @@ const TrilhaMusical: React.FC<{ m: Musica; fps: number }> = ({ m, fps }) => {
 export const Video: React.FC<{ timeline: Timeline }> = ({ timeline }) => {
   const { tema, cenas } = timeline;
   useFontesDoTema(tema);
+  const estilo = escolherEstilo(tema.estilo);
   const T = tema.movimento.duracaoTransicaoQuadros;
 
   return (
@@ -70,19 +68,18 @@ export const Video: React.FC<{ timeline: Timeline }> = ({ timeline }) => {
         return (
           <Sequence key={cena.id} from={from} durationInFrames={cena.duracao + (cena.inicio - from)} name={`${cena.id} · ${cena.tipo}`}>
             <ComTransicao tipo={tipo} quadros={cena.inicio - from}>
-              <ConteudoCena cena={cena} tema={tema} />
+              <ConteudoCena cena={cena} tema={tema} estilo={estilo} />
             </ComTransicao>
             {cena.textoTela ? (
               <Sequence from={cena.inicio - from} layout="absolute-fill">
-                <TextoNaTela texto={cena.textoTela} tema={tema} duracaoCena={cena.duracao} id={cena.id} />
+                <estilo.TextoNaTela texto={cena.textoTela} tema={tema} duracaoCena={cena.duracao} id={cena.id} />
               </Sequence>
             ) : null}
           </Sequence>
         );
       })}
 
-      <Grao intensidade={tema.efeitos.grao} />
-      <Vinheta intensidade={tema.efeitos.vinheta} />
+      <estilo.Acabamento tema={tema} />
       {timeline.legendas.length ? <Legendas timeline={timeline} /> : null}
       {timeline.logo ? (
         <Img src={staticFile(timeline.logo)} style={{ position: "absolute", right: 36, bottom: 30, width: 86, opacity: 0.55 }} />

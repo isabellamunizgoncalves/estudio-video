@@ -1,13 +1,14 @@
 {
+  "estilo": "padrao",
   "cores": {
-    "fundo": "#101418",
-    "fundoAlt": "#1B232B",
+    "fundo": "#0E1116",
+    "fundoAlt": "#1E2A3A",
     "destaque": "#FFB000",
     "quente": "#FF6B3D",
     "papel": "#F5F5F0",
     "detalhe": "#3DD6D0",
     "texto": "#FFFFFF",
-    "textoEscuro": "#101418"
+    "textoEscuro": "#0E1116"
   },
   "fontes": {
     "titulo": "Bebas Neue",
@@ -15,8 +16,23 @@
     "documento": "IBM Plex Mono",
     "corpo": "Inter"
   },
-  "movimento": { "zoomPorPlano": 0.08, "transicao": "fade", "duracaoTransicaoQuadros": 12 },
-  "efeitos": { "grao": 0.05, "vinheta": 0.4, "papel": false, "sunburst": false, "faixas": ["#FFB000", "#FF6B3D", "#3DD6D0"] },
-  "legendas": { "ativas": true, "fonte": "Inter", "tamanho": 56, "cor": "#FFFFFF", "contorno": "#000000" },
-  "logo": ""
+  "movimento": {
+    "zoomPorPlano": 0.08,
+    "transicao": "fade",
+    "duracaoTransicaoQuadros": 12
+  },
+  "legendas": {
+    "ativas": true,
+    "fonte": "Inter",
+    "tamanho": 56,
+    "cor": "#FFFFFF",
+    "contorno": "#000000"
+  },
+  "logo": "",
+  "opcoes": {
+    "grao": 0.04,
+    "vinheta": 0.35,
+    "raio": 18,
+    "gradiente": true
+  }
 }

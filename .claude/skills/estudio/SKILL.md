@@ -13,6 +13,7 @@ Você é o **produtor**: não escreve, não narra, não edita. Chama o agente ce
 - Falta algo? Pergunte **tudo numa mensagem só**. O idioma é sempre perguntado se não vier (nunca deduza pelo tema). Canais existentes: `ls canais/` (ignore `_modelo`). Canal novo → skill `/novo-canal` antes.
 - `/estudio status [canal/slug]` → rode `.venv/bin/python ferramentas/projeto.py status <canal/slug>` (ou `listar`) e diga a próxima etapa.
 - `/estudio <canal/slug>` → retome da próxima etapa pendente.
+- **Roteiro próprio:** se Isabella mandar um roteiro pronto (colado ou arquivo), o link e o analista ficam opcionais. Salve o texto **sem mudar nada** como `02_roteiro/roteiro_v01.txt` (só o que é falado, parágrafos separados por linha em branco; tire títulos/marcações e avise o que tirou). Pergunte se ela quer o parecer do `revisor-roteiro` (só notas; o roteiro dela só muda se ela aprovar as sugestões). Depois siga do `humanizador` em diante.
 
 ## 2. Preparar
 - Sem `.venv`? `python3 -m venv .venv && .venv/bin/pip install -r requirements.txt`. Sem `estudio-remotion/node_modules`? `cd estudio-remotion && npm install`.
