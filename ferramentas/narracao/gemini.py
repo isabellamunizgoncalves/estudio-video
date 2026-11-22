@@ -18,10 +18,25 @@ import time
 import wave
 from pathlib import Path
 
-VOZES = ["Zephyr", "Puck", "Charon", "Kore", "Fenrir", "Leda", "Orus", "Aoede", "Callirrhoe", "Autonoe",
-         "Enceladus", "Iapetus", "Umbriel", "Algieba", "Despina", "Erinome", "Algenib", "Rasalgethi",
-         "Laomedeia", "Achernar", "Alnilam", "Schedar", "Gacrux", "Pulcherrima", "Achird",
-         "Zubenelgenubi", "Vindemiatrix", "Sadachbia", "Sadaltager", "Sulafat"]
+# Gênero conforme a tabela "Voice options" da documentação do Gemini TTS
+# (cloud.google.com/text-to-speech/docs/gemini-tts). O Google não publica descrição de timbre,
+# então não há adjetivo aqui: a escolha da voz de um canal é sempre feita de ouvido.
+GENERO_VOZ = {
+    "Zephyr": "f", "Puck": "m", "Charon": "m", "Kore": "f", "Fenrir": "m",
+    "Leda": "f", "Orus": "m", "Aoede": "f", "Callirrhoe": "f", "Autonoe": "f",
+    "Enceladus": "m", "Iapetus": "m", "Umbriel": "m", "Algieba": "m", "Despina": "f",
+    "Erinome": "f", "Algenib": "m", "Rasalgethi": "m", "Laomedeia": "f", "Achernar": "f",
+    "Alnilam": "m", "Schedar": "m", "Gacrux": "f", "Pulcherrima": "f", "Achird": "m",
+    "Zubenelgenubi": "m", "Vindemiatrix": "f", "Sadachbia": "m", "Sadaltager": "m", "Sulafat": "f",
+}
+
+VOZES = list(GENERO_VOZ)
+
+
+def vozes_por_genero(genero: str) -> list[str]:
+    """Vozes de um gênero ('m', 'f') ou todas ('t')."""
+    g = (genero or "t").lower()[0]
+    return VOZES if g == "t" else [v for v, x in GENERO_VOZ.items() if x == g]
 
 _cliente = None
 
