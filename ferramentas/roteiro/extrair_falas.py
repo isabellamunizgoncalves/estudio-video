@@ -21,15 +21,17 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
 from comum.estudio import Projeto, ultima_versao  # noqa: E402
 
-PROIBIDOS = [
-    # menção a comentários / público que escreveu (pt, fr, en, es, de)
-    r"\bcoment[aá]rios?\b", r"\bcomentou\b", r"voc[eê]s (disseram|escreveram)", r"\bli (os|seus) coment",
-    r"\bcommentaires?\b", r"vous (m'avez|nous avez) (écrit|dit)", r"un(e)? (spectat|abonn)\w+ (nous|m')",
-    r"\bcomments?\b(?! below)", r"you (told|wrote)", r"\bcomentarios?\b", r"\bKommentar",
-    r"@\w{3,}",
-    # produção dentro da fala
-    r"\b\d{1,2}:\d{2}\b", r"\[[^\]]+\]", r"\((pausa|pause|música|music|b-?roll|corte)[^)]*\)",
-]
+# Menção a comentários / público que escreveu, por idioma do roteiro
+# (por idioma para não confundir, p.ex., o "comment" francês com o "comments" inglês).
+PROIBIDOS_IDIOMA = {
+    "pt": [r"\bcoment[aá]rios?\b", r"\bcomentou\b", r"voc[eê]s (disseram|escreveram)", r"\bli (os|seus) coment"],
+    "fr": [r"\bcommentaires?\b", r"vous (m'avez|nous avez) (écrit|dit)", r"un(e)? (spectat|abonn)\w+ (nous|m')"],
+    "en": [r"\bcomments?\b(?! below)", r"you (told|wrote)"],
+    "es": [r"\bcomentarios?\b", r"(me|nos) (escribisteis|dijisteis)"],
+    "de": [r"\bKommentar"],
+}
+# Produção dentro da fala e @handles (todos os idiomas)
+PROIBIDOS_GERAIS = [r"@\w{3,}", r"\b\d{1,2}:\d{2}\b", r"\[[^\]]+\]", r"\((pausa|pause|música|music|b-?roll|corte)[^)]*\)"]
 # CTA pedindo para comentar é permitido; esses padrões liberam o alerta acima.
 PERMITIDOS = [r"(dites|écrivez|laissez)[^.]{0,40}commentaire", r"(deixe|escreva|conte)[^.]{0,40}coment",
               r"(leave|drop|tell)[^.]{0,40}comment", r"(deja|escribe)[^.]{0,40}comentario"]
@@ -54,12 +56,14 @@ def extrair(md: str) -> list[str]:
     return falas
 
 
-def alertas(texto: str) -> list[str]:
+def alertas(texto: str, idioma: str = "") -> list[str]:
+    lang = idioma[:2].lower()
+    proibidos = PROIBIDOS_GERAIS + (PROIBIDOS_IDIOMA.get(lang) or [p for ps in PROIBIDOS_IDIOMA.values() for p in ps])
     achados = []
     for frase in re.split(r"(?<=[.!?…])\s+", texto):
         if any(re.search(p, frase, re.I) for p in PERMITIDOS):
             continue
-        for p in PROIBIDOS:
+        for p in proibidos:
             if re.search(p, frase, re.I):
                 achados.append(frase.strip()[:160])
                 break
@@ -92,7 +96,7 @@ def main() -> None:
     print(f"{len(falas)} blocos · {palavras} palavras · ~{minutos:.1f} min a {ppm} palavras/min")
     if minimo and minutos < minimo:
         print(f"⚠ abaixo do mínimo do canal ({minimo} min): faltam ~{int((minimo - minutos) * ppm)} palavras")
-    achados = alertas(texto)
+    achados = alertas(texto, proj.dados.get("idioma") or canal.get("idioma", ""))
     for a in achados:
         print(f"⚠ revisar: {a}")
     proj.marcar("roteiro", arquivo=proj.rel(txt), palavras=palavras, minutos=round(minutos, 1))
