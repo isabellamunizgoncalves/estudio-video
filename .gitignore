@@ -3,9 +3,19 @@
 .env.*
 !.env.exemplo
 
-# Projetos de vídeo: ficam fora do git (só o README da pasta é versionado)
-projetos/*
-!projetos/README.md
+# Projetos de vídeo: os TEXTOS vão para o git (projeto.json, mapa, roteiros, revisões,
+# decupagem, timeline, publicação) para qualquer sessão retomar o vídeo.
+# Fora do git: mídia pesada e comentários brutos do público.
+projetos/**/01_pesquisa/comentarios.json
+projetos/**/01_pesquisa/contexto.md
+projetos/**/01_pesquisa/comentarios-colados.md
+projetos/**/03_narracao/blocos_*/
+projetos/**/04_visual/candidatos/
+projetos/**/04_visual/midia/
+projetos/**/04_visual/musica/
+projetos/**/05_edicao/assets/
+projetos/**/05_edicao/renders/
+projetos/_teste/
 
 # Python
 .venv*/

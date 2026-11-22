@@ -1,0 +1,22 @@
+{
+  "canal": "retrovisage",
+  "slug": "25-plats-annees-60",
+  "tema": "Les Français adoraient ces 25 PLATS dans les années 60… pourquoi ont-ils disparu ?",
+  "link_referencia": "https://www.youtube.com/watch?v=v2DQYWPb0wA",
+  "idioma": "fr-FR",
+  "criado_em": "2026-11-22T09:16:15+00:00",
+  "etapas": {
+    "coleta": {
+      "atualizado_em": "2026-11-22T09:16:28+00:00",
+      "fonte": "youtube-api",
+      "comentarios": 339,
+      "transcricao": false
+    },
+    "roteiro": {
+      "atualizado_em": "2026-11-22T09:57:32+00:00",
+      "arquivo": "02_roteiro/roteiro_v04.txt",
+      "palavras": 3683,
+      "minutos": 26.3
+    }
+  }
+}

@@ -1,7 +1,7 @@
 # projetos/
 
 Um vídeo por pasta: `projetos/<canal>/<slug>/`. Criada por `./scripts/novo-video.sh` (ou pela skill `/estudio`).
-O conteúdo fica **fora do git** (áudio, vídeo e mídia pesada). Faça backup no Drive/HD se quiser guardar.
+Os **textos** (projeto, mapa emocional, roteiros, revisões, decupagem, timeline, publicação) vão para o git, para qualquer sessão retomar o vídeo. A **mídia pesada** (áudio, vídeo, imagens, prévias) e os **comentários brutos** ficam fora: guarde os renders no Drive/HD.
 
 ```
 projeto.json        canal, tema, link, idioma e estado das etapas
