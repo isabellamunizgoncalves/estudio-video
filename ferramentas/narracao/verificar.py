@@ -67,7 +67,13 @@ class Resultado:
 def verificar(audio: Path, texto: str, idioma: str, palavras_por_minuto: int,
               similaridade_minima: float = 0.93, desvio_max: float = 0.35) -> Resultado:
     lang = idioma.split("-")[0].lower()
-    segs, _ = whisper().transcribe(str(audio), language=lang, word_timestamps=True, beam_size=5,
+    # Decodifica via ffmpeg (faster-whisper 1.2.1 é incompatível com av 19 na leitura de arquivo).
+    import subprocess
+    import numpy as np
+    pcm = subprocess.run(["ffmpeg", "-v", "error", "-i", str(audio), "-f", "f32le", "-ac", "1",
+                          "-ar", "16000", "-"], capture_output=True, check=True).stdout
+    sinal = np.frombuffer(pcm, dtype=np.float32)
+    segs, _ = whisper().transcribe(sinal, language=lang, word_timestamps=True, beam_size=5,
                                    vad_filter=False, condition_on_previous_text=False)
     ouvidas = [w for s in segs for w in (s.words or [])]
     orig = tokens(texto)
