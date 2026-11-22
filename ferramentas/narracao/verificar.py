@@ -39,6 +39,46 @@ def tokens(texto: str) -> list[str]:
     return [t for t in re.findall(r"\S+", texto) if normalizar(t)]
 
 
+def _numero_fr(n: int) -> str:
+    """Número por extenso em francês (0–100), já sem hífen."""
+    u = ["zero", "un", "deux", "trois", "quatre", "cinq", "six", "sept", "huit", "neuf", "dix",
+         "onze", "douze", "treize", "quatorze", "quinze", "seize", "dix sept", "dix huit", "dix neuf"]
+    dez = {2: "vingt", 3: "trente", 4: "quarante", 5: "cinquante", 6: "soixante"}
+    if n < 20:
+        return u[n]
+    if n == 100:
+        return "cent"
+    if n < 70:
+        d, r = divmod(n, 10)
+        return dez[d] if r == 0 else (f"{dez[d]} et un" if r == 1 else f"{dez[d]} {u[r]}")
+    if n < 80:
+        return "soixante et onze" if n == 71 else f"soixante {u[n - 60]}"
+    return "quatre vingts" if n == 80 else f"quatre vingt {u[n - 80]}"
+
+
+_NUMEROS = {str(n): _numero_fr(n) for n in range(0, 101)}
+
+
+def subtokens(palavra: str) -> list[str]:
+    """Pedaços comparáveis de uma palavra, iguais nos dois lados da comparação.
+
+    O Whisper devolve a elisão partida («qu'on» → «qu'» + «on»), parte o hífen
+    («pot-au-feu» → «pot» + «au» + «feu») e escreve número em dígito («vingt-cinq» → «25»),
+    enquanto o roteiro traz a forma escrita. Sem igualar isso, um francês bem narrado perde
+    cerca de 11% de similaridade sem nenhum erro de narração.
+    """
+    bruto = unicodedata.normalize("NFKD", palavra.lower().replace("\u2019", "'"))
+    bruto = "".join(c for c in bruto if not unicodedata.combining(c))
+    partes: list[str] = []
+    for pedaco in re.split(r"[^0-9a-z']+", bruto):
+        for q in pedaco.split("'"):
+            q = q.strip("'")
+            if not q:
+                continue
+            partes.extend(_NUMEROS[q].split() if q.isdigit() and q in _NUMEROS else [q])
+    return partes
+
+
 def duracao_wav(caminho: Path) -> float:
     with wave.open(str(caminho), "rb") as w:
         return w.getnframes() / w.getframerate()
@@ -77,16 +117,25 @@ def verificar(audio: Path, texto: str, idioma: str, palavras_por_minuto: int,
                                    vad_filter=False, condition_on_previous_text=False)
     ouvidas = [w for s in segs for w in (s.words or [])]
     orig = tokens(texto)
-    a = [normalizar(t) for t in orig]
-    b = [normalizar(w.word) for w in ouvidas]
-    b_idx = [i for i, x in enumerate(b) if x]
-    b = [b[i] for i in b_idx]
-    ouvidas = [ouvidas[i] for i in b_idx]
+    # Compara em subtokens (elisão, hífen e número já igualados); a_map/b_map levam
+    # cada subtoken de volta à palavra original, para o tempo por palavra não se perder.
+    a: list[str] = []
+    a_map: list[int] = []
+    for i, t in enumerate(orig):
+        for st in subtokens(t):
+            a.append(st)
+            a_map.append(i)
+    b: list[str] = []
+    b_map: list[int] = []
+    for j, w in enumerate(ouvidas):
+        for st in subtokens(w.word):
+            b.append(st)
+            b_map.append(j)
 
     sm = difflib.SequenceMatcher(a=a, b=b, autojunk=False)
     sim = sm.ratio() if a else 0.0
     dur = duracao_wav(audio)
-    esperada = len(a) / palavras_por_minuto * 60
+    esperada = len(orig) / palavras_por_minuto * 60
     r = Resultado(similaridade=round(sim, 4), duracao=round(dur, 2), duracao_esperada=round(esperada, 2),
                   transcrito=" ".join(w.word.strip() for w in ouvidas))
 
@@ -113,11 +162,13 @@ def verificar(audio: Path, texto: str, idioma: str, palavras_por_minuto: int,
             break
 
     # Tempo de cada palavra do texto original (interpolado onde não houve casamento).
-    tempos: list[tuple[float, float] | None] = [None] * len(a)
+    tempos: list[tuple[float, float] | None] = [None] * len(orig)
     for bloco in sm.get_matching_blocks():
         for k in range(bloco.size):
-            w = ouvidas[bloco.b + k]
-            tempos[bloco.a + k] = (float(w.start), float(w.end))
+            w = ouvidas[b_map[bloco.b + k]]
+            i = a_map[bloco.a + k]
+            ini, fim_w = float(w.start), float(w.end)
+            tempos[i] = (ini, fim_w) if tempos[i] is None else (min(tempos[i][0], ini), max(tempos[i][1], fim_w))
     if ouvidas:
         r.inicio_fala = float(ouvidas[0].start)
         r.fim_fala = float(ouvidas[-1].end)
