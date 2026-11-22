@@ -30,11 +30,12 @@ def cliente():
     global _cliente
     if _cliente is None:
         from google import genai
+        from google.genai import types
 
         chave = os.environ.get("GEMINI_API_KEY") or os.environ.get("GOOGLE_API_KEY")
         if not chave:
             raise SystemExit("Falta GEMINI_API_KEY no .env (crie em https://aistudio.google.com/apikey).")
-        _cliente = genai.Client(api_key=chave)
+        _cliente = genai.Client(api_key=chave, http_options=types.HttpOptions(api_version="v1beta"))
     return _cliente
 
 
