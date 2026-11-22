@@ -105,7 +105,8 @@ class Resultado:
 
 
 def verificar(audio: Path, texto: str, idioma: str, palavras_por_minuto: int,
-              similaridade_minima: float = 0.93, desvio_max: float = 0.35) -> Resultado:
+              similaridade_minima: float = 0.93, desvio_max: float = 0.35,
+              silencio_max: float = 2.8) -> Resultado:
     lang = idioma.split("-")[0].lower()
     # Decodifica via ffmpeg (faster-whisper 1.2.1 é incompatível com av 19 na leitura de arquivo).
     import subprocess
@@ -157,7 +158,7 @@ def verificar(audio: Path, texto: str, idioma: str, palavras_por_minuto: int,
             r.problemas.append(f"trecho pulado: «{' '.join(a[i1:i2][:12])}»")
 
     for w1, w2 in zip(ouvidas, ouvidas[1:]):
-        if w2.start - w1.end > 2.8:
+        if w2.start - w1.end > silencio_max:
             r.problemas.append(f"silêncio de {w2.start - w1.end:.1f}s em {w1.end:.1f}s")
             break
 

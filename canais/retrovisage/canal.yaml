@@ -35,6 +35,8 @@ narracao:
   verificacao:
     similaridade_minima: 0.93 # texto transcrito x roteiro (0–1)
     desvio_duracao_max: 0.35  # duração real x esperada (±35%)
+    silencio_max_s: 5         # pausa longa é respiração deste canal ("laissant respirer
+                              # les points de suspension"); acima disso é a voz travando
     tentativas: 4
 
 visual:

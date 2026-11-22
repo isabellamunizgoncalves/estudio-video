@@ -80,6 +80,7 @@ def narrar_bloco(bloco: Bloco, pasta: Path, cfg: dict, idioma: str, ppm: int, to
     melhor = None
     minimo = ver.get("similaridade_minima", 0.93)
     desvio = ver.get("desvio_duracao_max", 0.35)
+    silencio = float(ver.get("silencio_max_s", 2.8))
 
     # Tomadas já gravadas (sessão anterior interrompida, cota estourada): verificar sai de graça,
     # gravar de novo custa uma requisição. Só vale a que passa contra o texto ATUAL do bloco —
@@ -87,7 +88,7 @@ def narrar_bloco(bloco: Bloco, pasta: Path, cfg: dict, idioma: str, ppm: int, to
     existentes = sorted(pasta.glob(f"bloco_{bloco.indice:03d}_t*.wav"),
                         key=lambda f: int(f.stem.rsplit("_t", 1)[1]))
     for arq in existentes:
-        r = verificar(arq, bloco.texto, idioma, ppm, minimo, desvio)
+        r = verificar(arq, bloco.texto, idioma, ppm, minimo, desvio, silencio)
         t = int(arq.stem.rsplit("_t", 1)[1])
         estado = "✔" if r.aprovado else "✖ " + "; ".join(r.problemas)
         print(f"    tomada {t} (já gravada): sim {r.similaridade:.3f}, {r.duracao:.1f}s {estado}")
@@ -110,7 +111,7 @@ def narrar_bloco(bloco: Bloco, pasta: Path, cfg: dict, idioma: str, ppm: int, to
             print(f"    {mod} recusou ({getattr(exc, 'code', '')}); usando {reserva}")
             mod = reserva
             sintetizar(bloco.texto, arq, modelo=mod, **opcoes)
-        r = verificar(arq, bloco.texto, idioma, ppm, minimo, desvio)
+        r = verificar(arq, bloco.texto, idioma, ppm, minimo, desvio, silencio)
         estado = "✔" if r.aprovado else "✖ " + "; ".join(r.problemas)
         print(f"    tomada {t} ({mod.split('-')[2] if mod.count('-') > 2 else mod}): sim {r.similaridade:.3f}, "
               f"{r.duracao:.1f}s {estado}")
