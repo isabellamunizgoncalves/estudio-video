@@ -70,14 +70,39 @@ def aparar(origem: Path, destino: Path, inicio: float, fim: float) -> float:
     return (b - a) / 2 / taxa
 
 
-def semear_do_cache(pasta_etapa: Path, trabalho: Path, blocos) -> int:
+def carregar_provedor(cfg: dict):
+    """(sintetizar, deterministico) conforme `narracao.provedor` do canal."""
+    nome = (cfg.get("provedor") or "gemini").lower()
+    if nome == "edge":
+        from narracao.edge import DETERMINISTICO, sintetizar
+        return sintetizar, DETERMINISTICO
+    if nome == "gemini":
+        from narracao.gemini import sintetizar
+        return sintetizar, False
+    raise SystemExit(f"provedor de narração desconhecido: {nome} (use gemini ou edge)")
+
+
+def opcoes_sintese(cfg: dict, voz: str, idioma: str, tom: str, tentativa: int) -> dict:
+    """Argumentos do provedor. O Edge não aceita atuação, só ritmo e tom."""
+    if (cfg.get("provedor") or "gemini").lower() == "edge":
+        return dict(voz=voz, idioma=idioma, ritmo=cfg.get("ritmo", ""), tom_hz=cfg.get("tom_hz", ""))
+    return dict(voz=voz, direcao=cfg.get("direcao", ""), tom=tom, idioma=idioma,
+                temperatura=TEMPERATURAS[(tentativa - 1) % len(TEMPERATURAS)])
+
+
+def pasta_cache(pasta_etapa: Path, voz: str) -> Path:
+    """Cache separado por voz: trocar a voz não pode reaproveitar áudio da voz antiga."""
+    return pasta_etapa / "aprovados" / voz
+
+
+def semear_do_cache(pasta_etapa: Path, trabalho: Path, blocos, voz: str) -> int:
     """Traz do cache versionado as tomadas aprovadas em sessões anteriores.
 
     O container de uma sessão é descartado; só o que está no git sobrevive. As tomadas
     aprovadas ficam em `03_narracao/aprovados/bloco_NNN.flac` (sem perda, metade do tamanho
     do WAV) e voltam aqui como tomada 1, para a verificação conferir contra o texto atual.
     """
-    cache = pasta_etapa / "aprovados"
+    cache = pasta_cache(pasta_etapa, voz)
     trazidos = 0
     for b in blocos:
         orig = cache / f"bloco_{b.indice:03d}.flac"
@@ -87,24 +112,25 @@ def semear_do_cache(pasta_etapa: Path, trabalho: Path, blocos) -> int:
         subprocess.run(["ffmpeg", "-v", "error", "-y", "-i", str(orig), str(destino)], check=True)
         trazidos += 1
     if trazidos:
-        print(f"  {trazidos} bloco(s) trazido(s) do cache em {cache.name}/")
+        print(f"  {trazidos} bloco(s) trazido(s) do cache de {voz}")
     return trazidos
 
 
-def guardar_no_cache(arq: Path, pasta_etapa: Path, indice: int) -> None:
+def guardar_no_cache(arq: Path, pasta_etapa: Path, indice: int, voz: str) -> None:
     """Guarda a tomada aprovada em FLAC, para a próxima sessão não regravar."""
-    cache = pasta_etapa / "aprovados"
+    cache = pasta_cache(pasta_etapa, voz)
     cache.mkdir(parents=True, exist_ok=True)
     subprocess.run(["ffmpeg", "-v", "error", "-y", "-i", str(arq), "-c:a", "flac",
                     str(cache / f"bloco_{indice:03d}.flac")], check=True)
 
 
 def narrar_bloco(bloco: Bloco, pasta: Path, cfg: dict, idioma: str, ppm: int, tom: str, voz: str, modelo: str):
-    from narracao.gemini import sintetizar
     from narracao.verificar import verificar
 
+    sintetizar, deterministico = carregar_provedor(cfg)
     ver = cfg.get("verificacao", {})
-    n_tent = int(ver.get("tentativas", 4))
+    # Provedor determinístico devolve sempre o mesmo áudio: repetir tomada não muda nada.
+    n_tent = 1 if deterministico else int(ver.get("tentativas", 4))
     reserva = cfg.get("modelo_reserva") or modelo
     melhor = None
     minimo = ver.get("similaridade_minima", 0.93)
@@ -130,8 +156,7 @@ def narrar_bloco(bloco: Bloco, pasta: Path, cfg: dict, idioma: str, ppm: int, to
     for t in range(len(existentes) + 1, len(existentes) + n_tent + 1):
         mod = reserva if (t == len(existentes) + n_tent and n_tent > 2) else modelo
         arq = pasta / f"bloco_{bloco.indice:03d}_t{t}.wav"
-        opcoes = dict(voz=voz, direcao=cfg.get("direcao", ""), tom=tom, idioma=idioma,
-                      temperatura=TEMPERATURAS[(t - 1) % len(TEMPERATURAS)])
+        opcoes = opcoes_sintese(cfg, voz, idioma, tom, t)
         try:
             sintetizar(bloco.texto, arq, modelo=mod, **opcoes)
         except Exception as exc:
@@ -142,8 +167,10 @@ def narrar_bloco(bloco: Bloco, pasta: Path, cfg: dict, idioma: str, ppm: int, to
             sintetizar(bloco.texto, arq, modelo=mod, **opcoes)
         r = verificar(arq, bloco.texto, idioma, ppm, minimo, desvio, silencio)
         estado = "✔" if r.aprovado else "✖ " + "; ".join(r.problemas)
-        print(f"    tomada {t} ({mod.split('-')[2] if mod.count('-') > 2 else mod}): sim {r.similaridade:.3f}, "
-              f"{r.duracao:.1f}s {estado}")
+        etiqueta = mod if (cfg.get("provedor") or "gemini").lower() == "gemini" else "edge"
+        if etiqueta.count("-") > 2:
+            etiqueta = etiqueta.split("-")[2]
+        print(f"    tomada {t} ({etiqueta}): sim {r.similaridade:.3f}, {r.duracao:.1f}s {estado}")
         if melhor is None or r.nota > melhor[1].nota:
             melhor = (arq, r, t)
         if r.aprovado:
@@ -175,7 +202,9 @@ def main() -> None:
     direcao_arq = fonte.parent / f"direcao_v{numero_versao(fonte)}.json"
     direcao = ler_json(direcao_arq, []) or []
 
-    print(f"Fonte: {proj.rel(fonte)} · {len(blocos)} blocos · voz {voz} · {modelo}")
+    provedor = (cfg.get("provedor") or "gemini").lower()
+    print(f"Fonte: {proj.rel(fonte)} · {len(blocos)} blocos · voz {voz} · "
+          f"{modelo if provedor == 'gemini' else 'edge-tts'}")
     if args.plano:
         for b in blocos:
             print(f"  bloco {b.indice:03d}: {b.palavras} palavras (~{b.palavras / ppm * 60:.0f}s) "
@@ -188,7 +217,19 @@ def main() -> None:
     trabalho = pasta / f"blocos_v{v}"
     trabalho.mkdir(parents=True, exist_ok=True)
 
-    semear_do_cache(pasta, trabalho, blocos)
+    # A pasta de trabalho guarda tomadas de UMA voz. Se a voz do canal mudou, as antigas
+    # passariam na verificação (o texto é o mesmo) e entrariam no vídeo com a voz errada.
+    marca = trabalho / ".voz"
+    anterior_voz = marca.read_text(encoding="utf-8").strip() if marca.exists() else ""
+    if anterior_voz and anterior_voz != voz:
+        guardada = pasta / f"{trabalho.name}_{anterior_voz}"
+        trabalho.rename(guardada)
+        trabalho.mkdir(parents=True, exist_ok=True)
+        print(f"  voz mudou de {anterior_voz} para {voz}: tomadas antigas movidas para {guardada.name}/")
+        marca = trabalho / ".voz"
+    marca.write_text(voz + "\n", encoding="utf-8")
+
+    semear_do_cache(pasta, trabalho, blocos, voz)
 
     refazer = {int(x) for x in args.blocos.split(",")} if args.blocos else None
     anterior = ler_json(ultima_versao(pasta, "narracao", ".json"), None) if refazer else None
@@ -217,7 +258,7 @@ def main() -> None:
         final = trabalho / f"bloco_{b.indice:03d}.wav"
         dur = aparar(arq, final, ini, fim)
         if r.aprovado:
-            guardar_no_cache(arq, pasta, b.indice)
+            guardar_no_cache(arq, pasta, b.indice, voz)
         resultados.append({
             "indice": b.indice, "texto": b.texto, "primeiro_paragrafo": b.primeiro_paragrafo,
             "arquivo": proj.rel(final), "duracao": round(dur, 3), "tomadas": t,

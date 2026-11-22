@@ -49,4 +49,4 @@ estudio-remotion/public/_projeto
 # Em FLAC (sem perda, metade do WAV): ~1,4 MB por bloco, ~40 MB por vídeo.
 # As tomadas reprovadas e os arquivos de montagem continuam fora (blocos_*/ acima).
 !projetos/**/03_narracao/aprovados/
-!projetos/**/03_narracao/aprovados/*.flac
+!projetos/**/03_narracao/aprovados/**/*.flac

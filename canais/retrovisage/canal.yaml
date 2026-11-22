@@ -20,10 +20,15 @@ roteiro:
   despedida: "À très bientôt… dans la France d'autrefois."
 
 narracao:
-  provedor: gemini
-  modelo: gemini-2.5-pro-preview-tts       # melhor qualidade
+  provedor: edge              # Edge TTS: sem chave e sem cota. Ressalvas em ferramentas/narracao/edge.py
+  voz: fr-FR-RemyMultilingualNeural   # escolhida de ouvido por Isabella, ritmo normal
+  ritmo: ""                   # Edge: '-15%' deixa mais lento; vazio = ritmo natural da voz
+  tom_hz: ""                  # Edge: '-2Hz' deixa mais grave
+  # Se voltar para provedor: gemini, use voz: Charon e os modelos abaixo.
+  modelo: gemini-2.5-pro-preview-tts       # melhor qualidade (indisponível no plano gratuito)
   modelo_reserva: gemini-2.5-flash-preview-tts  # se o pro falhar ou estourar a cota
-  voz: Charon                 # teste outras com: python ferramentas/narracao/testar_vozes.py --canal retrovisage
+  # ATENÇÃO: só o provedor gemini usa esta direção e o tom do direcao_vNN.json.
+  # Com provedor: edge a voz não recebe atuação nenhuma, apenas ritmo e tom_hz.
   direcao: >-
     Tu es un narrateur français d'environ soixante ans, à la voix chaude et posée.
     Tu racontes des souvenirs d'enfance à de vieux amis, au coin du feu : lentement,
@@ -37,7 +42,7 @@ narracao:
     desvio_duracao_max: 0.35  # duração real x esperada (±35%)
     silencio_max_s: 5         # pausa longa é respiração deste canal ("laissant respirer
                               # les points de suspension"); acima disso é a voz travando
-    tentativas: 4
+    tentativas: 4             # só no gemini; o edge é determinístico e faz 1 tomada
 
 visual:
   guia: visual.md             # identidade visual, regras de imagem
