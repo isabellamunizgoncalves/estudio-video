@@ -35,6 +35,7 @@ def main() -> None:
     ap.add_argument("--todas", action="store_true",
                     help="testa todas as vozes do perfil, não só a seleção curta")
     ap.add_argument("--texto")
+    ap.add_argument("--modelo", help="padrão: narracao.modelo do canal, com queda para o modelo_reserva")
     args = ap.parse_args()
     canal = carregar_canal(args.canal)
     cfg = canal.get("narracao", {})
@@ -53,14 +54,41 @@ def main() -> None:
     else:
         vozes = curtas.get(args.perfil) or vozes_por_genero("t")
     print(f"Canal {args.canal} · perfil {args.perfil} · {len(vozes)} vozes · {idioma}")
+    modelo = args.modelo or cfg.get("modelo", "gemini-2.5-pro-preview-tts")
+    reserva = cfg.get("modelo_reserva")
+    feitas, falhas = 0, []
     for v in vozes:
         if v not in VOZES:
             print(f"voz desconhecida: {v} (disponíveis: {', '.join(VOZES)})")
             continue
         destino = CANAIS / args.canal / "amostras-voz" / f"{v}.wav"
-        sintetizar(texto, destino, voz=v, modelo=cfg.get("modelo", "gemini-2.5-pro-preview-tts"),
-                   direcao=cfg.get("direcao", ""), idioma=idioma)
+        if destino.exists():
+            print(f"= {destino.relative_to(CANAIS.parent)} já existe, pulando")
+            feitas += 1
+            continue
+        opcoes = dict(voz=v, direcao=cfg.get("direcao", ""), idioma=idioma)
+        try:
+            sintetizar(texto, destino, modelo=modelo, **opcoes)
+        except Exception as exc:
+            # O modelo preferido do canal pode não existir no plano da conta (o pro tem limite
+            # zero no gratuito): tenta o reserva antes de desistir desta voz.
+            if not reserva or reserva == modelo:
+                print(f"✖ {v}: {type(exc).__name__}: {str(exc)[:120]}")
+                falhas.append(v)
+                continue
+            print(f"  {modelo} não atendeu; tentando {reserva}")
+            try:
+                sintetizar(texto, destino, modelo=reserva, **opcoes)
+            except Exception as exc2:
+                print(f"✖ {v}: {type(exc2).__name__}: {str(exc2)[:120]}")
+                falhas.append(v)
+                continue
+        feitas += 1
         print(f"→ {destino.relative_to(CANAIS.parent)}  ({'masculina' if GENERO_VOZ.get(v) == 'm' else 'feminina'})")
+
+    print(f"\n{feitas} de {len(vozes)} amostras em canais/{args.canal}/amostras-voz/")
+    if falhas:
+        print(f"faltaram: {', '.join(falhas)} — rode de novo depois (as prontas são puladas)")
 
 
 if __name__ == "__main__":
