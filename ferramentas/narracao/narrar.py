@@ -70,6 +70,35 @@ def aparar(origem: Path, destino: Path, inicio: float, fim: float) -> float:
     return (b - a) / 2 / taxa
 
 
+def semear_do_cache(pasta_etapa: Path, trabalho: Path, blocos) -> int:
+    """Traz do cache versionado as tomadas aprovadas em sessões anteriores.
+
+    O container de uma sessão é descartado; só o que está no git sobrevive. As tomadas
+    aprovadas ficam em `03_narracao/aprovados/bloco_NNN.flac` (sem perda, metade do tamanho
+    do WAV) e voltam aqui como tomada 1, para a verificação conferir contra o texto atual.
+    """
+    cache = pasta_etapa / "aprovados"
+    trazidos = 0
+    for b in blocos:
+        orig = cache / f"bloco_{b.indice:03d}.flac"
+        if not orig.exists() or list(trabalho.glob(f"bloco_{b.indice:03d}_t*.wav")):
+            continue
+        destino = trabalho / f"bloco_{b.indice:03d}_t1.wav"
+        subprocess.run(["ffmpeg", "-v", "error", "-y", "-i", str(orig), str(destino)], check=True)
+        trazidos += 1
+    if trazidos:
+        print(f"  {trazidos} bloco(s) trazido(s) do cache em {cache.name}/")
+    return trazidos
+
+
+def guardar_no_cache(arq: Path, pasta_etapa: Path, indice: int) -> None:
+    """Guarda a tomada aprovada em FLAC, para a próxima sessão não regravar."""
+    cache = pasta_etapa / "aprovados"
+    cache.mkdir(parents=True, exist_ok=True)
+    subprocess.run(["ffmpeg", "-v", "error", "-y", "-i", str(arq), "-c:a", "flac",
+                    str(cache / f"bloco_{indice:03d}.flac")], check=True)
+
+
 def narrar_bloco(bloco: Bloco, pasta: Path, cfg: dict, idioma: str, ppm: int, tom: str, voz: str, modelo: str):
     from narracao.gemini import sintetizar
     from narracao.verificar import verificar
@@ -159,6 +188,8 @@ def main() -> None:
     trabalho = pasta / f"blocos_v{v}"
     trabalho.mkdir(parents=True, exist_ok=True)
 
+    semear_do_cache(pasta, trabalho, blocos)
+
     refazer = {int(x) for x in args.blocos.split(",")} if args.blocos else None
     anterior = ler_json(ultima_versao(pasta, "narracao", ".json"), None) if refazer else None
     if refazer and not anterior:
@@ -185,6 +216,8 @@ def main() -> None:
         fim = min(r.duracao, r.fim_fala + 0.35) if r.fim_fala else r.duracao
         final = trabalho / f"bloco_{b.indice:03d}.wav"
         dur = aparar(arq, final, ini, fim)
+        if r.aprovado:
+            guardar_no_cache(arq, pasta, b.indice)
         resultados.append({
             "indice": b.indice, "texto": b.texto, "primeiro_paragrafo": b.primeiro_paragrafo,
             "arquivo": proj.rel(final), "duracao": round(dur, 3), "tomadas": t,
