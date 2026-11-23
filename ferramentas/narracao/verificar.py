@@ -169,7 +169,7 @@ class Resultado:
         return self.similaridade - 0.05 * len(self.problemas)
 
 
-def _tirar_alucinacao(ouvidas: list):
+def _tirar_alucinacao(ouvidas: list, texto: str = ""):
     """Remove das palavras ouvidas as frases que o Whisper inventa. Devolve (palavras, texto tirado).
 
     O Whisper fatia a palavra de formas imprevisíveis («Sous» + «-titres»), então a busca é
@@ -187,13 +187,22 @@ def _tirar_alucinacao(ouvidas: list):
             continue
         inicios.append(sum(len(x) + 1 for x in partes))
         partes.append(limpo)
-    texto = " ".join(partes)
+    ouvido = " ".join(partes)
 
-    primeiro = len(texto)
+    # Uma frase que ESTÁ no roteiro nunca é alucinação: o CTA de um canal pode ser
+    # exatamente uma das frases que o Whisper inventa («abonnez-vous…»). Sem esta
+    # checagem, o filtro cortaria a despedida real e acusaria final truncado.
+    roteiro = re.sub(r"[^\w]+", " ", (texto or "").lower()).strip()
+    roteiro = re.sub(r"\s+", " ", roteiro)
+
+    primeiro = len(ouvido)
     for padrao in ALUCINACOES:
-        for m in re.finditer(padrao, texto):
+        for m in re.finditer(padrao, ouvido):
+            trecho = m.group(0).split()
+            if trecho and roteiro and " ".join(trecho[:4]) in roteiro:
+                continue  # está no roteiro: é fala de verdade
             primeiro = min(primeiro, m.start())
-    if primeiro >= len(texto):
+    if primeiro >= len(ouvido):
         return ouvidas, ""
 
     corte = len(ouvidas)
@@ -217,7 +226,7 @@ def verificar(audio: Path, texto: str, idioma: str, palavras_por_minuto: int,
     segs, _ = whisper().transcribe(sinal, language=lang, word_timestamps=True, beam_size=5,
                                    vad_filter=False, condition_on_previous_text=False)
     ouvidas = [w for s in segs for w in (s.words or [])]
-    ouvidas, alucinado = _tirar_alucinacao(ouvidas)
+    ouvidas, alucinado = _tirar_alucinacao(ouvidas, texto)
     orig = tokens(texto)
     # Compara em subtokens (elisão, hífen e número já igualados); a_map/b_map levam
     # cada subtoken de volta à palavra original, para o tempo por palavra não se perder.

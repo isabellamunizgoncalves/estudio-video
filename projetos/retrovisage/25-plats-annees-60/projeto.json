@@ -19,10 +19,10 @@
       "minutos": 26.3
     },
     "narracao": {
-      "atualizado_em": "2026-11-23T10:09:25+00:00",
-      "audio": "03_narracao/narracao_v02.wav",
-      "duracao": 1241.2,
-      "reprovados": 0
+      "atualizado_em": "2026-11-23T17:56:53+00:00",
+      "audio": "03_narracao/narracao_v03.wav",
+      "duracao": 1237.0,
+      "reprovados": 1
     }
   }
 }
