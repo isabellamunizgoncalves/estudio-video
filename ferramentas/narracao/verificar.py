@@ -59,6 +59,20 @@ def _numero_fr(n: int) -> str:
 _NUMEROS = {str(n): _numero_fr(n) for n in range(0, 101)}
 
 
+# O Whisper inventa estas frases em áudio silencioso: são legendas e vinhetas que ele
+# aprendeu no treino, não som que exista na narração. Deixá-las entrar infla a transcrição
+# e derruba a nota de um áudio correto. Não é regra de canal: é defeito conhecido do modelo.
+ALUCINACOES = [
+    r"\bsous\s*titr\w*\s+(?:r\w*alis\w*|par)\b.*",
+    r"\bsous\s*titr\w*\s+(?:de\s+)?la\s+communaut\w*\b.*",
+    r"\bamara\s+org\b.*",
+    r"\bsous\s*titrage\s+(?:soci\w*|st)\b.*",
+    r"\bmerci\s+d\s*avoir\s+regard\w*\b.*",
+    r"\babonnez\s+vous\b.*",
+    r"\bthanks?\s+for\s+watching\b.*",
+    r"\bsubtitles?\s+by\b.*",
+    r"\blegendas?\s+(?:pela|por)\b.*",
+]
 _fonetizador: dict = {}
 _cache_fonema: dict[tuple[str, str], str] = {}
 
@@ -144,6 +158,7 @@ class Resultado:
     inicio_fala: float = 0.0
     fim_fala: float = 0.0
     transcrito: str = ""
+    alucinacao_whisper: str = ""   # frase que o Whisper inventou e foi tirada da comparação
 
     @property
     def aprovado(self) -> bool:
@@ -152,6 +167,41 @@ class Resultado:
     @property
     def nota(self) -> float:
         return self.similaridade - 0.05 * len(self.problemas)
+
+
+def _tirar_alucinacao(ouvidas: list):
+    """Remove das palavras ouvidas as frases que o Whisper inventa. Devolve (palavras, texto tirado).
+
+    O Whisper fatia a palavra de formas imprevisíveis («Sous» + «-titres»), então a busca é
+    feita num texto normalizado (minúsculas, hífen e pontuação viram espaço) com o começo de
+    cada palavra anotado, para o corte cair na palavra certa.
+    """
+    if not ouvidas:
+        return ouvidas, ""
+    partes, inicios = [], []
+    for w in ouvidas:
+        limpo = re.sub(r"[^\w]+", " ", w.word.lower()).strip()
+        limpo = re.sub(r"\s+", " ", limpo)
+        if not limpo:
+            inicios.append(None)
+            continue
+        inicios.append(sum(len(x) + 1 for x in partes))
+        partes.append(limpo)
+    texto = " ".join(partes)
+
+    primeiro = len(texto)
+    for padrao in ALUCINACOES:
+        for m in re.finditer(padrao, texto):
+            primeiro = min(primeiro, m.start())
+    if primeiro >= len(texto):
+        return ouvidas, ""
+
+    corte = len(ouvidas)
+    for i, ini in enumerate(inicios):
+        if ini is not None and ini >= primeiro:
+            corte = i
+            break
+    return ouvidas[:corte], " ".join(w.word.strip() for w in ouvidas[corte:])
 
 
 def verificar(audio: Path, texto: str, idioma: str, palavras_por_minuto: int,
@@ -167,6 +217,7 @@ def verificar(audio: Path, texto: str, idioma: str, palavras_por_minuto: int,
     segs, _ = whisper().transcribe(sinal, language=lang, word_timestamps=True, beam_size=5,
                                    vad_filter=False, condition_on_previous_text=False)
     ouvidas = [w for s in segs for w in (s.words or [])]
+    ouvidas, alucinado = _tirar_alucinacao(ouvidas)
     orig = tokens(texto)
     # Compara em subtokens (elisão, hífen e número já igualados); a_map/b_map levam
     # cada subtoken de volta à palavra original, para o tempo por palavra não se perder.
@@ -187,11 +238,16 @@ def verificar(audio: Path, texto: str, idioma: str, palavras_por_minuto: int,
     a, b = fonetizar(a, idioma), fonetizar(b, idioma)
 
     sm = difflib.SequenceMatcher(a=a, b=b, autojunk=False)
-    sim = sm.ratio() if a else 0.0
+    # Cobertura do ROTEIRO (quanto do texto foi realmente falado), e não a proporção
+    # simétrica do difflib: palavra a mais na transcrição derrubava a nota de narração
+    # correta. Sobra de fala é acusada à parte, pelas checagens de invenção.
+    casadas = sum(x.size for x in sm.get_matching_blocks())
+    sim = (casadas / len(a)) if a else 0.0
     dur = duracao_wav(audio)
     esperada = len(orig) / palavras_por_minuto * 60
     r = Resultado(similaridade=round(sim, 4), duracao=round(dur, 2), duracao_esperada=round(esperada, 2),
-                  transcrito=" ".join(w.word.strip() for w in ouvidas))
+                  transcrito=" ".join(w.word.strip() for w in ouvidas),
+                  alucinacao_whisper=alucinado)
 
     if sim < similaridade_minima:
         r.problemas.append(f"texto diverge (similaridade {sim:.2f} < {similaridade_minima})")
@@ -204,6 +260,8 @@ def verificar(audio: Path, texto: str, idioma: str, palavras_por_minuto: int,
         r.problemas.append(f"fala extra no início: «{' '.join(b_escrito[ops[0][3]:ops[0][4]][:12])}»")
     if ops and ops[-1][0] in ("delete", "replace") and (ops[-1][2] - ops[-1][1]) >= 3:
         r.problemas.append(f"final cortado: faltou «{' '.join(a_escrito[ops[-1][1]:ops[-1][2]][:12])}»")
+    if ops and ops[-1][0] in ("insert", "replace") and (ops[-1][4] - ops[-1][3]) - (ops[-1][2] - ops[-1][1]) >= 4:
+        r.problemas.append(f"fala extra no final: «{' '.join(b_escrito[ops[-1][3]:ops[-1][4]][:12])}»")
     for op, i1, i2, j1, j2 in ops[1:-1]:
         if op in ("insert", "replace") and (j2 - j1) - (i2 - i1) >= 4:
             r.problemas.append(f"trecho inventado: «{' '.join(b_escrito[j1:j2][:12])}»")
