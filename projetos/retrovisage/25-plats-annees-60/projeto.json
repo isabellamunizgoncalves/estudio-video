@@ -17,6 +17,12 @@
       "arquivo": "02_roteiro/roteiro_v04.txt",
       "palavras": 3683,
       "minutos": 26.3
+    },
+    "narracao": {
+      "atualizado_em": "2026-11-23T10:06:42+00:00",
+      "audio": "03_narracao/narracao_v01.wav",
+      "duracao": 1241.3,
+      "reprovados": 5
     }
   }
 }

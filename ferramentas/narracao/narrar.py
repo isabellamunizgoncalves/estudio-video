@@ -316,13 +316,14 @@ def main() -> None:
 
     reprovados = [r for r in resultados if not r.get("aprovado")]
     manifesto = {
-        "versao": v, "fonte": proj.rel(fonte), "audio": proj.rel(saida), "voz": voz, "modelo": modelo,
+        "versao": v, "fonte": proj.rel(fonte), "audio": proj.rel(saida), "voz": voz,
+        "provedor": provedor, "modelo": modelo if provedor == "gemini" else "edge-tts",
         "idioma": idioma, "duracao": round(cursor, 3), "pausa_bloco": pausa,
         "blocos": resultados, "palavras": palavras, "frases": frases_out,
     }
     gravar_json(pasta / f"narracao_v{v}.json", manifesto)
 
-    linhas = [f"# QA da narração v{v}", "", f"- Fonte: `{proj.rel(fonte)}`", f"- Voz: {voz} · {modelo}",
+    linhas = [f"# QA da narração v{v}", "", f"- Fonte: `{proj.rel(fonte)}`", f"- Voz: {voz} · {modelo if provedor == 'gemini' else 'edge-tts'}",
               f"- Duração: {int(cursor // 60)}min{int(cursor % 60):02d}s · {len(resultados)} blocos · "
               f"{len(reprovados)} reprovados", "", "| Bloco | Início | Duração | Tomadas | Similaridade | Situação |",
               "|---|---|---|---|---|---|"]
