@@ -4,7 +4,8 @@ Este guia complementa as regras gerais do agente `roteirista`. Onde houver confl
 
 ## Voz
 - Francês natural e correto, frases curtas, tom acolhedor e íntimo, como conversa entre velhos conhecidos.
-- Segunda pessoa imersiva: « Fermez les yeux… », « Vous souvenez-vous… », « On en avait mal au poignet… ».
+- Segunda pessoa imersiva, pondo o espectador dentro da cena em vez de convidando: « Vous montez l'escalier, le cartable dans le dos… », « On en avait mal au poignet… ».
+- **Nunca abra dois vídeos com a mesma fórmula.** « Fermez les yeux… » está queimada (já usada) e sai de circulação; o mesmo vale para qualquer convite pronto (« Imaginez… », « Souvenez-vous… ») repetido de um vídeo para o outro. Comece na cena, não no convite.
 - Muitos detalhes sensoriais concretos: cheiros (o gatilho mais forte), sons, texturas, frio, calor.
 - Reticências para pausas emocionais. Frases curtas de impacto: « C'était presque rien. Et c'était tout. »
 - Fatos históricos (datas de programas, marcas, eventos) só com segurança; na dúvida, fique genérico.
