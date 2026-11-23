@@ -59,7 +59,55 @@ def _numero_fr(n: int) -> str:
 _NUMEROS = {str(n): _numero_fr(n) for n in range(0, 101)}
 
 
-def subtokens(palavra: str) -> list[str]:
+_fonetizador: dict = {}
+_cache_fonema: dict[tuple[str, str], str] = {}
+
+
+def _backend(idioma: str):
+    """Backend do espeak para o idioma, ou None se não der para fonetizar aqui."""
+    lang = (idioma or "").replace("_", "-").lower() or "fr-fr"
+    if lang in _fonetizador:
+        return _fonetizador[lang]
+    try:
+        import espeakng_loader
+        from phonemizer.backend import EspeakBackend
+        from phonemizer.backend.espeak.wrapper import EspeakWrapper
+
+        EspeakWrapper.set_library(espeakng_loader.get_library_path())
+        EspeakWrapper.set_data_path(espeakng_loader.get_data_path())
+        try:
+            b = EspeakBackend(lang, with_stress=False)
+        except RuntimeError:
+            b = EspeakBackend(lang.split("-")[0], with_stress=False)
+    except Exception as exc:  # sem espeak: cai para a comparação por letra
+        print(f"    (sem fonética para {lang}: {type(exc).__name__}; comparando por letra)")
+        b = None
+    _fonetizador[lang] = b
+    return b
+
+
+def fonetizar(pedacos: list[str], idioma: str) -> list[str]:
+    """Som de cada pedaço. Em francês o plural e o feminino são mudos («tomate» e «tomates»
+    soam igual) e há muitos homófonos («vert»/«ver», «pâte»/«patte»): comparar letra a letra
+    reprova narração boa. Sem espeak, devolve os próprios pedaços."""
+    b = _backend(idioma)
+    if b is None:
+        return pedacos
+    lang = (idioma or "fr-fr").replace("_", "-").lower()
+    faltam = [p for p in dict.fromkeys(pedacos) if (lang, p) not in _cache_fonema]
+    if faltam:
+        try:
+            for palavra, som in zip(faltam, b.phonemize(faltam, strip=True)):
+                # Tira marca de vogal longa e de ênfase: «pâte» /paːt/ e «patte» /pat/ são
+                # o mesmo som para o nosso fim, e o espeak alonga de forma inconsistente.
+                limpo = som.replace(" ", "").replace("ː", "").replace("ˈ", "").replace("ˌ", "")
+                _cache_fonema[(lang, palavra)] = limpo or palavra
+        except Exception:
+            return pedacos
+    return [_cache_fonema.get((lang, p), p) for p in pedacos]
+
+
+def subtokens(palavra: str, *, acentos: bool = False) -> list[str]:
     """Pedaços comparáveis de uma palavra, iguais nos dois lados da comparação.
 
     O Whisper devolve a elisão partida («qu'on» → «qu'» + «on»), parte o hífen
@@ -67,10 +115,12 @@ def subtokens(palavra: str) -> list[str]:
     enquanto o roteiro traz a forma escrita. Sem igualar isso, um francês bem narrado perde
     cerca de 11% de similaridade sem nenhum erro de narração.
     """
-    bruto = unicodedata.normalize("NFKD", palavra.lower().replace("\u2019", "'"))
-    bruto = "".join(c for c in bruto if not unicodedata.combining(c))
+    bruto = palavra.lower().replace("\u2019", "'")
+    if not acentos:
+        bruto = unicodedata.normalize("NFKD", bruto)
+        bruto = "".join(c for c in bruto if not unicodedata.combining(c))
     partes: list[str] = []
-    for pedaco in re.split(r"[^0-9a-z']+", bruto):
+    for pedaco in re.split(r"[^\w']+", bruto, flags=re.UNICODE):
         for q in pedaco.split("'"):
             q = q.strip("'")
             if not q:
@@ -123,15 +173,18 @@ def verificar(audio: Path, texto: str, idioma: str, palavras_por_minuto: int,
     a: list[str] = []
     a_map: list[int] = []
     for i, t in enumerate(orig):
-        for st in subtokens(t):
+        for st in subtokens(t, acentos=True):
             a.append(st)
             a_map.append(i)
     b: list[str] = []
     b_map: list[int] = []
     for j, w in enumerate(ouvidas):
-        for st in subtokens(w.word):
+        for st in subtokens(w.word, acentos=True):
             b.append(st)
             b_map.append(j)
+    # Compara o SOM, não a letra. Guarda a escrita para as mensagens de problema.
+    a_escrito, b_escrito = a, b
+    a, b = fonetizar(a, idioma), fonetizar(b, idioma)
 
     sm = difflib.SequenceMatcher(a=a, b=b, autojunk=False)
     sim = sm.ratio() if a else 0.0
@@ -148,14 +201,14 @@ def verificar(audio: Path, texto: str, idioma: str, palavras_por_minuto: int,
     # Inserções longas no começo = instrução lida em voz alta; faltas no fim = corte.
     ops = sm.get_opcodes()
     if ops and ops[0][0] in ("insert", "replace") and (ops[0][4] - ops[0][3]) >= 4:
-        r.problemas.append(f"fala extra no início: «{' '.join(b[ops[0][3]:ops[0][4]][:12])}»")
+        r.problemas.append(f"fala extra no início: «{' '.join(b_escrito[ops[0][3]:ops[0][4]][:12])}»")
     if ops and ops[-1][0] in ("delete", "replace") and (ops[-1][2] - ops[-1][1]) >= 3:
-        r.problemas.append(f"final cortado: faltou «{' '.join(a[ops[-1][1]:ops[-1][2]][:12])}»")
+        r.problemas.append(f"final cortado: faltou «{' '.join(a_escrito[ops[-1][1]:ops[-1][2]][:12])}»")
     for op, i1, i2, j1, j2 in ops[1:-1]:
         if op in ("insert", "replace") and (j2 - j1) - (i2 - i1) >= 4:
-            r.problemas.append(f"trecho inventado: «{' '.join(b[j1:j2][:12])}»")
+            r.problemas.append(f"trecho inventado: «{' '.join(b_escrito[j1:j2][:12])}»")
         if op in ("delete", "replace") and (i2 - i1) - (j2 - j1) >= 4:
-            r.problemas.append(f"trecho pulado: «{' '.join(a[i1:i2][:12])}»")
+            r.problemas.append(f"trecho pulado: «{' '.join(a_escrito[i1:i2][:12])}»")
 
     for w1, w2 in zip(ouvidas, ouvidas[1:]):
         if w2.start - w1.end > silencio_max:

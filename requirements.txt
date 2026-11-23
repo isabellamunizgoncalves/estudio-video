@@ -7,3 +7,5 @@ pyyaml>=6.0
 python-dotenv>=1.0
 pillow>=10.0
 edge-tts>=7.0
+phonemizer>=3.3
+espeakng-loader>=0.2
