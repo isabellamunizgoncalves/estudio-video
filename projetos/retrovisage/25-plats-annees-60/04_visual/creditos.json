@@ -441,6 +441,21 @@
     "baixado_em": "2026-11-23T20:15:02+00:00"
   },
   {
+    "cena": "c032",
+    "arquivo": "04_visual/midia/c032.jpg",
+    "tipo": "imagem",
+    "banco": "wikimedia",
+    "id": "145877360",
+    "titulo": "The Ice cream eaters 1969 (JOKAÖN3A F82-1).tif",
+    "autor": "https://finna.fi/Record/museovirasto.f9a0b74d-177b-4e33-bdae-6cc52f89e0f9",
+    "licenca": "CC BY 4.0",
+    "licenca_url": "https://creativecommons.org/licenses/by/4.0",
+    "pagina": "https://commons.wikimedia.org/wiki/File:The_Ice_cream_eaters_1969_(JOKA%C3%96N3A_F82-1).tif",
+    "atribuicao": "https://finna.fi/Record/museovirasto.f9a0b74d-177b-4e33-bdae-6cc52f89e0f9, CC BY 4.0, via Wikimedia Commons",
+    "trecho": null,
+    "baixado_em": "2026-11-24T01:53:07+00:00"
+  },
+  {
     "cena": "c033",
     "arquivo": "04_visual/midia/c033.jpg",
     "tipo": "imagem",
@@ -1564,6 +1579,21 @@
     "atribuicao": "Imagem: FERMOSERGIO / Pixabay",
     "trecho": null,
     "baixado_em": "2026-11-24T00:04:35+00:00"
+  },
+  {
+    "cena": "c125",
+    "arquivo": "04_visual/midia/c125.jpg",
+    "tipo": "imagem",
+    "banco": "wikimedia",
+    "id": "67522445",
+    "titulo": "Slagersjongen op de fiets in Amsterdam, Bestanddeelnr 924-3525.jpg",
+    "autor": "W. Punt for Anefo",
+    "licenca": "CC0",
+    "licenca_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+    "pagina": "https://commons.wikimedia.org/wiki/File:Slagersjongen_op_de_fiets_in_Amsterdam,_Bestanddeelnr_924-3525.jpg",
+    "atribuicao": "W. Punt for Anefo, CC0, via Wikimedia Commons",
+    "trecho": null,
+    "baixado_em": "2026-11-24T01:53:02+00:00"
   },
   {
     "cena": "c126",
