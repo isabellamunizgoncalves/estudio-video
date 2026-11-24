@@ -10,6 +10,9 @@ jobs:
       - uses: actions/setup-node@v4
         with: { node-version: "22" }
       - run: sudo apt-get update && sudo apt-get install -y ffmpeg
-      - run: pip install pyyaml requests pillow
+      # Instala do requirements.txt, e não de uma lista escrita aqui: a lista fixa ficou
+      # para trás duas vezes seguidas (edge-tts quando o canal trocou de provedor, numpy
+      # quando a verificação passou a decodificar o áudio) e o CI quebrou nas duas.
+      - run: pip install -r requirements.txt
       - run: python testes/teste_ponta_a_ponta.py --sem-render
       - run: cd estudio-remotion && npm ci && npm run typecheck
