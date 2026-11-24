@@ -55,10 +55,15 @@ visual:
     # Sufixo de estilo do prompt. Em inglês: é a língua em que o modelo foi treinado.
     # Imagem gerada ilustra, não documenta: use só em cena encenada que não existe em
     # acervo livre (gesto doméstico, família à mesa, retrato). Arquivo real sempre vence.
+    # Em COR. A regra «não colorir» do visual.md vale para arquivo histórico, que não se
+    # falsifica; imagem gerada não tem original para respeitar, e o canal é colagem
+    # colorida. A cor é a do filme da época (Kodachrome/Agfacolor desbotado), não a cor
+    # saturada de foto moderna — é isso que faz parecer 1962 e não 2026.
     estilo: >-
-      Black and white documentary photograph, France, early 1960s, modest working-class
-      home, period-correct objects only, nothing modern in frame, natural window light,
-      35mm film grain, slight vignetting, no text anywhere
+      Colour photograph on 1960s Kodachrome film, France, early 1960s, faded warm colour
+      palette with muted reds and ochres, modest working-class home, period-correct
+      objects only, nothing modern in frame, natural window light, 35mm film grain,
+      slight vignetting, no text anywhere
 
 musica:
   estilo: Accordéon, chanson française instrumentale, piano doux, années 50–60. Jamais de paroles.

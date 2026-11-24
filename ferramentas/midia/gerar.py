@@ -69,8 +69,10 @@ def montar_prompt(cena: dict, estilo: str) -> str:
     """
     desc = (cena.get("prompt_geracao") or cena.get("descricao") or "").strip().rstrip(".")
     extra = []
-    if cena.get("pb"):
-        extra.append("black and white")
+    # `pb` NÃO entra aqui. Ele é instrução de edição — manda o Remotion dessaturar o plano
+    # — e não de geração. Quem decide a cor da imagem gerada é o estilo do canal. Misturar
+    # os dois fazia uma cena nascer em P&B porque a edição ia dessaturá-la de qualquer jeito,
+    # o que é perder cor duas vezes. Cena que passa a ser gerada em cor tem `pb: false`.
     if cena.get("estilo") == "moldura":
         extra.append("centered composition with room around the subject")
     else:
