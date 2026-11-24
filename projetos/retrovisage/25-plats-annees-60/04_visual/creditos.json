@@ -453,7 +453,8 @@
     "pagina": "https://commons.wikimedia.org/wiki/File:The_Ice_cream_eaters_1969_(JOKA%C3%96N3A_F82-1).tif",
     "atribuicao": "https://finna.fi/Record/museovirasto.f9a0b74d-177b-4e33-bdae-6cc52f89e0f9, CC BY 4.0, via Wikimedia Commons",
     "trecho": null,
-    "baixado_em": "2026-11-24T01:53:07+00:00"
+    "baixado_em": "2026-11-24T01:53:07+00:00",
+    "observacao": "Aproximação: foto de 1969 (Finlândia) de criança comendo; não é França nem fatia quente."
   },
   {
     "cena": "c033",
@@ -552,6 +553,22 @@
     "baixado_em": "2026-11-23T20:15:09+00:00"
   },
   {
+    "cena": "c041",
+    "arquivo": "04_visual/midia/c041.jpg",
+    "tipo": "imagem",
+    "banco": "pixabay",
+    "id": "2556022",
+    "titulo": "garlic, cactus, window, green, house, cooking, farm, farmhouse, country, lifestyle, table, nutrition, wooden, plant, design, happy, garden, dinner, agriculture, meal, kitchen, natural, vegetable, home, organic, fresh, healthy, vegetarian, diet, salad, cook, tomato, food, nature, window, window, house, kitchen, kitchen, kitchen, kitchen, kitchen, home",
+    "autor": "TheVirtualDenise",
+    "licenca": "Pixabay Content License",
+    "licenca_url": "https://pixabay.com/service/license-summary/",
+    "pagina": "https://pixabay.com/photos/garlic-cactus-window-green-house-2556022/",
+    "atribuicao": "Imagem: TheVirtualDenise / Pixabay",
+    "trecho": null,
+    "baixado_em": "2026-11-24T02:47:19+00:00",
+    "observacao": "PLANO B: cozinha rústica vazia sem calendário (foto atual, Pixabay)."
+  },
+  {
     "cena": "c042",
     "arquivo": "04_visual/midia/c042.jpg",
     "tipo": "imagem",
@@ -598,6 +615,22 @@
       "duracao": 5.0
     },
     "baixado_em": "2026-11-23T20:15:12+00:00"
+  },
+  {
+    "cena": "c045",
+    "arquivo": "04_visual/midia/c045.jpg",
+    "tipo": "imagem",
+    "banco": "pixabay",
+    "id": "7711413",
+    "titulo": "dough, flour, batter, bake, cake, recipe, bowl, whisk, flour, batter, batter, batter, whisk, whisk, whisk, whisk, whisk",
+    "autor": "eatde",
+    "licenca": "Pixabay Content License",
+    "licenca_url": "https://pixabay.com/service/license-summary/",
+    "pagina": "https://pixabay.com/photos/dough-flour-batter-bake-cake-7711413/",
+    "atribuicao": "Imagem: eatde / Pixabay",
+    "trecho": null,
+    "baixado_em": "2026-11-24T02:47:53+00:00",
+    "observacao": "PLANO B: mãos com batedor na tigela (Pixabay, atual); não mostra a família em volta."
   },
   {
     "cena": "c046",
@@ -867,6 +900,22 @@
     "baixado_em": "2026-11-23T20:15:35+00:00"
   },
   {
+    "cena": "c065",
+    "arquivo": "04_visual/midia/c065.jpg",
+    "tipo": "imagem",
+    "banco": "wikimedia",
+    "id": "186499117",
+    "titulo": "Nainen ja lapsi kävelevät lumipyryssä Tehtaankadun kulmalla 1963 (HK19950323-3885).tif",
+    "autor": "Teuvo Kanerva",
+    "licenca": "CC BY 4.0",
+    "licenca_url": "https://creativecommons.org/licenses/by/4.0",
+    "pagina": "https://commons.wikimedia.org/wiki/File:Nainen_ja_lapsi_k%C3%A4velev%C3%A4t_lumipyryss%C3%A4_Tehtaankadun_kulmalla_1963_(HK19950323-3885).tif",
+    "atribuicao": "Teuvo Kanerva, CC BY 4.0, via Wikimedia Commons",
+    "trecho": null,
+    "baixado_em": "2026-11-24T02:57:34+00:00",
+    "observacao": "Foto de 1963 (Helsinque, Finnish Heritage Agency): mulher e criança na neve; lugar não é a França, sem cartables."
+  },
+  {
     "cena": "c066",
     "arquivo": "04_visual/midia/c066.mp4",
     "tipo": "video",
@@ -1024,6 +1073,22 @@
     "atribuicao": "Imagem: ElodiV / Pixabay",
     "trecho": null,
     "baixado_em": "2026-11-23T23:40:11+00:00"
+  },
+  {
+    "cena": "c077",
+    "arquivo": "04_visual/midia/c077.jpg",
+    "tipo": "imagem",
+    "banco": "wikimedia",
+    "id": "52020510",
+    "titulo": "Powdered Sugar - Macro.jpg",
+    "autor": "Atm100",
+    "licenca": "CC BY-SA 4.0",
+    "licenca_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "pagina": "https://commons.wikimedia.org/wiki/File:Powdered_Sugar_-_Macro.jpg",
+    "atribuicao": "Atm100, CC BY-SA 4.0, via Wikimedia Commons",
+    "trecho": null,
+    "baixado_em": "2026-11-24T02:47:07+00:00",
+    "observacao": "PLANO B: açúcar de confeiteiro em close (CC BY-SA 4.0, foto atual, colorida); sem criança."
   },
   {
     "cena": "c078",
@@ -1506,16 +1571,17 @@
     "cena": "c113",
     "arquivo": "04_visual/midia/c113.jpg",
     "tipo": "imagem",
-    "banco": "pixabay",
-    "id": "5200368",
-    "titulo": "cans, milk, dairy, farm, rustic, dairy, dairy, dairy, dairy, dairy",
-    "autor": "jackmac34",
-    "licenca": "Pixabay Content License",
-    "licenca_url": "https://pixabay.com/service/license-summary/",
-    "pagina": "https://pixabay.com/photos/cans-milk-dairy-farm-rustic-5200368/",
-    "atribuicao": "Imagem: jackmac34 / Pixabay",
+    "banco": "wikimedia",
+    "id": "99616564",
+    "titulo": "DIA41807 Spijkenisse Voorweg melkbussen 1963.jpg",
+    "autor": "Cor Koornneef",
+    "licenca": "CC BY-SA 4.0",
+    "licenca_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "pagina": "https://commons.wikimedia.org/wiki/File:DIA41807_Spijkenisse_Voorweg_melkbussen_1963.jpg",
+    "atribuicao": "Cor Koornneef, CC BY-SA 4.0, via Wikimedia Commons",
     "trecho": null,
-    "baixado_em": "2026-11-24T02:13:53+00:00"
+    "baixado_em": "2026-11-24T04:23:20+00:00",
+    "observacao": "PLANO B: latões de leite, foto de 1963 (Países Baixos), colorida; sem leiteira nem manteiga."
   },
   {
     "cena": "c115",
@@ -1545,7 +1611,8 @@
     "pagina": "https://pixabay.com/photos/hands-human-old-human-age-seniors-4051469/",
     "atribuicao": "Imagem: congerdesign / Pixabay",
     "trecho": null,
-    "baixado_em": "2026-11-24T02:13:53+00:00"
+    "baixado_em": "2026-11-24T02:13:53+00:00",
+    "observacao": "Aproximação: mãos de idosa no avental no colo (Pixabay, colorida), não apoiadas na mesa."
   },
   {
     "cena": "c118",
@@ -1575,7 +1642,8 @@
     "pagina": "https://commons.wikimedia.org/wiki/File:Familie_met_gasten_aan_de_maaltijd,_Bestanddeelnr_252-9363.jpg",
     "atribuicao": "Willem van de Poll, CC0, via Wikimedia Commons",
     "trecho": null,
-    "baixado_em": "2026-11-24T02:31:20+00:00"
+    "baixado_em": "2026-11-24T02:31:20+00:00",
+    "observacao": "Aproximação: família com convidados à mesa, foto holandesa (Van de Poll), provavelmente anos 40-50; lugar não é a França."
   },
   {
     "cena": "c121",
@@ -1638,7 +1706,8 @@
     "pagina": "https://commons.wikimedia.org/wiki/File:Slagersjongen_op_de_fiets_in_Amsterdam,_Bestanddeelnr_924-3525.jpg",
     "atribuicao": "W. Punt for Anefo, CC0, via Wikimedia Commons",
     "trecho": null,
-    "baixado_em": "2026-11-24T01:53:02+00:00"
+    "baixado_em": "2026-11-24T01:53:02+00:00",
+    "observacao": "Aproximação: slagersjongen (entregador de açougue) de bicicleta em Amsterdã, anos 60 (Anefo); lugar não é a França."
   },
   {
     "cena": "c126",
@@ -1653,7 +1722,24 @@
     "pagina": "https://commons.wikimedia.org/wiki/File:Chinese_tweeling_tijdens_de_vakantie_te_Rotterdam_Het_helpen_van_de_melkboer,_Bestanddeelnr_911-5297.jpg",
     "atribuicao": "Herbert Behrens / Anefo, CC0, via Wikimedia Commons",
     "trecho": null,
-    "baixado_em": "2026-11-24T01:33:27+00:00"
+    "baixado_em": "2026-11-24T01:33:27+00:00",
+    "observacao": "Aproximação: entrega de leite, Países Baixos, anos 60 (Anefo); sem garrafas na porta ao amanhecer, quadro vertical."
+  },
+  {
+    "cena": "c127",
+    "arquivo": "04_visual/midia/c127.jpg",
+    "tipo": "imagem",
+    "banco": "pixabay",
+    "id": "1129718",
+    "titulo": "book, old, antique, open book, vintage, old book, pages, history, worn, reading, library, gray book, gray books, gray library, gray reading, open book, open book, open book, open book, open book, old book",
+    "autor": "Long_Shadow",
+    "licenca": "Pixabay Content License",
+    "licenca_url": "https://pixabay.com/service/license-summary/",
+    "pagina": "https://pixabay.com/photos/book-old-antique-open-book-vintage-1129718/",
+    "atribuicao": "Imagem: Long_Shadow / Pixabay",
+    "trecho": null,
+    "baixado_em": "2026-11-24T02:47:18+00:00",
+    "observacao": "PLANO B: livro-caixa manuscrito antigo aberto (Pixabay); há texto de fundo parcial na borda esquerda, recortar na moldura."
   },
   {
     "cena": "c128",
@@ -1920,6 +2006,22 @@
     "baixado_em": "2026-11-23T20:17:09+00:00"
   },
   {
+    "cena": "c146",
+    "arquivo": "04_visual/midia/c146.jpg",
+    "tipo": "imagem",
+    "banco": "pixabay",
+    "id": "7614582",
+    "titulo": "plate, knife, fork, utensils, silver cutlery, dining, close up",
+    "autor": "Joa70",
+    "licenca": "Pixabay Content License",
+    "licenca_url": "https://pixabay.com/service/license-summary/",
+    "pagina": "https://pixabay.com/photos/plate-knife-fork-utensils-7614582/",
+    "atribuicao": "Imagem: Joa70 / Pixabay",
+    "trecho": null,
+    "baixado_em": "2026-11-24T02:47:45+00:00",
+    "observacao": "PLANO B: prato vazio e talheres sépia sobre a mesa (Pixabay); sem armário vazio."
+  },
+  {
     "cena": "c147",
     "arquivo": "04_visual/midia/c147.jpg",
     "tipo": "imagem",
@@ -1947,7 +2049,8 @@
     "pagina": "https://commons.wikimedia.org/wiki/File:Burgerellende,_honger_in_de_Tweede_Wereldoorlog,_SFA001000629_01.jpg",
     "atribuicao": "Wiel van der Randen, Public domain, via Wikimedia Commons",
     "trecho": null,
-    "baixado_em": "2026-11-24T02:31:42+00:00"
+    "baixado_em": "2026-11-24T02:31:42+00:00",
+    "observacao": "Aproximação: menino com prato, foto holandesa da fome de 1944-45 (domínio público); tom mais duro que o da frase."
   },
   {
     "cena": "c149",
@@ -1977,7 +2080,8 @@
     "pagina": "https://pixabay.com/photos/supper-loaf-dinner-broken-bread-7017021/",
     "atribuicao": "Imagem: congerdesign / Pixabay",
     "trecho": null,
-    "baixado_em": "2026-11-24T02:31:52+00:00"
+    "baixado_em": "2026-11-24T02:31:52+00:00",
+    "observacao": "PLANO B: mãos partindo pão num prato, P&B nativo do autor (Pixabay); não é caldo."
   },
   {
     "cena": "c151",
@@ -2074,6 +2178,22 @@
       "duracao": 12.0
     },
     "baixado_em": "2026-11-23T20:17:28+00:00"
+  },
+  {
+    "cena": "c157",
+    "arquivo": "04_visual/midia/c157.jpg",
+    "tipo": "imagem",
+    "banco": "pixabay",
+    "id": "5002105",
+    "titulo": "accordion, concertina, musical instrument, keys, keyboard, music, close-up, traditional, folk music, black and white keys, vintage, wood, bellows, melody, harmony, musician, acoustic, performance, classical, tactile, craftsmanship, sound, tones, composition, culture",
+    "autor": "Van3ssa_",
+    "licenca": "Pixabay Content License",
+    "licenca_url": "https://pixabay.com/service/license-summary/",
+    "pagina": "https://pixabay.com/photos/accordion-concertina-5002105/",
+    "atribuicao": "Imagem: Van3ssa_ / Pixabay",
+    "trecho": null,
+    "baixado_em": "2026-11-24T03:43:13+00:00",
+    "observacao": "PLANO B: acordeão em close (Pixabay); sem festa nem convidados."
   },
   {
     "cena": "c158",
@@ -2226,6 +2346,22 @@
     "baixado_em": "2026-11-23T20:17:33+00:00"
   },
   {
+    "cena": "c171",
+    "arquivo": "04_visual/midia/c171.jpg",
+    "tipo": "imagem",
+    "banco": "pixabay",
+    "id": "1404386",
+    "titulo": "kitchen, peasant, colombian",
+    "autor": "JOHFER",
+    "licenca": "Pixabay Content License",
+    "licenca_url": "https://pixabay.com/service/license-summary/",
+    "pagina": "https://pixabay.com/photos/kitchen-peasant-colombian-1404386/",
+    "atribuicao": "Imagem: JOHFER / Pixabay",
+    "trecho": null,
+    "baixado_em": "2026-11-24T03:43:26+00:00",
+    "observacao": "PLANO B: panela sobre fogo de lenha em cozinha rústica (Pixabay, 1280 px); não é forno nem travessa dourando."
+  },
+  {
     "cena": "c172",
     "arquivo": "04_visual/midia/c172.jpg",
     "tipo": "imagem",
@@ -2316,7 +2452,24 @@
     "pagina": "https://commons.wikimedia.org/wiki/File:Chaud-froid_van_kip_het_snijden_van_de_kip,_Bestanddeelnr_252-1842.jpg",
     "atribuicao": "Willem van de Poll, CC0, via Wikimedia Commons",
     "trecho": null,
-    "baixado_em": "2026-11-24T02:31:15+00:00"
+    "baixado_em": "2026-11-24T02:31:15+00:00",
+    "observacao": "PLANO B: mãos trinchando frango, P&B (Anefo, CC0); sem pai nem crianças."
+  },
+  {
+    "cena": "c179",
+    "arquivo": "04_visual/midia/c179.jpg",
+    "tipo": "imagem",
+    "banco": "pixabay",
+    "id": "7272200",
+    "titulo": "table setting, banquet, dining, decoration, wedding decor, elegant, luxury, dinner, restaurant, table setting, table setting, table setting, banquet, banquet, banquet, banquet, banquet, luxury",
+    "autor": "JoelFazhari",
+    "licenca": "Pixabay Content License",
+    "licenca_url": "https://pixabay.com/service/license-summary/",
+    "pagina": "https://pixabay.com/photos/table-setting-banquet-dining-7272200/",
+    "atribuicao": "Imagem: JoelFazhari / Pixabay",
+    "trecho": null,
+    "baixado_em": "2026-11-24T03:43:14+00:00",
+    "observacao": "PLANO B: mesa posta de toalha branca (Pixabay, aspecto de banquete atual); sem família."
   },
   {
     "cena": "c180",
@@ -2676,7 +2829,8 @@
     "pagina": "https://pixabay.com/photos/shelf-case-old-dusty-empty-4461069/",
     "atribuicao": "Imagem: Tama66 / Pixabay",
     "trecho": null,
-    "baixado_em": "2026-11-24T02:13:19+00:00"
+    "baixado_em": "2026-11-24T02:13:19+00:00",
+    "observacao": "PLANO B: prateleiras de loja vazias, tom sépia (Pixabay)."
   },
   {
     "cena": "c209",
@@ -2742,6 +2896,22 @@
     "baixado_em": "2026-11-24T00:06:22+00:00"
   },
   {
+    "cena": "c213",
+    "arquivo": "04_visual/midia/c213.jpg",
+    "tipo": "imagem",
+    "banco": "pixabay",
+    "id": "3721652",
+    "titulo": "still life, vintage, pot, kerosene lamp, old, retro, rustic, oil lamp, lamp, pottery, still life, still life, still life, still life, still life, pot, pot, pot, pottery",
+    "autor": "ELG21",
+    "licenca": "Pixabay Content License",
+    "licenca_url": "https://pixabay.com/service/license-summary/",
+    "pagina": "https://pixabay.com/photos/still-life-vintage-pot-3721652/",
+    "atribuicao": "Imagem: ELG21 / Pixabay",
+    "trecho": null,
+    "baixado_em": "2026-11-24T03:43:27+00:00",
+    "observacao": "PLANO B: panela antiga em natureza-morta (Pixabay, tratamento de textura); sem criança."
+  },
+  {
     "cena": "c214",
     "arquivo": "04_visual/midia/c214.jpg",
     "tipo": "imagem",
@@ -2803,6 +2973,22 @@
     "atribuicao": "Imagem: peaceileave / Pixabay",
     "trecho": null,
     "baixado_em": "2026-11-23T20:18:23+00:00"
+  },
+  {
+    "cena": "c218",
+    "arquivo": "04_visual/midia/c218.jpg",
+    "tipo": "imagem",
+    "banco": "pixabay",
+    "id": "4039976",
+    "titulo": "pie, cake, dessert, baking, delicious, indulgent, oranges, sweet, pastry, bake, plate, food",
+    "autor": "peaceileave",
+    "licenca": "Pixabay Content License",
+    "licenca_url": "https://pixabay.com/service/license-summary/",
+    "pagina": "https://pixabay.com/photos/pie-cake-dessert-baking-delicious-4039976/",
+    "atribuicao": "Imagem: peaceileave / Pixabay",
+    "trecho": null,
+    "baixado_em": "2026-11-24T02:47:54+00:00",
+    "observacao": "PLANO B: tarte tatin com pano de prato (Pixabay); sem criança."
   },
   {
     "cena": "c219",
@@ -2911,6 +3097,22 @@
     "atribuicao": "Imagem: sabinevanerp / Pixabay",
     "trecho": null,
     "baixado_em": "2026-11-24T00:06:26+00:00"
+  },
+  {
+    "cena": "c235",
+    "arquivo": "04_visual/midia/c235.jpg",
+    "tipo": "imagem",
+    "banco": "pixabay",
+    "id": "2229578",
+    "titulo": "chair, cap, summer, south, beautiful wallpaper, mediterranean, desktop backgrounds, simple, laptop wallpaper, poor, free background, poor art, art, still life, wait, persevere, 4k wallpaper 1920x1080, heat, wall, nature, free wallpaper, old, background, time, mac wallpaper, weathered, wooden chair, abandoned, empty, invitation, simplicity, cool backgrounds, old chair, mood, full hd wallpaper, wallpaper 4k, outdoors, windows wallpaper, 4k wallpaper, hd wallpaper, wallpaper hd, lonely, seat",
+    "autor": "ulleo",
+    "licenca": "Pixabay Content License",
+    "licenca_url": "https://pixabay.com/service/license-summary/",
+    "pagina": "https://pixabay.com/photos/chair-cap-summer-south-2229578/",
+    "atribuicao": "Imagem: ulleo / Pixabay",
+    "trecho": null,
+    "baixado_em": "2026-11-24T02:48:18+00:00",
+    "observacao": "Aproximação: cadeira vermelha vazia contra parede (Pixabay), fora da mesa."
   },
   {
     "cena": "c236",
