@@ -59,8 +59,15 @@ def estilo_do_canal(canal: dict, guia: str) -> str:
 
 
 def montar_prompt(cena: dict, estilo: str) -> str:
-    """Descrição da cena + estilo do canal. A descrição manda; o estilo é moldura."""
-    desc = (cena.get("descricao") or "").strip().rstrip(".")
+    """Descrição da cena + estilo do canal. A descrição manda; o estilo é moldura.
+
+    Prefere `prompt_geracao` da decupagem, que é escrito EM INGLÊS e já diz o tamanho do
+    plano (close, plano aberto, o que entra no quadro). A `descricao` é escrita na língua
+    do projeto e serve ao diretor e ao pesquisador, não ao modelo: em português ela produz
+    cena errada — «osso do peito» e «vidraça» não sobrevivem, e sem dizer que é close o
+    modelo inventa um plano aberto com gente demais.
+    """
+    desc = (cena.get("prompt_geracao") or cena.get("descricao") or "").strip().rstrip(".")
     extra = []
     if cena.get("pb"):
         extra.append("black and white")
