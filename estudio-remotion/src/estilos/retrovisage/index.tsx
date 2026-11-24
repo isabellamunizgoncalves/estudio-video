@@ -90,6 +90,28 @@ const Fita: React.FC<{ cor: string; largura?: number; rotacao?: number; style?: 
 
 const faixasDo = (tema: Tema) => opcao<string[]>(tema, "faixas", [tema.cores.destaque, tema.cores.quente, tema.cores.detalhe]);
 
+// Luminância relativa (WCAG) de "#rgb" / "#rrggbb"; null se não for hex.
+const luminancia = (cor: string): number | null => {
+  const h = cor.trim().replace("#", "");
+  const hex = h.length === 3 ? h.split("").map((c) => c + c).join("") : h;
+  if (!/^[0-9a-fA-F]{6}$/.test(hex)) return null;
+  const canais = [0, 2, 4].map((i) => {
+    const v = parseInt(hex.slice(i, i + 2), 16) / 255;
+    return v <= 0.03928 ? v / 12.92 : Math.pow((v + 0.055) / 1.055, 2.4);
+  });
+  return 0.2126 * canais[0] + 0.7152 * canais[1] + 0.0722 * canais[2];
+};
+
+/** Devolve `cor` se ela se destacar do fundo; senão a `alternativa`.
+ *  Evita cartela com título laranja sobre fundo laranja (ou faixa invisível). */
+const legivel = (cor: string, fundo: string, alternativa: string, minimo = 1.25) => {
+  const a = luminancia(cor);
+  const b = luminancia(fundo);
+  if (a === null || b === null) return cor;
+  const razao = (Math.max(a, b) + 0.05) / (Math.min(a, b) + 0.05);
+  return razao >= minimo ? cor : alternativa;
+};
+
 // ------------------------------------------------------------------ contrato
 const Fundo: EstiloVisual["Fundo"] = ({ tema, cor, idCena }) => {
   const base = cor || [tema.cores.fundo, tema.cores.quente, tema.cores.destaque, tema.cores.papel][Math.floor(semente(idCena) * 4)];
@@ -139,12 +161,16 @@ const CenaTitulo: EstiloVisual["CenaTitulo"] = ({ cena, tema }) => {
   const e2 = useEntrada(14, 18);
   const { width } = useVideoConfig();
   const tamanho = width * ((cena.titulo ?? "").length > 28 ? 0.055 : 0.075);
+  const fundoCartela = cena.fundo ?? tema.cores.fundo;
+  const corTitulo = legivel(tema.cores.destaque, fundoCartela, tema.cores.papel);
+  const corFita = legivel(tema.cores.quente, fundoCartela, tema.cores.papel);
+  const cores = faixasDo(tema).map((c) => legivel(c, fundoCartela, tema.cores.papel));
   return (
     <AbsoluteFill>
-      <Fundo tema={tema} cor={cena.fundo ?? tema.cores.fundo} idCena={cena.id} />
+      <Fundo tema={tema} cor={fundoCartela} idCena={cena.id} />
       <AbsoluteFill style={{ alignItems: "center", justifyContent: "center", padding: "0 8%" }}>
         {cena.subtitulo ? (
-          <Fita cor={tema.cores.quente} largura={width * 0.22} rotacao={-3} style={{ opacity: e2, marginBottom: 28 }}>
+          <Fita cor={corFita} largura={width * 0.22} rotacao={-3} style={{ opacity: e2, marginBottom: 28 }}>
             <span style={{ fontFamily: pilha(tema.fontes.rotulo), fontSize: width * 0.022, color: tema.cores.textoEscuro, letterSpacing: 2 }}>
               {cena.subtitulo}
             </span>
@@ -154,7 +180,7 @@ const CenaTitulo: EstiloVisual["CenaTitulo"] = ({ cena, tema }) => {
           style={{
             fontFamily: pilha(tema.fontes.titulo),
             fontSize: tamanho,
-            color: tema.cores.destaque,
+            color: corTitulo,
             textShadow: `5px 5px 0 ${tema.cores.textoEscuro}`,
             textAlign: "center",
             lineHeight: 1.1,
@@ -165,7 +191,7 @@ const CenaTitulo: EstiloVisual["CenaTitulo"] = ({ cena, tema }) => {
           {cena.titulo}
         </div>
         <div style={{ marginTop: 30 }}>
-          <Faixas cores={faixasDo(tema)} largura={width * 0.28} atraso={10} />
+          <Faixas cores={cores} largura={width * 0.28} atraso={10} />
         </div>
       </AbsoluteFill>
     </AbsoluteFill>

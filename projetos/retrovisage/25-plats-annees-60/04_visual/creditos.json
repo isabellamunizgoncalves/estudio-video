@@ -886,6 +886,22 @@
     "baixado_em": "2026-11-23T20:15:33+00:00"
   },
   {
+    "cena": "c061",
+    "arquivo": "04_visual/midia/c061.jpg",
+    "tipo": "imagem",
+    "banco": "wikimedia",
+    "id": "66699740",
+    "titulo": "Visite tijdens het bewonderen van een peuter met een speelgoedbeest, Bestanddeelnr 252-9376.jpg",
+    "autor": "Willem van de Poll",
+    "licenca": "CC0",
+    "licenca_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+    "pagina": "https://commons.wikimedia.org/wiki/File:Visite_tijdens_het_bewonderen_van_een_peuter_met_een_speelgoedbeest,_Bestanddeelnr_252-9376.jpg",
+    "atribuicao": "Willem van de Poll, CC0, via Wikimedia Commons",
+    "trecho": null,
+    "baixado_em": "2026-11-24T08:23:16+00:00",
+    "observacao": "Van de Poll, Paris 1950, série \"Visite\": convidados na sala, mulher gesticulando e rindo, com bebê no colo; é conversa animada à mesinha de café, não uma discussão acirrada."
+  },
+  {
     "cena": "c062",
     "arquivo": "04_visual/midia/c062.jpg",
     "tipo": "imagem",
@@ -1587,17 +1603,17 @@
     "cena": "c113",
     "arquivo": "04_visual/midia/c113.jpg",
     "tipo": "imagem",
-    "banco": "pixabay",
-    "id": "1809238",
-    "titulo": "milk, milk container, milking, cow, milk production, agriculture, nature, farm yard, cheese, cheese factory, cheese making, dairy, switzerland, milk kettle, alp, alpine cheese, milk, milk, milk, milk, milk, milk production, milk production, milk production, cheese, cheese, cheese, dairy, dairy",
-    "autor": "suju-foto",
-    "licenca": "Pixabay Content License",
-    "licenca_url": "https://pixabay.com/service/license-summary/",
-    "pagina": "https://pixabay.com/photos/milk-milk-container-milking-cow-1809238/",
-    "atribuicao": "Imagem: suju-foto / Pixabay",
+    "banco": "wikimedia",
+    "id": "66699033",
+    "titulo": "Melkfabriek man vult de melkbussen, Bestanddeelnr 252-9451.jpg",
+    "autor": "Willem van de Poll",
+    "licenca": "CC0",
+    "licenca_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+    "pagina": "https://commons.wikimedia.org/wiki/File:Melkfabriek_man_vult_de_melkbussen,_Bestanddeelnr_252-9451.jpg",
+    "atribuicao": "Willem van de Poll, CC0, via Wikimedia Commons",
     "trecho": null,
-    "baixado_em": "2026-11-24T08:06:55+00:00",
-    "observacao": "PLANO B: latões de leite encostados num muro antigo; sem leiteira nem manteiga. Trocada por licença CC BY-SA."
+    "baixado_em": "2026-11-24T08:26:00+00:00",
+    "observacao": "Van de Poll, Paris 1950 (252-9451): fábrica de leite, operário enchendo latões. Troca do Pixabay. Francesa e de época, mas é indústria, não leiteira cortando manteiga nem fazenda."
   },
   {
     "cena": "c115",
@@ -1646,6 +1662,22 @@
     "baixado_em": "2026-11-24T00:04:35+00:00"
   },
   {
+    "cena": "c119",
+    "arquivo": "04_visual/midia/c119.jpg",
+    "tipo": "imagem",
+    "banco": "wikimedia",
+    "id": "66699582",
+    "titulo": "Meisje drinkt limonade bij haar maaltijd, Bestanddeelnr 252-9388.jpg",
+    "autor": "Willem van de Poll",
+    "licenca": "CC0",
+    "licenca_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+    "pagina": "https://commons.wikimedia.org/wiki/File:Meisje_drinkt_limonade_bij_haar_maaltijd,_Bestanddeelnr_252-9388.jpg",
+    "atribuicao": "Willem van de Poll, CC0, via Wikimedia Commons",
+    "trecho": null,
+    "baixado_em": "2026-11-24T08:24:09+00:00",
+    "observacao": "Van de Poll, Paris 1950: menina à mesa da cozinha bebendo, com prato à frente e olhar para a câmera. APROXIMAÇÃO: não faz careta nem recusa o prato."
+  },
+  {
     "cena": "c120",
     "arquivo": "04_visual/midia/c120.jpg",
     "tipo": "imagem",
@@ -1659,7 +1691,7 @@
     "atribuicao": "Willem van de Poll, CC0, via Wikimedia Commons",
     "trecho": null,
     "baixado_em": "2026-11-24T02:31:20+00:00",
-    "observacao": "Aproximação: família com convidados à mesa, foto holandesa (Van de Poll), provavelmente anos 40-50; lugar não é a França."
+    "observacao": "Van de Poll, Paris 1950 (252-9363): família com convidados à mesa. É foto francesa, apesar do título holandês (corrige nota anterior que dizia \"não é a França\")."
   },
   {
     "cena": "c121",
@@ -1693,6 +1725,22 @@
       "duracao": 12.0
     },
     "baixado_em": "2026-11-23T20:16:52+00:00"
+  },
+  {
+    "cena": "c123",
+    "arquivo": "04_visual/midia/c123.jpg",
+    "tipo": "imagem",
+    "banco": "wikimedia",
+    "id": "66700229",
+    "titulo": "Echtpaar in de woonkamer de man zittend aan tafel terwijl de vrouw binnenkomt m, Bestanddeelnr 252-9336.jpg",
+    "autor": "Willem van de Poll",
+    "licenca": "CC0",
+    "licenca_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+    "pagina": "https://commons.wikimedia.org/wiki/File:Echtpaar_in_de_woonkamer_de_man_zittend_aan_tafel_terwijl_de_vrouw_binnenkomt_m,_Bestanddeelnr_252-9336.jpg",
+    "atribuicao": "Willem van de Poll, CC0, via Wikimedia Commons",
+    "trecho": null,
+    "baixado_em": "2026-11-24T08:23:12+00:00",
+    "observacao": "Van de Poll, Paris 1950: homem sentado à mesa e mulher entrando pela porta da cozinha com uma jarra. Aproximação da \"mesa dividida\": não mostra encantados vs. saindo, mas a ideia de sair/entrar da cozinha."
   },
   {
     "cena": "c124",
@@ -1730,16 +1778,16 @@
     "arquivo": "04_visual/midia/c126.jpg",
     "tipo": "imagem",
     "banco": "wikimedia",
-    "id": "68060392",
-    "titulo": "Chinese tweeling tijdens de vakantie te Rotterdam Het helpen van de melkboer, Bestanddeelnr 911-5297.jpg",
-    "autor": "Herbert Behrens / Anefo",
+    "id": "66698988",
+    "titulo": "Melkfabriek mannen verslepen kratten met melkflessen, Bestanddeelnr 252-9457.jpg",
+    "autor": "Willem van de Poll",
     "licenca": "CC0",
     "licenca_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
-    "pagina": "https://commons.wikimedia.org/wiki/File:Chinese_tweeling_tijdens_de_vakantie_te_Rotterdam_Het_helpen_van_de_melkboer,_Bestanddeelnr_911-5297.jpg",
-    "atribuicao": "Herbert Behrens / Anefo, CC0, via Wikimedia Commons",
+    "pagina": "https://commons.wikimedia.org/wiki/File:Melkfabriek_mannen_verslepen_kratten_met_melkflessen,_Bestanddeelnr_252-9457.jpg",
+    "atribuicao": "Willem van de Poll, CC0, via Wikimedia Commons",
     "trecho": null,
-    "baixado_em": "2026-11-24T01:33:27+00:00",
-    "observacao": "Aproximação: entrega de leite, Países Baixos, anos 60 (Anefo); sem garrafas na porta ao amanhecer, quadro vertical."
+    "baixado_em": "2026-11-24T08:26:03+00:00",
+    "observacao": "Van de Poll, Paris 1950 (252-9457): Laiterie Parisienne, homens carregando caixas de garrafas de leite na madrugada. Troca da foto holandesa. É carregamento de caminhão, não entrega à porta."
   },
   {
     "cena": "c127",
@@ -2057,16 +2105,16 @@
     "arquivo": "04_visual/midia/c148.jpg",
     "tipo": "imagem",
     "banco": "wikimedia",
-    "id": "146598751",
-    "titulo": "Burgerellende, honger in de Tweede Wereldoorlog, SFA001000629 01.jpg",
-    "autor": "Wiel van der Randen",
-    "licenca": "Public domain",
-    "licenca_url": "",
-    "pagina": "https://commons.wikimedia.org/wiki/File:Burgerellende,_honger_in_de_Tweede_Wereldoorlog,_SFA001000629_01.jpg",
-    "atribuicao": "Wiel van der Randen, Public domain, via Wikimedia Commons",
+    "id": "66699560",
+    "titulo": "Meisje breekt een stukje brood af bij haar maaltijd, Bestanddeelnr 252-9390.jpg",
+    "autor": "Willem van de Poll",
+    "licenca": "CC0",
+    "licenca_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+    "pagina": "https://commons.wikimedia.org/wiki/File:Meisje_breekt_een_stukje_brood_af_bij_haar_maaltijd,_Bestanddeelnr_252-9390.jpg",
+    "atribuicao": "Willem van de Poll, CC0, via Wikimedia Commons",
     "trecho": null,
-    "baixado_em": "2026-11-24T02:31:42+00:00",
-    "observacao": "Aproximação: menino com prato, foto holandesa da fome de 1944-45 (domínio público); tom mais duro que o da frase."
+    "baixado_em": "2026-11-24T08:26:05+00:00",
+    "observacao": "Van de Poll, Paris 1950 (252-9390): menina olhando o prato e partindo um pedaço de pão, tom sóbrio. Troca da foto da fome de 1944-45. Mãos não estão no colo. Mesma menina da c119, em cenas distantes."
   },
   {
     "cena": "c149",
@@ -2677,6 +2725,22 @@
     "baixado_em": "2026-11-24T00:04:46+00:00"
   },
   {
+    "cena": "c193",
+    "arquivo": "04_visual/midia/c193.jpg",
+    "tipo": "imagem",
+    "banco": "wikimedia",
+    "id": "66683264",
+    "titulo": "Kerkgangers verlaten op Palmpasen de Madeleine met gewijde palmtakken in de han…, Bestanddeelnr 254-0528.jpg",
+    "autor": "Willem van de Poll",
+    "licenca": "CC0",
+    "licenca_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+    "pagina": "https://commons.wikimedia.org/wiki/File:Kerkgangers_verlaten_op_Palmpasen_de_Madeleine_met_gewijde_palmtakken_in_de_han%E2%80%A6,_Bestanddeelnr_254-0528.jpg",
+    "atribuicao": "Willem van de Poll, CC0, via Wikimedia Commons",
+    "trecho": null,
+    "baixado_em": "2026-11-24T08:25:15+00:00",
+    "observacao": "PLANO B: Paris, Domingo de Ramos de c. 1965 (Van de Poll, 254-0528): fiéis saindo da Madeleine com ramos, homem, mulher e menino em primeiro plano. Não é aldeia nem igreja pequena."
+  },
+  {
     "cena": "c194",
     "arquivo": "04_visual/midia/c194.jpg",
     "tipo": "imagem",
@@ -2816,6 +2880,22 @@
     "atribuicao": "Imagem: epochalstock / Pixabay",
     "trecho": null,
     "baixado_em": "2026-11-24T00:06:20+00:00"
+  },
+  {
+    "cena": "c203",
+    "arquivo": "04_visual/midia/c203.jpg",
+    "tipo": "imagem",
+    "banco": "wikimedia",
+    "id": "66699826",
+    "titulo": "Familie met gasten aan de maaltijd, Bestanddeelnr 252-9364.jpg",
+    "autor": "Willem van de Poll",
+    "licenca": "CC0",
+    "licenca_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+    "pagina": "https://commons.wikimedia.org/wiki/File:Familie_met_gasten_aan_de_maaltijd,_Bestanddeelnr_252-9364.jpg",
+    "atribuicao": "Willem van de Poll, CC0, via Wikimedia Commons",
+    "trecho": null,
+    "baixado_em": "2026-11-24T08:21:37+00:00",
+    "observacao": "Van de Poll, Paris 1950 (252-9364): almoço com convidados, adultos conversando, criança na cadeirinha. Faltam crianças debaixo da mesa. Mesma sessão da c120 (9363), enquadramento diferente."
   },
   {
     "cena": "c204",
@@ -3022,6 +3102,22 @@
     "baixado_em": "2026-11-24T00:06:23+00:00"
   },
   {
+    "cena": "c222",
+    "arquivo": "04_visual/midia/c222.jpg",
+    "tipo": "imagem",
+    "banco": "wikimedia",
+    "id": "66700184",
+    "titulo": "Bordurende vrouw zittend in een fauteuil in haar woonkamer, Bestanddeelnr 252-9340.jpg",
+    "autor": "Willem van de Poll",
+    "licenca": "CC0",
+    "licenca_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+    "pagina": "https://commons.wikimedia.org/wiki/File:Bordurende_vrouw_zittend_in_een_fauteuil_in_haar_woonkamer,_Bestanddeelnr_252-9340.jpg",
+    "atribuicao": "Willem van de Poll, CC0, via Wikimedia Commons",
+    "trecho": null,
+    "baixado_em": "2026-11-24T08:24:15+00:00",
+    "observacao": "PLANO B: Van de Poll, Paris 1950 (252-9340): senhora idosa de óculos bordando na sala. Não é avental nem cozinha; não há retrato frontal de avó no acervo consultado."
+  },
+  {
     "cena": "c224",
     "arquivo": "04_visual/midia/c224.jpg",
     "tipo": "imagem",
@@ -3035,6 +3131,22 @@
     "atribuicao": "Imagem: sabinevanerp / Pixabay",
     "trecho": null,
     "baixado_em": "2026-11-24T00:06:23+00:00"
+  },
+  {
+    "cena": "c226",
+    "arquivo": "04_visual/midia/c226.jpg",
+    "tipo": "imagem",
+    "banco": "wikimedia",
+    "id": "66700118",
+    "titulo": "Vrouw aan het werk in haar keukentje, Bestanddeelnr 252-9342.jpg",
+    "autor": "Willem van de Poll",
+    "licenca": "CC0",
+    "licenca_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+    "pagina": "https://commons.wikimedia.org/wiki/File:Vrouw_aan_het_werk_in_haar_keukentje,_Bestanddeelnr_252-9342.jpg",
+    "atribuicao": "Willem van de Poll, CC0, via Wikimedia Commons",
+    "trecho": null,
+    "baixado_em": "2026-11-24T08:24:12+00:00",
+    "observacao": "Van de Poll, Paris 1950 (252-9342): mulher idosa de cardigã na cozinha olhando a câmera, com utensílios ao fundo. Sem avental claro; boa para \"une personne\"."
   },
   {
     "cena": "c227",
@@ -3113,6 +3225,22 @@
     "atribuicao": "Imagem: sabinevanerp / Pixabay",
     "trecho": null,
     "baixado_em": "2026-11-24T00:06:26+00:00"
+  },
+  {
+    "cena": "c233",
+    "arquivo": "04_visual/midia/c233.jpg",
+    "tipo": "imagem",
+    "banco": "wikimedia",
+    "id": "66699815",
+    "titulo": "Familie met gasten aan de maaltijd, Bestanddeelnr 252-9365.jpg",
+    "autor": "Willem van de Poll",
+    "licenca": "CC0",
+    "licenca_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+    "pagina": "https://commons.wikimedia.org/wiki/File:Familie_met_gasten_aan_de_maaltijd,_Bestanddeelnr_252-9365.jpg",
+    "atribuicao": "Willem van de Poll, CC0, via Wikimedia Commons",
+    "trecho": null,
+    "baixado_em": "2026-11-24T08:22:11+00:00",
+    "observacao": "Van de Poll, Paris 1950 (252-9365): almoço com convidados, mulher mais velha de pé ao fundo (servindo/atendendo), família sentada. Mesma sessão das c120/c203."
   },
   {
     "cena": "c235",
@@ -3312,5 +3440,21 @@
     "atribuicao": "Imagem: Pexels / Pixabay",
     "trecho": null,
     "baixado_em": "2026-11-23T20:14:09+00:00"
+  },
+  {
+    "cena": "c251",
+    "arquivo": "04_visual/midia/c251.jpg",
+    "tipo": "imagem",
+    "banco": "wikimedia",
+    "id": "73714434",
+    "titulo": "Gezin aan tafel tijdens de maaltijd, Bestanddeelnr 252-9349.jpg",
+    "autor": "Willem van de Poll",
+    "licenca": "CC0",
+    "licenca_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+    "pagina": "https://commons.wikimedia.org/wiki/File:Gezin_aan_tafel_tijdens_de_maaltijd,_Bestanddeelnr_252-9349.jpg",
+    "atribuicao": "Willem van de Poll, CC0, via Wikimedia Commons",
+    "trecho": null,
+    "baixado_em": "2026-11-24T08:22:22+00:00",
+    "observacao": "Van de Poll, Paris 1950 (252-9349): família com três filhos à mesa, plano aberto, rostos visíveis. Mesma série da c008, ângulo e frame diferentes."
   }
 ]

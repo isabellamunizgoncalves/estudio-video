@@ -11,13 +11,16 @@ export const useCamera = (movimento: Movimento = "zoom-in", duracao: number, zoo
   const frame = useCurrentFrame();
   const t = interpolate(frame, [0, Math.max(1, duracao)], [0, 1], { extrapolateRight: "clamp" });
   const z = zoom || 0.06;
+  // `translateX` vem depois do `scale` na lista, então o deslocamento também é ampliado:
+  // o máximo que pode andar sem mostrar o fundo é (z/2)/(1+z) da largura, não z/2.
+  const p = ((z / 2) / (1 + z)) * 100;
   switch (movimento) {
     case "zoom-out":
       return `scale(${1 + z - z * t})`;
     case "pan-esquerda":
-      return `scale(${1 + z}) translateX(${(z / 2) * 100 - t * z * 100}%)`;
+      return `scale(${1 + z}) translateX(${p - 2 * p * t}%)`;
     case "pan-direita":
-      return `scale(${1 + z}) translateX(${-(z / 2) * 100 + t * z * 100}%)`;
+      return `scale(${1 + z}) translateX(${-p + 2 * p * t}%)`;
     case "parado":
       return "scale(1)";
     default:

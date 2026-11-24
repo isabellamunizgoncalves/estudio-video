@@ -23,6 +23,26 @@
       "audio": "03_narracao/narracao_v04.wav",
       "duracao": 1242.9,
       "reprovados": 0
+    },
+    "timeline": {
+      "atualizado_em": "2026-11-24T08:23:54+00:00",
+      "arquivo": "05_edicao/timeline_v02.json",
+      "cenas": 252,
+      "faltas": [
+        "c114",
+        "c119",
+        "c178",
+        "c193",
+        "c220",
+        "c222",
+        "c223",
+        "c226"
+      ]
+    },
+    "render": {
+      "atualizado_em": "2026-11-24T08:17:11+00:00",
+      "arquivo": "05_edicao/renders/video_v01_0-34.mp4",
+      "previa": false
     }
   }
 }
