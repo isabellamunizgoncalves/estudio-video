@@ -71,6 +71,7 @@ def main() -> None:
         cena = {
             "id": c["id"], "inicio": ini, "duracao": max(1, fim - ini), "tipo": tipo,
             "estilo": c.get("estilo", "tela-cheia"), "movimento": c.get("movimento", "zoom-in"),
+            "encaixe": c.get("encaixe", "cobrir"), "enquadramento": c.get("enquadramento"),
             "transicao": c.get("transicao", tema.get("movimento", {}).get("transicao", "fade")),
             "pb": bool(c.get("pb", False)), "fundo": c.get("fundo"),
             "textoTela": c.get("texto_tela"), "titulo": c.get("titulo"), "subtitulo": c.get("subtitulo"),

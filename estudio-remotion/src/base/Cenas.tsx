@@ -29,10 +29,17 @@ export const useCamera = (movimento: Movimento = "zoom-in", duracao: number, zoo
 };
 
 export const Midia: React.FC<{ cena: Cena; style?: React.CSSProperties }> = ({ cena, style }) => {
+  const enq = cena.enquadramento ?? undefined;
+  const fx = (enq?.x ?? 0.5) * 100;
+  const fy = (enq?.y ?? 0.5) * 100;
+  const zoom = enq?.zoom ?? 1;
   const css: React.CSSProperties = {
     width: "100%",
     height: "100%",
-    objectFit: "cover",
+    objectFit: cena.encaixe === "conter" ? "contain" : "cover",
+    objectPosition: `${fx}% ${fy}%`,
+    transform: zoom !== 1 ? `scale(${zoom})` : undefined,
+    transformOrigin: zoom !== 1 ? `${fx}% ${fy}%` : undefined,
     filter: cena.pb ? "grayscale(1) contrast(1.08)" : undefined,
     ...style,
   };
@@ -59,6 +66,20 @@ export const CenaMidia: React.FC<{ cena: Cena; tema: Tema; estilo: EstiloVisual 
             </Moldura>
           </div>
         </AbsoluteFill>
+      </AbsoluteFill>
+    );
+  }
+  if (cena.encaixe === "conter") {
+    // Mídia inteira dentro do quadro (pillarbox/letterbox) sobre o fundo do estilo do canal.
+    // A margem deixa o zoom de câmera caber sem recortar de novo as bordas da mídia.
+    const margem = `${(tema.movimento.zoomPorPlano / (2 + 2 * tema.movimento.zoomPorPlano)) * 100}%`;
+    const { Fundo } = estilo;
+    return (
+      <AbsoluteFill style={{ overflow: "hidden" }}>
+        <Fundo tema={tema} cor={cena.fundo} idCena={cena.id} />
+        <div style={{ position: "absolute", inset: margem, transform }}>
+          <Midia cena={cena} />
+        </div>
       </AbsoluteFill>
     );
   }
