@@ -2674,11 +2674,11 @@
     "pagina": null,
     "atribuicao": null,
     "trecho": null,
-    "baixado_em": "2026-11-24T11:45:11+00:00",
+    "baixado_em": "2026-11-24T11:52:44+00:00",
     "gerado": true,
     "modelo": "black-forest-labs/FLUX.2-klein-4B",
     "semente": 70460,
-    "prompt": "Colour photograph on 1960s Kodachrome film, France, early 1960s, faded warm colour palette with muted reds and ochres, modest working-class home, period-correct objects only, nothing modern in frame, natural window light, 35mm film grain, slight vignetting, no text anywhere. Very close view of two children's hands at a kitchen table pulling apart a dried chicken wishbone, each holding one side; emptied plates and crumbs on the oilcloth; only the hands and the children's chins in frame. centered composition with room around the subject.",
+    "prompt": "Colour photograph on 1960s Kodachrome film, France, early 1960s, faded warm colour palette with muted reds and ochres, modest working-class home, period-correct objects only, nothing modern in frame, natural window light, 35mm film grain, slight vignetting, no text anywhere. Very close view of two children's hands at a kitchen table, each holding one end of a dry pale chicken wishbone and pulling it apart; the bone is clean, dry and bare, with no meat, skin or sauce on it; emptied plates and bread crumbs on the tablecloth; only the hands and the children's chins in frame. centered composition with room around the subject.",
     "observacao": "IMAGEM GERADA, não é documento histórico. A publicação precisa marcar conteúdo sintético no YouTube."
   },
   {
