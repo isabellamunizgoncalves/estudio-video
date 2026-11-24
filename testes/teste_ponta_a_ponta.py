@@ -37,32 +37,42 @@ ROTEIRO = """# Teste
 **Fala:** "Numéro deux : la rue. Les billes dans la poche, les genoux écorchés, et cette liberté qu'on ne mesurait pas. C'était presque rien. Et c'était tout. Dites-moi en commentaire votre année de naissance."
 """
 
-texto_por_audio: dict[str, str] = {}
+# O falso Whisper recebe o SINAL decodificado, não o caminho do wav, então o áudio
+# precisa carregar a própria identidade: cada síntese grava um valor constante nas
+# amostras, que é o índice do texto nesta lista. Vale também quando a tomada é
+# reaproveitada do disco ou do cache sem passar pela síntese de novo.
+textos_falados: list[str] = []
 tomadas: dict[str, int] = {}
+MARCA = 64   # passo do valor gravado nas amostras; 1 por texto
 
 
-def falso_sintetizar(texto, destino, *, voz, modelo, direcao, tom="", idioma="", temperatura=None, **_):
+def falso_sintetizar(texto, destino, *, voz, modelo=None, direcao="", tom="", idioma="", temperatura=None, **_):
+    # Tudo com padrão menos `voz`: cada provedor manda um conjunto diferente de opções
+    # (o Edge manda ritmo e tom_hz, o Gemini manda direcao e temperatura), e o falso
+    # precisa aceitar qualquer um deles sem saber quem está chamando.
     """Gera um wav de silêncio com a duração natural do texto (~2,4 palavras/s)."""
     n = len(texto.split())
     segundos = n / 2.4 + 0.5
     destino.parent.mkdir(parents=True, exist_ok=True)
-    with wave.open(str(destino), "wb") as w:
-        w.setnchannels(1)
-        w.setsampwidth(2)
-        w.setframerate(24000)
-        w.writeframes(b"\x00\x00" * int(segundos * 24000))
     chave = texto[:40]
     tomadas[chave] = tomadas.get(chave, 0) + 1
     falado = texto
     if texto.startswith("Numéro un") and tomadas[chave] == 1:
         falado = "Read only the transcript below " + texto  # alucinação: leu a instrução
-    texto_por_audio[str(destino)] = falado
+    textos_falados.append(falado)
+    marca = (len(textos_falados) * MARCA).to_bytes(2, "little", signed=True)
+    with wave.open(str(destino), "wb") as w:
+        w.setnchannels(1)
+        w.setsampwidth(2)
+        w.setframerate(24000)
+        w.writeframes(marca * int(segundos * 24000))
     return destino
 
 
 class FalsoWhisper:
-    def transcribe(self, caminho, **_):
-        palavras = texto_por_audio[str(caminho)].split()
+    def transcribe(self, sinal, **_):
+        indice = round(float(sinal[0]) * 32768 / MARCA)
+        palavras = textos_falados[indice - 1].split()
         t, ws = 0.25, []
         for p in palavras:
             ws.append(SimpleNamespace(word=" " + p, start=t, end=t + 0.34))
@@ -100,6 +110,11 @@ def main() -> None:
     from narracao import narrar
 
     gem.sintetizar = falso_sintetizar
+    # O teste finge a síntese no DESPACHO, não num provedor: o canal escolhe o provedor em
+    # `narracao.provedor`, e fingir só o Gemini deixava o teste chamar o Edge de verdade
+    # quando o canal mudou para `edge` — rede no CI, e o CI quebrou por `edge_tts` ausente.
+    # Assim vale para qualquer provedor, inclusive os que ainda não existem.
+    narrar.carregar_provedor = lambda cfg: (falso_sintetizar, False)
     ver._modelo = FalsoWhisper()
     canal_orig = Projeto.canal.fget
 

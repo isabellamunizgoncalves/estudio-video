@@ -60,7 +60,10 @@ export const CenaMidia: React.FC<{ cena: Cena; tema: Tema; estilo: EstiloVisual 
       <AbsoluteFill>
         <Fundo tema={tema} cor={cena.fundo} idCena={cena.id} />
         <AbsoluteFill style={{ alignItems: "center", justifyContent: "center", transform }}>
-          <div style={{ width: "74%", aspectRatio: "16 / 10" }}>
+          {/* minHeight 0: como item de flex a caixa tem min-height:auto e uma mídia 4:3
+              esticava a moldura para além da tela (o "conter" acabava cortando em cima e
+              embaixo). Com 0, quem manda é o aspectRatio e a mídia cabe inteira dentro. */}
+          <div style={{ width: "74%", aspectRatio: "16 / 10", minHeight: 0, maxHeight: "100%" }}>
             <Moldura tema={tema} idCena={cena.id} entrada={entrada}>
               <Midia cena={cena} />
             </Moldura>

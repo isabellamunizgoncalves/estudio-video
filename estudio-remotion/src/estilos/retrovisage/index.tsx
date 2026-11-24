@@ -220,7 +220,10 @@ const CenaCitacao: EstiloVisual["CenaCitacao"] = ({ cena, tema }) => {
   const frame = useCurrentFrame();
   const { width } = useVideoConfig();
   const texto = cena.titulo ?? "";
-  const letras = Math.floor(interpolate(frame, [6, 6 + texto.length * 1.6], [0, texto.length], { extrapolateLeft: "clamp", extrapolateRight: "clamp" }));
+  // A datilografia nunca passa de ~60% da cena: nas citações longas ela terminava junto
+  // com o corte e a frase inteira não chegava a ficar parada na tela para ser lida.
+  const fimDigitacao = Math.max(14, Math.min(6 + texto.length * 1.6, cena.duracao * 0.6));
+  const letras = Math.floor(interpolate(frame, [6, fimDigitacao], [0, texto.length], { extrapolateLeft: "clamp", extrapolateRight: "clamp" }));
   return (
     <AbsoluteFill>
       <Fundo tema={tema} cor={cena.fundo ?? tema.cores.fundo} idCena={cena.id} />
