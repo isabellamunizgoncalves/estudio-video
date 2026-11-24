@@ -1,5 +1,35 @@
 [
   {
+    "cena": "c001",
+    "arquivo": "04_visual/midia/c001.jpg",
+    "tipo": "imagem",
+    "banco": "pixabay",
+    "id": "8054618",
+    "titulo": "stairs, girl, shade, silhouette, path, outdoors, shadow, black and white, shadow, black and white, black and white, black and white, black and white, black and white",
+    "autor": "wal_172619",
+    "licenca": "Pixabay Content License",
+    "licenca_url": "https://pixabay.com/service/license-summary/",
+    "pagina": "https://pixabay.com/photos/stairs-girl-shade-silhouette-path-8054618/",
+    "atribuicao": "Imagem: wal_172619 / Pixabay",
+    "trecho": null,
+    "baixado_em": "2026-11-23T23:39:55+00:00"
+  },
+  {
+    "cena": "c002",
+    "arquivo": "04_visual/midia/c002.jpg",
+    "tipo": "imagem",
+    "banco": "pixabay",
+    "id": "7913270",
+    "titulo": "door knocker, door, entry, lock, wall, stones, monument, knocker, blue, door, door, door, wall, wall, wall, wall, wall",
+    "autor": "lecreusois",
+    "licenca": "Pixabay Content License",
+    "licenca_url": "https://pixabay.com/service/license-summary/",
+    "pagina": "https://pixabay.com/photos/door-knocker-door-entry-lock-wall-7913270/",
+    "atribuicao": "Imagem: lecreusois / Pixabay",
+    "trecho": null,
+    "baixado_em": "2026-11-23T23:39:56+00:00"
+  },
+  {
     "cena": "c003",
     "arquivo": "04_visual/midia/c003.mp4",
     "tipo": "video",
@@ -36,6 +66,51 @@
     "baixado_em": "2026-11-23T20:14:52+00:00"
   },
   {
+    "cena": "c006",
+    "arquivo": "04_visual/midia/c006.jpg",
+    "tipo": "imagem",
+    "banco": "pixabay",
+    "id": "2757683",
+    "titulo": "books, old books, old cooking books, cooking books, book stack, old german script, antiquarian, historical, old, spine, used books, lying, paper, worn, read",
+    "autor": "Ralphs_Fotos",
+    "licenca": "Pixabay Content License",
+    "licenca_url": "https://pixabay.com/service/license-summary/",
+    "pagina": "https://pixabay.com/photos/books-old-books-old-cooking-books-2757683/",
+    "atribuicao": "Imagem: Ralphs_Fotos / Pixabay",
+    "trecho": null,
+    "baixado_em": "2026-11-23T23:39:56+00:00"
+  },
+  {
+    "cena": "c007",
+    "arquivo": "04_visual/midia/c007.jpg",
+    "tipo": "imagem",
+    "banco": "pixabay",
+    "id": "6728600",
+    "titulo": "salt, sea salt, spoon, wooden spoon, bowl, spice, ingredients, table, food, healthy, cooking, salt, salt, salt, salt, salt",
+    "autor": "mkupiec7",
+    "licenca": "Pixabay Content License",
+    "licenca_url": "https://pixabay.com/service/license-summary/",
+    "pagina": "https://pixabay.com/photos/salt-sea-salt-spoon-wooden-spoon-6728600/",
+    "atribuicao": "Imagem: mkupiec7 / Pixabay",
+    "trecho": null,
+    "baixado_em": "2026-11-23T23:39:57+00:00"
+  },
+  {
+    "cena": "c009",
+    "arquivo": "04_visual/midia/c009.jpg",
+    "tipo": "imagem",
+    "banco": "pixabay",
+    "id": "3091234",
+    "titulo": "automobile, antique car, citroen duck, window, building, architecture, old, city, travel, historic center, renault, wissem castle, alsace, automobile, automobile, window, window, window, window, window, building, city, travel",
+    "autor": "GuentherDillingen",
+    "licenca": "Pixabay Content License",
+    "licenca_url": "https://pixabay.com/service/license-summary/",
+    "pagina": "https://pixabay.com/photos/automobile-antique-car-citroen-duck-3091234/",
+    "atribuicao": "Imagem: GuentherDillingen / Pixabay",
+    "trecho": null,
+    "baixado_em": "2026-11-23T23:39:58+00:00"
+  },
+  {
     "cena": "c011",
     "arquivo": "04_visual/midia/c011.jpg",
     "tipo": "imagem",
@@ -49,6 +124,36 @@
     "atribuicao": "Imagem: TehzeebNoah / Pixabay",
     "trecho": null,
     "baixado_em": "2026-11-23T20:14:52+00:00"
+  },
+  {
+    "cena": "c012",
+    "arquivo": "04_visual/midia/c012.jpg",
+    "tipo": "imagem",
+    "banco": "pixabay",
+    "id": "1433494",
+    "titulo": "dinner, table, home, table setting, dining, celebration, elegant, interior, candles, dinner, dinner, dinner, dinner, dinner",
+    "autor": "JillWellington",
+    "licenca": "Pixabay Content License",
+    "licenca_url": "https://pixabay.com/service/license-summary/",
+    "pagina": "https://pixabay.com/photos/dinner-table-home-table-setting-1433494/",
+    "atribuicao": "Imagem: JillWellington / Pixabay",
+    "trecho": null,
+    "baixado_em": "2026-11-23T23:39:59+00:00"
+  },
+  {
+    "cena": "c013",
+    "arquivo": "04_visual/midia/c013.jpg",
+    "tipo": "imagem",
+    "banco": "pixabay",
+    "id": "710572",
+    "titulo": "grinder, grinding machine, meat grinder, cast iron, gray, meat grinder, meat grinder, meat grinder, meat grinder, meat grinder",
+    "autor": "PatricioHurtado",
+    "licenca": "Pixabay Content License",
+    "licenca_url": "https://pixabay.com/service/license-summary/",
+    "pagina": "https://pixabay.com/photos/grinder-grinding-machine-710572/",
+    "atribuicao": "Imagem: PatricioHurtado / Pixabay",
+    "trecho": null,
+    "baixado_em": "2026-11-23T23:39:59+00:00"
   },
   {
     "cena": "c014",
@@ -102,6 +207,21 @@
     "baixado_em": "2026-11-23T20:14:53+00:00"
   },
   {
+    "cena": "c017",
+    "arquivo": "04_visual/midia/c017.jpg",
+    "tipo": "imagem",
+    "banco": "pixabay",
+    "id": "5035763",
+    "titulo": "cooking pot, cook, kitchen, stove, kitchen utensils, preparation, pot, stove, stove, stove, kitchen utensils, kitchen utensils, kitchen utensils, kitchen utensils, kitchen utensils",
+    "autor": "werbeguru",
+    "licenca": "Pixabay Content License",
+    "licenca_url": "https://pixabay.com/service/license-summary/",
+    "pagina": "https://pixabay.com/photos/cooking-pot-cook-kitchen-stove-5035763/",
+    "atribuicao": "Imagem: werbeguru / Pixabay",
+    "trecho": null,
+    "baixado_em": "2026-11-23T23:40:00+00:00"
+  },
+  {
     "cena": "c018",
     "arquivo": "04_visual/midia/c018.jpg",
     "tipo": "imagem",
@@ -115,6 +235,36 @@
     "atribuicao": "Imagem: ivabalk / Pixabay",
     "trecho": null,
     "baixado_em": "2026-11-23T20:14:54+00:00"
+  },
+  {
+    "cena": "c019",
+    "arquivo": "04_visual/midia/c019.jpg",
+    "tipo": "imagem",
+    "banco": "pixabay",
+    "id": "6960522",
+    "titulo": "vegetables, leek, organic, onions, healthy",
+    "autor": "Antonio_Cansino",
+    "licenca": "Pixabay Content License",
+    "licenca_url": "https://pixabay.com/service/license-summary/",
+    "pagina": "https://pixabay.com/photos/vegetables-leek-organic-onions-6960522/",
+    "atribuicao": "Imagem: Antonio_Cansino / Pixabay",
+    "trecho": null,
+    "baixado_em": "2026-11-23T23:40:01+00:00"
+  },
+  {
+    "cena": "c020",
+    "arquivo": "04_visual/midia/c020.jpg",
+    "tipo": "imagem",
+    "banco": "pixabay",
+    "id": "658109",
+    "titulo": "still life, vegetables, bottles, spice grinder, still life, still life, still life, still life, still life",
+    "autor": "domeckopol",
+    "licenca": "Pixabay Content License",
+    "licenca_url": "https://pixabay.com/service/license-summary/",
+    "pagina": "https://pixabay.com/photos/still-life-vegetables-bottles-658109/",
+    "atribuicao": "Imagem: domeckopol / Pixabay",
+    "trecho": null,
+    "baixado_em": "2026-11-23T23:40:01+00:00"
   },
   {
     "cena": "c021",
@@ -135,6 +285,21 @@
     "baixado_em": "2026-11-23T20:18:34+00:00"
   },
   {
+    "cena": "c022",
+    "arquivo": "04_visual/midia/c022.jpg",
+    "tipo": "imagem",
+    "banco": "wikimedia",
+    "id": "17048106",
+    "titulo": "Mrs. Monroe Jones in the kitchen of the four room house which serves as the family's home and for which they pay... - NARA - 541190.jpg",
+    "autor": "Russell Lee",
+    "licenca": "Public domain",
+    "licenca_url": "",
+    "pagina": "https://commons.wikimedia.org/wiki/File:Mrs._Monroe_Jones_in_the_kitchen_of_the_four_room_house_which_serves_as_the_family%27s_home_and_for_which_they_pay..._-_NARA_-_541190.jpg",
+    "atribuicao": "Russell Lee, Public domain, via Wikimedia Commons",
+    "trecho": null,
+    "baixado_em": "2026-11-24T00:05:01+00:00"
+  },
+  {
     "cena": "c023",
     "arquivo": "04_visual/midia/c023.jpg",
     "tipo": "imagem",
@@ -148,6 +313,36 @@
     "atribuicao": "Imagem: guvo59 / Pixabay",
     "trecho": null,
     "baixado_em": "2026-11-23T20:14:54+00:00"
+  },
+  {
+    "cena": "c024",
+    "arquivo": "04_visual/midia/c024.jpg",
+    "tipo": "imagem",
+    "banco": "pixabay",
+    "id": "6485751",
+    "titulo": "kitchen, stove, cook, to bake, cooking machine, monochrome, oven, firing, money, wood",
+    "autor": "ThomasWolter",
+    "licenca": "Pixabay Content License",
+    "licenca_url": "https://pixabay.com/service/license-summary/",
+    "pagina": "https://pixabay.com/photos/kitchen-stove-cook-to-bake-6485751/",
+    "atribuicao": "Imagem: ThomasWolter / Pixabay",
+    "trecho": null,
+    "baixado_em": "2026-11-23T23:40:02+00:00"
+  },
+  {
+    "cena": "c025",
+    "arquivo": "04_visual/midia/c025.jpg",
+    "tipo": "imagem",
+    "banco": "pixabay",
+    "id": "2095750",
+    "titulo": "retro, vintage, kitchen, cupboard, spices, old, antique, style, herbs, cupboard, cupboard, cupboard, cupboard, cupboard",
+    "autor": "JillWellington",
+    "licenca": "Pixabay Content License",
+    "licenca_url": "https://pixabay.com/service/license-summary/",
+    "pagina": "https://pixabay.com/photos/retro-vintage-kitchen-cupboard-2095750/",
+    "atribuicao": "Imagem: JillWellington / Pixabay",
+    "trecho": null,
+    "baixado_em": "2026-11-23T23:40:03+00:00"
   },
   {
     "cena": "c026",
@@ -196,6 +391,21 @@
       "duracao": 8.0
     },
     "baixado_em": "2026-11-23T20:18:40+00:00"
+  },
+  {
+    "cena": "c029",
+    "arquivo": "04_visual/midia/c029.jpg",
+    "tipo": "imagem",
+    "banco": "pixabay",
+    "id": "646622",
+    "titulo": "still life, bottles, nostalgia, decoration, still life, still life, still life, still life, still life",
+    "autor": "domeckopol",
+    "licenca": "Pixabay Content License",
+    "licenca_url": "https://pixabay.com/service/license-summary/",
+    "pagina": "https://pixabay.com/photos/still-life-bottles-nostalgia-646622/",
+    "atribuicao": "Imagem: domeckopol / Pixabay",
+    "trecho": null,
+    "baixado_em": "2026-11-23T23:40:04+00:00"
   },
   {
     "cena": "c031",
@@ -282,6 +492,21 @@
     "baixado_em": "2026-11-23T20:18:44+00:00"
   },
   {
+    "cena": "c039",
+    "arquivo": "04_visual/midia/c039.jpg",
+    "tipo": "imagem",
+    "banco": "pixabay",
+    "id": "2785",
+    "titulo": "cheese, wheels, wheels of cheese, dairy, dairy products, wooden shelves, eat, food, food photography, cheese, cheese, cheese, cheese, cheese",
+    "autor": "PublicDomainPictures",
+    "licenca": "Pixabay Content License",
+    "licenca_url": "https://pixabay.com/service/license-summary/",
+    "pagina": "https://pixabay.com/photos/cheese-wheels-wheels-of-cheese-2785/",
+    "atribuicao": "Imagem: PublicDomainPictures / Pixabay",
+    "trecho": null,
+    "baixado_em": "2026-11-23T23:40:05+00:00"
+  },
+  {
     "cena": "c040",
     "arquivo": "04_visual/midia/c040.jpg",
     "tipo": "imagem",
@@ -360,6 +585,21 @@
     "baixado_em": "2026-11-23T20:15:12+00:00"
   },
   {
+    "cena": "c047",
+    "arquivo": "04_visual/midia/c047.jpg",
+    "tipo": "imagem",
+    "banco": "pixabay",
+    "id": "1053466",
+    "titulo": "apple, coffee, recipe, sütterlin, current, food, yummy, coffee table, preparation, recipe, recipe, recipe, recipe, recipe",
+    "autor": "klaber",
+    "licenca": "Pixabay Content License",
+    "licenca_url": "https://pixabay.com/service/license-summary/",
+    "pagina": "https://pixabay.com/photos/apple-coffee-recipe-s%C3%BCtterlin-1053466/",
+    "atribuicao": "Imagem: klaber / Pixabay",
+    "trecho": null,
+    "baixado_em": "2026-11-23T23:40:05+00:00"
+  },
+  {
     "cena": "c048",
     "arquivo": "04_visual/midia/c048.mp4",
     "tipo": "video",
@@ -391,6 +631,21 @@
     "atribuicao": "Imagem: GamerChef6 / Pixabay",
     "trecho": null,
     "baixado_em": "2026-11-23T20:15:18+00:00"
+  },
+  {
+    "cena": "c050",
+    "arquivo": "04_visual/midia/c050.jpg",
+    "tipo": "imagem",
+    "banco": "pixabay",
+    "id": "791149",
+    "titulo": "table setting, table, preparing, set, christmas, nature, holidays, woman, girl, flowers, beautiful flowers, dishes, set table, interior, decoration, dinner, flower wallpaper, flower background, meal, xmas",
+    "autor": "kaboompics",
+    "licenca": "Pixabay Content License",
+    "licenca_url": "https://pixabay.com/service/license-summary/",
+    "pagina": "https://pixabay.com/photos/table-setting-table-preparing-set-791149/",
+    "atribuicao": "Imagem: kaboompics / Pixabay",
+    "trecho": null,
+    "baixado_em": "2026-11-23T23:40:06+00:00"
   },
   {
     "cena": "c051",
@@ -457,6 +712,36 @@
     "atribuicao": "Imagem: joshuemd / Pixabay",
     "trecho": null,
     "baixado_em": "2026-11-23T20:15:32+00:00"
+  },
+  {
+    "cena": "c055",
+    "arquivo": "04_visual/midia/c055.jpg",
+    "tipo": "imagem",
+    "banco": "pixabay",
+    "id": "3591341",
+    "titulo": "dormer window, pane, classic, historic, roof, tiles, architecture, style, dutch, brown window, dormer window, roof, dutch, dutch, dutch, dutch, dutch",
+    "autor": "MabelAmber",
+    "licenca": "Pixabay Content License",
+    "licenca_url": "https://pixabay.com/service/license-summary/",
+    "pagina": "https://pixabay.com/photos/dormer-window-pane-classic-historic-3591341/",
+    "atribuicao": "Imagem: MabelAmber / Pixabay",
+    "trecho": null,
+    "baixado_em": "2026-11-23T23:40:07+00:00"
+  },
+  {
+    "cena": "c056",
+    "arquivo": "04_visual/midia/c056.jpg",
+    "tipo": "imagem",
+    "banco": "pixabay",
+    "id": "637531",
+    "titulo": "frost on window, winter, cold, ice, winter, winter, winter, winter, winter",
+    "autor": "JillWellington",
+    "licenca": "Pixabay Content License",
+    "licenca_url": "https://pixabay.com/service/license-summary/",
+    "pagina": "https://pixabay.com/photos/frost-on-window-winter-cold-ice-637531/",
+    "atribuicao": "Imagem: JillWellington / Pixabay",
+    "trecho": null,
+    "baixado_em": "2026-11-23T23:40:08+00:00"
   },
   {
     "cena": "c057",
@@ -570,6 +855,51 @@
     "baixado_em": "2026-11-23T20:15:41+00:00"
   },
   {
+    "cena": "c067",
+    "arquivo": "04_visual/midia/c067.jpg",
+    "tipo": "imagem",
+    "banco": "pixabay",
+    "id": "2616983",
+    "titulo": "kitchen, stove, pots",
+    "autor": "StockSnap",
+    "licenca": "Pixabay Content License",
+    "licenca_url": "https://pixabay.com/service/license-summary/",
+    "pagina": "https://pixabay.com/photos/kitchen-stove-pots-2616983/",
+    "atribuicao": "Imagem: StockSnap / Pixabay",
+    "trecho": null,
+    "baixado_em": "2026-11-23T23:40:09+00:00"
+  },
+  {
+    "cena": "c068",
+    "arquivo": "04_visual/midia/c068.jpg",
+    "tipo": "imagem",
+    "banco": "pixabay",
+    "id": "2178442",
+    "titulo": "kettles, boil, burn, tea pots, cook, cooking, fire, flame, food, heat, hot, kitchen, gas stove, cooking, cooking, cooking, cooking, fire, food, kitchen, kitchen, kitchen, kitchen, kitchen",
+    "autor": "Pexels",
+    "licenca": "Pixabay Content License",
+    "licenca_url": "https://pixabay.com/service/license-summary/",
+    "pagina": "https://pixabay.com/photos/kettles-boil-burn-tea-pots-cook-2178442/",
+    "atribuicao": "Imagem: Pexels / Pixabay",
+    "trecho": null,
+    "baixado_em": "2026-11-23T23:40:09+00:00"
+  },
+  {
+    "cena": "c069",
+    "arquivo": "04_visual/midia/c069.jpg",
+    "tipo": "imagem",
+    "banco": "pixabay",
+    "id": "1854416",
+    "titulo": "antique, classroom, desk, school, exercise book, worn, worn wood, classroom, classroom, classroom, classroom, classroom, Mejlby, Denmark",
+    "autor": "PrebenGammelmark",
+    "licenca": "Pixabay Content License",
+    "licenca_url": "https://pixabay.com/service/license-summary/",
+    "pagina": "https://pixabay.com/photos/antique-classroom-desk-school-1854416/",
+    "atribuicao": "Imagem: PrebenGammelmark / Pixabay",
+    "trecho": null,
+    "baixado_em": "2026-11-23T23:40:10+00:00"
+  },
+  {
     "cena": "c071",
     "arquivo": "04_visual/midia/c071.jpg",
     "tipo": "imagem",
@@ -651,6 +981,36 @@
     "baixado_em": "2026-11-23T20:16:00+00:00"
   },
   {
+    "cena": "c076",
+    "arquivo": "04_visual/midia/c076.jpg",
+    "tipo": "imagem",
+    "banco": "pixabay",
+    "id": "2635521",
+    "titulo": "bugnes, tradition, donuts, vegan, without eggs, without the butter, without milk, french, home made, sweet, bugnes, bugnes, bugnes, bugnes, bugnes, donuts",
+    "autor": "ElodiV",
+    "licenca": "Pixabay Content License",
+    "licenca_url": "https://pixabay.com/service/license-summary/",
+    "pagina": "https://pixabay.com/photos/bugnes-tradition-donuts-vegan-2635521/",
+    "atribuicao": "Imagem: ElodiV / Pixabay",
+    "trecho": null,
+    "baixado_em": "2026-11-23T23:40:11+00:00"
+  },
+  {
+    "cena": "c078",
+    "arquivo": "04_visual/midia/c078.jpg",
+    "tipo": "imagem",
+    "banco": "pixabay",
+    "id": "1122161",
+    "titulo": "chenonceau castle, chenonceau, chenonceaux, chateau, castles, the loire valley, renaissance, architecture, loire castle, the loire valley, the loire valley, the loire valley, the loire valley, the loire valley",
+    "autor": "FranceIntense",
+    "licenca": "Pixabay Content License",
+    "licenca_url": "https://pixabay.com/service/license-summary/",
+    "pagina": "https://pixabay.com/photos/chenonceau-castle-chenonceau-1122161/",
+    "atribuicao": "Imagem: FranceIntense / Pixabay",
+    "trecho": null,
+    "baixado_em": "2026-11-23T23:40:12+00:00"
+  },
+  {
     "cena": "c079",
     "arquivo": "04_visual/midia/c079.jpg",
     "tipo": "imagem",
@@ -699,6 +1059,36 @@
     "baixado_em": "2026-11-23T20:16:10+00:00"
   },
   {
+    "cena": "c082",
+    "arquivo": "04_visual/midia/c082.jpg",
+    "tipo": "imagem",
+    "banco": "pixabay",
+    "id": "5145166",
+    "titulo": "herbs, natural medicine, medicinal herbs, garden herbs, nettle, daisy, greedy, dandelion, herbal oil, oil, medicinal plant, healthy, healing, leaves, nature, health, heal, plant, natural, nettle, nettle, healing, healing, healing, healing, healing",
+    "autor": "congerdesign",
+    "licenca": "Pixabay Content License",
+    "licenca_url": "https://pixabay.com/service/license-summary/",
+    "pagina": "https://pixabay.com/photos/herbs-natural-medicine-5145166/",
+    "atribuicao": "Imagem: congerdesign / Pixabay",
+    "trecho": null,
+    "baixado_em": "2026-11-23T23:40:14+00:00"
+  },
+  {
+    "cena": "c083",
+    "arquivo": "04_visual/midia/c083.jpg",
+    "tipo": "imagem",
+    "banco": "pixabay",
+    "id": "6914029",
+    "titulo": "woman, shoots, harvesting, plants, leaves, farmer, agriculture, girl, food, produce, organic, garden, nature, farmer, farmer, farmer, farmer, farmer",
+    "autor": "lailieeeee",
+    "licenca": "Pixabay Content License",
+    "licenca_url": "https://pixabay.com/service/license-summary/",
+    "pagina": "https://pixabay.com/photos/woman-shoots-harvesting-plants-6914029/",
+    "atribuicao": "Imagem: lailieeeee / Pixabay",
+    "trecho": null,
+    "baixado_em": "2026-11-23T23:40:14+00:00"
+  },
+  {
     "cena": "c085",
     "arquivo": "04_visual/midia/c085.jpg",
     "tipo": "imagem",
@@ -744,6 +1134,21 @@
     "baixado_em": "2026-11-23T20:19:00+00:00"
   },
   {
+    "cena": "c088",
+    "arquivo": "04_visual/midia/c088.jpg",
+    "tipo": "imagem",
+    "banco": "pixabay",
+    "id": "4977313",
+    "titulo": "foie gras pate, pate, street food, bread, pate, pate, pate, pate, pate",
+    "autor": "phuonghoangthuy",
+    "licenca": "Pixabay Content License",
+    "licenca_url": "https://pixabay.com/service/license-summary/",
+    "pagina": "https://pixabay.com/photos/foie-gras-pate-pate-street-food-4977313/",
+    "atribuicao": "Imagem: phuonghoangthuy / Pixabay",
+    "trecho": null,
+    "baixado_em": "2026-11-23T23:40:15+00:00"
+  },
+  {
     "cena": "c089",
     "arquivo": "04_visual/midia/c089.jpg",
     "tipo": "imagem",
@@ -757,6 +1162,21 @@
     "atribuicao": "Imagem: genniebee512 / Pixabay",
     "trecho": null,
     "baixado_em": "2026-11-23T20:19:01+00:00"
+  },
+  {
+    "cena": "c090",
+    "arquivo": "04_visual/midia/c090.jpg",
+    "tipo": "imagem",
+    "banco": "pixabay",
+    "id": "8622718",
+    "titulo": "city, historic center, alley, architecture, houses, luneburg, northern germany",
+    "autor": "Tho-Ge",
+    "licenca": "Pixabay Content License",
+    "licenca_url": "https://pixabay.com/service/license-summary/",
+    "pagina": "https://pixabay.com/photos/city-historic-center-alley-8622718/",
+    "atribuicao": "Imagem: Tho-Ge / Pixabay",
+    "trecho": null,
+    "baixado_em": "2026-11-23T23:40:16+00:00"
   },
   {
     "cena": "c091",
@@ -822,6 +1242,36 @@
     "baixado_em": "2026-11-23T20:19:06+00:00"
   },
   {
+    "cena": "c095",
+    "arquivo": "04_visual/midia/c095.jpg",
+    "tipo": "imagem",
+    "banco": "pixabay",
+    "id": "675338",
+    "titulo": "adult, wholesale, old, wholesale, wholesale, wholesale, wholesale, wholesale",
+    "autor": "darvasaya",
+    "licenca": "Pixabay Content License",
+    "licenca_url": "https://pixabay.com/service/license-summary/",
+    "pagina": "https://pixabay.com/photos/adult-wholesale-old-675338/",
+    "atribuicao": "Imagem: darvasaya / Pixabay",
+    "trecho": null,
+    "baixado_em": "2026-11-23T23:40:13+00:00"
+  },
+  {
+    "cena": "c096",
+    "arquivo": "04_visual/midia/c096.jpg",
+    "tipo": "imagem",
+    "banco": "pixabay",
+    "id": "3716742",
+    "titulo": "honfleur, perspective, clouds, nature, landscape, panorama, water, reflections, sky, port, france, evening",
+    "autor": "edmondlafoto",
+    "licenca": "Pixabay Content License",
+    "licenca_url": "https://pixabay.com/service/license-summary/",
+    "pagina": "https://pixabay.com/photos/honfleur-perspective-clouds-3716742/",
+    "atribuicao": "Imagem: edmondlafoto / Pixabay",
+    "trecho": null,
+    "baixado_em": "2026-11-24T00:04:29+00:00"
+  },
+  {
     "cena": "c097",
     "arquivo": "04_visual/midia/c097.jpg",
     "tipo": "imagem",
@@ -882,6 +1332,21 @@
     "baixado_em": "2026-11-23T20:16:27+00:00"
   },
   {
+    "cena": "c101",
+    "arquivo": "04_visual/midia/c101.jpg",
+    "tipo": "imagem",
+    "banco": "pixabay",
+    "id": "10222182",
+    "titulo": "money, coins, hands, elderly, pouch, savings, finance, poverty, old, close-up, wrinkled, currency, counting, pension, economy, traditional, history, fingers, retirement, budget, ai generated",
+    "autor": "geralt",
+    "licenca": "Pixabay Content License",
+    "licenca_url": "https://pixabay.com/service/license-summary/",
+    "pagina": "https://pixabay.com/photos/money-coins-hands-elderly-pouch-10222182/",
+    "atribuicao": "Imagem: geralt / Pixabay",
+    "trecho": null,
+    "baixado_em": "2026-11-24T00:04:29+00:00"
+  },
+  {
     "cena": "c102",
     "arquivo": "04_visual/midia/c102.jpg",
     "tipo": "imagem",
@@ -895,6 +1360,21 @@
     "atribuicao": "Imagem: izafi / Pixabay",
     "trecho": null,
     "baixado_em": "2026-11-23T20:16:27+00:00"
+  },
+  {
+    "cena": "c103",
+    "arquivo": "04_visual/midia/c103.jpg",
+    "tipo": "imagem",
+    "banco": "pixabay",
+    "id": "635613",
+    "titulo": "furniture, kitchen, table, window, kitchen, kitchen, kitchen, kitchen, kitchen",
+    "autor": "garten-gg",
+    "licenca": "Pixabay Content License",
+    "licenca_url": "https://pixabay.com/service/license-summary/",
+    "pagina": "https://pixabay.com/photos/furniture-kitchen-table-window-635613/",
+    "atribuicao": "Imagem: garten-gg / Pixabay",
+    "trecho": null,
+    "baixado_em": "2026-11-24T00:04:30+00:00"
   },
   {
     "cena": "c105",
@@ -915,6 +1395,21 @@
     "baixado_em": "2026-11-23T20:16:34+00:00"
   },
   {
+    "cena": "c106",
+    "arquivo": "04_visual/midia/c106.jpg",
+    "tipo": "imagem",
+    "banco": "pixabay",
+    "id": "1647651",
+    "titulo": "lost places, expired, old, abandoned, ruin, building, house, ailing, to forget, pforphoto, old building, dilapidated, dilapidated, shabby, broken, architecture, decay, disintegration, masonry, ephemeral, past, transience, finiteness, passed, school, monastery, given up, unused, scary, weathered, disintegrate, stairs, stairwell, railing, floors, mood, the atmosphere",
+    "autor": "652234",
+    "licenca": "Pixabay Content License",
+    "licenca_url": "https://pixabay.com/service/license-summary/",
+    "pagina": "https://pixabay.com/photos/lost-places-expired-old-abandoned-1647651/",
+    "atribuicao": "Imagem: 652234 / Pixabay",
+    "trecho": null,
+    "baixado_em": "2026-11-24T00:04:31+00:00"
+  },
+  {
     "cena": "c108",
     "arquivo": "04_visual/midia/c108.jpg",
     "tipo": "imagem",
@@ -928,6 +1423,36 @@
     "atribuicao": "Imagem: Bru-nO / Pixabay",
     "trecho": null,
     "baixado_em": "2026-11-23T20:16:34+00:00"
+  },
+  {
+    "cena": "c110",
+    "arquivo": "04_visual/midia/c110.jpg",
+    "tipo": "imagem",
+    "banco": "pixabay",
+    "id": "710040",
+    "titulo": "table, food, lunch, breakfast, fresh, dish, family, house, family house, cooking, taste, meal, cutlery, glasses, plates, tablecloth, napkins, lunch, lunch, lunch, lunch, lunch, family, family, family, cooking, cooking, meal",
+    "autor": "RealAKP",
+    "licenca": "Pixabay Content License",
+    "licenca_url": "https://pixabay.com/service/license-summary/",
+    "pagina": "https://pixabay.com/photos/table-food-lunch-breakfast-fresh-710040/",
+    "atribuicao": "Imagem: RealAKP / Pixabay",
+    "trecho": null,
+    "baixado_em": "2026-11-24T00:04:32+00:00"
+  },
+  {
+    "cena": "c111",
+    "arquivo": "04_visual/midia/c111.jpg",
+    "tipo": "imagem",
+    "banco": "pixabay",
+    "id": "1866137",
+    "titulo": "clock, wall, time, hour, classic, style, sign, dial, second, round, minute, white, circle, design, modern, vintage, ticking, face, old, hand, clock face, measurement, clock, clock, clock, clock, clock, circle, clock face",
+    "autor": "VariousPhotography",
+    "licenca": "Pixabay Content License",
+    "licenca_url": "https://pixabay.com/service/license-summary/",
+    "pagina": "https://pixabay.com/photos/clock-wall-time-hour-classic-1866137/",
+    "atribuicao": "Imagem: VariousPhotography / Pixabay",
+    "trecho": null,
+    "baixado_em": "2026-11-24T00:04:33+00:00"
   },
   {
     "cena": "c112",
@@ -946,6 +1471,36 @@
       "duracao": 5.0
     },
     "baixado_em": "2026-11-23T20:16:37+00:00"
+  },
+  {
+    "cena": "c115",
+    "arquivo": "04_visual/midia/c115.jpg",
+    "tipo": "imagem",
+    "banco": "pixabay",
+    "id": "1614646",
+    "titulo": "board, slate, blackboard, chalk, school, teaching, old, write, teach, blackboard, school, school, school, school, school, teaching",
+    "autor": "congerdesign",
+    "licenca": "Pixabay Content License",
+    "licenca_url": "https://pixabay.com/service/license-summary/",
+    "pagina": "https://pixabay.com/photos/board-slate-blackboard-chalk-1614646/",
+    "atribuicao": "Imagem: congerdesign / Pixabay",
+    "trecho": null,
+    "baixado_em": "2026-11-24T00:04:34+00:00"
+  },
+  {
+    "cena": "c118",
+    "arquivo": "04_visual/midia/c118.jpg",
+    "tipo": "imagem",
+    "banco": "pixabay",
+    "id": "2374652",
+    "titulo": "meat, raw, sausage, meat, meat, meat, meat, meat, sausage",
+    "autor": "FERMOSERGIO",
+    "licenca": "Pixabay Content License",
+    "licenca_url": "https://pixabay.com/service/license-summary/",
+    "pagina": "https://pixabay.com/photos/meat-raw-sausage-2374652/",
+    "atribuicao": "Imagem: FERMOSERGIO / Pixabay",
+    "trecho": null,
+    "baixado_em": "2026-11-24T00:04:35+00:00"
   },
   {
     "cena": "c121",
@@ -981,6 +1536,36 @@
     "baixado_em": "2026-11-23T20:16:52+00:00"
   },
   {
+    "cena": "c124",
+    "arquivo": "04_visual/midia/c124.jpg",
+    "tipo": "imagem",
+    "banco": "pixabay",
+    "id": "2374652",
+    "titulo": "meat, raw, sausage, meat, meat, meat, meat, meat, sausage",
+    "autor": "FERMOSERGIO",
+    "licenca": "Pixabay Content License",
+    "licenca_url": "https://pixabay.com/service/license-summary/",
+    "pagina": "https://pixabay.com/photos/meat-raw-sausage-2374652/",
+    "atribuicao": "Imagem: FERMOSERGIO / Pixabay",
+    "trecho": null,
+    "baixado_em": "2026-11-24T00:04:35+00:00"
+  },
+  {
+    "cena": "c128",
+    "arquivo": "04_visual/midia/c128.jpg",
+    "tipo": "imagem",
+    "banco": "pixabay",
+    "id": "5276146",
+    "titulo": "stores closed, store, closed, city, grunge, cloudy, new york, nyc, shut, down, pandemic, covid19, virus, lock",
+    "autor": "Lenzatic",
+    "licenca": "Pixabay Content License",
+    "licenca_url": "https://pixabay.com/service/license-summary/",
+    "pagina": "https://pixabay.com/photos/stores-closed-store-closed-city-5276146/",
+    "atribuicao": "Imagem: Lenzatic / Pixabay",
+    "trecho": null,
+    "baixado_em": "2026-11-24T00:04:36+00:00"
+  },
+  {
     "cena": "c129",
     "arquivo": "04_visual/midia/c129.jpg",
     "tipo": "imagem",
@@ -1009,6 +1594,36 @@
     "atribuicao": "Imagem: RitaE / Pixabay",
     "trecho": null,
     "baixado_em": "2026-11-23T20:16:53+00:00"
+  },
+  {
+    "cena": "c131",
+    "arquivo": "04_visual/midia/c131.jpg",
+    "tipo": "imagem",
+    "banco": "pixabay",
+    "id": "7464488",
+    "titulo": "market, vegetable stall, vendor, thailand, bangkok, thai, asia, vegetables, food, market, vegetable stall, vegetable stall, vegetable stall, vendor, vendor, vendor, thailand, thailand, thailand, bangkok, bangkok, bangkok, bangkok, bangkok, thai",
+    "autor": "viarami",
+    "licenca": "Pixabay Content License",
+    "licenca_url": "https://pixabay.com/service/license-summary/",
+    "pagina": "https://pixabay.com/photos/market-vegetable-stall-vendor-7464488/",
+    "atribuicao": "Imagem: viarami / Pixabay",
+    "trecho": null,
+    "baixado_em": "2026-11-24T00:04:37+00:00"
+  },
+  {
+    "cena": "c132",
+    "arquivo": "04_visual/midia/c132.jpg",
+    "tipo": "imagem",
+    "banco": "pixabay",
+    "id": "1275551",
+    "titulo": "fruit stand, fruits, produce, harvest, organic, fresh produce, farmer's market, market stall, healthy, food, sale, vitamins, oranges, clementines, fresh fruits, sale, sale, sale, sale, sale",
+    "autor": "652234",
+    "licenca": "Pixabay Content License",
+    "licenca_url": "https://pixabay.com/service/license-summary/",
+    "pagina": "https://pixabay.com/photos/fruit-stand-fruits-produce-harvest-1275551/",
+    "atribuicao": "Imagem: 652234 / Pixabay",
+    "trecho": null,
+    "baixado_em": "2026-11-24T00:04:38+00:00"
   },
   {
     "cena": "c133",
@@ -1075,6 +1690,21 @@
     "atribuicao": "Imagem: Einladung_zum_Essen / Pixabay",
     "trecho": null,
     "baixado_em": "2026-11-23T20:17:01+00:00"
+  },
+  {
+    "cena": "c138",
+    "arquivo": "04_visual/midia/c138.jpg",
+    "tipo": "imagem",
+    "banco": "pixabay",
+    "id": "696164",
+    "titulo": "thanksgiving, vegetables, harvest, potatoes, food, decoration, fixed, agriculture, fall, thanksgiving, potatoes, potatoes, potatoes, potatoes, potatoes",
+    "autor": "congerdesign",
+    "licenca": "Pixabay Content License",
+    "licenca_url": "https://pixabay.com/service/license-summary/",
+    "pagina": "https://pixabay.com/photos/thanksgiving-vegetables-harvest-696164/",
+    "atribuicao": "Imagem: congerdesign / Pixabay",
+    "trecho": null,
+    "baixado_em": "2026-11-24T00:04:39+00:00"
   },
   {
     "cena": "c141",
@@ -1155,6 +1785,36 @@
     "baixado_em": "2026-11-23T20:17:09+00:00"
   },
   {
+    "cena": "c147",
+    "arquivo": "04_visual/midia/c147.jpg",
+    "tipo": "imagem",
+    "banco": "pixabay",
+    "id": "1659717",
+    "titulo": "christmas background, book, read, old, literature, books, bookshelf, old books, hardcover, hardback, cover, collection, library, historically, leather covers, bookcase, used books, stories, reading, knowledge, bookworm",
+    "autor": "garten-gg",
+    "licenca": "Pixabay Content License",
+    "licenca_url": "https://pixabay.com/service/license-summary/",
+    "pagina": "https://pixabay.com/photos/christmas-background-book-read-old-1659717/",
+    "atribuicao": "Imagem: garten-gg / Pixabay",
+    "trecho": null,
+    "baixado_em": "2026-11-24T00:04:39+00:00"
+  },
+  {
+    "cena": "c149",
+    "arquivo": "04_visual/midia/c149.jpg",
+    "tipo": "imagem",
+    "banco": "pixabay",
+    "id": "4621891",
+    "titulo": "oven, fire, chimney, hot, flame, iron, heat, warm, light, match, blaze, burn, energy, fireplace, wood, firewood, briquettes, door, hand, finger",
+    "autor": "fotoblend",
+    "licenca": "Pixabay Content License",
+    "licenca_url": "https://pixabay.com/service/license-summary/",
+    "pagina": "https://pixabay.com/photos/oven-fire-chimney-hot-flame-iron-4621891/",
+    "atribuicao": "Imagem: fotoblend / Pixabay",
+    "trecho": null,
+    "baixado_em": "2026-11-24T00:04:40+00:00"
+  },
+  {
     "cena": "c151",
     "arquivo": "04_visual/midia/c151.jpg",
     "tipo": "imagem",
@@ -1168,6 +1828,21 @@
     "atribuicao": "Imagem: Hans / Pixabay",
     "trecho": null,
     "baixado_em": "2026-11-23T20:17:10+00:00"
+  },
+  {
+    "cena": "c152",
+    "arquivo": "04_visual/midia/c152.jpg",
+    "tipo": "imagem",
+    "banco": "pixabay",
+    "id": "524122",
+    "titulo": "soup terrine, antique, gold rim, service, dishes, soup terrine, soup terrine, soup terrine, soup terrine, soup terrine",
+    "autor": "Counselling",
+    "licenca": "Pixabay Content License",
+    "licenca_url": "https://pixabay.com/service/license-summary/",
+    "pagina": "https://pixabay.com/photos/soup-terrine-antique-gold-rim-524122/",
+    "atribuicao": "Imagem: Counselling / Pixabay",
+    "trecho": null,
+    "baixado_em": "2026-11-24T00:04:41+00:00"
   },
   {
     "cena": "c153",
@@ -1236,6 +1911,21 @@
     "baixado_em": "2026-11-23T20:17:28+00:00"
   },
   {
+    "cena": "c158",
+    "arquivo": "04_visual/midia/c158.jpg",
+    "tipo": "imagem",
+    "banco": "pixabay",
+    "id": "931434",
+    "titulo": "cooking zone, stove, kitchen stove, antique, cook, old kitchen stove, iron, water boiler, stove, stove, stove, stove, stove",
+    "autor": "Barni1",
+    "licenca": "Pixabay Content License",
+    "licenca_url": "https://pixabay.com/service/license-summary/",
+    "pagina": "https://pixabay.com/photos/cooking-zone-stove-kitchen-stove-931434/",
+    "atribuicao": "Imagem: Barni1 / Pixabay",
+    "trecho": null,
+    "baixado_em": "2026-11-24T00:04:41+00:00"
+  },
+  {
     "cena": "c160",
     "arquivo": "04_visual/midia/c160.jpg",
     "tipo": "imagem",
@@ -1249,6 +1939,21 @@
     "atribuicao": "Imagem: zweifelsfreimitb / Pixabay",
     "trecho": null,
     "baixado_em": "2026-11-23T20:17:28+00:00"
+  },
+  {
+    "cena": "c162",
+    "arquivo": "04_visual/midia/c162.jpg",
+    "tipo": "imagem",
+    "banco": "pixabay",
+    "id": "2943443",
+    "titulo": "pot, copper, cook, kitchen, tradition, pots, brass, metal, frying pans, of copper, pot, copper, copper, copper, copper, copper, kitchen",
+    "autor": "sferrario1968",
+    "licenca": "Pixabay Content License",
+    "licenca_url": "https://pixabay.com/service/license-summary/",
+    "pagina": "https://pixabay.com/photos/pot-copper-cook-kitchen-tradition-2943443/",
+    "atribuicao": "Imagem: sferrario1968 / Pixabay",
+    "trecho": null,
+    "baixado_em": "2026-11-24T00:04:43+00:00"
   },
   {
     "cena": "c163",
@@ -1296,6 +2001,21 @@
     "baixado_em": "2026-11-23T20:17:31+00:00"
   },
   {
+    "cena": "c168",
+    "arquivo": "04_visual/midia/c168.jpg",
+    "tipo": "imagem",
+    "banco": "pixabay",
+    "id": "5696243",
+    "titulo": "table, table setting, cutlery, wine glasses, glassware, banquet, wedding, party, celebration, event, dining table, banquet, banquet, party, party, party, event, event, event, event, event",
+    "autor": "Dorigo",
+    "licenca": "Pixabay Content License",
+    "licenca_url": "https://pixabay.com/service/license-summary/",
+    "pagina": "https://pixabay.com/photos/table-table-setting-cutlery-5696243/",
+    "atribuicao": "Imagem: Dorigo / Pixabay",
+    "trecho": null,
+    "baixado_em": "2026-11-24T00:04:43+00:00"
+  },
+  {
     "cena": "c169",
     "arquivo": "04_visual/midia/c169.jpg",
     "tipo": "imagem",
@@ -1339,6 +2059,21 @@
     "atribuicao": "Imagem: RitaE / Pixabay",
     "trecho": null,
     "baixado_em": "2026-11-23T20:17:33+00:00"
+  },
+  {
+    "cena": "c173",
+    "arquivo": "04_visual/midia/c173.jpg",
+    "tipo": "imagem",
+    "banco": "pixabay",
+    "id": "6329168",
+    "titulo": "chicken, grill, food, grilled chicken, meat, dish, meal, farmer's market, local market, market, innviertel, austria, grilled chicken, grilled chicken, grilled chicken, grilled chicken, grilled chicken, meat",
+    "autor": "Innviertlerin",
+    "licenca": "Pixabay Content License",
+    "licenca_url": "https://pixabay.com/service/license-summary/",
+    "pagina": "https://pixabay.com/photos/chicken-grill-food-grilled-chicken-6329168/",
+    "atribuicao": "Imagem: Innviertlerin / Pixabay",
+    "trecho": null,
+    "baixado_em": "2026-11-24T00:04:44+00:00"
   },
   {
     "cena": "c174",
@@ -1497,6 +2232,21 @@
     "baixado_em": "2026-11-23T20:13:59+00:00"
   },
   {
+    "cena": "c188",
+    "arquivo": "04_visual/midia/c188.jpg",
+    "tipo": "imagem",
+    "banco": "pixabay",
+    "id": "7110932",
+    "titulo": "recipe book, encyclopedia, culinary book, cookbook, greenery, vintage mustard pot, recipe book, recipe book, recipe book, recipe book, cookbook, cookbook, cookbook, cookbook, cookbook",
+    "autor": "Bluesnap",
+    "licenca": "Pixabay Content License",
+    "licenca_url": "https://pixabay.com/service/license-summary/",
+    "pagina": "https://pixabay.com/photos/recipe-book-encyclopedia-7110932/",
+    "atribuicao": "Imagem: Bluesnap / Pixabay",
+    "trecho": null,
+    "baixado_em": "2026-11-24T00:04:45+00:00"
+  },
+  {
     "cena": "c189",
     "arquivo": "04_visual/midia/c189.jpg",
     "tipo": "imagem",
@@ -1546,6 +2296,21 @@
       "duracao": 7.0
     },
     "baixado_em": "2026-11-23T20:17:44+00:00"
+  },
+  {
+    "cena": "c192",
+    "arquivo": "04_visual/midia/c192.jpg",
+    "tipo": "imagem",
+    "banco": "pixabay",
+    "id": "5844969",
+    "titulo": "floor, corridor, interior, wood floor, old, room, space, vintage, backdrop, retro",
+    "autor": "Tama66",
+    "licenca": "Pixabay Content License",
+    "licenca_url": "https://pixabay.com/service/license-summary/",
+    "pagina": "https://pixabay.com/photos/floor-corridor-interior-wood-floor-5844969/",
+    "atribuicao": "Imagem: Tama66 / Pixabay",
+    "trecho": null,
+    "baixado_em": "2026-11-24T00:04:46+00:00"
   },
   {
     "cena": "c194",
@@ -1611,6 +2376,36 @@
     "baixado_em": "2026-11-23T20:17:52+00:00"
   },
   {
+    "cena": "c198",
+    "arquivo": "04_visual/midia/c198.jpg",
+    "tipo": "imagem",
+    "banco": "pixabay",
+    "id": "2940275",
+    "titulo": "rabbits, dwarf rabbit, color dwarf, domestic animal, basil, easter bunny, rabbits, dwarf rabbit, dwarf rabbit, basil, basil, basil, basil, basil, easter bunny",
+    "autor": "MariechenUnterwegs",
+    "licenca": "Pixabay Content License",
+    "licenca_url": "https://pixabay.com/service/license-summary/",
+    "pagina": "https://pixabay.com/photos/rabbits-dwarf-rabbit-color-dwarf-2940275/",
+    "atribuicao": "Imagem: MariechenUnterwegs / Pixabay",
+    "trecho": null,
+    "baixado_em": "2026-11-24T00:06:18+00:00"
+  },
+  {
+    "cena": "c199",
+    "arquivo": "04_visual/midia/c199.jpg",
+    "tipo": "imagem",
+    "banco": "pixabay",
+    "id": "6920169",
+    "titulo": "rabbit, rabbit ears, animal, mammal, easter bunny, cage, fur, animal portrait, nature",
+    "autor": "kasjanf",
+    "licenca": "Pixabay Content License",
+    "licenca_url": "https://pixabay.com/service/license-summary/",
+    "pagina": "https://pixabay.com/photos/rabbit-rabbit-ears-animal-mammal-6920169/",
+    "atribuicao": "Imagem: kasjanf / Pixabay",
+    "trecho": null,
+    "baixado_em": "2026-11-24T00:06:19+00:00"
+  },
+  {
     "cena": "c200",
     "arquivo": "04_visual/midia/c200.mp4",
     "tipo": "video",
@@ -1642,6 +2437,36 @@
     "atribuicao": "Imagem: epicantus / Pixabay",
     "trecho": null,
     "baixado_em": "2026-11-23T20:17:59+00:00"
+  },
+  {
+    "cena": "c202",
+    "arquivo": "04_visual/midia/c202.jpg",
+    "tipo": "imagem",
+    "banco": "pixabay",
+    "id": "10123931",
+    "titulo": "family, lunch, outdoor, table, dishes, children, food, gathering, meal, happiness, adults, salad, vegetables, fruit, olives, cooking, preparation, sunny, green, home, togetherness, conversation, plates, enjoyment, ai generated",
+    "autor": "epochalstock",
+    "licenca": "Pixabay Content License",
+    "licenca_url": "https://pixabay.com/service/license-summary/",
+    "pagina": "https://pixabay.com/photos/family-lunch-outdoor-table-dishes-10123931/",
+    "atribuicao": "Imagem: epochalstock / Pixabay",
+    "trecho": null,
+    "baixado_em": "2026-11-24T00:06:20+00:00"
+  },
+  {
+    "cena": "c204",
+    "arquivo": "04_visual/midia/c204.jpg",
+    "tipo": "imagem",
+    "banco": "pixabay",
+    "id": "1967373",
+    "titulo": "wedding reception, banquet, tableware, cutlery, wedding, knife, glass, composition, white, spoon, covering, tablecloth, fork, plate, christmas decoration, food, glasses, decoration, porcelain, party, table, the ceremony, eat, doily, beautiful, transparent, the minimum, elegant, agency, restaurant, wedding house, silver cutlery, arrangement, the tradition of, catering, banquet, tableware, tableware, cutlery, plate, plate, catering, catering, catering, catering, catering",
+    "autor": "AS_Photography",
+    "licenca": "Pixabay Content License",
+    "licenca_url": "https://pixabay.com/service/license-summary/",
+    "pagina": "https://pixabay.com/photos/wedding-reception-banquet-tableware-1967373/",
+    "atribuicao": "Imagem: AS_Photography / Pixabay",
+    "trecho": null,
+    "baixado_em": "2026-11-24T00:06:21+00:00"
   },
   {
     "cena": "c209",
@@ -1690,6 +2515,21 @@
       "duracao": 8.0
     },
     "baixado_em": "2026-11-23T20:18:15+00:00"
+  },
+  {
+    "cena": "c212",
+    "arquivo": "04_visual/midia/c212.jpg",
+    "tipo": "imagem",
+    "banco": "pixabay",
+    "id": "2474181",
+    "titulo": "boiling over of milk, ceramic hob, hotplate, pot, milk, foaming milk, branded milk, annoying, to forget, dementia, forgetfulness, reflection, odor, milk splash, steam, boiling milk, hot, milk, milk, milk, milk, milk, boiling milk, boiling milk, boiling milk",
+    "autor": "Myriams-Fotos",
+    "licenca": "Pixabay Content License",
+    "licenca_url": "https://pixabay.com/service/license-summary/",
+    "pagina": "https://pixabay.com/photos/boiling-over-of-milk-ceramic-hob-2474181/",
+    "atribuicao": "Imagem: Myriams-Fotos / Pixabay",
+    "trecho": null,
+    "baixado_em": "2026-11-24T00:06:22+00:00"
   },
   {
     "cena": "c214",
@@ -1755,6 +2595,36 @@
     "baixado_em": "2026-11-23T20:18:23+00:00"
   },
   {
+    "cena": "c219",
+    "arquivo": "04_visual/midia/c219.jpg",
+    "tipo": "imagem",
+    "banco": "pixabay",
+    "id": "3211749",
+    "titulo": "table, cup, desktop backgrounds, coffee, background, cafe, cappuccino, coffee cup, full hd wallpaper, morning, news, newspaper, white, beautiful wallpaper, italian, drink, aroma, flavor, brewed, wallpaper 4k, espresso, hd wallpaper, breakfast, laptop wallpaper, free wallpaper, mug, isolated, black, cofee, 4k wallpaper, latte, windows wallpaper, laptop, color, break, business, wallpaper hd, 4k wallpaper 1920x1080, mac wallpaper, desk, top, cool backgrounds, free background, work, wood, hot, vintage, workplace, tapeta komputer, zbliżenie",
+    "autor": "wpaczocha",
+    "licenca": "Pixabay Content License",
+    "licenca_url": "https://pixabay.com/service/license-summary/",
+    "pagina": "https://pixabay.com/photos/table-cup-coffee-background-cafe-3211749/",
+    "atribuicao": "Imagem: wpaczocha / Pixabay",
+    "trecho": null,
+    "baixado_em": "2026-11-24T00:06:23+00:00"
+  },
+  {
+    "cena": "c224",
+    "arquivo": "04_visual/midia/c224.jpg",
+    "tipo": "imagem",
+    "banco": "pixabay",
+    "id": "2906458",
+    "titulo": "christmas wallpaper, hands, old, old age, elderly, vulnerable, care, happy mothers day, old person, self-reliance, help, health, seniors, mother, daughter, family, love, mom, grandmother, grandparents",
+    "autor": "sabinevanerp",
+    "licenca": "Pixabay Content License",
+    "licenca_url": "https://pixabay.com/service/license-summary/",
+    "pagina": "https://pixabay.com/photos/christmas-wallpaper-hands-old-2906458/",
+    "atribuicao": "Imagem: sabinevanerp / Pixabay",
+    "trecho": null,
+    "baixado_em": "2026-11-24T00:06:23+00:00"
+  },
+  {
     "cena": "c227",
     "arquivo": "04_visual/midia/c227.mp4",
     "tipo": "video",
@@ -1771,6 +2641,66 @@
       "duracao": 5.0
     },
     "baixado_em": "2026-11-23T20:18:30+00:00"
+  },
+  {
+    "cena": "c228",
+    "arquivo": "04_visual/midia/c228.jpg",
+    "tipo": "imagem",
+    "banco": "pixabay",
+    "id": "2178442",
+    "titulo": "kettles, boil, burn, tea pots, cook, cooking, fire, flame, food, heat, hot, kitchen, gas stove, cooking, cooking, cooking, cooking, fire, food, kitchen, kitchen, kitchen, kitchen, kitchen",
+    "autor": "Pexels",
+    "licenca": "Pixabay Content License",
+    "licenca_url": "https://pixabay.com/service/license-summary/",
+    "pagina": "https://pixabay.com/photos/kettles-boil-burn-tea-pots-cook-2178442/",
+    "atribuicao": "Imagem: Pexels / Pixabay",
+    "trecho": null,
+    "baixado_em": "2026-11-24T00:06:24+00:00"
+  },
+  {
+    "cena": "c229",
+    "arquivo": "04_visual/midia/c229.jpg",
+    "tipo": "imagem",
+    "banco": "pixabay",
+    "id": "1130743",
+    "titulo": "notepad, glasses, travel, planning, page, notes, paper, vacation, trip, desk, photographs, write, concept, old, retro, antique, vintage, classic, travel, travel, travel, travel, travel, planning, paper, write, vintage",
+    "autor": "DariuszSankowski",
+    "licenca": "Pixabay Content License",
+    "licenca_url": "https://pixabay.com/service/license-summary/",
+    "pagina": "https://pixabay.com/photos/notepad-glasses-travel-planning-1130743/",
+    "atribuicao": "Imagem: DariuszSankowski / Pixabay",
+    "trecho": null,
+    "baixado_em": "2026-11-24T00:06:25+00:00"
+  },
+  {
+    "cena": "c230",
+    "arquivo": "04_visual/midia/c230.jpg",
+    "tipo": "imagem",
+    "banco": "pixabay",
+    "id": "1375788",
+    "titulo": "cook, cookbook, side, enjoyment, meal, fresh, homemade, preparation, recipes, food, ingredients, kitchen, a book, herbs, old book, old, cookbook, cookbook, cookbook, cookbook, cookbook, recipes",
+    "autor": "Bru-nO",
+    "licenca": "Pixabay Content License",
+    "licenca_url": "https://pixabay.com/service/license-summary/",
+    "pagina": "https://pixabay.com/photos/cook-cookbook-side-enjoyment-meal-1375788/",
+    "atribuicao": "Imagem: Bru-nO / Pixabay",
+    "trecho": null,
+    "baixado_em": "2026-11-24T00:06:26+00:00"
+  },
+  {
+    "cena": "c231",
+    "arquivo": "04_visual/midia/c231.jpg",
+    "tipo": "imagem",
+    "banco": "pixabay",
+    "id": "2906458",
+    "titulo": "christmas wallpaper, hands, old, old age, elderly, vulnerable, care, happy mothers day, old person, self-reliance, help, health, seniors, mother, daughter, family, love, mom, grandmother, grandparents",
+    "autor": "sabinevanerp",
+    "licenca": "Pixabay Content License",
+    "licenca_url": "https://pixabay.com/service/license-summary/",
+    "pagina": "https://pixabay.com/photos/christmas-wallpaper-hands-old-2906458/",
+    "atribuicao": "Imagem: sabinevanerp / Pixabay",
+    "trecho": null,
+    "baixado_em": "2026-11-24T00:06:26+00:00"
   },
   {
     "cena": "c236",
@@ -1894,6 +2824,21 @@
     "atribuicao": "Imagem: JESHOOTS-com / Pixabay",
     "trecho": null,
     "baixado_em": "2026-11-23T20:18:44+00:00"
+  },
+  {
+    "cena": "c247",
+    "arquivo": "04_visual/midia/c247.jpg",
+    "tipo": "imagem",
+    "banco": "pixabay",
+    "id": "4353096",
+    "titulo": "nostalgia, oven, old, animal, historical, wood stove, pet, wood, antique, to bake, past, stove, formerly, kitchen, cat, reute mill",
+    "autor": "Alexas_Fotos",
+    "licenca": "Pixabay Content License",
+    "licenca_url": "https://pixabay.com/service/license-summary/",
+    "pagina": "https://pixabay.com/photos/nostalgia-oven-old-historical-4353096/",
+    "atribuicao": "Imagem: Alexas_Fotos / Pixabay",
+    "trecho": null,
+    "baixado_em": "2026-11-24T00:06:27+00:00"
   },
   {
     "cena": "c248",
