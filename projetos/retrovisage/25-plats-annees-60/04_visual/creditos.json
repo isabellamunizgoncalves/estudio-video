@@ -332,18 +332,22 @@
   },
   {
     "cena": "c024",
-    "arquivo": "04_visual/midia/c024.jpg",
-    "tipo": "imagem",
+    "arquivo": "04_visual/midia/c024.mp4",
+    "tipo": "video",
     "banco": "pixabay",
-    "id": "6485751",
-    "titulo": "kitchen, stove, cook, to bake, cooking machine, monochrome, oven, firing, money, wood",
-    "autor": "ThomasWolter",
+    "id": "28236",
+    "titulo": "rain, raindrop, wet, water, window, drop, weather, droplets, blue, rainy, beautiful wallpaper, dark, raining, background, live wallpaper",
+    "autor": "lawlaw91",
     "licenca": "Pixabay Content License",
-    "licenca_url": "https://pixabay.com/service/license-summary/",
-    "pagina": "https://pixabay.com/photos/kitchen-stove-cook-to-bake-6485751/",
-    "atribuicao": "Imagem: ThomasWolter / Pixabay",
-    "trecho": null,
-    "baixado_em": "2026-11-23T23:40:02+00:00"
+    "licenca_url": null,
+    "pagina": "https://pixabay.com/videos/id-28236/",
+    "atribuicao": "Vídeo: lawlaw91 / Pixabay",
+    "trecho": {
+      "inicio": 0.0,
+      "duracao": 7.0
+    },
+    "baixado_em": "2026-11-24T08:34:41+00:00",
+    "observacao": "Chuva sobre vidro com cidade desfocada ao fundo; vai para P&B. Textura atemporal."
   },
   {
     "cena": "c025",
@@ -377,18 +381,22 @@
   },
   {
     "cena": "c027",
-    "arquivo": "04_visual/midia/c027.jpg",
-    "tipo": "imagem",
+    "arquivo": "04_visual/midia/c027.mp4",
+    "tipo": "video",
     "banco": "pixabay",
-    "id": "5702703",
-    "titulo": "bread, slices, loaf, bread loaf, sliced bread, bread slices, chopping board, baked, dough, surface, home made, pao caseiro, bread, bread, bread, bread, bread",
-    "autor": "amiraxgelcola",
+    "id": "14239",
+    "titulo": "bread, cook, fresh bread, bakery, cutting board, cooking, table, dish, knife, loaf, food, wheat bread, slicing, nutrition, bakery products, a sandwich",
+    "autor": "AlekseiyPovar",
     "licenca": "Pixabay Content License",
-    "licenca_url": "https://pixabay.com/service/license-summary/",
-    "pagina": "https://pixabay.com/photos/bread-slices-loaf-bread-loaf-5702703/",
-    "atribuicao": "Imagem: amiraxgelcola / Pixabay",
-    "trecho": null,
-    "baixado_em": "2026-11-23T20:14:55+00:00"
+    "licenca_url": null,
+    "pagina": "https://pixabay.com/videos/id-14239/",
+    "atribuicao": "Vídeo: AlekseiyPovar / Pixabay",
+    "trecho": {
+      "inicio": 0.0,
+      "duracao": 7.0
+    },
+    "baixado_em": "2026-11-24T08:34:15+00:00",
+    "observacao": "Mãos cortando pão rústico em fatias grossas na tábua, plano fechado de gesto, sem rosto. Pixabay, serve pelo gesto atemporal."
   },
   {
     "cena": "c028",
@@ -410,18 +418,22 @@
   },
   {
     "cena": "c029",
-    "arquivo": "04_visual/midia/c029.jpg",
-    "tipo": "imagem",
+    "arquivo": "04_visual/midia/c029.mp4",
+    "tipo": "video",
     "banco": "pixabay",
-    "id": "646622",
-    "titulo": "still life, bottles, nostalgia, decoration, still life, still life, still life, still life, still life",
-    "autor": "domeckopol",
+    "id": "98044",
+    "titulo": "milk, drop, splash, drink, crown, cream, healthy, flowing, falling, 3d",
+    "autor": "bellergy",
     "licenca": "Pixabay Content License",
-    "licenca_url": "https://pixabay.com/service/license-summary/",
-    "pagina": "https://pixabay.com/photos/still-life-bottles-nostalgia-646622/",
-    "atribuicao": "Imagem: domeckopol / Pixabay",
-    "trecho": null,
-    "baixado_em": "2026-11-23T23:40:04+00:00"
+    "licenca_url": null,
+    "pagina": "https://pixabay.com/videos/id-98044/",
+    "atribuicao": "Vídeo: bellergy / Pixabay",
+    "trecho": {
+      "inicio": 0.0,
+      "duracao": 7.0
+    },
+    "baixado_em": "2026-11-24T08:34:54+00:00",
+    "observacao": "Gota caindo e formando coroa de respingo em líquido claro, câmera lenta; textura para gotas na tigela."
   },
   {
     "cena": "c030",
@@ -809,18 +821,22 @@
   },
   {
     "cena": "c056",
-    "arquivo": "04_visual/midia/c056.jpg",
-    "tipo": "imagem",
+    "arquivo": "04_visual/midia/c056.mp4",
+    "tipo": "video",
     "banco": "pixabay",
-    "id": "637531",
-    "titulo": "frost on window, winter, cold, ice, winter, winter, winter, winter, winter",
-    "autor": "JillWellington",
+    "id": "253051",
+    "titulo": "sunset, window, snow, light, barn, building, house, pane, trees, cold, frost, frozen, wintry, glass, nature, winter, background",
+    "autor": "Joe_hackney",
     "licenca": "Pixabay Content License",
-    "licenca_url": "https://pixabay.com/service/license-summary/",
-    "pagina": "https://pixabay.com/photos/frost-on-window-winter-cold-ice-637531/",
-    "atribuicao": "Imagem: JillWellington / Pixabay",
-    "trecho": null,
-    "baixado_em": "2026-11-23T23:40:08+00:00"
+    "licenca_url": null,
+    "pagina": "https://pixabay.com/videos/id-253051/",
+    "atribuicao": "Vídeo: Joe_hackney / Pixabay",
+    "trecho": {
+      "inicio": 0.0,
+      "duracao": 7.0
+    },
+    "baixado_em": "2026-11-24T08:34:38+00:00",
+    "observacao": "Janela de vidraças geladas com neve ao fundo, vista de dentro; vai para P&B na edição."
   },
   {
     "cena": "c057",
@@ -857,18 +873,22 @@
   },
   {
     "cena": "c059",
-    "arquivo": "04_visual/midia/c059.jpg",
-    "tipo": "imagem",
+    "arquivo": "04_visual/midia/c059.mp4",
+    "tipo": "video",
     "banco": "pixabay",
-    "id": "61106",
-    "titulo": "potato gratin, meal, oven, potato wedges, potatoes, dish, kitchen, cook, gratinated, crispy, potato dish, potato gratin, potato gratin, potato gratin, oven, oven, oven, oven, oven, potatoes",
-    "autor": "Suppenkasper",
+    "id": "197206",
+    "titulo": "cheese, pasta, noodles, grate, food, kitchen, chef, cook, restaurant, gastronomy",
+    "autor": "ListosParaRodar",
     "licenca": "Pixabay Content License",
-    "licenca_url": "https://pixabay.com/service/license-summary/",
-    "pagina": "https://pixabay.com/photos/potato-gratin-meal-oven-61106/",
-    "atribuicao": "Imagem: Suppenkasper / Pixabay",
-    "trecho": null,
-    "baixado_em": "2026-11-23T20:15:33+00:00"
+    "licenca_url": null,
+    "pagina": "https://pixabay.com/videos/id-197206/",
+    "atribuicao": "Vídeo: ListosParaRodar / Pixabay",
+    "trecho": {
+      "inicio": 0.0,
+      "duracao": 7.0
+    },
+    "baixado_em": "2026-11-24T08:34:59+00:00",
+    "observacao": "Mãos ralando queijo sobre o prato, plano fechado, luz baixa; gesto sem contexto de época."
   },
   {
     "cena": "c060",
@@ -1340,18 +1360,22 @@
   },
   {
     "cena": "c093",
-    "arquivo": "04_visual/midia/c093.jpg",
-    "tipo": "imagem",
+    "arquivo": "04_visual/midia/c093.mp4",
+    "tipo": "video",
     "banco": "pixabay",
-    "id": "683918",
-    "titulo": "bread pudding, food, dessert, bread, pudding, traditional, homemade, delicious, cinnamon, eggs, milk, holiday, christmas, bread pudding, bread pudding, bread pudding, bread pudding, bread pudding",
-    "autor": "genniebee512",
+    "id": "74041",
+    "titulo": "cakes, cute, dessert, oven, gugelhopf, baked, fried, brand, bundt cake, time lapse, timelapse",
+    "autor": "adege",
     "licenca": "Pixabay Content License",
-    "licenca_url": "https://pixabay.com/service/license-summary/",
-    "pagina": "https://pixabay.com/photos/bread-pudding-food-dessert-bread-683918/",
-    "atribuicao": "Imagem: genniebee512 / Pixabay",
-    "trecho": null,
-    "baixado_em": "2026-11-23T20:19:05+00:00"
+    "licenca_url": null,
+    "pagina": "https://pixabay.com/videos/id-74041/",
+    "atribuicao": "Vídeo: adege / Pixabay",
+    "trecho": {
+      "inicio": 0.0,
+      "duracao": 6.0
+    },
+    "baixado_em": "2026-11-24T08:34:50+00:00",
+    "observacao": "Bolo/pão dourado dentro do forno aceso, luz alaranjada; plano fechado sem contexto de época."
   },
   {
     "cena": "c094",
@@ -1568,18 +1592,22 @@
   },
   {
     "cena": "c111",
-    "arquivo": "04_visual/midia/c111.jpg",
-    "tipo": "imagem",
+    "arquivo": "04_visual/midia/c111.mp4",
+    "tipo": "video",
     "banco": "pixabay",
-    "id": "1866137",
-    "titulo": "clock, wall, time, hour, classic, style, sign, dial, second, round, minute, white, circle, design, modern, vintage, ticking, face, old, hand, clock face, measurement, clock, clock, clock, clock, clock, circle, clock face",
-    "autor": "VariousPhotography",
+    "id": "15629",
+    "titulo": "alarm, clock, watch, time, retro, vintage",
+    "autor": "wastedgeneration",
     "licenca": "Pixabay Content License",
-    "licenca_url": "https://pixabay.com/service/license-summary/",
-    "pagina": "https://pixabay.com/photos/clock-wall-time-hour-classic-1866137/",
-    "atribuicao": "Imagem: VariousPhotography / Pixabay",
-    "trecho": null,
-    "baixado_em": "2026-11-24T00:04:33+00:00"
+    "licenca_url": null,
+    "pagina": "https://pixabay.com/videos/id-15629/",
+    "atribuicao": "Vídeo: wastedgeneration / Pixabay",
+    "trecho": {
+      "inicio": 0.0,
+      "duracao": 7.0
+    },
+    "baixado_em": "2026-11-24T08:34:47+00:00",
+    "observacao": "Despertador retrô verde sobre livros, close do mostrador e ponteiros."
   },
   {
     "cena": "c112",
@@ -2411,19 +2439,22 @@
   },
   {
     "cena": "c171",
-    "arquivo": "04_visual/midia/c171.jpg",
-    "tipo": "imagem",
+    "arquivo": "04_visual/midia/c171.mp4",
+    "tipo": "video",
     "banco": "pixabay",
-    "id": "1404386",
-    "titulo": "kitchen, peasant, colombian",
-    "autor": "JOHFER",
+    "id": "123069",
+    "titulo": "fire, flame, beautiful wallpaper, wood, fireplace, oven, kitchen, to bake, hot, hell, abstract, background, camp, winter, spark, heat, burn, burning, beautiful, night, light, movement, romantic, romance",
+    "autor": "Engin_Akyurt",
     "licenca": "Pixabay Content License",
-    "licenca_url": "https://pixabay.com/service/license-summary/",
-    "pagina": "https://pixabay.com/photos/kitchen-peasant-colombian-1404386/",
-    "atribuicao": "Imagem: JOHFER / Pixabay",
-    "trecho": null,
-    "baixado_em": "2026-11-24T03:43:26+00:00",
-    "observacao": "PLANO B: panela sobre fogo de lenha em cozinha rústica (Pixabay, 1280 px); não é forno nem travessa dourando."
+    "licenca_url": null,
+    "pagina": "https://pixabay.com/videos/id-123069/",
+    "atribuicao": "Vídeo: Engin_Akyurt / Pixabay",
+    "trecho": {
+      "inicio": 0.0,
+      "duracao": 7.0
+    },
+    "baixado_em": "2026-11-24T08:34:25+00:00",
+    "observacao": "Fogo no forno de tijolo, chama viva. Textura atemporal; ilustra o forno aceso (sem travessa visível)."
   },
   {
     "cena": "c172",
@@ -2490,34 +2521,41 @@
   },
   {
     "cena": "c176",
-    "arquivo": "04_visual/midia/c176.jpg",
-    "tipo": "imagem",
-    "banco": "pixabay",
-    "id": "5954894",
-    "titulo": "chicken, dish, food, meal, lunch, chicken thigh, chicken drumstick, potato wedges, fried, cooked, tasty, delicious, closeup, chicken, chicken, chicken, chicken, chicken, chicken thigh, chicken thigh, chicken thigh, chicken drumstick",
-    "autor": "RitaE",
-    "licenca": "Pixabay Content License",
-    "licenca_url": "https://pixabay.com/service/license-summary/",
-    "pagina": "https://pixabay.com/photos/chicken-dish-food-meal-lunch-5954894/",
-    "atribuicao": "Imagem: RitaE / Pixabay",
-    "trecho": null,
-    "baixado_em": "2026-11-23T20:13:58+00:00"
+    "arquivo": "04_visual/midia/c176.mp4",
+    "tipo": "video",
+    "banco": "archive",
+    "id": "carving_magic",
+    "titulo": "Carving Magic (Swift and Company, c. 1957)",
+    "autor": "Prelinger Archives",
+    "licenca": "Domínio público",
+    "licenca_url": "http://creativecommons.org/licenses/publicdomain/",
+    "pagina": "https://archive.org/details/carving_magic",
+    "atribuicao": "Vídeo: Carving Magic (Swift and Company, c. 1957), Prelinger Archives / Internet Archive (domínio público)",
+    "trecho": {
+      "inicio": 171.0,
+      "duracao": 6.5
+    },
+    "baixado_em": "2026-11-24T08:30:42+00:00",
+    "observacao": "Coxa separada da ave assada no prato branco, close, faca e garfo entrando. Filme Prelinger de 1950s, grão de película."
   },
   {
     "cena": "c177",
-    "arquivo": "04_visual/midia/c177.jpg",
-    "tipo": "imagem",
-    "banco": "wikimedia",
-    "id": "73693872",
-    "titulo": "Chaud-froid van kip het snijden van de kip, Bestanddeelnr 252-1842.jpg",
-    "autor": "Willem van de Poll",
-    "licenca": "CC0",
-    "licenca_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
-    "pagina": "https://commons.wikimedia.org/wiki/File:Chaud-froid_van_kip_het_snijden_van_de_kip,_Bestanddeelnr_252-1842.jpg",
-    "atribuicao": "Willem van de Poll, CC0, via Wikimedia Commons",
-    "trecho": null,
-    "baixado_em": "2026-11-24T02:31:15+00:00",
-    "observacao": "PLANO B: mãos trinchando frango, P&B (Anefo, CC0); sem pai nem crianças."
+    "arquivo": "04_visual/midia/c177.mp4",
+    "tipo": "video",
+    "banco": "archive",
+    "id": "carving_magic",
+    "titulo": "Carving Magic (Swift and Company, c. 1957)",
+    "autor": "Prelinger Archives",
+    "licenca": "Domínio público",
+    "licenca_url": "http://creativecommons.org/licenses/publicdomain/",
+    "pagina": "https://archive.org/details/carving_magic",
+    "atribuicao": "Vídeo: Carving Magic (Swift and Company, c. 1957), Prelinger Archives / Internet Archive (domínio público)",
+    "trecho": {
+      "inicio": 155.0,
+      "duracao": 6.5
+    },
+    "baixado_em": "2026-11-24T08:30:41+00:00",
+    "observacao": "Mãos de adulto trinchando ave assada a faca e garfo, sem rosto. Filme Prelinger (Swift) cor desbotada, vira P&B. Serve ao pai trinchando; o prato é peru, não frango, mas o gesto é igual."
   },
   {
     "cena": "c179",
@@ -2978,18 +3016,22 @@
   },
   {
     "cena": "c212",
-    "arquivo": "04_visual/midia/c212.jpg",
-    "tipo": "imagem",
+    "arquivo": "04_visual/midia/c212.mp4",
+    "tipo": "video",
     "banco": "pixabay",
-    "id": "2474181",
-    "titulo": "boiling over of milk, ceramic hob, hotplate, pot, milk, foaming milk, branded milk, annoying, to forget, dementia, forgetfulness, reflection, odor, milk splash, steam, boiling milk, hot, milk, milk, milk, milk, milk, boiling milk, boiling milk, boiling milk",
-    "autor": "Myriams-Fotos",
+    "id": "2344",
+    "titulo": "smoke, steam, hot, smoking, steaming, vapor, gas, gaseous, pollution",
+    "autor": "Life-Of-Vids",
     "licenca": "Pixabay Content License",
-    "licenca_url": "https://pixabay.com/service/license-summary/",
-    "pagina": "https://pixabay.com/photos/boiling-over-of-milk-ceramic-hob-2474181/",
-    "atribuicao": "Imagem: Myriams-Fotos / Pixabay",
-    "trecho": null,
-    "baixado_em": "2026-11-24T00:06:22+00:00"
+    "licenca_url": null,
+    "pagina": "https://pixabay.com/videos/id-2344/",
+    "atribuicao": "Vídeo: Life-Of-Vids / Pixabay",
+    "trecho": {
+      "inicio": 3.0,
+      "duracao": 7.0
+    },
+    "baixado_em": "2026-11-24T08:34:35+00:00",
+    "observacao": "Vapor branco subindo sobre fundo escuro; textura atemporal para vapor de leite quente."
   },
   {
     "cena": "c213",
@@ -3168,18 +3210,22 @@
   },
   {
     "cena": "c228",
-    "arquivo": "04_visual/midia/c228.jpg",
-    "tipo": "imagem",
+    "arquivo": "04_visual/midia/c228.mp4",
+    "tipo": "video",
     "banco": "pixabay",
-    "id": "2178442",
-    "titulo": "kettles, boil, burn, tea pots, cook, cooking, fire, flame, food, heat, hot, kitchen, gas stove, cooking, cooking, cooking, cooking, fire, food, kitchen, kitchen, kitchen, kitchen, kitchen",
-    "autor": "Pexels",
+    "id": "75546",
+    "titulo": "gas, stove, fire, flame, heat, combustion, ignition",
+    "autor": "EtoileOfficial",
     "licenca": "Pixabay Content License",
-    "licenca_url": "https://pixabay.com/service/license-summary/",
-    "pagina": "https://pixabay.com/photos/kettles-boil-burn-tea-pots-cook-2178442/",
-    "atribuicao": "Imagem: Pexels / Pixabay",
-    "trecho": null,
-    "baixado_em": "2026-11-24T00:06:24+00:00"
+    "licenca_url": null,
+    "pagina": "https://pixabay.com/videos/id-75546/",
+    "atribuicao": "Vídeo: EtoileOfficial / Pixabay",
+    "trecho": {
+      "inicio": 0.0,
+      "duracao": 6.0
+    },
+    "baixado_em": "2026-11-24T08:34:30+00:00",
+    "observacao": "Boca de fogão a gás com chama azul, close; queimador de aço sem marca de época."
   },
   {
     "cena": "c229",

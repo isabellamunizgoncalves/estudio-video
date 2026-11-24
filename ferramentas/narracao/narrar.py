@@ -108,6 +108,12 @@ def semear_do_cache(pasta_etapa: Path, trabalho: Path, blocos, voz: str) -> int:
         orig = cache / f"bloco_{b.indice:03d}.flac"
         if not orig.exists() or list(trabalho.glob(f"bloco_{b.indice:03d}_t*.wav")):
             continue
+        # O cache é por índice, mas o roteiro muda entre versões e o índice não acompanha:
+        # sem esta conferência, um trecho cortado do roteiro volta narrado da sessão anterior.
+        guardado = orig.with_suffix(".txt")
+        if guardado.exists() and guardado.read_text(encoding="utf-8") != b.texto:
+            print(f"  bloco {b.indice:03d}: o texto mudou desde a gravação; cache ignorado")
+            continue
         destino = trabalho / f"bloco_{b.indice:03d}_t1.wav"
         subprocess.run(["ffmpeg", "-v", "error", "-y", "-i", str(orig), str(destino)], check=True)
         trazidos += 1
@@ -116,12 +122,14 @@ def semear_do_cache(pasta_etapa: Path, trabalho: Path, blocos, voz: str) -> int:
     return trazidos
 
 
-def guardar_no_cache(arq: Path, pasta_etapa: Path, indice: int, voz: str) -> None:
-    """Guarda a tomada aprovada em FLAC, para a próxima sessão não regravar."""
+def guardar_no_cache(arq: Path, pasta_etapa: Path, indice: int, voz: str, texto: str = "") -> None:
+    """Guarda a tomada aprovada em FLAC, com o texto que ela narra, para a próxima sessão
+    não regravar — e para não reaproveitar a tomada se o roteiro mudar."""
     cache = pasta_cache(pasta_etapa, voz)
     cache.mkdir(parents=True, exist_ok=True)
     subprocess.run(["ffmpeg", "-v", "error", "-y", "-i", str(arq), "-c:a", "flac",
                     str(cache / f"bloco_{indice:03d}.flac")], check=True)
+    (cache / f"bloco_{indice:03d}.txt").write_text(texto, encoding="utf-8")
 
 
 def narrar_bloco(bloco: Bloco, pasta: Path, cfg: dict, idioma: str, ppm: int, tom: str, voz: str, modelo: str):
@@ -258,7 +266,7 @@ def main() -> None:
         final = trabalho / f"bloco_{b.indice:03d}.wav"
         dur = aparar(arq, final, ini, fim)
         if r.aprovado:
-            guardar_no_cache(arq, pasta, b.indice, voz)
+            guardar_no_cache(arq, pasta, b.indice, voz, b.texto)
         resultados.append({
             "indice": b.indice, "texto": b.texto, "primeiro_paragrafo": b.primeiro_paragrafo,
             "arquivo": proj.rel(final), "duracao": round(dur, 3), "tomadas": t,

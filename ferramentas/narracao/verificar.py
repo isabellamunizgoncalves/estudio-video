@@ -265,7 +265,11 @@ def verificar(audio: Path, texto: str, idioma: str, palavras_por_minuto: int,
 
     # Inserções longas no começo = instrução lida em voz alta; faltas no fim = corte.
     ops = sm.get_opcodes()
-    if ops and ops[0][0] in ("insert", "replace") and (ops[0][4] - ops[0][3]) >= 4:
+    # No início o limite é baixo (2 subtokens de SOBRA, não de tamanho): uma fórmula curta
+    # lida a mais — «Fermez les yeux», 3 subtokens — passava sob o limite antigo de 4 e a
+    # nota não acusava, porque a similaridade mede cobertura do roteiro e ignora inserção.
+    # Mede-se a sobra para que trocar palavra por palavra (replace 2↔2) não vire alarme.
+    if ops and ops[0][0] in ("insert", "replace") and (ops[0][4] - ops[0][3]) - (ops[0][2] - ops[0][1]) >= 2:
         r.problemas.append(f"fala extra no início: «{' '.join(b_escrito[ops[0][3]:ops[0][4]][:12])}»")
     if ops and ops[-1][0] in ("delete", "replace") and (ops[-1][2] - ops[-1][1]) >= 3:
         r.problemas.append(f"final cortado: faltou «{' '.join(a_escrito[ops[-1][1]:ops[-1][2]][:12])}»")
