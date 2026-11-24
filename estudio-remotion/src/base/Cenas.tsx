@@ -1,6 +1,6 @@
 // Cenas da base: só o que é igual em todo canal. O visual vem do pacote de estilo.
 import React from "react";
-import { AbsoluteFill, Img, interpolate, Loop, OffthreadVideo, staticFile, useCurrentFrame, useVideoConfig } from "remotion";
+import { AbsoluteFill, Freeze, Img, interpolate, Loop, OffthreadVideo, staticFile, useCurrentFrame, useVideoConfig } from "remotion";
 import type { Camada, Cena, Movimento, Tema } from "../tipos";
 import type { EstiloVisual } from "../estilos/tipos";
 import { useEntrada } from "./util";
@@ -92,6 +92,20 @@ export const CenaMidia: React.FC<{ cena: Cena; tema: Tema; estilo: EstiloVisual 
   );
 };
 
+/** Peça de colagem: foto, ou o 1º quadro parado se a cena de origem virou vídeo
+ *  (assim uma troca de mídia não quebra o render de quem a usa como camada). */
+const PecaMidia: React.FC<{ src: string }> = ({ src }) => {
+  const style: React.CSSProperties = { width: "100%", display: "block" };
+  if (/\.(mp4|mov|webm|mkv)$/i.test(src)) {
+    return (
+      <Freeze frame={0}>
+        <OffthreadVideo src={staticFile(src)} muted style={style} />
+      </Freeze>
+    );
+  }
+  return <Img src={staticFile(src)} style={style} />;
+};
+
 const PecaColagem: React.FC<{ camada: Camada; indice: number; tema: Tema; estilo: EstiloVisual; idCena: string }> = ({
   camada,
   indice,
@@ -114,7 +128,7 @@ const PecaColagem: React.FC<{ camada: Camada; indice: number; tema: Tema; estilo
       }}
     >
       <Moldura tema={tema} idCena={`${idCena}-${indice}`} entrada={e} compacta>
-        <Img src={staticFile(camada.src)} style={{ width: "100%", display: "block" }} />
+        <PecaMidia src={camada.src} />
       </Moldura>
     </div>
   );
