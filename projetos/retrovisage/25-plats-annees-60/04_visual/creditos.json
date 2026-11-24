@@ -408,6 +408,21 @@
     "baixado_em": "2026-11-23T23:40:04+00:00"
   },
   {
+    "cena": "c030",
+    "arquivo": "04_visual/midia/c030.jpg",
+    "tipo": "imagem",
+    "banco": "pixabay",
+    "id": "9195259",
+    "titulo": "child, game, learn, play, toy, wooden toys",
+    "autor": "Tho-Ge",
+    "licenca": "Pixabay Content License",
+    "licenca_url": "https://pixabay.com/service/license-summary/",
+    "pagina": "https://pixabay.com/photos/child-game-learn-play-toy-9195259/",
+    "atribuicao": "Imagem: Tho-Ge / Pixabay",
+    "trecho": null,
+    "baixado_em": "2026-11-24T00:18:54+00:00"
+  },
+  {
     "cena": "c031",
     "arquivo": "04_visual/midia/c031.mp4",
     "tipo": "video",
@@ -1692,6 +1707,21 @@
     "baixado_em": "2026-11-23T20:17:01+00:00"
   },
   {
+    "cena": "c137",
+    "arquivo": "04_visual/midia/c137.jpg",
+    "tipo": "imagem",
+    "banco": "wikimedia",
+    "id": "66416118",
+    "titulo": "Groentenstal voor café La Pointe St Eustace, Rue de Montmartre, Parijs, Bestanddeelnr 255-9987.jpg",
+    "autor": "Willem van de Poll",
+    "licenca": "CC0",
+    "licenca_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+    "pagina": "https://commons.wikimedia.org/wiki/File:Groentenstal_voor_caf%C3%A9_La_Pointe_St_Eustace,_Rue_de_Montmartre,_Parijs,_Bestanddeelnr_255-9987.jpg",
+    "atribuicao": "Willem van de Poll, CC0, via Wikimedia Commons",
+    "trecho": null,
+    "baixado_em": "2026-11-24T00:19:01+00:00"
+  },
+  {
     "cena": "c138",
     "arquivo": "04_visual/midia/c138.jpg",
     "tipo": "imagem",
@@ -1705,6 +1735,21 @@
     "atribuicao": "Imagem: congerdesign / Pixabay",
     "trecho": null,
     "baixado_em": "2026-11-24T00:04:39+00:00"
+  },
+  {
+    "cena": "c139",
+    "arquivo": "04_visual/midia/c139.jpg",
+    "tipo": "imagem",
+    "banco": "wikimedia",
+    "id": "131140225",
+    "titulo": "Marchande des quatre saisons. PH1033.jpg",
+    "autor": "Vert, Louis (Paris, 05–09–1865 - Saint-Ouen-l'Aumône, 20–09–1924), photographe",
+    "licenca": "CC0",
+    "licenca_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+    "pagina": "https://commons.wikimedia.org/wiki/File:Marchande_des_quatre_saisons._PH1033.jpg",
+    "atribuicao": "Vert, Louis (Paris, 05–09–1865 - Saint-Ouen-l'Aumône, 20–09–1924), photographe, CC0, via Wikimedia Commons",
+    "trecho": null,
+    "baixado_em": "2026-11-24T00:19:02+00:00"
   },
   {
     "cena": "c141",
@@ -1984,6 +2029,21 @@
     "atribuicao": "Imagem: RitaE / Pixabay",
     "trecho": null,
     "baixado_em": "2026-11-23T20:17:30+00:00"
+  },
+  {
+    "cena": "c165",
+    "arquivo": "04_visual/midia/c165.jpg",
+    "tipo": "imagem",
+    "banco": "wikimedia",
+    "id": "26448264",
+    "titulo": "Stanley Kubrick - African American children at table cph.3d02356.jpg",
+    "autor": "Stanley Kubrick",
+    "licenca": "Public domain",
+    "licenca_url": "",
+    "pagina": "https://commons.wikimedia.org/wiki/File:Stanley_Kubrick_-_African_American_children_at_table_cph.3d02356.jpg",
+    "atribuicao": "Stanley Kubrick, Public domain, via Wikimedia Commons",
+    "trecho": null,
+    "baixado_em": "2026-11-24T00:33:01+00:00"
   },
   {
     "cena": "c166",

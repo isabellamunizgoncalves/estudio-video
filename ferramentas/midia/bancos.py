@@ -17,10 +17,41 @@ import html
 import os
 import re
 
+import time
+
 import requests
 
 UA = {"User-Agent": "estudio-video/1.0 (ferramenta de producao de video)"}
 TEMPO = 25
+
+
+def _pedir(banco: str, url: str, params: dict, tentativas: int = 3):
+    """GET com repetição curta. Banco instável (o Openverse responde 504/500 e o Wikimedia
+    429) não pode derrubar a busca inteira nem passar por «não achei nada»: devolve None e
+    avisa, para a cena ficar registrada como sem material em vez de silenciosamente vazia."""
+    espera = 2
+    for t in range(tentativas):
+        try:
+            r = requests.get(url, headers=UA, params=params, timeout=TEMPO)
+        except Exception as exc:
+            if t == tentativas - 1:
+                print(f"    ⚠ {banco}: {type(exc).__name__} — banco inacessível, não é ausência de resultado")
+                return None
+        else:
+            if r.ok:
+                return r
+            if r.status_code not in (429, 500, 502, 503, 504) or t == tentativas - 1:
+                print(f"    ⚠ {banco}: HTTP {r.status_code} — banco indisponível, não é ausência de resultado")
+                return None
+        time.sleep(espera)
+        espera *= 2
+    return None
+
+
+def _aviso(banco: str, r) -> None:
+    """Banco fora do ar não pode parecer «não achei nada»: foi assim que o 504 do
+    Openverse e o 429 do Wikimedia passaram meses sem ninguém ver."""
+    print(f"    ⚠ {banco}: HTTP {r.status_code} — banco indisponível, não é ausência de resultado")
 
 
 def _limpar(t: str | None) -> str:
@@ -121,12 +152,19 @@ def wikimedia(q: str, tipo: str, n: int) -> list[dict]:
 def openverse(q: str, tipo: str, n: int) -> list[dict]:
     if tipo == "video":
         return []
-    r = requests.get("https://api.openverse.org/v1/images/", headers=UA, timeout=TEMPO,
-                     params={"q": q, "page_size": n, "license_type": "commercial,modification", "aspect_ratio": "wide,square"})
-    if not r.ok:
+    # A busca de imagens do Openverse responde 504 quando recebe license_type ou
+    # aspect_ratio: o índice estoura com filtro. Pedimos sem filtro e separamos a licença
+    # aqui, senão o banco inteiro devolve vazio como se não houvesse resultado.
+    r = _pedir("openverse", "https://api.openverse.org/v1/images/", {"q": q, "page_size": max(n * 3, 20)})
+    if r is None:
         return []
+    livres = {"cc0", "pdm", "by", "by-sa"}
     out = []
     for f in r.json().get("results", []):
+        if (f.get("license") or "").lower() not in livres:
+            continue
+        if len(out) >= n:
+            break
         lic = f"CC {f.get('license', '').upper()} {f.get('license_version') or ''}".strip()
         if f.get("license") in ("cc0", "pdm"):
             lic = "Domínio público" if f["license"] == "pdm" else "CC0"
@@ -139,20 +177,27 @@ def openverse(q: str, tipo: str, n: int) -> list[dict]:
 
 # ------------------------------------------------------------------ Internet Archive
 def archive(q: str, tipo: str, n: int) -> list[dict]:
-    if tipo == "imagem":
-        return []
-    r = requests.get("https://archive.org/advancedsearch.php", headers=UA, timeout=TEMPO, params={
-        "q": f"({q}) AND mediatype:(movies) AND licenseurl:*", "fl[]": ["identifier", "title", "licenseurl", "creator", "year"],
+    # O Archive serve imagem e filme. Antes só filme era consultado, o que deixava de fora
+    # a melhor fonte de FOTO de época — justamente o que um canal de nostalgia mais usa.
+    midia = "image" if tipo == "imagem" else "movies"
+    r = _pedir("archive", "https://archive.org/advancedsearch.php", {
+        "q": f"({q}) AND mediatype:({midia}) AND licenseurl:*", "fl[]": ["identifier", "title", "licenseurl", "creator", "year"],
         "rows": n, "output": "json", "sort[]": "downloads desc"})
-    if not r.ok:
+    if r is None:
         return []
     out = []
     for d in r.json().get("response", {}).get("docs", []):
         ident = d["identifier"]
-        licurl = d.get("licenseurl") or ""
+        licurl = (d.get("licenseurl") or "")
+        # NC proíbe uso comercial e ND proíbe editar o material: os dois inviabilizam um
+        # vídeo monetizado. O Archive devolve muito disso, então o corte é aqui, antes de
+        # a opção chegar ao pesquisador.
+        fatias = [x for x in licurl.lower().rstrip("/").split("/") if x]
+        if any(p in ("nc", "nd", "by-nc", "by-nd", "by-nc-sa", "by-nc-nd") for p in fatias):
+            continue
         lic = "Domínio público" if ("publicdomain" in licurl or "mark" in licurl) else ("CC " + licurl.rstrip("/").split("/")[-2].upper() if "creativecommons" in licurl else "ver página")
         criador = d.get("creator") if isinstance(d.get("creator"), str) else ", ".join(d.get("creator") or [])
-        out.append({"banco": "archive", "id": ident, "tipo": "video", "titulo": d.get("title"),
+        out.append({"banco": "archive", "id": ident, "tipo": tipo if tipo in ("imagem", "video") else "video", "titulo": d.get("title"),
                     "pagina": f"https://archive.org/details/{ident}", "download": None,  # resolvido no download
                     "previa": f"https://archive.org/services/img/{ident}", "autor": criador, "ano": str(d.get("year") or ""),
                     "licenca": lic, "licenca_url": licurl, "atribuicao": f"{criador or d.get('title')} — Internet Archive ({lic})"})
