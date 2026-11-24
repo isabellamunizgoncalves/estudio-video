@@ -112,6 +112,22 @@ const legivel = (cor: string, fundo: string, alternativa: string, minimo = 1.25)
   return razao >= minimo ? cor : alternativa;
 };
 
+const contraste = (cor: string, fundo: string): number => {
+  const a = luminancia(cor);
+  const b = luminancia(fundo);
+  if (a === null || b === null) return 0;
+  return (Math.max(a, b) + 0.05) / (Math.min(a, b) + 0.05);
+};
+
+/** Para o TÍTULO da cartela: escolhe, entre as cores da paleta, a de maior contraste com o
+ *  fundo — e não a primeira que passa de um limite. O limite binário errava em dois dos
+ *  quatro fundos do canal: sobre a mostarda o laranja dava 1,70:1 e ficava, porque passava
+ *  do mínimo de 1,25; o café dá 5,83:1. Sobre o café, o laranja dava 3,43:1 e o creme dá
+ *  10,27:1. Fita e faixas continuam com `legivel`, que preserva a cor de identidade do
+ *  canal: ali a cor importa mais que o contraste, no título é o contrário. */
+const maisLegivel = (fundo: string, candidatas: string[]): string =>
+  candidatas.reduce((a, b) => (contraste(b, fundo) > contraste(a, fundo) ? b : a));
+
 // ------------------------------------------------------------------ contrato
 const Fundo: EstiloVisual["Fundo"] = ({ tema, cor, idCena }) => {
   const base = cor || [tema.cores.fundo, tema.cores.quente, tema.cores.destaque, tema.cores.papel][Math.floor(semente(idCena) * 4)];
@@ -162,7 +178,7 @@ const CenaTitulo: EstiloVisual["CenaTitulo"] = ({ cena, tema }) => {
   const { width } = useVideoConfig();
   const tamanho = width * ((cena.titulo ?? "").length > 28 ? 0.055 : 0.075);
   const fundoCartela = cena.fundo ?? tema.cores.fundo;
-  const corTitulo = legivel(tema.cores.destaque, fundoCartela, tema.cores.papel);
+  const corTitulo = maisLegivel(fundoCartela, [tema.cores.destaque, tema.cores.papel, tema.cores.textoEscuro]);
   const corFita = legivel(tema.cores.quente, fundoCartela, tema.cores.papel);
   const cores = faixasDo(tema).map((c) => legivel(c, fundoCartela, tema.cores.papel));
   return (
@@ -181,7 +197,9 @@ const CenaTitulo: EstiloVisual["CenaTitulo"] = ({ cena, tema }) => {
             fontFamily: pilha(tema.fontes.titulo),
             fontSize: tamanho,
             color: corTitulo,
-            textShadow: `5px 5px 0 ${tema.cores.textoEscuro}`,
+            // A sombra deslocada é do logo do canal, mas sombra café sob título café
+            // (o que acontece sobre a mostarda) vira um borrão: ali ela vai de creme.
+            textShadow: `5px 5px 0 ${corTitulo === tema.cores.textoEscuro ? tema.cores.papel : tema.cores.textoEscuro}`,
             textAlign: "center",
             lineHeight: 1.1,
             transform: `scale(${0.85 + 0.15 * e})`,
