@@ -51,6 +51,14 @@ visual:
   bancos: [wikimedia, archive, openverse, pexels, pixabay]
   idioma_busca: en            # buscas nos bancos funcionam melhor em inglês (+ termos em francês)
   plano_medio_segundos: 5     # duração média de cada plano
+  geracao:                    # ferramentas/midia/gerar.py — ÚLTIMO recurso, quando o acervo não tem
+    # Sufixo de estilo do prompt. Em inglês: é a língua em que o modelo foi treinado.
+    # Imagem gerada ilustra, não documenta: use só em cena encenada que não existe em
+    # acervo livre (gesto doméstico, família à mesa, retrato). Arquivo real sempre vence.
+    estilo: >-
+      Black and white documentary photograph, France, early 1960s, modest working-class
+      home, period-correct objects only, nothing modern in frame, natural window light,
+      35mm film grain, slight vignetting, no text anywhere
 
 musica:
   estilo: Accordéon, chanson française instrumentale, piano doux, années 50–60. Jamais de paroles.
