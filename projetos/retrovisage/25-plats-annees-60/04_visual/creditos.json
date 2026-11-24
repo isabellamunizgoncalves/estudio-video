@@ -1002,18 +1002,22 @@
   },
   {
     "cena": "c068",
-    "arquivo": "04_visual/midia/c068.jpg",
-    "tipo": "imagem",
+    "arquivo": "04_visual/midia/c068.mp4",
+    "tipo": "video",
     "banco": "pixabay",
-    "id": "2178442",
-    "titulo": "kettles, boil, burn, tea pots, cook, cooking, fire, flame, food, heat, hot, kitchen, gas stove, cooking, cooking, cooking, cooking, fire, food, kitchen, kitchen, kitchen, kitchen, kitchen",
-    "autor": "Pexels",
+    "id": "61956",
+    "titulo": "flour, cake, dessert, sweets, burning, pastries, baked, cooking, bakery, cook, kitchen, food, meal, pastry shop, shortbread dough, kneading dough, brittle, ingredients",
+    "autor": "krzys16",
     "licenca": "Pixabay Content License",
-    "licenca_url": "https://pixabay.com/service/license-summary/",
-    "pagina": "https://pixabay.com/photos/kettles-boil-burn-tea-pots-cook-2178442/",
-    "atribuicao": "Imagem: Pexels / Pixabay",
-    "trecho": null,
-    "baixado_em": "2026-11-23T23:40:09+00:00"
+    "licenca_url": null,
+    "pagina": "https://pixabay.com/videos/id-61956/",
+    "atribuicao": "Vídeo: krzys16 / Pixabay",
+    "trecho": {
+      "inicio": 0.0,
+      "duracao": 7.0
+    },
+    "baixado_em": "2026-11-24T08:35:18+00:00",
+    "observacao": "Mãos sovando massa sobre tábua de madeira, close sem rosto; vai para P&B."
   },
   {
     "cena": "c069",
@@ -1098,18 +1102,22 @@
   },
   {
     "cena": "c075",
-    "arquivo": "04_visual/midia/c075.jpg",
-    "tipo": "imagem",
+    "arquivo": "04_visual/midia/c075.mp4",
+    "tipo": "video",
     "banco": "pixabay",
-    "id": "2635521",
-    "titulo": "bugnes, tradition, donuts, vegan, without eggs, without the butter, without milk, french, home made, sweet, bugnes, bugnes, bugnes, bugnes, bugnes, donuts",
-    "autor": "ElodiV",
+    "id": "318785",
+    "titulo": "hot cooking oil, sizzling frying pan, close up food texture, oil bubbles, cooking background, kitchen atmosphere, frying sound asmr, golden oil surface, macro food video, slow motion splash, gourmet cooking, culinary footage, texture detail, cozy kitchen vibe, home cooking, restaurant kitchen, abstract liquid motion, loopable background, minimal food scene, high detail macro, rich warm tones, food commercial look, realistic texture, recipe video background, frying oil surface",
+    "autor": "Solarselle77",
     "licenca": "Pixabay Content License",
-    "licenca_url": "https://pixabay.com/service/license-summary/",
-    "pagina": "https://pixabay.com/photos/bugnes-tradition-donuts-vegan-2635521/",
-    "atribuicao": "Imagem: ElodiV / Pixabay",
-    "trecho": null,
-    "baixado_em": "2026-11-23T20:16:00+00:00"
+    "licenca_url": null,
+    "pagina": "https://pixabay.com/videos/id-318785/",
+    "atribuicao": "Vídeo: Solarselle77 / Pixabay",
+    "trecho": {
+      "inicio": 0.0,
+      "duracao": 5.0
+    },
+    "baixado_em": "2026-11-24T08:35:22+00:00",
+    "observacao": "Óleo borbulhando na frigideira, close; textura de fritura."
   },
   {
     "cena": "c076",
@@ -1562,18 +1570,22 @@
   },
   {
     "cena": "c108",
-    "arquivo": "04_visual/midia/c108.jpg",
-    "tipo": "imagem",
+    "arquivo": "04_visual/midia/c108.mp4",
+    "tipo": "video",
     "banco": "pixabay",
-    "id": "3597348",
-    "titulo": "kitchen, cook, pot, cooking pot, stove, steam, hot, kitchen, kitchen, cooking pot, cooking pot, stove, stove, stove, stove, stove",
-    "autor": "Bru-nO",
+    "id": "267",
+    "titulo": "pot, cooking, steam, steaming, hot, food, kettle, preparation, kitchen, sepia, cook, heat, warm",
+    "autor": "Life-Of-Vids",
     "licenca": "Pixabay Content License",
-    "licenca_url": "https://pixabay.com/service/license-summary/",
-    "pagina": "https://pixabay.com/photos/kitchen-cook-pot-cooking-pot-stove-3597348/",
-    "atribuicao": "Imagem: Bru-nO / Pixabay",
-    "trecho": null,
-    "baixado_em": "2026-11-23T20:16:34+00:00"
+    "licenca_url": null,
+    "pagina": "https://pixabay.com/videos/id-267/",
+    "atribuicao": "Vídeo: Life-Of-Vids / Pixabay",
+    "trecho": {
+      "inicio": 3.0,
+      "duracao": 7.0
+    },
+    "baixado_em": "2026-11-24T08:36:04+00:00",
+    "observacao": "Vapor subindo de panela escura sobre fundo claro; panela de hoje, sem rostos."
   },
   {
     "cena": "c110",
@@ -1850,18 +1862,22 @@
   },
   {
     "cena": "c129",
-    "arquivo": "04_visual/midia/c129.jpg",
-    "tipo": "imagem",
+    "arquivo": "04_visual/midia/c129.mp4",
+    "tipo": "video",
     "banco": "pixabay",
-    "id": "109863",
-    "titulo": "supermarket, shopping, food, market, were, flesh, supermarket, supermarket, supermarket, supermarket, supermarket",
-    "autor": "Karamo",
+    "id": "120160",
+    "titulo": "pork belly, butcher shop, food, meat, pork, barbecue, bbq, republic of korea, korean butcher shop, beef, exhibition, pig",
+    "autor": "killy555",
     "licenca": "Pixabay Content License",
-    "licenca_url": "https://pixabay.com/service/license-summary/",
-    "pagina": "https://pixabay.com/photos/supermarket-shopping-food-market-109863/",
-    "atribuicao": "Imagem: Karamo / Pixabay",
-    "trecho": null,
-    "baixado_em": "2026-11-23T20:16:52+00:00"
+    "licenca_url": null,
+    "pagina": "https://pixabay.com/videos/id-120160/",
+    "atribuicao": "Vídeo: killy555 / Pixabay",
+    "trecho": {
+      "inicio": 0.0,
+      "duracao": 7.0
+    },
+    "baixado_em": "2026-11-24T08:35:40+00:00",
+    "observacao": "Vitrine refrigerada de supermercado com bandejas de carne embaladas em plástico; moderno de propósito."
   },
   {
     "cena": "c130",
@@ -2036,18 +2052,22 @@
   },
   {
     "cena": "c142",
-    "arquivo": "04_visual/midia/c142.jpg",
-    "tipo": "imagem",
+    "arquivo": "04_visual/midia/c142.mp4",
+    "tipo": "video",
     "banco": "pixabay",
-    "id": "3040924",
-    "titulo": "food, key, spoon, hot, healthy, cup, wood, wooden, soup, table, delicious, enjoy the meal, close up, tasty, bun, meal, loaf, yummy, bread slice, napkin, warm, outdoors, nourishment, simple food, pumpkin soup, spartan, soup, soup, soup, soup, soup, pumpkin soup, pumpkin soup",
-    "autor": "suju-foto",
+    "id": "76649",
+    "titulo": "semolina, porridge with milk, dish, kitchen, food, cook, cereals, iron, stove, cooking process, stir, spoon, breakfast, lean, rustic, healthy, diet",
+    "autor": "misskursovie2013",
     "licenca": "Pixabay Content License",
-    "licenca_url": "https://pixabay.com/service/license-summary/",
-    "pagina": "https://pixabay.com/photos/food-key-spoon-hot-healthy-cup-3040924/",
-    "atribuicao": "Imagem: suju-foto / Pixabay",
-    "trecho": null,
-    "baixado_em": "2026-11-23T20:17:03+00:00"
+    "licenca_url": null,
+    "pagina": "https://pixabay.com/videos/id-76649/",
+    "atribuicao": "Vídeo: misskursovie2013 / Pixabay",
+    "trecho": {
+      "inicio": 0.0,
+      "duracao": 7.0
+    },
+    "baixado_em": "2026-11-24T08:35:27+00:00",
+    "observacao": "Tigela esmaltada branca com creme espesso e pálido; peça de época, serve à panade."
   },
   {
     "cena": "c143",
@@ -2177,18 +2197,22 @@
   },
   {
     "cena": "c151",
-    "arquivo": "04_visual/midia/c151.jpg",
-    "tipo": "imagem",
+    "arquivo": "04_visual/midia/c151.mp4",
+    "tipo": "video",
     "banco": "pixabay",
-    "id": "767292",
-    "titulo": "cook, pot, vegetables, vegetable top, vegetable broth, wooden spoon, vegetable broth, vegetable broth, vegetable broth, vegetable broth, vegetable broth",
-    "autor": "Hans",
+    "id": "237019",
+    "titulo": "soup, plate, table, tasty, kitchen, nutrition, pot, bowl, fresh",
+    "autor": "TAMGRA",
     "licenca": "Pixabay Content License",
-    "licenca_url": "https://pixabay.com/service/license-summary/",
-    "pagina": "https://pixabay.com/photos/cook-pot-vegetables-vegetable-top-767292/",
-    "atribuicao": "Imagem: Hans / Pixabay",
-    "trecho": null,
-    "baixado_em": "2026-11-23T20:17:10+00:00"
+    "licenca_url": null,
+    "pagina": "https://pixabay.com/videos/id-237019/",
+    "atribuicao": "Vídeo: TAMGRA / Pixabay",
+    "trecho": {
+      "inicio": 0.0,
+      "duracao": 7.0
+    },
+    "baixado_em": "2026-11-24T08:35:13+00:00",
+    "observacao": "Colher de pau mexendo caldo espesso e alaranjado com ervas, close de panela; gesto atemporal."
   },
   {
     "cena": "c152",
@@ -2409,18 +2433,22 @@
   },
   {
     "cena": "c169",
-    "arquivo": "04_visual/midia/c169.jpg",
-    "tipo": "imagem",
+    "arquivo": "04_visual/midia/c169.mp4",
+    "tipo": "video",
     "banco": "pixabay",
-    "id": "5020495",
-    "titulo": "store, sausage, market, food, meat, germany, brown meat",
-    "autor": "Flotograph",
+    "id": "15421",
+    "titulo": "butcher, meat, food, asia, fresh market",
+    "autor": "waterlettuce",
     "licenca": "Pixabay Content License",
-    "licenca_url": "https://pixabay.com/service/license-summary/",
-    "pagina": "https://pixabay.com/photos/store-sausage-market-food-meat-5020495/",
-    "atribuicao": "Imagem: Flotograph / Pixabay",
-    "trecho": null,
-    "baixado_em": "2026-11-23T20:17:32+00:00"
+    "licenca_url": null,
+    "pagina": "https://pixabay.com/videos/id-15421/",
+    "atribuicao": "Vídeo: waterlettuce / Pixabay",
+    "trecho": {
+      "inicio": 0.0,
+      "duracao": 7.0
+    },
+    "baixado_em": "2026-11-24T08:35:43+00:00",
+    "observacao": "Balcão de açougue com carnes, balança e embutidos pendurados, sem rostos; moderno de propósito."
   },
   {
     "cena": "c170",
@@ -2620,18 +2648,22 @@
   },
   {
     "cena": "c183",
-    "arquivo": "04_visual/midia/c183.jpg",
-    "tipo": "imagem",
+    "arquivo": "04_visual/midia/c183.mp4",
+    "tipo": "video",
     "banco": "pixabay",
-    "id": "1724472",
-    "titulo": "antiquariat, cookbook old, cookbook antiquarian, a book, antique cookbook, cookbook, cookbook, cookbook, cookbook, cookbook, cookbook",
-    "autor": "Detmold",
+    "id": "4878",
+    "titulo": "book, reading, leaf through, pages, hands, literature, education, to read",
+    "autor": "klimkin",
     "licenca": "Pixabay Content License",
-    "licenca_url": "https://pixabay.com/service/license-summary/",
-    "pagina": "https://pixabay.com/photos/antiquariat-cookbook-old-1724472/",
-    "atribuicao": "Imagem: Detmold / Pixabay",
-    "trecho": null,
-    "baixado_em": "2026-11-23T20:19:10+00:00"
+    "licenca_url": null,
+    "pagina": "https://pixabay.com/videos/id-4878/",
+    "atribuicao": "Vídeo: klimkin / Pixabay",
+    "trecho": {
+      "inicio": 0.0,
+      "duracao": 7.0
+    },
+    "baixado_em": "2026-11-24T08:35:35+00:00",
+    "observacao": "Mãos folheando livro aberto, sem rosto; cena de hoje de propósito."
   },
   {
     "cena": "c184",
@@ -3384,18 +3416,22 @@
   },
   {
     "cena": "c243",
-    "arquivo": "04_visual/midia/c243.jpg",
-    "tipo": "imagem",
+    "arquivo": "04_visual/midia/c243.mp4",
+    "tipo": "video",
     "banco": "pixabay",
-    "id": "2619380",
-    "titulo": "grocery store, supermarket, retail, aisle, market, store, food, shop, grocery, shopping, consumer, business, products, groceries, grocery store, grocery store, supermarket, supermarket, supermarket, supermarket, supermarket, store, grocery",
-    "autor": "ccipeggy",
+    "id": "366932",
+    "titulo": "ai generated, woman, shopping, supermarket, market, purchasing, food, store, business, retail, grocery, shop, marketplace, fresh, grocery cart, trolley, buy, basket, customer",
+    "autor": "mycuppatea",
     "licenca": "Pixabay Content License",
-    "licenca_url": "https://pixabay.com/service/license-summary/",
-    "pagina": "https://pixabay.com/photos/grocery-store-supermarket-retail-2619380/",
-    "atribuicao": "Imagem: ccipeggy / Pixabay",
-    "trecho": null,
-    "baixado_em": "2026-11-23T20:18:43+00:00"
+    "licenca_url": null,
+    "pagina": "https://pixabay.com/videos/id-366932/",
+    "atribuicao": "Vídeo: mycuppatea / Pixabay",
+    "trecho": {
+      "inicio": 0.0,
+      "duracao": 5.0
+    },
+    "baixado_em": "2026-11-24T08:35:49+00:00",
+    "observacao": "Corredor de supermercado visto de trás, mulher com carrinho; moderno de propósito."
   },
   {
     "cena": "c244",
@@ -3414,18 +3450,22 @@
   },
   {
     "cena": "c245",
-    "arquivo": "04_visual/midia/c245.jpg",
-    "tipo": "imagem",
+    "arquivo": "04_visual/midia/c245.mp4",
+    "tipo": "video",
     "banco": "pixabay",
-    "id": "569070",
-    "titulo": "bell pepper, slicing, culinary, capsicum, red bell pepper, red pepper, pepper, sweet pepper, cutting, ingredients, food, vegetables, cutting board, kitchen, food preparation, pepper, kitchen, kitchen, kitchen, kitchen, kitchen",
-    "autor": "JESHOOTS-com",
+    "id": "11230",
+    "titulo": "onion, cut, hands, knife, cook, prepare, food, kitchen, close-up",
+    "autor": "klimkin",
     "licenca": "Pixabay Content License",
-    "licenca_url": "https://pixabay.com/service/license-summary/",
-    "pagina": "https://pixabay.com/photos/bell-pepper-slicing-culinary-569070/",
-    "atribuicao": "Imagem: JESHOOTS-com / Pixabay",
-    "trecho": null,
-    "baixado_em": "2026-11-23T20:18:44+00:00"
+    "licenca_url": null,
+    "pagina": "https://pixabay.com/videos/id-11230/",
+    "atribuicao": "Vídeo: klimkin / Pixabay",
+    "trecho": {
+      "inicio": 0.0,
+      "duracao": 7.0
+    },
+    "baixado_em": "2026-11-24T08:35:31+00:00",
+    "observacao": "Mãos jovens cortando cebola roxa em tábua; cena de hoje de propósito."
   },
   {
     "cena": "c247",
