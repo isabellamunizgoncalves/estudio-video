@@ -1,0 +1,6143 @@
+{
+  "narracao": "03_narracao/narracao_v04.json",
+  "duracao_narracao": 1242.938,
+  "plano_medio_segundos": 4.93,
+  "cenas": [
+    {
+      "id": "c001",
+      "frases": [
+        0
+      ],
+      "tipo": "midia",
+      "estilo": "tela-cheia",
+      "movimento": "pan-direita",
+      "descricao": "criança de costas subindo a escada de um prédio antigo com cartable de couro nas costas, anos 60, só o corrimão iluminado",
+      "busca": {
+        "consultas": [
+          "child leather school satchel climbing stairs 1960s france",
+          "enfant cartable escalier annees 60",
+          "cage d'escalier immeuble ancien porte palier"
+        ],
+        "tipo": "imagem",
+        "bancos": [
+          "archive",
+          "wikimedia",
+          "openverse"
+        ]
+      },
+      "pb": false,
+      "transicao": "corte"
+    },
+    {
+      "id": "c002",
+      "frases": [
+        1
+      ],
+      "tipo": "midia",
+      "estilo": "moldura",
+      "movimento": "zoom-out",
+      "descricao": "porta de cozinha fechada vista de perto, capacho, luz quente por baixo da porta",
+      "busca": {
+        "consultas": [
+          "closed kitchen door keyhole light underneath 1960s apartment",
+          "porte de cuisine fermee paillasson lumiere"
+        ],
+        "tipo": "imagem",
+        "bancos": [
+          "archive",
+          "wikimedia",
+          "openverse"
+        ]
+      },
+      "pb": false,
+      "fundo": "#4A2C1D",
+      "transicao": "fade"
+    },
+    {
+      "id": "c003",
+      "frases": [
+        2
+      ],
+      "tipo": "midia",
+      "estilo": "tela-cheia",
+      "movimento": "parado",
+      "descricao": "cebola picada dourando na manteiga numa frigideira, folha de louro, close",
+      "busca": {
+        "consultas": [
+          "onions frying in butter bay leaf close up pan",
+          "oignon qui dore dans le beurre laurier poele"
+        ],
+        "tipo": "video",
+        "bancos": [
+          "pexels",
+          "pixabay"
+        ]
+      },
+      "pb": false,
+      "transicao": "fade"
+    },
+    {
+      "id": "c004",
+      "frases": [
+        3
+      ],
+      "tipo": "midia",
+      "estilo": "tela-cheia",
+      "movimento": "zoom-in",
+      "descricao": "tampa de cocotte de ferro fundido dançando com o vapor no fogão",
+      "busca": {
+        "consultas": [
+          "cast iron pot lid rattling steam stove close up",
+          "couvercle cocotte fonte vapeur qui danse"
+        ],
+        "tipo": "video",
+        "bancos": [
+          "pexels",
+          "pixabay"
+        ]
+      },
+      "pb": false,
+      "transicao": "fade"
+    },
+    {
+      "id": "c005",
+      "frases": [
+        4
+      ],
+      "tipo": "titulo",
+      "titulo": "25 PLATS",
+      "subtitulo": "DE NOTRE ENFANCE",
+      "fundo": "#D9622B",
+      "transicao": "slide",
+      "nota_edicao": "v03: fundo laranja mantido; a cartela agora escolhe a cor do titulo que contrasta (src/estilos/retrovisage)."
+    },
+    {
+      "id": "c006",
+      "frases": [
+        5
+      ],
+      "tipo": "midia",
+      "estilo": "moldura",
+      "movimento": "pan-esquerda",
+      "descricao": "livro de cozinha francês antigo fechado sobre o buffet, capa gasta, ao lado de uma vitrine de açougue",
+      "busca": {
+        "consultas": [
+          "old worn french cookbook closed on kitchen buffet",
+          "vieux livre de cuisine usee buffet boucherie vitrine"
+        ],
+        "tipo": "imagem",
+        "bancos": [
+          "wikimedia",
+          "archive"
+        ]
+      },
+      "pb": false,
+      "fundo": "#E8A33D",
+      "transicao": "fade",
+      "prompt_geracao": "An old French cookbook lying closed on a wooden sideboard in a home kitchen, worn cloth binding frayed at the corners, no legible lettering on the cover, soft window light from the side, close framing on the book",
+      "nota_edicao": "v06: imagem gerada em cor no lugar de foto de banco moderna."
+    },
+    {
+      "id": "c007",
+      "frases": [
+        6,
+        7
+      ],
+      "tipo": "midia",
+      "estilo": "moldura",
+      "movimento": "zoom-in",
+      "descricao": "mão de avó oferecendo a colher de pau para uma criança provar, cozinha antiga",
+      "busca": {
+        "consultas": [
+          "grandmother hand offering wooden spoon child tasting kitchen",
+          "enfant goute cuillere en bois cuisine ancienne"
+        ],
+        "tipo": "imagem",
+        "bancos": [
+          "archive",
+          "wikimedia",
+          "openverse"
+        ]
+      },
+      "pb": false,
+      "transicao": "fade",
+      "fundo": "#4A2C1D",
+      "nota_edicao": "v03: foto colorida nao vira P&B (visual.md); em moldura para nao ocupar a tela inteira com foto de banco moderna. PEDIDO: substituir a midia (mao de avo oferecendo a colher a uma crianca). v06: imagem gerada em cor no lugar de foto de banco moderna.",
+      "prompt_geracao": "A grandmother's hand holding out a wooden spoon for a small child to taste, in an old kitchen; the child leans in with eyes on the spoon; close framing on the hands and the child's face, the stove blurred behind"
+    },
+    {
+      "id": "c008",
+      "frases": [
+        8,
+        9
+      ],
+      "tipo": "midia",
+      "estilo": "tela-cheia",
+      "movimento": "pan-direita",
+      "descricao": "família francesa dos anos 60 sentada à mesa da cozinha, toalha de oleado, refeição em curso",
+      "busca": {
+        "consultas": [
+          "french family at kitchen table 1960s meal oilcloth",
+          "famille francaise a table annees 60 repas cuisine"
+        ],
+        "tipo": "imagem",
+        "bancos": [
+          "archive",
+          "wikimedia",
+          "openverse"
+        ]
+      },
+      "pb": true,
+      "transicao": "fade"
+    },
+    {
+      "id": "c009",
+      "frases": [
+        10
+      ],
+      "tipo": "midia",
+      "estilo": "moldura",
+      "movimento": "zoom-out",
+      "descricao": "rua de aldeia francesa ao longo das estações, árvores e telhados, atmosfera de época",
+      "busca": {
+        "consultas": [
+          "french village street 1960s seasons trees rooftops",
+          "village francais rue annees 60 saisons"
+        ],
+        "tipo": "imagem",
+        "bancos": [
+          "archive",
+          "wikimedia",
+          "openverse"
+        ]
+      },
+      "pb": false,
+      "fundo": "#D9622B",
+      "transicao": "fade",
+      "nota_edicao": "v03: foto colorida (fachada alsaciana + 2CV) nao vira P&B (visual.md)."
+    },
+    {
+      "id": "c010",
+      "frases": [
+        11
+      ],
+      "tipo": "titulo",
+      "titulo": "LUNDI",
+      "subtitulo": "LE JOUR DES RESTES",
+      "fundo": "#4A2C1D",
+      "transicao": "slide"
+    },
+    {
+      "id": "c011",
+      "frases": [
+        12,
+        13
+      ],
+      "tipo": "midia",
+      "estilo": "tela-cheia",
+      "movimento": "pan-esquerda",
+      "descricao": "hachis parmentier gratinado num prato de louca, superfície dourada com sulcos de garfo",
+      "busca": {
+        "consultas": [
+          "hachis parmentier shepherd pie gratin golden fork lines",
+          "hachis parmentier gratine plat four"
+        ],
+        "tipo": "imagem",
+        "bancos": [
+          "pexels",
+          "pixabay"
+        ]
+      },
+      "texto_tela": {
+        "tipo": "numero",
+        "texto": "NUMÉRO UN",
+        "subtexto": "Le hachis parmentier",
+        "duracao": 2.6
+      },
+      "pb": false,
+      "transicao": "fade"
+    },
+    {
+      "id": "c012",
+      "frases": [
+        14
+      ],
+      "tipo": "midia",
+      "estilo": "tela-cheia",
+      "movimento": "zoom-in",
+      "descricao": "família numerosa rindo à mesa, pratos passando de mão em mão, anos 60",
+      "busca": {
+        "consultas": [
+          "large family laughing around dinner table 1960s france",
+          "famille nombreuse rires table annees 60"
+        ],
+        "tipo": "imagem",
+        "bancos": [
+          "archive",
+          "wikimedia",
+          "openverse"
+        ]
+      },
+      "pb": true,
+      "transicao": "fade"
+    },
+    {
+      "id": "c013",
+      "frases": [
+        15
+      ],
+      "tipo": "midia",
+      "estilo": "moldura",
+      "movimento": "pan-direita",
+      "descricao": "moedor de carne manual de ferro aparafusado na borda da mesa de cozinha",
+      "busca": {
+        "consultas": [
+          "antique hand crank meat grinder clamped table edge",
+          "hachoir a viande manuel visse bord de table"
+        ],
+        "tipo": "imagem",
+        "bancos": [
+          "wikimedia",
+          "archive"
+        ]
+      },
+      "pb": false,
+      "fundo": "#5A3522",
+      "transicao": "fade"
+    },
+    {
+      "id": "c014",
+      "frases": [
+        16
+      ],
+      "tipo": "midia",
+      "estilo": "tela-cheia",
+      "movimento": "parado",
+      "descricao": "manivela girando e a carne saindo em vermicelles pelo crivo do moedor",
+      "busca": {
+        "consultas": [
+          "hand cranking meat grinder minced meat coming out",
+          "manivelle hachoir viande hachee qui sort"
+        ],
+        "tipo": "video",
+        "bancos": [
+          "pexels",
+          "pixabay"
+        ]
+      },
+      "pb": false,
+      "transicao": "fade"
+    },
+    {
+      "id": "c015",
+      "frases": [
+        17
+      ],
+      "tipo": "midia",
+      "estilo": "tela-cheia",
+      "movimento": "zoom-out",
+      "descricao": "purê de batata amassado com garfo espalhado sobre a carne e levado ao forno, superfície dourando",
+      "busca": {
+        "consultas": [
+          "mashed potato spread with fork gratin browning oven",
+          "puree ecrasee a la fourchette gratin au four"
+        ],
+        "tipo": "video",
+        "bancos": [
+          "pexels",
+          "pixabay"
+        ]
+      },
+      "pb": false,
+      "transicao": "fade"
+    },
+    {
+      "id": "c016",
+      "frases": [
+        18,
+        19
+      ],
+      "tipo": "midia",
+      "estilo": "moldura",
+      "movimento": "zoom-out",
+      "descricao": "canto do prato gratinado com a crosta presa, colher raspando a borda",
+      "busca": {
+        "consultas": [
+          "baked gratin crispy burnt corner spoon scraping dish",
+          "coin du plat gratine croute attachee cuillere"
+        ],
+        "tipo": "imagem",
+        "bancos": [
+          "pexels",
+          "pixabay"
+        ]
+      },
+      "pb": false,
+      "fundo": "#F3E7CF",
+      "transicao": "fade"
+    },
+    {
+      "id": "c017",
+      "frases": [
+        20,
+        21
+      ],
+      "tipo": "midia",
+      "estilo": "tela-cheia",
+      "movimento": "pan-esquerda",
+      "descricao": "grande marmita de pot-au-feu no fogão, caldo e legumes, tampa entreaberta",
+      "busca": {
+        "consultas": [
+          "pot au feu large pot simmering broth vegetables stove",
+          "marmite pot-au-feu bouillon legumes cuisiniere"
+        ],
+        "tipo": "imagem",
+        "bancos": [
+          "archive",
+          "wikimedia",
+          "pexels"
+        ]
+      },
+      "pb": false,
+      "transicao": "fade"
+    },
+    {
+      "id": "c018",
+      "frases": [
+        22
+      ],
+      "tipo": "midia",
+      "estilo": "tela-cheia",
+      "movimento": "zoom-in",
+      "descricao": "sopa espessa de legumes servida num prato fundo de louca antiga",
+      "busca": {
+        "consultas": [
+          "thick vegetable soup deep plate rustic french",
+          "soupe epaisse de legumes assiette creuse"
+        ],
+        "tipo": "imagem",
+        "bancos": [
+          "pexels",
+          "pixabay"
+        ]
+      },
+      "texto_tela": {
+        "tipo": "numero",
+        "texto": "NUMÉRO DEUX",
+        "subtexto": "La soupe du lendemain",
+        "duracao": 2.0
+      },
+      "pb": false,
+      "transicao": "corte"
+    },
+    {
+      "id": "c019",
+      "frases": [
+        23,
+        24
+      ],
+      "tipo": "midia",
+      "estilo": "moldura",
+      "movimento": "pan-direita",
+      "descricao": "caldo do dia anterior, dois alhos-porros e três batatas sobre a mesa, ao lado do moinho de legumes",
+      "busca": {
+        "consultas": [
+          "leeks potatoes broth on kitchen table vegetable mill",
+          "poireaux pommes de terre bouillon moulin a legumes"
+        ],
+        "tipo": "imagem",
+        "bancos": [
+          "archive",
+          "wikimedia",
+          "pexels"
+        ]
+      },
+      "pb": false,
+      "fundo": "#4A2C1D",
+      "transicao": "fade"
+    },
+    {
+      "id": "c020",
+      "frases": [
+        25
+      ],
+      "tipo": "midia",
+      "estilo": "tela-cheia",
+      "movimento": "zoom-out",
+      "descricao": "moinho de legumes manual antigo parado sobre a panela, close na manivela",
+      "busca": {
+        "consultas": [
+          "vintage hand food mill moulin a legumes close up",
+          "moulin a legumes manuel ancien manivelle"
+        ],
+        "tipo": "imagem",
+        "bancos": [
+          "wikimedia",
+          "archive"
+        ]
+      },
+      "pb": false,
+      "transicao": "corte"
+    },
+    {
+      "id": "c021",
+      "frases": [
+        26
+      ],
+      "tipo": "midia",
+      "estilo": "tela-cheia",
+      "movimento": "parado",
+      "descricao": "sopa caindo espessa pelo crivo do moinho dentro da panela, manivela girando",
+      "busca": {
+        "consultas": [
+          "food mill turning thick soup falling into pot",
+          "soupe qui tombe du moulin a legumes casserole"
+        ],
+        "tipo": "video",
+        "bancos": [
+          "pexels",
+          "pixabay"
+        ]
+      },
+      "pb": false,
+      "transicao": "fade"
+    },
+    {
+      "id": "c022",
+      "frases": [
+        27,
+        28
+      ],
+      "tipo": "midia",
+      "estilo": "moldura",
+      "movimento": "pan-esquerda",
+      "descricao": "criança tentando girar a manivela do moinho na cozinha, adulto apoiando a panela",
+      "busca": {
+        "consultas": [
+          "child turning food mill crank kitchen 1960s",
+          "enfant tourne la manivelle du moulin cuisine"
+        ],
+        "tipo": "imagem",
+        "bancos": [
+          "archive",
+          "wikimedia",
+          "openverse"
+        ]
+      },
+      "pb": true,
+      "fundo": "#E8A33D",
+      "transicao": "fade"
+    },
+    {
+      "id": "c023",
+      "frases": [
+        29
+      ],
+      "tipo": "midia",
+      "estilo": "tela-cheia",
+      "movimento": "zoom-in",
+      "descricao": "concha servindo sopa no prato fundo e um fio de creme de leite por cima",
+      "busca": {
+        "consultas": [
+          "ladle pouring soup deep plate swirl of cream",
+          "louche soupe assiette creuse filet de creme"
+        ],
+        "tipo": "imagem",
+        "bancos": [
+          "pexels",
+          "pixabay"
+        ]
+      },
+      "pb": false,
+      "transicao": "fade"
+    },
+    {
+      "id": "c024",
+      "frases": [
+        30
+      ],
+      "tipo": "midia",
+      "estilo": "tela-cheia",
+      "movimento": "pan-direita",
+      "descricao": "janela embaçada de novembro vista de dentro da cozinha, aquecedor a carvão aceso",
+      "busca": {
+        "consultas": [
+          "foggy window november old kitchen coal stove warm",
+          "fenetre embuee novembre poele a charbon cuisine"
+        ],
+        "tipo": "imagem",
+        "bancos": [
+          "archive",
+          "wikimedia",
+          "openverse"
+        ]
+      },
+      "pb": true,
+      "transicao": "fade"
+    },
+    {
+      "id": "c025",
+      "frases": [
+        31,
+        32
+      ],
+      "tipo": "midia",
+      "estilo": "moldura",
+      "movimento": "zoom-out",
+      "descricao": "armário de cozinha dos anos 60 com potes, vidros e restos guardados, nada desperdiçado",
+      "busca": {
+        "consultas": [
+          "1960s french kitchen cupboard jars tins preserved food",
+          "placard de cuisine annees 60 bocaux boites"
+        ],
+        "tipo": "imagem",
+        "bancos": [
+          "archive",
+          "wikimedia",
+          "pexels"
+        ]
+      },
+      "pb": false,
+      "fundo": "#D9622B",
+      "transicao": "fade"
+    },
+    {
+      "id": "c026",
+      "frases": [
+        33,
+        34
+      ],
+      "tipo": "midia",
+      "estilo": "tela-cheia",
+      "movimento": "pan-esquerda",
+      "descricao": "fatias de pain perdu douradas na travessa, açúcar por cima",
+      "busca": {
+        "consultas": [
+          "french toast pain perdu golden slices sugar plate",
+          "pain perdu tranches dorees sucre assiette"
+        ],
+        "tipo": "imagem",
+        "bancos": [
+          "pexels",
+          "pixabay"
+        ]
+      },
+      "texto_tela": {
+        "tipo": "numero",
+        "texto": "NUMÉRO TROIS",
+        "subtexto": "Le pain perdu",
+        "duracao": 2.2
+      },
+      "pb": false,
+      "transicao": "fade"
+    },
+    {
+      "id": "c027",
+      "frases": [
+        35,
+        36
+      ],
+      "tipo": "midia",
+      "estilo": "tela-cheia",
+      "movimento": "zoom-in",
+      "descricao": "pão duro como madeira sendo cortado em fatias grossas na tábua",
+      "busca": {
+        "consultas": [
+          "cutting very stale hard bread thick slices board",
+          "pain dur comme du bois coupe en tranches"
+        ],
+        "tipo": "imagem",
+        "bancos": [
+          "pexels",
+          "pixabay"
+        ]
+      },
+      "pb": false,
+      "transicao": "fade"
+    },
+    {
+      "id": "c028",
+      "frases": [
+        37
+      ],
+      "tipo": "midia",
+      "estilo": "moldura",
+      "movimento": "zoom-in",
+      "descricao": "fatia de pão mergulhada no leite açúcarado e depois no ovo batido",
+      "busca": {
+        "consultas": [
+          "bread slice dipped in milk then beaten egg bowl",
+          "tranche de pain trempee lait sucre oeuf battu"
+        ],
+        "tipo": "video",
+        "bancos": [
+          "pexels",
+          "pixabay"
+        ]
+      },
+      "pb": false,
+      "fundo": "#5A3522",
+      "transicao": "fade"
+    },
+    {
+      "id": "c029",
+      "frases": [
+        38
+      ],
+      "tipo": "midia",
+      "estilo": "moldura",
+      "movimento": "pan-direita",
+      "descricao": "frasco antigo de água de flor de laranjeira, gotas caindo na tigela",
+      "busca": {
+        "consultas": [
+          "vintage orange blossom water bottle drops bowl",
+          "eau de fleur d'oranger flacon ancien gouttes"
+        ],
+        "tipo": "imagem",
+        "bancos": [
+          "wikimedia",
+          "archive"
+        ]
+      },
+      "pb": false,
+      "fundo": "#F3E7CF",
+      "transicao": "fade"
+    },
+    {
+      "id": "c030",
+      "frases": [
+        39,
+        40
+      ],
+      "tipo": "midia",
+      "estilo": "tela-cheia",
+      "movimento": "zoom-out",
+      "descricao": "criança sentada à mesa da cozinha com os pés balançando sem tocar o chão",
+      "busca": {
+        "consultas": [
+          "child sitting kitchen table feet dangling 1960s",
+          "enfant assis table cuisine pieds qui ne touchent pas le sol"
+        ],
+        "tipo": "imagem",
+        "bancos": [
+          "archive",
+          "wikimedia",
+          "openverse"
+        ]
+      },
+      "pb": true,
+      "transicao": "fade"
+    },
+    {
+      "id": "c031",
+      "frases": [
+        41
+      ],
+      "tipo": "midia",
+      "estilo": "tela-cheia",
+      "movimento": "parado",
+      "descricao": "pain perdu chiando na frigideira com manteiga, açúcar caramelizando nas bordas",
+      "busca": {
+        "consultas": [
+          "french toast sizzling butter pan caramelizing edges",
+          "pain perdu qui gresille poele sucre caramelise"
+        ],
+        "tipo": "video",
+        "bancos": [
+          "pexels",
+          "pixabay"
+        ]
+      },
+      "pb": false,
+      "transicao": "fade"
+    },
+    {
+      "id": "c032",
+      "frases": [
+        42
+      ],
+      "tipo": "midia",
+      "estilo": "moldura",
+      "movimento": "pan-esquerda",
+      "descricao": "criança comendo depressa uma fatia quente e pedindo mais",
+      "busca": {
+        "consultas": [
+          "child eating hot french toast asking for more 1960s",
+          "enfant mange pain perdu trop chaud en redemande"
+        ],
+        "tipo": "imagem",
+        "bancos": [
+          "archive",
+          "wikimedia",
+          "openverse"
+        ]
+      },
+      "pb": true,
+      "fundo": "#4A2C1D",
+      "transicao": "fade"
+    },
+    {
+      "id": "c033",
+      "frases": [
+        43
+      ],
+      "tipo": "midia",
+      "estilo": "tela-cheia",
+      "movimento": "zoom-in",
+      "descricao": "travessa de pain perdu polvilhada de açúcar sobre a toalha de oleado",
+      "busca": {
+        "consultas": [
+          "plate of french toast dusted sugar oilcloth table",
+          "assiette de pain perdu sucre toile ciree"
+        ],
+        "tipo": "imagem",
+        "bancos": [
+          "pexels",
+          "pixabay"
+        ]
+      },
+      "pb": false,
+      "transicao": "fade"
+    },
+    {
+      "id": "c034",
+      "frases": [
+        44,
+        45
+      ],
+      "tipo": "citacao",
+      "titulo": "C'était presque rien.\nEt c'était tout.",
+      "fundo": "#D9622B",
+      "transicao": "fade"
+    },
+    {
+      "id": "c035",
+      "frases": [
+        46
+      ],
+      "tipo": "titulo",
+      "titulo": "MARDI",
+      "subtitulo": "UN GOÛT DE FROMAGE QUI FILE",
+      "fundo": "#5A3522",
+      "transicao": "slide"
+    },
+    {
+      "id": "c036",
+      "frases": [
+        47,
+        48
+      ],
+      "tipo": "midia",
+      "estilo": "tela-cheia",
+      "movimento": "pan-direita",
+      "descricao": "prato de coquillettes com gruyere derretido, vapor",
+      "busca": {
+        "consultas": [
+          "small pasta shells melted gruyere cheese plate",
+          "coquillettes au gruyere fondu assiette"
+        ],
+        "tipo": "imagem",
+        "bancos": [
+          "pexels",
+          "pixabay"
+        ]
+      },
+      "texto_tela": {
+        "tipo": "numero",
+        "texto": "NUMÉRO QUATRE",
+        "subtexto": "Les coquillettes au gruyère",
+        "duracao": 2.2
+      },
+      "pb": false,
+      "transicao": "fade"
+    },
+    {
+      "id": "c037",
+      "frases": [
+        49
+      ],
+      "tipo": "midia",
+      "estilo": "tela-cheia",
+      "movimento": "zoom-out",
+      "descricao": "coquillettes escorridas na panela, noz de manteiga e queijo ralado derretendo",
+      "busca": {
+        "consultas": [
+          "drained pasta knob of butter grated cheese melting",
+          "coquillettes beurre fromage rape qui fond"
+        ],
+        "tipo": "video",
+        "bancos": [
+          "pexels",
+          "pixabay"
+        ]
+      },
+      "pb": false,
+      "transicao": "fade"
+    },
+    {
+      "id": "c038",
+      "frases": [
+        50
+      ],
+      "tipo": "midia",
+      "estilo": "moldura",
+      "movimento": "parado",
+      "descricao": "garfo erguido e fios de queijo derretido esticando bem alto",
+      "busca": {
+        "consultas": [
+          "fork lifting long melted cheese strings stretching",
+          "fils de fromage fondu qui s'etirent fourchette"
+        ],
+        "tipo": "video",
+        "bancos": [
+          "pexels",
+          "pixabay"
+        ]
+      },
+      "pb": false,
+      "fundo": "#E8A33D",
+      "transicao": "fade"
+    },
+    {
+      "id": "c039",
+      "frases": [
+        51
+      ],
+      "tipo": "midia",
+      "estilo": "tela-cheia",
+      "movimento": "zoom-out",
+      "descricao": "crianças rindo à mesa com queijo no queixo, anos 60",
+      "busca": {
+        "consultas": [
+          "children laughing table cheese on chin 1960s",
+          "enfants qui rient table fromage au menton"
+        ],
+        "tipo": "imagem",
+        "bancos": [
+          "archive",
+          "wikimedia",
+          "openverse"
+        ]
+      },
+      "pb": true,
+      "transicao": "fade"
+    },
+    {
+      "id": "c040",
+      "frases": [
+        52,
+        53
+      ],
+      "tipo": "midia",
+      "estilo": "tela-cheia",
+      "movimento": "pan-esquerda",
+      "descricao": "prato de coquillettes hoje numa mesa de madeira, mãos de criança com garfo, sem rostos",
+      "busca": {
+        "consultas": [
+          "child hands fork pasta plate wooden table today",
+          "assiette de coquillettes mains d'enfant table bois"
+        ],
+        "tipo": "imagem",
+        "bancos": [
+          "pexels",
+          "pixabay"
+        ]
+      },
+      "pb": false,
+      "transicao": "fade"
+    },
+    {
+      "id": "c041",
+      "frases": [
+        54,
+        55
+      ],
+      "tipo": "midia",
+      "estilo": "moldura",
+      "movimento": "zoom-in",
+      "descricao": "cozinha antiga vazia e um calendário de parede dos anos 60 com a semana marcada",
+      "busca": {
+        "consultas": [
+          "empty old french kitchen vintage wall calendar week",
+          "cuisine ancienne vide calendrier mural annees 60"
+        ],
+        "tipo": "imagem",
+        "bancos": [
+          "archive",
+          "wikimedia",
+          "pexels"
+        ]
+      },
+      "pb": false,
+      "fundo": "#D9622B",
+      "transicao": "fade"
+    },
+    {
+      "id": "c042",
+      "frases": [
+        56
+      ],
+      "tipo": "midia",
+      "estilo": "tela-cheia",
+      "movimento": "pan-direita",
+      "descricao": "tigela de faiança com batedor de arame e um pulso firme batendo",
+      "busca": {
+        "consultas": [
+          "earthenware bowl wire whisk hand whisking vigorously",
+          "bol en faience fouet a main poignet"
+        ],
+        "tipo": "imagem",
+        "bancos": [
+          "pexels",
+          "pixabay"
+        ]
+      },
+      "pb": false,
+      "transicao": "fade"
+    },
+    {
+      "id": "c043",
+      "frases": [
+        57,
+        58
+      ],
+      "tipo": "midia",
+      "estilo": "tela-cheia",
+      "movimento": "zoom-out",
+      "descricao": "ovos cozidos cortados ao meio com maionese por cima, prato de entrada",
+      "busca": {
+        "consultas": [
+          "hard boiled eggs halves with mayonnaise plate starter",
+          "oeufs durs mayonnaise assiette entree"
+        ],
+        "tipo": "imagem",
+        "bancos": [
+          "pexels",
+          "pixabay"
+        ]
+      },
+      "texto_tela": {
+        "tipo": "numero",
+        "texto": "NUMÉRO CINQ",
+        "subtexto": "Les œufs durs mayonnaise",
+        "duracao": 2.6
+      },
+      "pb": false,
+      "transicao": "fade"
+    },
+    {
+      "id": "c044",
+      "frases": [
+        59,
+        60
+      ],
+      "tipo": "midia",
+      "estilo": "moldura",
+      "movimento": "zoom-in",
+      "descricao": "azeite caindo em fio finissimo na tigela enquanto a mão bate sem parar",
+      "busca": {
+        "consultas": [
+          "thin stream of oil poured into bowl whisking mayonnaise",
+          "huile versee goutte a goutte bol mayonnaise montee"
+        ],
+        "tipo": "video",
+        "bancos": [
+          "pexels",
+          "pixabay"
+        ]
+      },
+      "pb": false,
+      "fundo": "#5A3522",
+      "transicao": "fade"
+    },
+    {
+      "id": "c045",
+      "frases": [
+        61
+      ],
+      "tipo": "midia",
+      "estilo": "tela-cheia",
+      "movimento": "pan-esquerda",
+      "descricao": "pessoas em volta da tigela prendendo a respiração, mãos batendo rápido, cozinha antiga",
+      "busca": {
+        "consultas": [
+          "family watching hand whisking bowl kitchen tense 1960s",
+          "mains qui fouettent bol entoures de la famille cuisine"
+        ],
+        "tipo": "imagem",
+        "bancos": [
+          "archive",
+          "wikimedia",
+          "openverse"
+        ]
+      },
+      "pb": true,
+      "transicao": "fade"
+    },
+    {
+      "id": "c046",
+      "frases": [
+        62
+      ],
+      "tipo": "midia",
+      "estilo": "tela-cheia",
+      "movimento": "zoom-in",
+      "descricao": "maionese talhada com aspecto granuloso e separado na tigela",
+      "busca": {
+        "consultas": [
+          "curdled split mayonnaise grainy bowl failed",
+          "mayonnaise qui a tourne granuleuse bol"
+        ],
+        "tipo": "imagem",
+        "bancos": [
+          "pexels",
+          "pixabay"
+        ]
+      },
+      "pb": false,
+      "transicao": "fade"
+    },
+    {
+      "id": "c047",
+      "frases": [
+        63,
+        64
+      ],
+      "tipo": "midia",
+      "estilo": "moldura",
+      "movimento": "pan-direita",
+      "descricao": "caderno de receitas manuscrito aberto ao lado dos ingredientes alinhados na mesa",
+      "busca": {
+        "consultas": [
+          "handwritten recipe notebook eggs mustard oil lined up",
+          "cahier de recettes manuscrit ingredients alignes table"
+        ],
+        "tipo": "imagem",
+        "bancos": [
+          "archive",
+          "wikimedia",
+          "pexels"
+        ]
+      },
+      "pb": false,
+      "fundo": "#F3E7CF",
+      "transicao": "fade"
+    },
+    {
+      "id": "c048",
+      "frases": [
+        65
+      ],
+      "tipo": "midia",
+      "estilo": "tela-cheia",
+      "movimento": "parado",
+      "descricao": "gema nova numa tigela limpa recebendo a maionese talhada aos poucos, batendo",
+      "busca": {
+        "consultas": [
+          "fresh egg yolk bowl slowly rescuing split mayonnaise",
+          "nouveau jaune d'oeuf rattraper la mayonnaise ratee"
+        ],
+        "tipo": "video",
+        "bancos": [
+          "pexels",
+          "pixabay"
+        ]
+      },
+      "pb": false,
+      "transicao": "fade"
+    },
+    {
+      "id": "c049",
+      "frases": [
+        66,
+        67
+      ],
+      "tipo": "midia",
+      "estilo": "tela-cheia",
+      "movimento": "zoom-out",
+      "descricao": "metades de ovo cozido com um chapeuzinho de maionese, close",
+      "busca": {
+        "consultas": [
+          "halved boiled eggs topped with dollop of mayonnaise",
+          "oeufs durs petit chapeau de mayonnaise gros plan"
+        ],
+        "tipo": "imagem",
+        "bancos": [
+          "pexels",
+          "pixabay"
+        ]
+      },
+      "pb": false,
+      "transicao": "fade"
+    },
+    {
+      "id": "c050",
+      "frases": [
+        68,
+        69
+      ],
+      "tipo": "midia",
+      "estilo": "moldura",
+      "movimento": "pan-esquerda",
+      "descricao": "mesa posta dos dias de festa com entrada servida e uma cesta de ovos frescos",
+      "busca": {
+        "consultas": [
+          "set festive french table starter dish basket of eggs",
+          "table des grands jours entree panier d'oeufs frais"
+        ],
+        "tipo": "imagem",
+        "bancos": [
+          "archive",
+          "wikimedia",
+          "pexels"
+        ]
+      },
+      "pb": false,
+      "fundo": "#4A2C1D",
+      "transicao": "fade"
+    },
+    {
+      "id": "c051",
+      "frases": [
+        70,
+        71
+      ],
+      "tipo": "midia",
+      "estilo": "tela-cheia",
+      "movimento": "zoom-in",
+      "descricao": "ovos cozinhando dentro de molho de tomate vermelho na frigideira",
+      "busca": {
+        "consultas": [
+          "eggs poached in red tomato sauce frying pan",
+          "oeufs a la tomate poele sauce rouge"
+        ],
+        "tipo": "imagem",
+        "bancos": [
+          "pexels",
+          "pixabay"
+        ]
+      },
+      "texto_tela": {
+        "tipo": "numero",
+        "texto": "NUMÉRO SIX",
+        "subtexto": "Les œufs à la tomate",
+        "duracao": 2.8
+      },
+      "pb": false,
+      "transicao": "fade"
+    },
+    {
+      "id": "c052",
+      "frases": [
+        72
+      ],
+      "tipo": "midia",
+      "estilo": "tela-cheia",
+      "movimento": "zoom-out",
+      "descricao": "tomates do quintal desfazendo na frigideira com cebola",
+      "busca": {
+        "consultas": [
+          "garden tomatoes melting in pan with onion",
+          "tomates du jardin qui fondent poele oignon"
+        ],
+        "tipo": "video",
+        "bancos": [
+          "pexels",
+          "pixabay"
+        ]
+      },
+      "pb": false,
+      "transicao": "fade"
+    },
+    {
+      "id": "c053",
+      "frases": [
+        73
+      ],
+      "tipo": "midia",
+      "estilo": "moldura",
+      "movimento": "parado",
+      "descricao": "ovos quebrados direto no molho de tomate, cozinhando devagar",
+      "busca": {
+        "consultas": [
+          "cracking eggs directly into tomato sauce pan",
+          "oeufs casses dans la sauce tomate cuisson douce"
+        ],
+        "tipo": "video",
+        "bancos": [
+          "pexels",
+          "pixabay"
+        ]
+      },
+      "pb": false,
+      "fundo": "#E8A33D",
+      "transicao": "fade"
+    },
+    {
+      "id": "c054",
+      "frases": [
+        74
+      ],
+      "tipo": "midia",
+      "estilo": "tela-cheia",
+      "movimento": "pan-direita",
+      "descricao": "fatia de pão limpando o prato ate a última marca de vermelho",
+      "busca": {
+        "consultas": [
+          "bread slice wiping plate last trace of tomato sauce",
+          "tranche de pain qui sauce l'assiette trace rouge"
+        ],
+        "tipo": "imagem",
+        "bancos": [
+          "pexels",
+          "pixabay"
+        ]
+      },
+      "pb": false,
+      "transicao": "fade"
+    },
+    {
+      "id": "c055",
+      "frases": [
+        75,
+        76
+      ],
+      "tipo": "midia",
+      "estilo": "tela-cheia",
+      "movimento": "zoom-out",
+      "descricao": "janela aberta sobre os telhados no verao com andorinhoes voando, tomates no parapeito",
+      "busca": {
+        "consultas": [
+          "open window rooftops swifts flying summer tomatoes sill",
+          "fenetre ouverte toits martinets tomates rebord"
+        ],
+        "tipo": "imagem",
+        "bancos": [
+          "archive",
+          "wikimedia",
+          "pexels"
+        ]
+      },
+      "pb": false,
+      "transicao": "fade"
+    },
+    {
+      "id": "c056",
+      "frases": [
+        77
+      ],
+      "tipo": "midia",
+      "estilo": "moldura",
+      "movimento": "pan-esquerda",
+      "descricao": "vidro de janela com gelo e rua de inverno vista de dentro",
+      "busca": {
+        "consultas": [
+          "frosted window pane winter street seen from inside",
+          "vitre givree rue d'hiver vue de l'interieur"
+        ],
+        "tipo": "imagem",
+        "bancos": [
+          "archive",
+          "wikimedia",
+          "openverse"
+        ]
+      },
+      "pb": true,
+      "fundo": "#D9622B",
+      "transicao": "fade"
+    },
+    {
+      "id": "c057",
+      "frases": [
+        78,
+        79
+      ],
+      "tipo": "midia",
+      "estilo": "tela-cheia",
+      "movimento": "zoom-in",
+      "descricao": "gratinado de endives enroladas em presunto, superfície dourada e borbulhante",
+      "busca": {
+        "consultas": [
+          "endive ham gratin golden bubbling baking dish",
+          "endives au jambon gratin dore plat"
+        ],
+        "tipo": "imagem",
+        "bancos": [
+          "pexels",
+          "pixabay"
+        ]
+      },
+      "texto_tela": {
+        "tipo": "numero",
+        "texto": "NUMÉRO SEPT",
+        "subtexto": "Les endives au jambon",
+        "duracao": 2.2
+      },
+      "pb": false,
+      "transicao": "fade"
+    },
+    {
+      "id": "c058",
+      "frases": [
+        80
+      ],
+      "tipo": "midia",
+      "estilo": "tela-cheia",
+      "movimento": "zoom-in",
+      "descricao": "endive enrolada numa fatia de presunto e bechamel mexida com colher de pau",
+      "busca": {
+        "consultas": [
+          "endive rolled in ham slice bechamel stirred wooden spoon",
+          "endive roulee jambon bechamel cuillere en bois"
+        ],
+        "tipo": "video",
+        "bancos": [
+          "pexels",
+          "pixabay"
+        ]
+      },
+      "pb": false,
+      "transicao": "fade"
+    },
+    {
+      "id": "c059",
+      "frases": [
+        81
+      ],
+      "tipo": "midia",
+      "estilo": "moldura",
+      "movimento": "pan-direita",
+      "descricao": "noz-moscada ralada e queijo sobre o gratinado borbulhando no forno",
+      "busca": {
+        "consultas": [
+          "grating nutmeg cheese over gratin bubbling oven",
+          "muscade rapee fromage gratin bulles dorees four"
+        ],
+        "tipo": "imagem",
+        "bancos": [
+          "pexels",
+          "pixabay"
+        ]
+      },
+      "pb": false,
+      "fundo": "#5A3522",
+      "transicao": "fade"
+    },
+    {
+      "id": "c060",
+      "frases": [
+        82,
+        83
+      ],
+      "tipo": "midia",
+      "estilo": "moldura",
+      "movimento": "zoom-out",
+      "descricao": "endives cruas cortadas ao meio mostrando o coração amargo",
+      "busca": {
+        "consultas": [
+          "raw belgian endives halved bitter core close up",
+          "endives crues coupees en deux coeur amer"
+        ],
+        "tipo": "imagem",
+        "bancos": [
+          "pexels",
+          "pixabay"
+        ]
+      },
+      "texto_tela": {
+        "tipo": "destaque",
+        "texto": "L'amertume",
+        "duracao": 2.8
+      },
+      "pb": false,
+      "fundo": "#F3E7CF",
+      "transicao": "fade"
+    },
+    {
+      "id": "c061",
+      "frases": [
+        84
+      ],
+      "tipo": "midia",
+      "estilo": "tela-cheia",
+      "movimento": "pan-esquerda",
+      "descricao": "dois convidados discutindo à mesa com gestos convictos, anos 60",
+      "busca": {
+        "consultas": [
+          "two guests debating at table gesturing 1960s france",
+          "convives qui argumentent a table annees 60"
+        ],
+        "tipo": "imagem",
+        "bancos": [
+          "archive",
+          "wikimedia",
+          "openverse"
+        ]
+      },
+      "pb": true,
+      "transicao": "fade"
+    },
+    {
+      "id": "c062",
+      "frases": [
+        85,
+        86
+      ],
+      "tipo": "midia",
+      "estilo": "tela-cheia",
+      "movimento": "zoom-in",
+      "descricao": "prato de endives au jambon visto de cima sobre a toalha de oleado",
+      "busca": {
+        "consultas": [
+          "endive ham gratin seen from above oilcloth table",
+          "endives au jambon vu du dessus toile ciree"
+        ],
+        "tipo": "imagem",
+        "bancos": [
+          "pexels",
+          "pixabay"
+        ]
+      },
+      "pb": false,
+      "transicao": "fade"
+    },
+    {
+      "id": "c063",
+      "frases": [
+        87
+      ],
+      "tipo": "titulo",
+      "titulo": "MERCREDI",
+      "subtitulo": "L'ARME CONTRE L'HIVER",
+      "fundo": "#E8A33D",
+      "transicao": "slide"
+    },
+    {
+      "id": "c064",
+      "frases": [
+        88
+      ],
+      "tipo": "midia",
+      "estilo": "tela-cheia",
+      "movimento": "pan-direita",
+      "descricao": "prato de lentilhas com petit sale, carne de porco salgada",
+      "busca": {
+        "consultas": [
+          "green lentils with salt pork plate rustic",
+          "lentilles au petit sale assiette"
+        ],
+        "tipo": "imagem",
+        "bancos": [
+          "pexels",
+          "pixabay"
+        ]
+      },
+      "texto_tela": {
+        "tipo": "numero",
+        "texto": "NUMÉRO HUIT",
+        "subtexto": "Les lentilles au petit salé",
+        "duracao": 2.8
+      },
+      "pb": false,
+      "transicao": "fade"
+    },
+    {
+      "id": "c065",
+      "frases": [
+        89
+      ],
+      "tipo": "midia",
+      "estilo": "moldura",
+      "movimento": "zoom-out",
+      "descricao": "crianças voltando da escola na neve derretida com cartables, anos 60",
+      "busca": {
+        "consultas": [
+          "school children walking melting snow satchels 1960s",
+          "ecoliers neige fondue cartables annees 60"
+        ],
+        "tipo": "imagem",
+        "bancos": [
+          "archive",
+          "wikimedia",
+          "openverse"
+        ]
+      },
+      "pb": true,
+      "fundo": "#4A2C1D",
+      "transicao": "fade"
+    },
+    {
+      "id": "c066",
+      "frases": [
+        90
+      ],
+      "tipo": "midia",
+      "estilo": "tela-cheia",
+      "movimento": "parado",
+      "descricao": "lentilhas fervendo lentamente com petit sale e uma cebola cravejada de cravo",
+      "busca": {
+        "consultas": [
+          "lentils simmering salt pork onion studded cloves pot",
+          "lentilles qui mijotent oignon clou de girofle"
+        ],
+        "tipo": "video",
+        "bancos": [
+          "pexels",
+          "pixabay"
+        ]
+      },
+      "pb": false,
+      "transicao": "fade"
+    },
+    {
+      "id": "c067",
+      "frases": [
+        91,
+        92
+      ],
+      "tipo": "midia",
+      "estilo": "tela-cheia",
+      "movimento": "pan-esquerda",
+      "descricao": "grande cocotte cheia de lentilhas e um prato requentado no canto do fogão",
+      "busca": {
+        "consultas": [
+          "large pot full of lentils reheated plate stove corner",
+          "grande cocotte de lentilles assiette rechauffee"
+        ],
+        "tipo": "imagem",
+        "bancos": [
+          "archive",
+          "wikimedia",
+          "pexels"
+        ]
+      },
+      "pb": false,
+      "transicao": "fade"
+    },
+    {
+      "id": "c068",
+      "frases": [
+        93,
+        94,
+        95
+      ],
+      "tipo": "midia",
+      "estilo": "moldura",
+      "movimento": "zoom-in",
+      "descricao": "mãos de mulher cozinhando vistas de costas, sem rosto, cozinha antiga",
+      "busca": {
+        "consultas": [
+          "woman hands cooking from behind no face old kitchen",
+          "mains de femme qui cuisine de dos cuisine ancienne"
+        ],
+        "tipo": "imagem",
+        "bancos": [
+          "archive",
+          "wikimedia",
+          "openverse"
+        ]
+      },
+      "pb": true,
+      "fundo": "#E8A33D",
+      "transicao": "fade"
+    },
+    {
+      "id": "c069",
+      "frases": [
+        96
+      ],
+      "tipo": "midia",
+      "estilo": "tela-cheia",
+      "movimento": "pan-direita",
+      "descricao": "calendário escolar antigo com a quinta-feira em destaque, sala de aula vazia",
+      "busca": {
+        "consultas": [
+          "vintage french school calendar thursday empty classroom",
+          "calendrier ancien jeudi salle de classe vide"
+        ],
+        "tipo": "imagem",
+        "bancos": [
+          "archive",
+          "wikimedia",
+          "openverse"
+        ]
+      },
+      "pb": false,
+      "transicao": "fade"
+    },
+    {
+      "id": "c070",
+      "frases": [
+        97
+      ],
+      "tipo": "titulo",
+      "titulo": "JEUDI",
+      "subtitulo": "PAS D'ÉCOLE",
+      "fundo": "#D9622B",
+      "transicao": "slide"
+    },
+    {
+      "id": "c071",
+      "frases": [
+        98,
+        99
+      ],
+      "tipo": "midia",
+      "estilo": "tela-cheia",
+      "movimento": "zoom-out",
+      "descricao": "bolinhos de maçã fritos polvilhados de açúcar numa travessa",
+      "busca": {
+        "consultas": [
+          "apple fritters beignets dusted icing sugar plate",
+          "beignets aux pommes sucre glace assiette"
+        ],
+        "tipo": "imagem",
+        "bancos": [
+          "pexels",
+          "pixabay"
+        ]
+      },
+      "texto_tela": {
+        "tipo": "numero",
+        "texto": "NUMÉRO NEUF",
+        "subtexto": "Les beignets aux pommes",
+        "duracao": 3.6
+      },
+      "pb": false,
+      "transicao": "fade"
+    },
+    {
+      "id": "c072",
+      "frases": [
+        100
+      ],
+      "tipo": "midia",
+      "estilo": "tela-cheia",
+      "movimento": "zoom-out",
+      "descricao": "óleo fervendo na panela funda da cozinha, vapor subindo",
+      "busca": {
+        "consultas": [
+          "hot oil shimmering deep pan frying kitchen",
+          "huile qui fremit friture poele profonde"
+        ],
+        "tipo": "video",
+        "bancos": [
+          "pexels",
+          "pixabay"
+        ]
+      },
+      "pb": false,
+      "transicao": "fade"
+    },
+    {
+      "id": "c073",
+      "frases": [
+        101
+      ],
+      "tipo": "midia",
+      "estilo": "moldura",
+      "movimento": "pan-esquerda",
+      "descricao": "rodelas de maçã mergulhadas na massa e depois no óleo",
+      "busca": {
+        "consultas": [
+          "apple rings dipped in batter then hot oil",
+          "rondelles de pomme dans la pate puis l'huile"
+        ],
+        "tipo": "imagem",
+        "bancos": [
+          "pexels",
+          "pixabay"
+        ]
+      },
+      "pb": false,
+      "fundo": "#5A3522",
+      "transicao": "fade"
+    },
+    {
+      "id": "c074",
+      "frases": [
+        102,
+        103,
+        104
+      ],
+      "tipo": "midia",
+      "estilo": "tela-cheia",
+      "movimento": "parado",
+      "descricao": "bolinhos inflando e dançando no óleo quente e depois esfriando num pano",
+      "busca": {
+        "consultas": [
+          "fritters puffing dancing in hot oil cooling cloth",
+          "beignets qui gonflent dans l'huile refroidissent torchon"
+        ],
+        "tipo": "video",
+        "bancos": [
+          "pexels",
+          "pixabay"
+        ]
+      },
+      "pb": false,
+      "transicao": "fade"
+    },
+    {
+      "id": "c075",
+      "frases": [
+        105
+      ],
+      "tipo": "midia",
+      "estilo": "tela-cheia",
+      "movimento": "zoom-in",
+      "descricao": "losangos de massa fina inflados saindo do óleo, bugnes",
+      "busca": {
+        "consultas": [
+          "thin diamond shaped dough bugnes frying puffed",
+          "bugnes losanges de pate boursouflees huile"
+        ],
+        "tipo": "imagem",
+        "bancos": [
+          "pexels",
+          "pixabay"
+        ]
+      },
+      "pb": false,
+      "transicao": "fade"
+    },
+    {
+      "id": "c076",
+      "frases": [
+        106
+      ],
+      "tipo": "midia",
+      "estilo": "moldura",
+      "movimento": "pan-direita",
+      "descricao": "travessa de bugnes, merveilles e oreillettes cobertas de açúcar de confeiteiro",
+      "busca": {
+        "consultas": [
+          "pile of french carnival fritters bugnes icing sugar",
+          "bugnes merveilles oreillettes sucre glace plat"
+        ],
+        "tipo": "imagem",
+        "bancos": [
+          "archive",
+          "wikimedia",
+          "pexels"
+        ]
+      },
+      "texto_tela": {
+        "tipo": "rotulo",
+        "texto": "BUGNES · MERVEILLES · OREILLETTES",
+        "duracao": 4.2
+      },
+      "pb": false,
+      "fundo": "#D9622B",
+      "transicao": "fade"
+    },
+    {
+      "id": "c077",
+      "frases": [
+        107,
+        108
+      ],
+      "tipo": "midia",
+      "estilo": "tela-cheia",
+      "movimento": "zoom-out",
+      "descricao": "criança com açúcar de confeiteiro no nariz e nos dedos, anos 60",
+      "busca": {
+        "consultas": [
+          "child powdered sugar on nose fingers 1960s",
+          "enfant sucre glace sur le nez annees 60"
+        ],
+        "tipo": "imagem",
+        "bancos": [
+          "archive",
+          "wikimedia",
+          "openverse"
+        ]
+      },
+      "pb": true,
+      "transicao": "fade"
+    },
+    {
+      "id": "c078",
+      "frases": [
+        109
+      ],
+      "tipo": "midia",
+      "estilo": "tela-cheia",
+      "movimento": "pan-esquerda",
+      "descricao": "horta no fundo do quintal com canteiros de legumes, casa ao fundo",
+      "busca": {
+        "consultas": [
+          "vegetable garden rows backyard french house",
+          "potager au fond du jardin rangs de legumes"
+        ],
+        "tipo": "imagem",
+        "bancos": [
+          "archive",
+          "wikimedia",
+          "pexels"
+        ]
+      },
+      "pb": false,
+      "transicao": "fade"
+    },
+    {
+      "id": "c079",
+      "frases": [
+        110,
+        111
+      ],
+      "tipo": "midia",
+      "estilo": "tela-cheia",
+      "movimento": "zoom-in",
+      "descricao": "sopa de azedinha servida num prato fundo com um fio de creme",
+      "busca": {
+        "consultas": [
+          "sorrel soup deep plate cream swirl rustic",
+          "soupe a l'oseille assiette creuse creme"
+        ],
+        "tipo": "imagem",
+        "bancos": [
+          "pexels",
+          "pixabay"
+        ]
+      },
+      "texto_tela": {
+        "tipo": "numero",
+        "texto": "NUMÉRO DIX",
+        "subtexto": "La soupe à l'oseille",
+        "duracao": 2.4
+      },
+      "pb": false,
+      "transicao": "fade"
+    },
+    {
+      "id": "c080",
+      "frases": [
+        112
+      ],
+      "tipo": "midia",
+      "estilo": "moldura",
+      "movimento": "zoom-in",
+      "descricao": "folhas de azedinha desfazendo na manteiga e mudando de cor na panela",
+      "busca": {
+        "consultas": [
+          "sorrel leaves melting in butter changing colour pan",
+          "oseille fondue dans le beurre change de couleur"
+        ],
+        "tipo": "video",
+        "bancos": [
+          "pexels",
+          "pixabay"
+        ]
+      },
+      "pb": false,
+      "fundo": "#F3E7CF",
+      "transicao": "fade"
+    },
+    {
+      "id": "c081",
+      "frases": [
+        113
+      ],
+      "tipo": "midia",
+      "estilo": "tela-cheia",
+      "movimento": "pan-direita",
+      "descricao": "gema de ovo batida sendo misturada na sopa para adocar",
+      "busca": {
+        "consultas": [
+          "egg yolk stirred into soup to soften acidity",
+          "jaune d'oeuf delaye dans la soupe adoucir"
+        ],
+        "tipo": "imagem",
+        "bancos": [
+          "pexels",
+          "pixabay"
+        ]
+      },
+      "pb": false,
+      "transicao": "fade"
+    },
+    {
+      "id": "c082",
+      "frases": [
+        114
+      ],
+      "tipo": "midia",
+      "estilo": "moldura",
+      "movimento": "zoom-out",
+      "descricao": "cesta com agrião, urtigas colhidas com luvas e dentes-de-leão do campo",
+      "busca": {
+        "consultas": [
+          "basket watercress nettles picked gloves dandelion greens",
+          "panier cresson orties gants pissenlits des pres"
+        ],
+        "tipo": "imagem",
+        "bancos": [
+          "archive",
+          "wikimedia",
+          "pexels"
+        ]
+      },
+      "pb": false,
+      "fundo": "#4A2C1D",
+      "transicao": "fade"
+    },
+    {
+      "id": "c083",
+      "frases": [
+        115,
+        116
+      ],
+      "tipo": "midia",
+      "estilo": "tela-cheia",
+      "movimento": "pan-esquerda",
+      "descricao": "camponesa de joelhos colhendo verduras na terra, sem livro nem calendário, anos 60",
+      "busca": {
+        "consultas": [
+          "woman picking greens from garden soil by hand 1960s",
+          "femme qui cueille des legumes a la main jardin annees 60"
+        ],
+        "tipo": "imagem",
+        "bancos": [
+          "archive",
+          "wikimedia",
+          "openverse"
+        ]
+      },
+      "pb": true,
+      "transicao": "fade"
+    },
+    {
+      "id": "c084",
+      "frases": [
+        117,
+        118
+      ],
+      "tipo": "titulo",
+      "titulo": "VENDREDI",
+      "subtitulo": "LA MER PREND LE RELAIS",
+      "fundo": "#5A3522",
+      "transicao": "slide"
+    },
+    {
+      "id": "c085",
+      "frases": [
+        119,
+        120
+      ],
+      "tipo": "midia",
+      "estilo": "tela-cheia",
+      "movimento": "zoom-in",
+      "descricao": "filé de arenque defumado com batatas mornas regadas de azeite num prato",
+      "busca": {
+        "consultas": [
+          "smoked herring fillets warm potatoes oil plate",
+          "harengs pommes a l'huile assiette"
+        ],
+        "tipo": "imagem",
+        "bancos": [
+          "pexels",
+          "pixabay"
+        ]
+      },
+      "texto_tela": {
+        "tipo": "numero",
+        "texto": "NUMÉRO ONZE",
+        "subtexto": "Les harengs pommes à l'huile",
+        "duracao": 2.4
+      },
+      "pb": false,
+      "transicao": "fade"
+    },
+    {
+      "id": "c086",
+      "frases": [
+        121
+      ],
+      "tipo": "midia",
+      "estilo": "tela-cheia",
+      "movimento": "pan-direita",
+      "descricao": "terrina de barro com filés de arenque cobertos de óleo, rodelas de cenoura e cebola",
+      "busca": {
+        "consultas": [
+          "earthenware terrine herring fillets in oil carrot onion",
+          "terrine de harengs sous l'huile carotte oignon"
+        ],
+        "tipo": "imagem",
+        "bancos": [
+          "pexels",
+          "pixabay"
+        ]
+      },
+      "pb": false,
+      "transicao": "fade"
+    },
+    {
+      "id": "c087",
+      "frases": [
+        122,
+        123
+      ],
+      "tipo": "midia",
+      "estilo": "moldura",
+      "movimento": "zoom-out",
+      "descricao": "batatas mornas cortadas em rodelas regadas com o óleo perfumado",
+      "busca": {
+        "consultas": [
+          "sliced warm potatoes drizzled with aromatic oil",
+          "pommes de terre tiedes arrosees d'huile parfumee"
+        ],
+        "tipo": "imagem",
+        "bancos": [
+          "pexels",
+          "pixabay"
+        ]
+      },
+      "pb": false,
+      "fundo": "#E8A33D",
+      "transicao": "fade"
+    },
+    {
+      "id": "c088",
+      "frases": [
+        124,
+        125
+      ],
+      "tipo": "midia",
+      "estilo": "tela-cheia",
+      "movimento": "pan-esquerda",
+      "descricao": "terrina guardada na despensa fresca esperando dias, luz baixa",
+      "busca": {
+        "consultas": [
+          "covered terrine waiting in cool pantry dim light",
+          "terrine qui attend dans le garde-manger"
+        ],
+        "tipo": "imagem",
+        "bancos": [
+          "archive",
+          "wikimedia",
+          "pexels"
+        ]
+      },
+      "pb": false,
+      "transicao": "fade"
+    },
+    {
+      "id": "c089",
+      "frases": [
+        126,
+        127
+      ],
+      "tipo": "midia",
+      "estilo": "tela-cheia",
+      "movimento": "zoom-in",
+      "descricao": "pudim de pão escuro e firme cortado em fatias grossas",
+      "busca": {
+        "consultas": [
+          "dark dense bread pudding thick slices plate",
+          "pudding de pain brun ferme grosses parts"
+        ],
+        "tipo": "imagem",
+        "bancos": [
+          "pexels",
+          "pixabay"
+        ]
+      },
+      "texto_tela": {
+        "tipo": "numero",
+        "texto": "NUMÉRO DOUZE",
+        "subtexto": "Le pudding du Nord",
+        "duracao": 2.1
+      },
+      "pb": false,
+      "transicao": "fade"
+    },
+    {
+      "id": "c090",
+      "frases": [
+        128
+      ],
+      "tipo": "midia",
+      "estilo": "moldura",
+      "movimento": "pan-direita",
+      "descricao": "rua de corons de tijolo no Norte da França, beffroi ao fundo, anos 60",
+      "busca": {
+        "consultas": [
+          "northern france brick miners houses street 1960s",
+          "corons briques rue du Nord beffroi annees 60"
+        ],
+        "tipo": "imagem",
+        "bancos": [
+          "archive",
+          "wikimedia",
+          "openverse"
+        ]
+      },
+      "pb": true,
+      "fundo": "#5A3522",
+      "transicao": "fade"
+    },
+    {
+      "id": "c091",
+      "frases": [
+        129
+      ],
+      "tipo": "midia",
+      "estilo": "tela-cheia",
+      "movimento": "parado",
+      "descricao": "pão duro de molho no leite sendo esmagado com a mão na bacia",
+      "busca": {
+        "consultas": [
+          "stale bread soaking in milk crushed by hand bowl",
+          "pain dur trempe dans le lait ecrase a la main"
+        ],
+        "tipo": "video",
+        "bancos": [
+          "pexels",
+          "pixabay"
+        ]
+      },
+      "pb": false,
+      "transicao": "fade"
+    },
+    {
+      "id": "c092",
+      "frases": [
+        130,
+        131
+      ],
+      "tipo": "midia",
+      "estilo": "moldura",
+      "movimento": "zoom-out",
+      "descricao": "ovos, açúcar mascavó vergeoise e passas sobre a mesa de cozinha",
+      "busca": {
+        "consultas": [
+          "eggs brown sugar raisins on kitchen table baking",
+          "oeufs vergeoise raisins secs table cuisine"
+        ],
+        "tipo": "imagem",
+        "bancos": [
+          "pexels",
+          "pixabay"
+        ]
+      },
+      "pb": false,
+      "fundo": "#D9622B",
+      "transicao": "fade"
+    },
+    {
+      "id": "c093",
+      "frases": [
+        132
+      ],
+      "tipo": "midia",
+      "estilo": "tela-cheia",
+      "movimento": "pan-esquerda",
+      "descricao": "pudim de pão saindo do forno, superfície escura e firme",
+      "busca": {
+        "consultas": [
+          "bread pudding coming out of oven dark firm top",
+          "pudding qui sort du four brun et ferme"
+        ],
+        "tipo": "imagem",
+        "bancos": [
+          "pexels",
+          "pixabay"
+        ]
+      },
+      "pb": false,
+      "transicao": "fade"
+    },
+    {
+      "id": "c094",
+      "frases": [
+        133,
+        134
+      ],
+      "tipo": "midia",
+      "estilo": "tela-cheia",
+      "movimento": "zoom-in",
+      "descricao": "fatias grossas de pudim como bolo e um cesto de croutons de pão duro ao lado",
+      "busca": {
+        "consultas": [
+          "thick bread pudding slices basket of stale crusts",
+          "grosses parts de pudding panier de croutons"
+        ],
+        "tipo": "imagem",
+        "bancos": [
+          "pexels",
+          "pixabay"
+        ]
+      },
+      "pb": false,
+      "transicao": "fade"
+    },
+    {
+      "id": "c095",
+      "frases": [
+        135,
+        136
+      ],
+      "tipo": "midia",
+      "estilo": "moldura",
+      "movimento": "pan-direita",
+      "descricao": "mulher idosa de olhos fechados lembrando, cozinha de província",
+      "busca": {
+        "consultas": [
+          "elderly woman eyes closed remembering old kitchen",
+          "femme agee les yeux fermes souvenir cuisine"
+        ],
+        "tipo": "imagem",
+        "bancos": [
+          "archive",
+          "wikimedia",
+          "openverse"
+        ]
+      },
+      "pb": true,
+      "fundo": "#F3E7CF",
+      "transicao": "fade"
+    },
+    {
+      "id": "c096",
+      "frases": [
+        137
+      ],
+      "tipo": "midia",
+      "estilo": "tela-cheia",
+      "movimento": "zoom-out",
+      "descricao": "porto de pesca francês com barcos e caixas de peixe, anos 60",
+      "busca": {
+        "consultas": [
+          "french fishing port boats crates 1960s",
+          "port de peche francais bateaux annees 60"
+        ],
+        "tipo": "imagem",
+        "bancos": [
+          "archive",
+          "wikimedia",
+          "openverse"
+        ]
+      },
+      "pb": true,
+      "transicao": "fade"
+    },
+    {
+      "id": "c097",
+      "frases": [
+        138,
+        139
+      ],
+      "tipo": "midia",
+      "estilo": "tela-cheia",
+      "movimento": "pan-esquerda",
+      "descricao": "bacalhau salgado duro como tábua sobre papel de embrulho",
+      "busca": {
+        "consultas": [
+          "dried salt cod stiff board wrapping paper",
+          "morue salee raide comme une planche papier"
+        ],
+        "tipo": "imagem",
+        "bancos": [
+          "pexels",
+          "pixabay"
+        ]
+      },
+      "texto_tela": {
+        "tipo": "numero",
+        "texto": "NUMÉRO TREIZE",
+        "subtexto": "La morue",
+        "duracao": 2.0
+      },
+      "pb": false,
+      "transicao": "fade"
+    },
+    {
+      "id": "c098",
+      "frases": [
+        140
+      ],
+      "tipo": "midia",
+      "estilo": "moldura",
+      "movimento": "zoom-in",
+      "descricao": "bacalhau de molho numa bacia esmaltada de água fria na pia",
+      "busca": {
+        "consultas": [
+          "salt cod soaking in enamel basin cold water sink",
+          "morue qui dessale bassine d'eau froide evier"
+        ],
+        "tipo": "imagem",
+        "bancos": [
+          "pexels",
+          "pixabay"
+        ]
+      },
+      "pb": false,
+      "fundo": "#4A2C1D",
+      "transicao": "fade"
+    },
+    {
+      "id": "c099",
+      "frases": [
+        141,
+        142
+      ],
+      "tipo": "midia",
+      "estilo": "tela-cheia",
+      "movimento": "pan-direita",
+      "descricao": "bacalhau escalfado com batatas e molho branco no prato",
+      "busca": {
+        "consultas": [
+          "poached cod potatoes white sauce plate",
+          "morue pochee pommes de terre sauce blanche"
+        ],
+        "tipo": "imagem",
+        "bancos": [
+          "pexels",
+          "pixabay"
+        ]
+      },
+      "pb": false,
+      "transicao": "fade"
+    },
+    {
+      "id": "c100",
+      "frases": [
+        143
+      ],
+      "tipo": "midia",
+      "estilo": "tela-cheia",
+      "movimento": "zoom-out",
+      "descricao": "brandade de bacalhau numa travessa com azeite e alho, mesa do Sul",
+      "busca": {
+        "consultas": [
+          "brandade de morue dish olive oil garlic south france",
+          "brandade de morue huile d'olive ail Sud"
+        ],
+        "tipo": "imagem",
+        "bancos": [
+          "pexels",
+          "pixabay"
+        ]
+      },
+      "pb": false,
+      "transicao": "fade"
+    },
+    {
+      "id": "c101",
+      "frases": [
+        144,
+        145
+      ],
+      "tipo": "midia",
+      "estilo": "moldura",
+      "movimento": "pan-esquerda",
+      "descricao": "porta-moedas antigo aberto com poucas moedas contadas sobre a mesa",
+      "busca": {
+        "consultas": [
+          "old coin purse few coins counted on table 1960s",
+          "porte-monnaie ancien pieces comptees table"
+        ],
+        "tipo": "imagem",
+        "bancos": [
+          "archive",
+          "wikimedia",
+          "pexels"
+        ]
+      },
+      "pb": false,
+      "fundo": "#E8A33D",
+      "transicao": "fade"
+    },
+    {
+      "id": "c102",
+      "frases": [
+        146,
+        147
+      ],
+      "tipo": "midia",
+      "estilo": "tela-cheia",
+      "movimento": "zoom-in",
+      "descricao": "etiqueta de preço sobre bacalhau numa peixaria de hoje, sem rostos",
+      "busca": {
+        "consultas": [
+          "price tag on cod fish counter today close up",
+          "etiquette de prix morue poissonnerie aujourd'hui"
+        ],
+        "tipo": "imagem",
+        "bancos": [
+          "pexels",
+          "pixabay"
+        ]
+      },
+      "texto_tela": {
+        "tipo": "destaque",
+        "texto": "Plus cher que la viande",
+        "duracao": 3.0
+      },
+      "pb": false,
+      "transicao": "fade"
+    },
+    {
+      "id": "c103",
+      "frases": [
+        148
+      ],
+      "tipo": "midia",
+      "estilo": "tela-cheia",
+      "movimento": "pan-direita",
+      "descricao": "mesa de cozinha vazia com cadeiras afastadas, cozinha antiga",
+      "busca": {
+        "consultas": [
+          "empty kitchen table chairs pushed back old house",
+          "table de cuisine vide chaises ecartees"
+        ],
+        "tipo": "imagem",
+        "bancos": [
+          "archive",
+          "wikimedia",
+          "openverse"
+        ]
+      },
+      "pb": true,
+      "transicao": "fade"
+    },
+    {
+      "id": "c104",
+      "frases": [
+        149
+      ],
+      "tipo": "titulo",
+      "titulo": "ONT-ILS VRAIMENT DISPARU ?",
+      "subtitulo": "UN INSTANT, AVANT LE WEEK-END",
+      "fundo": "#4A2C1D",
+      "transicao": "slide"
+    },
+    {
+      "id": "c105",
+      "frases": [
+        150
+      ],
+      "tipo": "midia",
+      "estilo": "tela-cheia",
+      "movimento": "zoom-out",
+      "descricao": "bandeja de comida pronta de plástico girando no micro-ondas, sem rostos",
+      "busca": {
+        "consultas": [
+          "ready meal plastic tray spinning in microwave",
+          "barquette plat prepare micro-ondes"
+        ],
+        "tipo": "video",
+        "bancos": [
+          "pexels",
+          "pixabay"
+        ]
+      },
+      "pb": false,
+      "transicao": "fade"
+    },
+    {
+      "id": "c106",
+      "frases": [
+        151
+      ],
+      "tipo": "midia",
+      "estilo": "moldura",
+      "movimento": "zoom-out",
+      "descricao": "escada de prédio vazia, ninguém subindo, luz fria",
+      "busca": {
+        "consultas": [
+          "empty apartment stairwell nobody cold light",
+          "cage d'escalier vide personne lumiere froide"
+        ],
+        "tipo": "imagem",
+        "bancos": [
+          "archive",
+          "wikimedia",
+          "pexels"
+        ]
+      },
+      "pb": false,
+      "fundo": "#5A3522",
+      "transicao": "fade"
+    },
+    {
+      "id": "c107",
+      "frases": [
+        152
+      ],
+      "tipo": "colagem",
+      "estilo": "moldura",
+      "movimento": "zoom-in",
+      "descricao": "colagem: os pratos que ainda se fazem hoje (endives, pot-au-feu, blanquette)",
+      "fundo": "#D9622B",
+      "camadas": [
+        {
+          "cena": "c057",
+          "x": 0.27,
+          "y": 0.34,
+          "largura": 0.36,
+          "rotacao": -4
+        },
+        {
+          "cena": "c017",
+          "x": 0.72,
+          "y": 0.33,
+          "largura": 0.34,
+          "rotacao": 3
+        },
+        {
+          "cena": "c180",
+          "x": 0.5,
+          "y": 0.7,
+          "largura": 0.38,
+          "rotacao": -2
+        }
+      ],
+      "transicao": "zoom"
+    },
+    {
+      "id": "c108",
+      "frases": [
+        153
+      ],
+      "tipo": "midia",
+      "estilo": "tela-cheia",
+      "movimento": "pan-esquerda",
+      "descricao": "cocotte de ferro fundido numa cozinha de hoje, vapor, sem rostos",
+      "busca": {
+        "consultas": [
+          "cast iron pot simmering modern kitchen no people",
+          "cocotte en fonte cuisine d'aujourd'hui vapeur"
+        ],
+        "tipo": "imagem",
+        "bancos": [
+          "pexels",
+          "pixabay"
+        ]
+      },
+      "pb": false,
+      "transicao": "corte"
+    },
+    {
+      "id": "c109",
+      "frases": [
+        154,
+        155
+      ],
+      "tipo": "citacao",
+      "titulo": "Ces plats ne sont pas morts.\nIls ont quitté la table de tous les jours.",
+      "fundo": "#4A2C1D",
+      "transicao": "fade"
+    },
+    {
+      "id": "c110",
+      "frases": [
+        156
+      ],
+      "tipo": "midia",
+      "estilo": "tela-cheia",
+      "movimento": "zoom-in",
+      "descricao": "mesa de família posta para um almoço de domingo quando os filhos vem",
+      "busca": {
+        "consultas": [
+          "family table set sunday lunch guests coming",
+          "table dressee repas de famille dimanche"
+        ],
+        "tipo": "imagem",
+        "bancos": [
+          "archive",
+          "wikimedia",
+          "pexels"
+        ]
+      },
+      "pb": false,
+      "transicao": "fade"
+    },
+    {
+      "id": "c111",
+      "frases": [
+        157,
+        158,
+        159
+      ],
+      "tipo": "midia",
+      "estilo": "tela-cheia",
+      "movimento": "pan-direita",
+      "descricao": "relógio de cozinha antigo com os ponteiros em close",
+      "busca": {
+        "consultas": [
+          "vintage kitchen wall clock hands close up",
+          "horloge de cuisine ancienne aiguilles"
+        ],
+        "tipo": "imagem",
+        "bancos": [
+          "wikimedia",
+          "archive"
+        ]
+      },
+      "texto_tela": {
+        "tipo": "destaque",
+        "texto": "Le temps",
+        "duracao": 3.0
+      },
+      "pb": false,
+      "transicao": "fade"
+    },
+    {
+      "id": "c112",
+      "frases": [
+        160
+      ],
+      "tipo": "midia",
+      "estilo": "moldura",
+      "movimento": "parado",
+      "descricao": "panela tampada fervendo devagar com vapor subindo numa cozinha",
+      "busca": {
+        "consultas": [
+          "covered pot simmering steam rising kitchen",
+          "casserole qui mijote vapeur cuisine"
+        ],
+        "tipo": "video",
+        "bancos": [
+          "pexels",
+          "pixabay"
+        ]
+      },
+      "pb": false,
+      "fundo": "#F3E7CF",
+      "transicao": "fade"
+    },
+    {
+      "id": "c113",
+      "frases": [
+        161
+      ],
+      "tipo": "midia",
+      "estilo": "tela-cheia",
+      "movimento": "zoom-out",
+      "descricao": "leiteira dos anos 60 cortando uma porção de manteiga, latões de leite da fazenda",
+      "busca": {
+        "consultas": [
+          "1960s french dairy shop butter block milk cans",
+          "cremerie annees 60 motte de beurre bidons de lait"
+        ],
+        "tipo": "imagem",
+        "bancos": [
+          "archive",
+          "wikimedia",
+          "openverse"
+        ]
+      },
+      "pb": true,
+      "transicao": "fade"
+    },
+    {
+      "id": "c114",
+      "frases": [
+        162
+      ],
+      "tipo": "midia",
+      "estilo": "tela-cheia",
+      "movimento": "pan-esquerda",
+      "descricao": "reflexo de uma pessoa idosa numa vidraça de cozinha",
+      "busca": {
+        "consultas": [
+          "elderly person reflection kitchen window glass",
+          "reflet personne agee vitre de cuisine"
+        ],
+        "tipo": "imagem",
+        "bancos": [
+          "archive",
+          "wikimedia",
+          "openverse"
+        ]
+      },
+      "pb": false,
+      "transicao": "fade",
+      "prompt_geracao": "An elderly woman standing at a kitchen window seen from inside, photographed from behind over her shoulder; her face appears faintly mirrored in the windowpane in front of her. Close framing on the window and her reflection, the kitchen dark around it",
+      "nota_edicao": "v04: prompt de geração em inglês, com o tamanho do plano. v05: imagem gerada em cor; pb desligado para a edição não dessaturar."
+    },
+    {
+      "id": "c115",
+      "frases": [
+        163
+      ],
+      "tipo": "midia",
+      "estilo": "moldura",
+      "movimento": "zoom-in",
+      "descricao": "criança voltando da escola e abrindo a porta de casa, cartable, anos 60",
+      "busca": {
+        "consultas": [
+          "child coming home from school opening door 1960s",
+          "enfant rentre de l'ecole ouvre la porte annees 60"
+        ],
+        "tipo": "imagem",
+        "bancos": [
+          "archive",
+          "wikimedia",
+          "openverse"
+        ]
+      },
+      "pb": true,
+      "fundo": "#4A2C1D",
+      "transicao": "fade"
+    },
+    {
+      "id": "c116",
+      "frases": [
+        164,
+        165
+      ],
+      "tipo": "midia",
+      "estilo": "tela-cheia",
+      "movimento": "pan-direita",
+      "descricao": "mãos enrugadas de mulher idosa apoiadas na mesa da cozinha",
+      "busca": {
+        "consultas": [
+          "wrinkled elderly woman hands resting kitchen table",
+          "mains de femme agee posees sur la table"
+        ],
+        "tipo": "imagem",
+        "bancos": [
+          "archive",
+          "wikimedia",
+          "openverse"
+        ]
+      },
+      "pb": true,
+      "transicao": "fade"
+    },
+    {
+      "id": "c117",
+      "frases": [
+        166
+      ],
+      "tipo": "titulo",
+      "titulo": "SAMEDI",
+      "subtitulo": "CHEZ LE BOUCHER",
+      "fundo": "#E8A33D",
+      "transicao": "slide"
+    },
+    {
+      "id": "c118",
+      "frases": [
+        167,
+        168
+      ],
+      "tipo": "midia",
+      "estilo": "tela-cheia",
+      "movimento": "zoom-out",
+      "descricao": "banca de miúdos no tripier: língua, tripas, gras-double",
+      "busca": {
+        "consultas": [
+          "tripe shop stall offal tongue display france",
+          "etal de tripier abats langue tripes"
+        ],
+        "tipo": "imagem",
+        "bancos": [
+          "archive",
+          "wikimedia",
+          "pexels"
+        ]
+      },
+      "texto_tela": {
+        "tipo": "numero",
+        "texto": "NUMÉRO QUATORZE",
+        "subtexto": "Les abats",
+        "duracao": 1.8
+      },
+      "pb": false,
+      "transicao": "fade"
+    },
+    {
+      "id": "c119",
+      "frases": [
+        169
+      ],
+      "tipo": "midia",
+      "estilo": "moldura",
+      "movimento": "pan-esquerda",
+      "descricao": "criança fazendo careta diante do prato à mesa",
+      "busca": {
+        "consultas": [
+          "child grimacing in front of plate at table",
+          "enfant qui fait la grimace devant son assiette"
+        ],
+        "tipo": "imagem",
+        "bancos": [
+          "archive",
+          "wikimedia",
+          "openverse"
+        ]
+      },
+      "pb": true,
+      "fundo": "#5A3522",
+      "transicao": "fade"
+    },
+    {
+      "id": "c120",
+      "frases": [
+        170
+      ],
+      "tipo": "midia",
+      "estilo": "tela-cheia",
+      "movimento": "zoom-in",
+      "descricao": "família dos anos 60 comendo com apetite um prato de miúdos",
+      "busca": {
+        "consultas": [
+          "1960s family eating heartily offal dish table",
+          "famille annees 60 regale plat d'abats"
+        ],
+        "tipo": "imagem",
+        "bancos": [
+          "archive",
+          "wikimedia",
+          "openverse"
+        ]
+      },
+      "pb": true,
+      "transicao": "fade"
+    },
+    {
+      "id": "c121",
+      "frases": [
+        171
+      ],
+      "tipo": "midia",
+      "estilo": "tela-cheia",
+      "movimento": "pan-direita",
+      "descricao": "língua de boi cozida fatiada com molho picante de pepinos em conserva",
+      "busca": {
+        "consultas": [
+          "sliced beef tongue piquant sauce gherkins plate",
+          "langue de boeuf sauce piquante cornichons"
+        ],
+        "tipo": "imagem",
+        "bancos": [
+          "pexels",
+          "pixabay"
+        ]
+      },
+      "pb": false,
+      "transicao": "fade"
+    },
+    {
+      "id": "c122",
+      "frases": [
+        172
+      ],
+      "tipo": "midia",
+      "estilo": "moldura",
+      "movimento": "zoom-in",
+      "descricao": "tripas fervendo lentamente numa caçarola de barro e gras-double com cebola dourada",
+      "busca": {
+        "consultas": [
+          "tripe stewing earthenware pot onions browning",
+          "tripes qui mijotent gras-double oignons dores"
+        ],
+        "tipo": "video",
+        "bancos": [
+          "pexels",
+          "pixabay"
+        ]
+      },
+      "pb": false,
+      "fundo": "#E8A33D",
+      "transicao": "fade"
+    },
+    {
+      "id": "c123",
+      "frases": [
+        173
+      ],
+      "tipo": "midia",
+      "estilo": "moldura",
+      "movimento": "zoom-out",
+      "descricao": "mesa dividida: alguns encantados, outro saindo da cozinha, anos 60",
+      "busca": {
+        "consultas": [
+          "family table divided reaction leaving kitchen 1960s",
+          "famille divisee a table quitte la cuisine annees 60"
+        ],
+        "tipo": "imagem",
+        "bancos": [
+          "archive",
+          "wikimedia",
+          "openverse"
+        ]
+      },
+      "pb": true,
+      "fundo": "#D9622B",
+      "transicao": "fade"
+    },
+    {
+      "id": "c124",
+      "frases": [
+        174,
+        175
+      ],
+      "tipo": "midia",
+      "estilo": "tela-cheia",
+      "movimento": "pan-esquerda",
+      "descricao": "açougueiro de avental atrás do balcão conversando com a cliente, anos 60",
+      "busca": {
+        "consultas": [
+          "butcher apron behind counter talking customer 1960s",
+          "boucher en tablier comptoir parle a la cliente annees 60"
+        ],
+        "tipo": "imagem",
+        "bancos": [
+          "archive",
+          "wikimedia",
+          "openverse"
+        ]
+      },
+      "pb": true,
+      "transicao": "fade"
+    },
+    {
+      "id": "c125",
+      "frases": [
+        176
+      ],
+      "tipo": "midia",
+      "estilo": "tela-cheia",
+      "movimento": "zoom-in",
+      "descricao": "entregador de bicicleta com o pacote amarrado no porta-bagagem, rua francesa",
+      "busca": {
+        "consultas": [
+          "delivery boy bicycle parcel rack french street 1950s",
+          "commis livreur a velo paquet porte-bagages rue"
+        ],
+        "tipo": "imagem",
+        "bancos": [
+          "archive",
+          "wikimedia",
+          "openverse"
+        ]
+      },
+      "pb": true,
+      "transicao": "fade"
+    },
+    {
+      "id": "c126",
+      "frases": [
+        177
+      ],
+      "tipo": "midia",
+      "estilo": "moldura",
+      "movimento": "pan-direita",
+      "descricao": "leiteiro entregando garrafas de leite na porta ao amanhecer",
+      "busca": {
+        "consultas": [
+          "milkman delivering glass bottles doorstep dawn",
+          "laitier livre bouteilles de lait au petit matin"
+        ],
+        "tipo": "imagem",
+        "bancos": [
+          "archive",
+          "wikimedia",
+          "openverse"
+        ]
+      },
+      "pb": true,
+      "fundo": "#F3E7CF",
+      "transicao": "fade"
+    },
+    {
+      "id": "c127",
+      "frases": [
+        178
+      ],
+      "tipo": "midia",
+      "estilo": "moldura",
+      "movimento": "zoom-out",
+      "descricao": "merceeiro anotando a conta num caderninho atrás do balcão",
+      "busca": {
+        "consultas": [
+          "grocer writing in small notebook behind counter 1960s",
+          "epicier note sur son petit carnet comptoir"
+        ],
+        "tipo": "imagem",
+        "bancos": [
+          "archive",
+          "wikimedia",
+          "openverse"
+        ]
+      },
+      "pb": true,
+      "fundo": "#4A2C1D",
+      "transicao": "fade"
+    },
+    {
+      "id": "c128",
+      "frases": [
+        179,
+        180
+      ],
+      "tipo": "midia",
+      "estilo": "tela-cheia",
+      "movimento": "pan-esquerda",
+      "descricao": "loja de tripier fechada com grade baixada e letreiro antigo",
+      "busca": {
+        "consultas": [
+          "closed tripe shop shutter old sign france",
+          "boutique de tripier fermee rideau de fer enseigne"
+        ],
+        "tipo": "imagem",
+        "bancos": [
+          "archive",
+          "wikimedia",
+          "pexels"
+        ]
+      },
+      "pb": false,
+      "transicao": "fade"
+    },
+    {
+      "id": "c129",
+      "frases": [
+        181
+      ],
+      "tipo": "midia",
+      "estilo": "tela-cheia",
+      "movimento": "zoom-in",
+      "descricao": "bandejas de carne embaladas em plástico numa prateleira de supermercado, sem rostos",
+      "busca": {
+        "consultas": [
+          "packaged meat trays supermarket shelf plastic",
+          "viande sous plastique barquettes rayon"
+        ],
+        "tipo": "imagem",
+        "bancos": [
+          "pexels",
+          "pixabay"
+        ]
+      },
+      "pb": false,
+      "transicao": "fade"
+    },
+    {
+      "id": "c130",
+      "frases": [
+        182,
+        183
+      ],
+      "tipo": "midia",
+      "estilo": "tela-cheia",
+      "movimento": "pan-direita",
+      "descricao": "boudin noir na frigideira com quartos de maçã caramelizados",
+      "busca": {
+        "consultas": [
+          "black pudding boudin noir pan apple wedges",
+          "boudin noir aux pommes poele"
+        ],
+        "tipo": "imagem",
+        "bancos": [
+          "pexels",
+          "pixabay"
+        ]
+      },
+      "texto_tela": {
+        "tipo": "numero",
+        "texto": "NUMÉRO QUINZE",
+        "subtexto": "Le boudin aux pommes",
+        "duracao": 2.3
+      },
+      "pb": false,
+      "transicao": "fade"
+    },
+    {
+      "id": "c131",
+      "frases": [
+        184
+      ],
+      "tipo": "midia",
+      "estilo": "moldura",
+      "movimento": "zoom-out",
+      "descricao": "mulher e criança no mercado com o cabaz na mão, manhã fria, anos 60",
+      "busca": {
+        "consultas": [
+          "woman child shopping basket market cold morning 1960s",
+          "mere et enfant au marche cabas matin froid annees 60"
+        ],
+        "tipo": "imagem",
+        "bancos": [
+          "archive",
+          "wikimedia",
+          "openverse"
+        ]
+      },
+      "pb": true,
+      "fundo": "#5A3522",
+      "transicao": "fade"
+    },
+    {
+      "id": "c132",
+      "frases": [
+        185
+      ],
+      "tipo": "midia",
+      "estilo": "tela-cheia",
+      "movimento": "pan-esquerda",
+      "descricao": "laranjas empilhadas na banca e grãos de café sendo torrados no mercado",
+      "busca": {
+        "consultas": [
+          "oranges piled market stall coffee roasting beans",
+          "oranges empilees etal cafe torrefie marche"
+        ],
+        "tipo": "imagem",
+        "bancos": [
+          "archive",
+          "wikimedia",
+          "pexels"
+        ]
+      },
+      "pb": false,
+      "transicao": "fade"
+    },
+    {
+      "id": "c133",
+      "frases": [
+        186
+      ],
+      "tipo": "midia",
+      "estilo": "tela-cheia",
+      "movimento": "zoom-in",
+      "descricao": "boudin noir enrolado e brilhante na vitrine do charcutier",
+      "busca": {
+        "consultas": [
+          "coiled black pudding glossy charcuterie display",
+          "boudin noir enroule luisant charcutier vitrine"
+        ],
+        "tipo": "imagem",
+        "bancos": [
+          "pexels",
+          "pixabay"
+        ]
+      },
+      "pb": false,
+      "transicao": "fade"
+    },
+    {
+      "id": "c134",
+      "frases": [
+        187
+      ],
+      "tipo": "midia",
+      "estilo": "moldura",
+      "movimento": "parado",
+      "descricao": "boudin cozinhando devagar na frigideira sem estourar",
+      "busca": {
+        "consultas": [
+          "black pudding cooking gently in pan",
+          "boudin qui cuit doucement a la poele"
+        ],
+        "tipo": "video",
+        "bancos": [
+          "pexels",
+          "pixabay"
+        ]
+      },
+      "pb": false,
+      "fundo": "#E8A33D",
+      "transicao": "fade"
+    },
+    {
+      "id": "c135",
+      "frases": [
+        188
+      ],
+      "tipo": "midia",
+      "estilo": "tela-cheia",
+      "movimento": "zoom-out",
+      "descricao": "quartos de maçã caramelizando na manteiga na frigideira",
+      "busca": {
+        "consultas": [
+          "apple wedges caramelizing in butter pan",
+          "pommes en quartiers caramelisees poele"
+        ],
+        "tipo": "video",
+        "bancos": [
+          "pexels",
+          "pixabay"
+        ]
+      },
+      "pb": false,
+      "transicao": "fade"
+    },
+    {
+      "id": "c136",
+      "frases": [
+        189
+      ],
+      "tipo": "midia",
+      "estilo": "moldura",
+      "movimento": "pan-direita",
+      "descricao": "prato servido com boudin e maçãs, pão ao lado",
+      "busca": {
+        "consultas": [
+          "plate black pudding apples bread rustic",
+          "assiette boudin aux pommes pain"
+        ],
+        "tipo": "imagem",
+        "bancos": [
+          "pexels",
+          "pixabay"
+        ]
+      },
+      "pb": false,
+      "fundo": "#D9622B",
+      "transicao": "fade"
+    },
+    {
+      "id": "c137",
+      "frases": [
+        190
+      ],
+      "tipo": "midia",
+      "estilo": "tela-cheia",
+      "movimento": "zoom-out",
+      "descricao": "mercado de rua francês no fim da manhã, freguesa de cabas de palha prestes a ir embora da banca",
+      "busca": {
+        "consultas": [
+          "french street market stall end of morning woman wicker shopping basket 1960s",
+          "marche de rue francais menagere cabas annees 60",
+          "vegetable market stall leaving customer vintage"
+        ],
+        "tipo": "imagem",
+        "bancos": [
+          "archive",
+          "wikimedia",
+          "openverse"
+        ]
+      },
+      "pb": true,
+      "transicao": "fade"
+    },
+    {
+      "id": "c138",
+      "frases": [
+        191
+      ],
+      "tipo": "midia",
+      "estilo": "moldura",
+      "movimento": "zoom-in",
+      "descricao": "ramo de salsa sendo posto dentro do cabaz de palha",
+      "busca": {
+        "consultas": [
+          "bunch of parsley placed into wicker shopping basket",
+          "bouquet de persil glisse dans le cabas"
+        ],
+        "tipo": "imagem",
+        "bancos": [
+          "archive",
+          "wikimedia",
+          "pexels"
+        ]
+      },
+      "pb": false,
+      "fundo": "#E8A33D",
+      "transicao": "fade"
+    },
+    {
+      "id": "c139",
+      "frases": [
+        192,
+        193
+      ],
+      "tipo": "midia",
+      "estilo": "tela-cheia",
+      "movimento": "pan-esquerda",
+      "descricao": "sorriso do feirante entregando a salsa, troca de mãos no mercado",
+      "busca": {
+        "consultas": [
+          "market vendor smiling handing herbs customer 1960s",
+          "sourire du marchand qui tend le persil marche"
+        ],
+        "tipo": "imagem",
+        "bancos": [
+          "archive",
+          "wikimedia",
+          "openverse"
+        ]
+      },
+      "pb": true,
+      "transicao": "fade"
+    },
+    {
+      "id": "c140",
+      "frases": [
+        194,
+        195
+      ],
+      "tipo": "citacao",
+      "titulo": "Ce persil-là ne coûtait rien.\nEt c'est peut-être lui qui nous manque le plus.",
+      "fundo": "#5A3522",
+      "transicao": "fade"
+    },
+    {
+      "id": "c141",
+      "frases": [
+        196,
+        197
+      ],
+      "tipo": "midia",
+      "estilo": "tela-cheia",
+      "movimento": "zoom-in",
+      "descricao": "quignon de pão duro sobre a tábua numa cozinha à noite de sábado",
+      "busca": {
+        "consultas": [
+          "stale bread end on cutting board kitchen evening",
+          "quignon de pain dur planche cuisine samedi soir"
+        ],
+        "tipo": "imagem",
+        "bancos": [
+          "pexels",
+          "pixabay"
+        ]
+      },
+      "pb": false,
+      "transicao": "fade"
+    },
+    {
+      "id": "c142",
+      "frases": [
+        198,
+        199
+      ],
+      "tipo": "midia",
+      "estilo": "tela-cheia",
+      "movimento": "pan-direita",
+      "descricao": "tigela de panade, papa espessa de pão com manteiga",
+      "busca": {
+        "consultas": [
+          "thick bread porridge panade bowl butter",
+          "panade bouillie de pain bol beurre"
+        ],
+        "tipo": "imagem",
+        "bancos": [
+          "pexels",
+          "pixabay"
+        ]
+      },
+      "texto_tela": {
+        "tipo": "numero",
+        "texto": "NUMÉRO SEIZE",
+        "subtexto": "La panade",
+        "duracao": 2.6
+      },
+      "pb": false,
+      "transicao": "fade"
+    },
+    {
+      "id": "c143",
+      "frases": [
+        200
+      ],
+      "tipo": "midia",
+      "estilo": "moldura",
+      "movimento": "parado",
+      "descricao": "pedaços de pão duro cozinhando no caldo com manteiga, mexidos devagar",
+      "busca": {
+        "consultas": [
+          "stale bread pieces cooking in broth butter stirred",
+          "pain dur en morceaux cuit dans le bouillon beurre"
+        ],
+        "tipo": "video",
+        "bancos": [
+          "pexels",
+          "pixabay"
+        ]
+      },
+      "pb": false,
+      "fundo": "#F3E7CF",
+      "transicao": "fade"
+    },
+    {
+      "id": "c144",
+      "frases": [
+        201
+      ],
+      "tipo": "midia",
+      "estilo": "tela-cheia",
+      "movimento": "zoom-out",
+      "descricao": "colher erguida com a papa espessa escorrendo devagar",
+      "busca": {
+        "consultas": [
+          "spoon lifted thick porridge slowly dripping",
+          "cuillere bouillie epaisse qui coule"
+        ],
+        "tipo": "imagem",
+        "bancos": [
+          "pexels",
+          "pixabay"
+        ]
+      },
+      "pb": false,
+      "transicao": "fade"
+    },
+    {
+      "id": "c145",
+      "frases": [
+        202
+      ],
+      "tipo": "midia",
+      "estilo": "tela-cheia",
+      "movimento": "pan-esquerda",
+      "descricao": "panade de leite adoçada numa tigela de faiança",
+      "busca": {
+        "consultas": [
+          "sweet milk bread porridge earthenware bowl",
+          "panade au lait sucree bol faience"
+        ],
+        "tipo": "imagem",
+        "bancos": [
+          "pexels",
+          "pixabay"
+        ]
+      },
+      "pb": false,
+      "transicao": "fade"
+    },
+    {
+      "id": "c146",
+      "frases": [
+        203,
+        204
+      ],
+      "tipo": "midia",
+      "estilo": "moldura",
+      "movimento": "zoom-in",
+      "descricao": "mesa pobre de cozinha com um único prato e um armário quase vazio ao fundo",
+      "busca": {
+        "consultas": [
+          "sparse kitchen table single dish empty cupboard 1950s",
+          "table pauvre un seul plat placard presque vide"
+        ],
+        "tipo": "imagem",
+        "bancos": [
+          "archive",
+          "wikimedia",
+          "openverse"
+        ]
+      },
+      "pb": true,
+      "fundo": "#4A2C1D",
+      "transicao": "fade"
+    },
+    {
+      "id": "c147",
+      "frases": [
+        205,
+        206
+      ],
+      "tipo": "midia",
+      "estilo": "moldura",
+      "movimento": "pan-direita",
+      "descricao": "rosto sério de uma mulher dos anos 50 e um caderno de contas aberto",
+      "busca": {
+        "consultas": [
+          "serious woman face 1950s account notebook kitchen",
+          "visage grave femme annees 50 carnet de comptes"
+        ],
+        "tipo": "imagem",
+        "bancos": [
+          "archive",
+          "wikimedia",
+          "openverse"
+        ]
+      },
+      "pb": true,
+      "fundo": "#5A3522",
+      "transicao": "fade"
+    },
+    {
+      "id": "c148",
+      "frases": [
+        207
+      ],
+      "tipo": "midia",
+      "estilo": "tela-cheia",
+      "movimento": "zoom-out",
+      "descricao": "criança diante do prato que precisava terminar, mãos no colo",
+      "busca": {
+        "consultas": [
+          "child must finish plate at table 1960s",
+          "enfant force de finir son assiette annees 60"
+        ],
+        "tipo": "imagem",
+        "bancos": [
+          "archive",
+          "wikimedia",
+          "openverse"
+        ]
+      },
+      "pb": true,
+      "transicao": "fade"
+    },
+    {
+      "id": "c149",
+      "frases": [
+        208,
+        209,
+        210
+      ],
+      "tipo": "midia",
+      "estilo": "tela-cheia",
+      "movimento": "pan-esquerda",
+      "descricao": "mesa cheia de família numerosa falando alto perto do fogão a lenha",
+      "busca": {
+        "consultas": [
+          "crowded family table talking warm wood stove 1960s",
+          "table pleine famille voix chaleur du poele annees 60"
+        ],
+        "tipo": "imagem",
+        "bancos": [
+          "archive",
+          "wikimedia",
+          "openverse"
+        ]
+      },
+      "pb": true,
+      "transicao": "fade"
+    },
+    {
+      "id": "c150",
+      "frases": [
+        211
+      ],
+      "tipo": "midia",
+      "estilo": "moldura",
+      "movimento": "zoom-in",
+      "descricao": "mãos de mulher quebrando três croutons de pão dentro do caldo",
+      "busca": {
+        "consultas": [
+          "woman hands breaking bread crusts into broth",
+          "mains de femme qui rompent des croutons bouillon"
+        ],
+        "tipo": "imagem",
+        "bancos": [
+          "archive",
+          "wikimedia",
+          "openverse"
+        ]
+      },
+      "pb": true,
+      "fundo": "#E8A33D",
+      "transicao": "fade"
+    },
+    {
+      "id": "c151",
+      "frases": [
+        212,
+        213
+      ],
+      "tipo": "midia",
+      "estilo": "tela-cheia",
+      "movimento": "pan-direita",
+      "descricao": "mãos girando a colher de pau na panela, close",
+      "busca": {
+        "consultas": [
+          "hands stirring wooden spoon in pot close up",
+          "mains qui tournent la cuillere en bois casserole"
+        ],
+        "tipo": "imagem",
+        "bancos": [
+          "pexels",
+          "pixabay"
+        ]
+      },
+      "texto_tela": {
+        "tipo": "destaque",
+        "texto": "Retenez ce geste",
+        "duracao": 1.3
+      },
+      "pb": false,
+      "transicao": "fade"
+    },
+    {
+      "id": "c152",
+      "frases": [
+        214
+      ],
+      "tipo": "midia",
+      "estilo": "tela-cheia",
+      "movimento": "zoom-out",
+      "descricao": "sopeira fumegante posta no centro da mesa de sábado",
+      "busca": {
+        "consultas": [
+          "steaming soup tureen centre of table 1960s",
+          "soupiere fumante centre de la table"
+        ],
+        "tipo": "imagem",
+        "bancos": [
+          "archive",
+          "wikimedia",
+          "pexels"
+        ]
+      },
+      "pb": false,
+      "transicao": "fade"
+    },
+    {
+      "id": "c153",
+      "frases": [
+        215,
+        216
+      ],
+      "tipo": "midia",
+      "estilo": "tela-cheia",
+      "movimento": "pan-esquerda",
+      "descricao": "tigela de sopa de cebola gratinada com crosta de queijo",
+      "busca": {
+        "consultas": [
+          "french onion soup gratinated cheese crust bowl",
+          "soupe a l'oignon gratinee croute de fromage bol"
+        ],
+        "tipo": "imagem",
+        "bancos": [
+          "pexels",
+          "pixabay"
+        ]
+      },
+      "texto_tela": {
+        "tipo": "numero",
+        "texto": "NUMÉRO DIX-SEPT",
+        "subtexto": "La soupe à l'oignon",
+        "duracao": 2.4
+      },
+      "pb": false,
+      "transicao": "fade"
+    },
+    {
+      "id": "c154",
+      "frases": [
+        217
+      ],
+      "tipo": "midia",
+      "estilo": "moldura",
+      "movimento": "zoom-in",
+      "descricao": "cebolas derretendo devagar na manteiga ate ficarem escuras",
+      "busca": {
+        "consultas": [
+          "onions caramelizing slowly in butter brown pan",
+          "oignons fondus lentement dans le beurre bruns"
+        ],
+        "tipo": "video",
+        "bancos": [
+          "pexels",
+          "pixabay"
+        ]
+      },
+      "pb": false,
+      "fundo": "#D9622B",
+      "transicao": "fade"
+    },
+    {
+      "id": "c155",
+      "frases": [
+        218
+      ],
+      "tipo": "midia",
+      "estilo": "tela-cheia",
+      "movimento": "zoom-in",
+      "descricao": "crosta de queijo gratinado quase queimada nas bordas da tigela",
+      "busca": {
+        "consultas": [
+          "melted cheese crust browned edges soup bowl",
+          "fromage gratine presque brule bords du bol"
+        ],
+        "tipo": "imagem",
+        "bancos": [
+          "pexels",
+          "pixabay"
+        ]
+      },
+      "pb": false,
+      "transicao": "fade"
+    },
+    {
+      "id": "c156",
+      "frases": [
+        219
+      ],
+      "tipo": "midia",
+      "estilo": "moldura",
+      "movimento": "parado",
+      "descricao": "colher rompendo a crosta e o vapor subindo da tigela",
+      "busca": {
+        "consultas": [
+          "spoon breaking cheese crust steam rising",
+          "cuillere casse la croute vapeur qui monte"
+        ],
+        "tipo": "video",
+        "bancos": [
+          "pexels",
+          "pixabay"
+        ]
+      },
+      "pb": false,
+      "fundo": "#F3E7CF",
+      "transicao": "fade"
+    },
+    {
+      "id": "c157",
+      "frases": [
+        220
+      ],
+      "tipo": "midia",
+      "estilo": "tela-cheia",
+      "movimento": "pan-direita",
+      "descricao": "festa de casamento de aldeia ao amanhecer, convidados cantando, anos 60",
+      "busca": {
+        "consultas": [
+          "village wedding party dawn guests singing 1960s",
+          "noce de village au petit matin invites annees 60"
+        ],
+        "tipo": "imagem",
+        "bancos": [
+          "archive",
+          "wikimedia",
+          "openverse"
+        ]
+      },
+      "pb": true,
+      "transicao": "fade"
+    },
+    {
+      "id": "c158",
+      "frases": [
+        221
+      ],
+      "tipo": "midia",
+      "estilo": "tela-cheia",
+      "movimento": "zoom-out",
+      "descricao": "canto do fogão a noite com a marmita comecando a ferver, luz baixa",
+      "busca": {
+        "consultas": [
+          "corner of stove at night pot starting to simmer",
+          "coin de la cuisiniere la nuit marmite qui fremit"
+        ],
+        "tipo": "imagem",
+        "bancos": [
+          "archive",
+          "wikimedia",
+          "pexels"
+        ]
+      },
+      "pb": false,
+      "transicao": "fade"
+    },
+    {
+      "id": "c159",
+      "frases": [
+        222
+      ],
+      "tipo": "titulo",
+      "titulo": "DIMANCHE",
+      "fundo": "#D9622B",
+      "transicao": "slide"
+    },
+    {
+      "id": "c160",
+      "frases": [
+        223
+      ],
+      "tipo": "midia",
+      "estilo": "tela-cheia",
+      "movimento": "pan-esquerda",
+      "descricao": "pot-au-feu servido: carne e legumes numa travessa funda",
+      "busca": {
+        "consultas": [
+          "pot au feu served beef vegetables platter",
+          "pot-au-feu servi viande legumes plat"
+        ],
+        "tipo": "imagem",
+        "bancos": [
+          "pexels",
+          "pixabay"
+        ]
+      },
+      "texto_tela": {
+        "tipo": "numero",
+        "texto": "NUMÉRO DIX-HUIT",
+        "subtexto": "Le pot-au-feu",
+        "duracao": 2.4
+      },
+      "pb": false,
+      "transicao": "fade"
+    },
+    {
+      "id": "c161",
+      "frases": [
+        224
+      ],
+      "tipo": "colagem",
+      "estilo": "moldura",
+      "movimento": "zoom-out",
+      "descricao": "colagem de segunda-feira: hachis, moinho e marmita, o que ficou prometido",
+      "fundo": "#4A2C1D",
+      "camadas": [
+        {
+          "cena": "c011",
+          "x": 0.28,
+          "y": 0.36,
+          "largura": 0.34,
+          "rotacao": -5
+        },
+        {
+          "cena": "c020",
+          "x": 0.7,
+          "y": 0.34,
+          "largura": 0.32,
+          "rotacao": 4
+        },
+        {
+          "cena": "c017",
+          "x": 0.5,
+          "y": 0.72,
+          "largura": 0.36,
+          "rotacao": -2
+        }
+      ],
+      "transicao": "zoom"
+    },
+    {
+      "id": "c162",
+      "frases": [
+        225,
+        226
+      ],
+      "tipo": "midia",
+      "estilo": "tela-cheia",
+      "movimento": "zoom-in",
+      "descricao": "grande marmita de ferro fundido no fogão, o rei da semana",
+      "busca": {
+        "consultas": [
+          "large cast iron stockpot on stove steam",
+          "grande marmite en fonte cuisiniere vapeur"
+        ],
+        "tipo": "imagem",
+        "bancos": [
+          "archive",
+          "wikimedia",
+          "pexels"
+        ]
+      },
+      "pb": false,
+      "transicao": "fade"
+    },
+    {
+      "id": "c163",
+      "frases": [
+        227
+      ],
+      "tipo": "midia",
+      "estilo": "tela-cheia",
+      "movimento": "pan-direita",
+      "descricao": "alhos-porros amarrados em feixe, cenouras e nabos sobre a mesa",
+      "busca": {
+        "consultas": [
+          "leeks tied in bundle carrots turnips table",
+          "poireaux ficeles en botte carottes navets"
+        ],
+        "tipo": "imagem",
+        "bancos": [
+          "pexels",
+          "pixabay"
+        ]
+      },
+      "pb": false,
+      "transicao": "fade"
+    },
+    {
+      "id": "c164",
+      "frases": [
+        228,
+        229
+      ],
+      "tipo": "midia",
+      "estilo": "moldura",
+      "movimento": "zoom-out",
+      "descricao": "osso com tutano e a medula espalhada numa torrada com sal grosso",
+      "busca": {
+        "consultas": [
+          "marrow bone spread on toast coarse salt",
+          "os a moelle etalee sur pain grille gros sel"
+        ],
+        "tipo": "imagem",
+        "bancos": [
+          "pexels",
+          "pixabay"
+        ]
+      },
+      "pb": false,
+      "fundo": "#5A3522",
+      "transicao": "fade"
+    },
+    {
+      "id": "c165",
+      "frases": [
+        230
+      ],
+      "tipo": "midia",
+      "estilo": "tela-cheia",
+      "movimento": "pan-esquerda",
+      "descricao": "mãos de crianças disputando o osso no prato",
+      "busca": {
+        "consultas": [
+          "children hands reaching for marrow bone plate",
+          "mains d'enfants se disputent l'os a moelle"
+        ],
+        "tipo": "imagem",
+        "bancos": [
+          "archive",
+          "wikimedia",
+          "openverse"
+        ]
+      },
+      "pb": true,
+      "transicao": "corte"
+    },
+    {
+      "id": "c166",
+      "frases": [
+        231,
+        232
+      ],
+      "tipo": "midia",
+      "estilo": "moldura",
+      "movimento": "zoom-in",
+      "descricao": "caldo servido como entrada no prato fundo, depois a carne e os legumes",
+      "busca": {
+        "consultas": [
+          "clear broth served deep plate then meat vegetables",
+          "bouillon en entree assiette creuse viande legumes"
+        ],
+        "tipo": "imagem",
+        "bancos": [
+          "pexels",
+          "pixabay"
+        ]
+      },
+      "pb": false,
+      "fundo": "#E8A33D",
+      "transicao": "fade"
+    },
+    {
+      "id": "c167",
+      "frases": [
+        233
+      ],
+      "tipo": "colagem",
+      "estilo": "moldura",
+      "movimento": "zoom-out",
+      "descricao": "colagem: um prato, vários dias - hachis e sopa do moinho",
+      "fundo": "#D9622B",
+      "camadas": [
+        {
+          "cena": "c011",
+          "x": 0.3,
+          "y": 0.4,
+          "largura": 0.38,
+          "rotacao": 3
+        },
+        {
+          "cena": "c018",
+          "x": 0.68,
+          "y": 0.62,
+          "largura": 0.34,
+          "rotacao": -4
+        }
+      ],
+      "transicao": "zoom"
+    },
+    {
+      "id": "c168",
+      "frases": [
+        234
+      ],
+      "tipo": "midia",
+      "estilo": "tela-cheia",
+      "movimento": "pan-direita",
+      "descricao": "mesa de cozinha com vários pratos servidos do mesmo cozido",
+      "busca": {
+        "consultas": [
+          "kitchen table several dishes from one pot meal",
+          "table plusieurs repas d'un seul plat cuisine"
+        ],
+        "tipo": "imagem",
+        "bancos": [
+          "archive",
+          "wikimedia",
+          "pexels"
+        ]
+      },
+      "pb": false,
+      "transicao": "fade"
+    },
+    {
+      "id": "c169",
+      "frases": [
+        235
+      ],
+      "tipo": "midia",
+      "estilo": "tela-cheia",
+      "movimento": "zoom-out",
+      "descricao": "balcão de açougue de hoje sem ossos com tutano, sem rostos",
+      "busca": {
+        "consultas": [
+          "modern butcher counter no marrow bones display",
+          "comptoir de boucherie aujourd'hui sans os a moelle"
+        ],
+        "tipo": "imagem",
+        "bancos": [
+          "pexels",
+          "pixabay"
+        ]
+      },
+      "pb": false,
+      "transicao": "fade"
+    },
+    {
+      "id": "c170",
+      "frases": [
+        236,
+        237
+      ],
+      "tipo": "midia",
+      "estilo": "moldura",
+      "movimento": "pan-esquerda",
+      "descricao": "prato de pot-au-feu incompleto, lugar vazio do osso na travessa",
+      "busca": {
+        "consultas": [
+          "pot au feu dish missing marrow bone plate",
+          "assiette de pot-au-feu sans os a moelle"
+        ],
+        "tipo": "imagem",
+        "bancos": [
+          "pexels",
+          "pixabay"
+        ]
+      },
+      "pb": false,
+      "fundo": "#F3E7CF",
+      "transicao": "fade"
+    },
+    {
+      "id": "c171",
+      "frases": [
+        238,
+        239
+      ],
+      "tipo": "midia",
+      "estilo": "tela-cheia",
+      "movimento": "zoom-in",
+      "descricao": "forno aceso de uma cozinha antiga com a travessa dourando dentro",
+      "busca": {
+        "consultas": [
+          "lit oven old kitchen roasting dish browning",
+          "four allume cuisine ancienne plat qui dore"
+        ],
+        "tipo": "imagem",
+        "bancos": [
+          "archive",
+          "wikimedia",
+          "pexels"
+        ]
+      },
+      "pb": false,
+      "transicao": "fade"
+    },
+    {
+      "id": "c172",
+      "frases": [
+        240
+      ],
+      "tipo": "midia",
+      "estilo": "tela-cheia",
+      "movimento": "pan-direita",
+      "descricao": "frango assado dourado numa travessa de forno, pele crocante",
+      "busca": {
+        "consultas": [
+          "roast chicken golden crispy skin roasting dish",
+          "poulet roti dore plat du four peau croustillante"
+        ],
+        "tipo": "imagem",
+        "bancos": [
+          "pexels",
+          "pixabay"
+        ]
+      },
+      "texto_tela": {
+        "tipo": "numero",
+        "texto": "NUMÉRO DIX-NEUF",
+        "subtexto": "Le poulet rôti du dimanche",
+        "duracao": 2.9
+      },
+      "pb": false,
+      "transicao": "fade"
+    },
+    {
+      "id": "c173",
+      "frases": [
+        241,
+        242
+      ],
+      "tipo": "midia",
+      "estilo": "moldura",
+      "movimento": "zoom-out",
+      "descricao": "galinhas numa banca de aves do mercado dos anos 60, frango como acontecimento",
+      "busca": {
+        "consultas": [
+          "poultry stall market chickens 1960s france",
+          "etal de volailles marche annees 60 poulet"
+        ],
+        "tipo": "imagem",
+        "bancos": [
+          "archive",
+          "wikimedia",
+          "openverse"
+        ]
+      },
+      "pb": true,
+      "fundo": "#4A2C1D",
+      "transicao": "fade"
+    },
+    {
+      "id": "c174",
+      "frases": [
+        243,
+        244
+      ],
+      "tipo": "midia",
+      "estilo": "tela-cheia",
+      "movimento": "zoom-out",
+      "descricao": "frango sendo regado com o próprio molho dentro do forno",
+      "busca": {
+        "consultas": [
+          "basting roast chicken with juices in oven",
+          "poulet arrose de son jus au four"
+        ],
+        "tipo": "video",
+        "bancos": [
+          "pexels",
+          "pixabay"
+        ]
+      },
+      "pb": false,
+      "transicao": "fade"
+    },
+    {
+      "id": "c175",
+      "frases": [
+        245
+      ],
+      "tipo": "midia",
+      "estilo": "tela-cheia",
+      "movimento": "pan-esquerda",
+      "descricao": "batatas assando no molho do frango e batatas fritas cortadas a mão na fritadeira",
+      "busca": {
+        "consultas": [
+          "potatoes roasting in chicken juices hand cut fries fryer",
+          "pommes de terre dans le jus frites coupees a la main friteuse"
+        ],
+        "tipo": "imagem",
+        "bancos": [
+          "pexels",
+          "pixabay"
+        ]
+      },
+      "pb": false,
+      "transicao": "fade"
+    },
+    {
+      "id": "c176",
+      "frases": [
+        246,
+        247,
+        248
+      ],
+      "tipo": "midia",
+      "estilo": "moldura",
+      "movimento": "zoom-in",
+      "descricao": "coxa e asa de frango assado num prato, close",
+      "busca": {
+        "consultas": [
+          "roast chicken leg and wing on plate close up",
+          "cuisse et aile de poulet roti assiette"
+        ],
+        "tipo": "imagem",
+        "bancos": [
+          "pexels",
+          "pixabay"
+        ]
+      },
+      "pb": false,
+      "fundo": "#5A3522",
+      "transicao": "fade"
+    },
+    {
+      "id": "c177",
+      "frases": [
+        249
+      ],
+      "tipo": "midia",
+      "estilo": "tela-cheia",
+      "movimento": "pan-direita",
+      "descricao": "pai trinchando o frango à mesa diante das crianças, anos 60",
+      "busca": {
+        "consultas": [
+          "father carving chicken at table children watching 1960s",
+          "pere qui decoupe le poulet a table annees 60"
+        ],
+        "tipo": "imagem",
+        "bancos": [
+          "archive",
+          "wikimedia",
+          "openverse"
+        ]
+      },
+      "pb": true,
+      "transicao": "fade"
+    },
+    {
+      "id": "c178",
+      "frases": [
+        250,
+        251
+      ],
+      "tipo": "midia",
+      "estilo": "moldura",
+      "movimento": "zoom-out",
+      "descricao": "duas crianças puxando cada uma um lado do osso do peito e fazendo um pedido",
+      "busca": {
+        "consultas": [
+          "two children pulling wishbone making a wish 1960s",
+          "enfants tirent le brechet voeu annees 60"
+        ],
+        "tipo": "imagem",
+        "bancos": [
+          "archive",
+          "wikimedia",
+          "openverse"
+        ]
+      },
+      "pb": false,
+      "fundo": "#E8A33D",
+      "transicao": "fade",
+      "prompt_geracao": "Very close view of two children's hands at a kitchen table, each holding one end of a dry pale chicken wishbone and pulling it apart; the bone is clean, dry and bare, with no meat, skin or sauce on it; emptied plates and bread crumbs on the tablecloth; only the hands and the children's chins in frame",
+      "nota_edicao": "v04: prompt de geração em inglês, com o tamanho do plano. v05: imagem gerada em cor; pb desligado para a edição não dessaturar. v07: osso seco e limpo; a versão anterior saiu avermelhada, com cara de carne crua."
+    },
+    {
+      "id": "c179",
+      "frases": [
+        252
+      ],
+      "tipo": "midia",
+      "estilo": "tela-cheia",
+      "movimento": "pan-esquerda",
+      "descricao": "mesa de domingo a francesa posta com toalha branca e família em volta",
+      "busca": {
+        "consultas": [
+          "french sunday table white tablecloth family 1960s",
+          "dimanche a la francaise table nappe blanche famille"
+        ],
+        "tipo": "imagem",
+        "bancos": [
+          "archive",
+          "wikimedia",
+          "openverse"
+        ]
+      },
+      "pb": true,
+      "transicao": "fade"
+    },
+    {
+      "id": "c180",
+      "frases": [
+        253,
+        254
+      ],
+      "tipo": "midia",
+      "estilo": "tela-cheia",
+      "movimento": "zoom-in",
+      "descricao": "blanquette de veau servida com molho branco e arroz",
+      "busca": {
+        "consultas": [
+          "blanquette de veau white sauce rice plate",
+          "blanquette de veau sauce blanche riz assiette"
+        ],
+        "tipo": "imagem",
+        "bancos": [
+          "pexels",
+          "pixabay"
+        ]
+      },
+      "texto_tela": {
+        "tipo": "numero",
+        "texto": "NUMÉRO VINGT",
+        "subtexto": "La blanquette de veau",
+        "duracao": 2.2
+      },
+      "pb": false,
+      "transicao": "fade"
+    },
+    {
+      "id": "c181",
+      "frases": [
+        255,
+        256
+      ],
+      "tipo": "midia",
+      "estilo": "moldura",
+      "movimento": "pan-direita",
+      "descricao": "molho branco cobrindo a colher e carne de vitela se desfazendo ao garfo",
+      "busca": {
+        "consultas": [
+          "white sauce coating spoon veal falling apart fork",
+          "sauce blanche nappante veau qui se defait fourchette"
+        ],
+        "tipo": "imagem",
+        "bancos": [
+          "pexels",
+          "pixabay"
+        ]
+      },
+      "pb": false,
+      "fundo": "#D9622B",
+      "transicao": "fade"
+    },
+    {
+      "id": "c182",
+      "frases": [
+        257,
+        258
+      ],
+      "tipo": "midia",
+      "estilo": "tela-cheia",
+      "movimento": "zoom-out",
+      "descricao": "cogumelos, cebolinhas e arroz branco ao lado do guisado",
+      "busca": {
+        "consultas": [
+          "mushrooms pearl onions white rice beside stew",
+          "champignons petits oignons riz blanc ragout"
+        ],
+        "tipo": "imagem",
+        "bancos": [
+          "pexels",
+          "pixabay"
+        ]
+      },
+      "pb": false,
+      "transicao": "fade"
+    },
+    {
+      "id": "c183",
+      "frases": [
+        259
+      ],
+      "tipo": "midia",
+      "estilo": "moldura",
+      "movimento": "pan-esquerda",
+      "descricao": "mãos abrindo um livro de receitas numa cozinha de hoje, sem rostos",
+      "busca": {
+        "consultas": [
+          "hands opening recipe book modern kitchen no faces",
+          "mains ouvrent un livre de recettes cuisine aujourd'hui"
+        ],
+        "tipo": "imagem",
+        "bancos": [
+          "pexels",
+          "pixabay"
+        ]
+      },
+      "pb": false,
+      "fundo": "#F3E7CF",
+      "transicao": "fade"
+    },
+    {
+      "id": "c184",
+      "frases": [
+        260,
+        261
+      ],
+      "tipo": "midia",
+      "estilo": "tela-cheia",
+      "movimento": "parado",
+      "descricao": "creme, gema de ovo e suco de limão sendo acrescentados no molho",
+      "busca": {
+        "consultas": [
+          "adding cream egg yolk lemon juice to sauce",
+          "creme jaune d'oeuf jus de citron ajoutes sauce"
+        ],
+        "tipo": "video",
+        "bancos": [
+          "pexels",
+          "pixabay"
+        ]
+      },
+      "pb": false,
+      "transicao": "fade"
+    },
+    {
+      "id": "c185",
+      "frases": [
+        262,
+        263,
+        264,
+        265,
+        266
+      ],
+      "tipo": "midia",
+      "estilo": "moldura",
+      "movimento": "zoom-in",
+      "descricao": "prato de blanquette quase intacto sobre a mesa",
+      "busca": {
+        "consultas": [
+          "barely touched plate of stew on table",
+          "assiette de blanquette presque intacte table"
+        ],
+        "tipo": "imagem",
+        "bancos": [
+          "pexels",
+          "pixabay"
+        ]
+      },
+      "pb": false,
+      "fundo": "#4A2C1D",
+      "transicao": "fade"
+    },
+    {
+      "id": "c186",
+      "frases": [
+        267,
+        268
+      ],
+      "tipo": "midia",
+      "estilo": "tela-cheia",
+      "movimento": "pan-direita",
+      "descricao": "a mesma cocotte de novo no fogo, tentativa repetida",
+      "busca": {
+        "consultas": [
+          "same pot back on the stove cooking again",
+          "la meme cocotte de nouveau sur le feu"
+        ],
+        "tipo": "imagem",
+        "bancos": [
+          "pexels",
+          "pixabay"
+        ]
+      },
+      "pb": false,
+      "transicao": "fade"
+    },
+    {
+      "id": "c187",
+      "frases": [
+        269
+      ],
+      "tipo": "citacao",
+      "titulo": "Toujours ce petit écart,\nimpossible à nommer.",
+      "fundo": "#D9622B",
+      "transicao": "fade"
+    },
+    {
+      "id": "c188",
+      "frases": [
+        270,
+        271,
+        272
+      ],
+      "tipo": "midia",
+      "estilo": "tela-cheia",
+      "movimento": "zoom-out",
+      "descricao": "caderno de receitas fechado sobre a mesa, pergunta suspensa",
+      "busca": {
+        "consultas": [
+          "closed handwritten recipe notebook on table",
+          "cahier de recettes ferme sur la table"
+        ],
+        "tipo": "imagem",
+        "bancos": [
+          "archive",
+          "wikimedia",
+          "pexels"
+        ]
+      },
+      "texto_tela": {
+        "tipo": "destaque",
+        "texto": "Qu'est-ce qui manquait ?",
+        "duracao": 3.5
+      },
+      "pb": false,
+      "transicao": "fade"
+    },
+    {
+      "id": "c189",
+      "frases": [
+        273,
+        274
+      ],
+      "tipo": "midia",
+      "estilo": "tela-cheia",
+      "movimento": "pan-esquerda",
+      "descricao": "boeuf bourguignon escuro na cocotte com lardons e cebolas",
+      "busca": {
+        "consultas": [
+          "beef bourguignon dark stew in pot bacon onions",
+          "boeuf bourguignon cocotte lardons oignons"
+        ],
+        "tipo": "imagem",
+        "bancos": [
+          "pexels",
+          "pixabay"
+        ]
+      },
+      "texto_tela": {
+        "tipo": "numero",
+        "texto": "NUMÉRO VINGT ET UN",
+        "subtexto": "Le bœuf bourguignon",
+        "duracao": 2.3
+      },
+      "pb": false,
+      "transicao": "fade"
+    },
+    {
+      "id": "c190",
+      "frases": [
+        275,
+        276
+      ],
+      "tipo": "midia",
+      "estilo": "moldura",
+      "movimento": "zoom-in",
+      "descricao": "fogo baixo embaixo da cocotte, chama pequena e constante",
+      "busca": {
+        "consultas": [
+          "low flame under cast iron pot slow cooking",
+          "feu doux sous la cocotte flamme lente"
+        ],
+        "tipo": "video",
+        "bancos": [
+          "pexels",
+          "pixabay"
+        ]
+      },
+      "pb": false,
+      "fundo": "#5A3522",
+      "transicao": "fade"
+    },
+    {
+      "id": "c191",
+      "frases": [
+        277
+      ],
+      "tipo": "midia",
+      "estilo": "tela-cheia",
+      "movimento": "parado",
+      "descricao": "carne selada na cocotte de ferro com lardons e cebolas, vinho tinto sendo vertido",
+      "busca": {
+        "consultas": [
+          "searing beef in cast iron pot pouring red wine",
+          "viande revenue cocotte en fonte vin rouge verse"
+        ],
+        "tipo": "video",
+        "bancos": [
+          "pexels",
+          "pixabay"
+        ]
+      },
+      "pb": false,
+      "transicao": "fade"
+    },
+    {
+      "id": "c192",
+      "frases": [
+        278,
+        279
+      ],
+      "tipo": "midia",
+      "estilo": "tela-cheia",
+      "movimento": "zoom-in",
+      "descricao": "corredor e cozinha de uma casa antiga tomados pelo aroma, luz de manha",
+      "busca": {
+        "consultas": [
+          "hallway old french house kitchen morning light",
+          "couloir maison ancienne cuisine lumiere du matin"
+        ],
+        "tipo": "imagem",
+        "bancos": [
+          "archive",
+          "wikimedia",
+          "openverse"
+        ]
+      },
+      "pb": true,
+      "transicao": "fade"
+    },
+    {
+      "id": "c193",
+      "frases": [
+        280
+      ],
+      "tipo": "midia",
+      "estilo": "moldura",
+      "movimento": "pan-direita",
+      "descricao": "família voltando da missa numa aldeia francesa, igreja ao fundo, anos 60",
+      "busca": {
+        "consultas": [
+          "family coming back from mass village church 1960s",
+          "famille rentre de la messe eglise village annees 60"
+        ],
+        "tipo": "imagem",
+        "bancos": [
+          "archive",
+          "wikimedia",
+          "openverse"
+        ]
+      },
+      "pb": true,
+      "fundo": "#E8A33D",
+      "transicao": "fade"
+    },
+    {
+      "id": "c194",
+      "frases": [
+        281
+      ],
+      "tipo": "midia",
+      "estilo": "moldura",
+      "movimento": "zoom-out",
+      "descricao": "cocotte raspada ate o fim, pratos vazios na mesa",
+      "busca": {
+        "consultas": [
+          "scraped empty stew pot plates on table",
+          "cocotte raclee assiettes vides table"
+        ],
+        "tipo": "imagem",
+        "bancos": [
+          "pexels",
+          "pixabay"
+        ]
+      },
+      "pb": false,
+      "fundo": "#D9622B",
+      "transicao": "fade"
+    },
+    {
+      "id": "c195",
+      "frases": [
+        282,
+        283
+      ],
+      "tipo": "midia",
+      "estilo": "tela-cheia",
+      "movimento": "pan-esquerda",
+      "descricao": "cocotte de ferro simples com ingredientes modestos ao lado: carne, cebola, vinho",
+      "busca": {
+        "consultas": [
+          "plain cast iron pot simple ingredients beef onion wine",
+          "cocotte en fonte simple ingredients modestes"
+        ],
+        "tipo": "imagem",
+        "bancos": [
+          "pexels",
+          "pixabay"
+        ]
+      },
+      "pb": false,
+      "transicao": "fade"
+    },
+    {
+      "id": "c196",
+      "frases": [
+        284,
+        285
+      ],
+      "tipo": "midia",
+      "estilo": "tela-cheia",
+      "movimento": "zoom-out",
+      "descricao": "relógio de cozinha com os ponteiros girando, close",
+      "busca": {
+        "consultas": [
+          "kitchen clock hands turning close up",
+          "horloge de cuisine aiguilles qui tournent"
+        ],
+        "tipo": "video",
+        "bancos": [
+          "pexels",
+          "pixabay"
+        ]
+      },
+      "texto_tela": {
+        "tipo": "destaque",
+        "texto": "Du temps",
+        "duracao": 1.7
+      },
+      "pb": false,
+      "transicao": "fade"
+    },
+    {
+      "id": "c197",
+      "frases": [
+        286,
+        287
+      ],
+      "tipo": "midia",
+      "estilo": "tela-cheia",
+      "movimento": "zoom-in",
+      "descricao": "civet de lapin em molho escuro numa cocotte de barro",
+      "busca": {
+        "consultas": [
+          "rabbit stew civet dark sauce earthenware pot",
+          "civet de lapin sauce sombre cocotte"
+        ],
+        "tipo": "imagem",
+        "bancos": [
+          "pexels",
+          "pixabay"
+        ]
+      },
+      "texto_tela": {
+        "tipo": "numero",
+        "texto": "NUMÉRO VINGT-DEUX",
+        "subtexto": "Le civet de lapin",
+        "duracao": 2.3
+      },
+      "pb": false,
+      "transicao": "fade"
+    },
+    {
+      "id": "c198",
+      "frases": [
+        288
+      ],
+      "tipo": "midia",
+      "estilo": "moldura",
+      "movimento": "pan-direita",
+      "descricao": "coelhos nas coelheiras no fundo do quintal de uma casa francesa, anos 60",
+      "busca": {
+        "consultas": [
+          "rabbits in backyard hutches french house 1960s",
+          "lapins dans les clapiers jardin annees 60"
+        ],
+        "tipo": "imagem",
+        "bancos": [
+          "archive",
+          "wikimedia",
+          "openverse"
+        ]
+      },
+      "pb": true,
+      "fundo": "#F3E7CF",
+      "transicao": "fade"
+    },
+    {
+      "id": "c199",
+      "frases": [
+        289,
+        290
+      ],
+      "tipo": "midia",
+      "estilo": "tela-cheia",
+      "movimento": "zoom-out",
+      "descricao": "coelheira vazia com a porta aberta, dia de festa",
+      "busca": {
+        "consultas": [
+          "empty rabbit hutch open door backyard",
+          "clapier vide porte ouverte jardin"
+        ],
+        "tipo": "imagem",
+        "bancos": [
+          "archive",
+          "wikimedia",
+          "pexels"
+        ]
+      },
+      "pb": false,
+      "transicao": "fade"
+    },
+    {
+      "id": "c200",
+      "frases": [
+        291
+      ],
+      "tipo": "midia",
+      "estilo": "tela-cheia",
+      "movimento": "parado",
+      "descricao": "civet fervendo devagar no vinho com lardons",
+      "busca": {
+        "consultas": [
+          "rabbit stew simmering in red wine bacon",
+          "civet qui mijote dans le vin lardons"
+        ],
+        "tipo": "video",
+        "bancos": [
+          "pexels",
+          "pixabay"
+        ]
+      },
+      "pb": false,
+      "transicao": "fade"
+    },
+    {
+      "id": "c201",
+      "frases": [
+        292
+      ],
+      "tipo": "midia",
+      "estilo": "moldura",
+      "movimento": "pan-esquerda",
+      "descricao": "pedaco de pão limpando o molho escuro no prato",
+      "busca": {
+        "consultas": [
+          "bread wiping dark sauce from plate",
+          "morceau de pain qui sauce la sauce sombre"
+        ],
+        "tipo": "imagem",
+        "bancos": [
+          "pexels",
+          "pixabay"
+        ]
+      },
+      "pb": false,
+      "fundo": "#4A2C1D",
+      "transicao": "fade"
+    },
+    {
+      "id": "c202",
+      "frases": [
+        293,
+        294
+      ],
+      "tipo": "midia",
+      "estilo": "tela-cheia",
+      "movimento": "zoom-in",
+      "descricao": "mesa de festa com extensão e cadeiras emprestadas, almoço de comunhão, anos 60",
+      "busca": {
+        "consultas": [
+          "extended family table borrowed chairs communion lunch 1960s",
+          "rallonge de table chaises empruntees repas de communion"
+        ],
+        "tipo": "imagem",
+        "bancos": [
+          "archive",
+          "wikimedia",
+          "openverse"
+        ]
+      },
+      "pb": true,
+      "transicao": "fade"
+    },
+    {
+      "id": "c203",
+      "frases": [
+        295,
+        296
+      ],
+      "tipo": "midia",
+      "estilo": "tela-cheia",
+      "movimento": "pan-direita",
+      "descricao": "crianças debaixo da mesa e tios conversando no almoço de família, anos 60",
+      "busca": {
+        "consultas": [
+          "children under the table uncles talking family lunch 1960s",
+          "cousins sous la table oncles qui racontent annees 60"
+        ],
+        "tipo": "imagem",
+        "bancos": [
+          "archive",
+          "wikimedia",
+          "openverse"
+        ]
+      },
+      "pb": true,
+      "transicao": "fade"
+    },
+    {
+      "id": "c204",
+      "frases": [
+        297,
+        298
+      ],
+      "tipo": "midia",
+      "estilo": "moldura",
+      "movimento": "zoom-out",
+      "descricao": "toalha de oleado trocada pela toalha branca dos dias de festa",
+      "busca": {
+        "consultas": [
+          "oilcloth replaced by white linen tablecloth set table",
+          "toile ciree remplacee par la nappe des grands jours"
+        ],
+        "tipo": "imagem",
+        "bancos": [
+          "archive",
+          "wikimedia",
+          "pexels"
+        ]
+      },
+      "pb": false,
+      "fundo": "#5A3522",
+      "transicao": "fade"
+    },
+    {
+      "id": "c205",
+      "frases": [
+        299
+      ],
+      "tipo": "colagem",
+      "estilo": "moldura",
+      "movimento": "zoom-in",
+      "descricao": "colagem: as duas últimas doçuras antes do último prato",
+      "fundo": "#E8A33D",
+      "camadas": [
+        {
+          "cena": "c210",
+          "x": 0.3,
+          "y": 0.42,
+          "largura": 0.36,
+          "rotacao": -4
+        },
+        {
+          "cena": "c215",
+          "x": 0.68,
+          "y": 0.56,
+          "largura": 0.36,
+          "rotacao": 3
+        }
+      ],
+      "transicao": "zoom"
+    },
+    {
+      "id": "c206",
+      "frases": [
+        300
+      ],
+      "tipo": "titulo",
+      "titulo": "LE NUMÉRO 25",
+      "fundo": "#5A3522",
+      "transicao": "slide"
+    },
+    {
+      "id": "c207",
+      "frases": [
+        301,
+        302
+      ],
+      "tipo": "midia",
+      "estilo": "tela-cheia",
+      "movimento": "pan-esquerda",
+      "descricao": "vitrine de loja fechada e mãos vazias: nada disso se compra",
+      "busca": {
+        "consultas": [
+          "closed shop window empty hands nothing to buy",
+          "vitrine fermee mains vides rien a acheter"
+        ],
+        "tipo": "imagem",
+        "bancos": [
+          "archive",
+          "wikimedia",
+          "openverse"
+        ]
+      },
+      "pb": true,
+      "transicao": "fade"
+    },
+    {
+      "id": "c208",
+      "frases": [
+        303
+      ],
+      "tipo": "colagem",
+      "estilo": "moldura",
+      "movimento": "zoom-out",
+      "descricao": "colagem: ele estava em cada prato da semana",
+      "fundo": "#D9622B",
+      "camadas": [
+        {
+          "cena": "c026",
+          "x": 0.26,
+          "y": 0.38,
+          "largura": 0.32,
+          "rotacao": -5
+        },
+        {
+          "cena": "c064",
+          "x": 0.55,
+          "y": 0.3,
+          "largura": 0.3,
+          "rotacao": 3
+        },
+        {
+          "cena": "c153",
+          "x": 0.72,
+          "y": 0.66,
+          "largura": 0.32,
+          "rotacao": -3
+        }
+      ],
+      "transicao": "zoom"
+    },
+    {
+      "id": "c209",
+      "frases": [
+        304
+      ],
+      "tipo": "midia",
+      "estilo": "tela-cheia",
+      "movimento": "zoom-in",
+      "descricao": "prato de blanquette visto de cima, a resposta que falta",
+      "busca": {
+        "consultas": [
+          "blanquette plate seen from above white sauce",
+          "assiette de blanquette vue du dessus"
+        ],
+        "tipo": "imagem",
+        "bancos": [
+          "pexels",
+          "pixabay"
+        ]
+      },
+      "pb": false,
+      "transicao": "fade"
+    },
+    {
+      "id": "c210",
+      "frases": [
+        305,
+        306,
+        307
+      ],
+      "tipo": "midia",
+      "estilo": "tela-cheia",
+      "movimento": "pan-direita",
+      "descricao": "tigela de arroz doce com canela, colher ao lado",
+      "busca": {
+        "consultas": [
+          "rice pudding bowl cinnamon spoon rustic",
+          "riz au lait bol cannelle cuillere"
+        ],
+        "tipo": "imagem",
+        "bancos": [
+          "pexels",
+          "pixabay"
+        ]
+      },
+      "texto_tela": {
+        "tipo": "numero",
+        "texto": "NUMÉRO VINGT-TROIS",
+        "subtexto": "Le riz au lait",
+        "duracao": 2.0
+      },
+      "pb": false,
+      "transicao": "fade"
+    },
+    {
+      "id": "c211",
+      "frases": [
+        308
+      ],
+      "tipo": "midia",
+      "estilo": "moldura",
+      "movimento": "zoom-in",
+      "descricao": "leite fervendo com fava de baunilha, arroz caindo em chuva, colher de pau no fundo da panela",
+      "busca": {
+        "consultas": [
+          "milk simmering vanilla pod rice poured wooden spoon pot",
+          "lait qui fremit vanille riz verse en pluie cuillere en bois"
+        ],
+        "tipo": "video",
+        "bancos": [
+          "pexels",
+          "pixabay"
+        ]
+      },
+      "pb": false,
+      "fundo": "#F3E7CF",
+      "transicao": "fade"
+    },
+    {
+      "id": "c212",
+      "frases": [
+        309
+      ],
+      "tipo": "midia",
+      "estilo": "moldura",
+      "movimento": "zoom-out",
+      "descricao": "vapor de leite quente subindo numa cozinha antiga",
+      "busca": {
+        "consultas": [
+          "hot milk steam rising old kitchen stove",
+          "vapeur de lait chaud cuisine ancienne"
+        ],
+        "tipo": "imagem",
+        "bancos": [
+          "archive",
+          "wikimedia",
+          "pexels"
+        ]
+      },
+      "pb": false,
+      "fundo": "#4A2C1D",
+      "transicao": "fade"
+    },
+    {
+      "id": "c213",
+      "frases": [
+        310,
+        311
+      ],
+      "tipo": "midia",
+      "estilo": "tela-cheia",
+      "movimento": "pan-esquerda",
+      "descricao": "criança raspando o fundo da panela de arroz doce com a colher",
+      "busca": {
+        "consultas": [
+          "child scraping rice pudding pot with spoon 1960s",
+          "enfant gratte la casserole de riz au lait annees 60"
+        ],
+        "tipo": "imagem",
+        "bancos": [
+          "archive",
+          "wikimedia",
+          "openverse"
+        ]
+      },
+      "pb": true,
+      "transicao": "fade"
+    },
+    {
+      "id": "c214",
+      "frases": [
+        312,
+        313
+      ],
+      "tipo": "midia",
+      "estilo": "tela-cheia",
+      "movimento": "zoom-in",
+      "descricao": "grãos de arroz caramelizados colados no fundo da panela",
+      "busca": {
+        "consultas": [
+          "caramelized rice grains stuck to bottom of pan",
+          "grains de riz caramelises colles au fond de la casserole"
+        ],
+        "tipo": "imagem",
+        "bancos": [
+          "pexels",
+          "pixabay"
+        ]
+      },
+      "pb": false,
+      "transicao": "fade"
+    },
+    {
+      "id": "c215",
+      "frases": [
+        314,
+        315
+      ],
+      "tipo": "midia",
+      "estilo": "tela-cheia",
+      "movimento": "pan-direita",
+      "descricao": "torta de maçã com as fatias dispostas em roseta, dourada",
+      "busca": {
+        "consultas": [
+          "apple tart apple slices rosette golden crust",
+          "tarte aux pommes lamelles en rosace doree"
+        ],
+        "tipo": "imagem",
+        "bancos": [
+          "pexels",
+          "pixabay"
+        ]
+      },
+      "texto_tela": {
+        "tipo": "numero",
+        "texto": "NUMÉRO VINGT-QUATRE",
+        "subtexto": "La tarte aux pommes",
+        "duracao": 2.4
+      },
+      "pb": false,
+      "transicao": "fade"
+    },
+    {
+      "id": "c216",
+      "frases": [
+        316
+      ],
+      "tipo": "midia",
+      "estilo": "moldura",
+      "movimento": "parado",
+      "descricao": "maçã sendo descascada numa única fita longa sem quebrar, faca e mao",
+      "busca": {
+        "consultas": [
+          "peeling apple in one long unbroken ribbon knife hand",
+          "pomme epluchee en un seul long ruban couteau"
+        ],
+        "tipo": "video",
+        "bancos": [
+          "pexels",
+          "pixabay"
+        ]
+      },
+      "pb": false,
+      "fundo": "#5A3522",
+      "transicao": "fade"
+    },
+    {
+      "id": "c217",
+      "frases": [
+        317,
+        318
+      ],
+      "tipo": "midia",
+      "estilo": "tela-cheia",
+      "movimento": "zoom-out",
+      "descricao": "calda caramelizada na borda da forma, dedo de criança se aproximando",
+      "busca": {
+        "consultas": [
+          "caramelized juice tart tin edge child finger",
+          "jus caramelise bord du moule doigt d'enfant"
+        ],
+        "tipo": "imagem",
+        "bancos": [
+          "pexels",
+          "pixabay"
+        ]
+      },
+      "pb": false,
+      "transicao": "fade"
+    },
+    {
+      "id": "c218",
+      "frases": [
+        319,
+        320
+      ],
+      "tipo": "midia",
+      "estilo": "tela-cheia",
+      "movimento": "pan-esquerda",
+      "descricao": "dedo levado a boca depois de provar a calda, criança cúmplice",
+      "busca": {
+        "consultas": [
+          "child licking finger after tasting tart juice",
+          "doigt porte a la bouche enfant complice"
+        ],
+        "tipo": "imagem",
+        "bancos": [
+          "archive",
+          "wikimedia",
+          "openverse"
+        ]
+      },
+      "pb": true,
+      "transicao": "fade"
+    },
+    {
+      "id": "c219",
+      "frases": [
+        321,
+        322
+      ],
+      "tipo": "midia",
+      "estilo": "moldura",
+      "movimento": "zoom-in",
+      "descricao": "xícaras de café e migalhas sobre a toalha depois do almoço",
+      "busca": {
+        "consultas": [
+          "coffee cups crumbs on tablecloth after lunch",
+          "tasses de cafe miettes sur la nappe apres le repas"
+        ],
+        "tipo": "imagem",
+        "bancos": [
+          "archive",
+          "wikimedia",
+          "pexels"
+        ]
+      },
+      "pb": false,
+      "fundo": "#E8A33D",
+      "transicao": "fade"
+    },
+    {
+      "id": "c220",
+      "frases": [
+        323,
+        324
+      ],
+      "tipo": "midia",
+      "estilo": "tela-cheia",
+      "movimento": "pan-direita",
+      "descricao": "mãos de mulher passando o pano na mesa da cozinha depois do almoço",
+      "busca": {
+        "consultas": [
+          "woman hands wiping kitchen table after meal",
+          "mains de femme qui essuient la table de cuisine"
+        ],
+        "tipo": "imagem",
+        "bancos": [
+          "archive",
+          "wikimedia",
+          "openverse"
+        ]
+      },
+      "pb": false,
+      "transicao": "fade",
+      "prompt_geracao": "Very close view of a woman's hands wiping a checked oilcloth kitchen table with a cloth after lunch, crumbs gathered to the edge; only hands and forearms in frame, apron sleeve at the edge of the picture",
+      "nota_edicao": "v04: prompt de geração em inglês, com o tamanho do plano. v05: imagem gerada em cor; pb desligado para a edição não dessaturar."
+    },
+    {
+      "id": "c221",
+      "frases": [
+        325
+      ],
+      "tipo": "titulo",
+      "titulo": "NUMÉRO 25",
+      "subtitulo": "LES MAINS DE CELLE QUI CUISINAIT",
+      "fundo": "#4A2C1D",
+      "transicao": "slide"
+    },
+    {
+      "id": "c222",
+      "frases": [
+        326,
+        327
+      ],
+      "tipo": "midia",
+      "estilo": "tela-cheia",
+      "movimento": "zoom-out",
+      "descricao": "retrato de uma avó francesa de avental na sua cozinha, anos 60",
+      "busca": {
+        "consultas": [
+          "portrait french grandmother apron kitchen 1960s",
+          "portrait grand-mere francaise tablier cuisine annees 60"
+        ],
+        "tipo": "imagem",
+        "bancos": [
+          "archive",
+          "wikimedia",
+          "openverse"
+        ]
+      },
+      "pb": true,
+      "transicao": "fade"
+    },
+    {
+      "id": "c223",
+      "frases": [
+        328
+      ],
+      "tipo": "midia",
+      "estilo": "tela-cheia",
+      "movimento": "pan-esquerda",
+      "descricao": "homem de avental cozinhando no fogão num domingo, anos 60",
+      "busca": {
+        "consultas": [
+          "man in apron cooking at stove sunday 1960s france",
+          "pere en tablier qui cuisine au fourneau annees 60"
+        ],
+        "tipo": "imagem",
+        "bancos": [
+          "archive",
+          "wikimedia",
+          "openverse"
+        ]
+      },
+      "pb": false,
+      "transicao": "fade",
+      "nota_edicao": "v05: imagem gerada em cor; pb desligado para a edição não dessaturar.",
+      "prompt_geracao": "A man in a kitchen apron standing at an enamel gas stove on a Sunday morning, stirring a heavy pot, seen from three-quarters behind; modest French kitchen of the period, tiled wall, pots on the shelf"
+    },
+    {
+      "id": "c224",
+      "frases": [
+        329,
+        330
+      ],
+      "tipo": "midia",
+      "estilo": "moldura",
+      "movimento": "zoom-in",
+      "descricao": "mãos vermelhas e gastas de uma mulher idosa em close",
+      "busca": {
+        "consultas": [
+          "elderly woman red worn hands close up",
+          "mains rouges abimees de femme agee gros plan"
+        ],
+        "tipo": "imagem",
+        "bancos": [
+          "archive",
+          "wikimedia",
+          "openverse"
+        ]
+      },
+      "pb": true,
+      "fundo": "#D9622B",
+      "transicao": "fade"
+    },
+    {
+      "id": "c225",
+      "frases": [
+        331
+      ],
+      "tipo": "citacao",
+      "titulo": "« Une pincée. »\n« À vue d'œil. »\n« Jusqu'à ce que ça sente bon. »",
+      "fundo": "#4A2C1D",
+      "transicao": "fade"
+    },
+    {
+      "id": "c226",
+      "frases": [
+        332,
+        333,
+        334
+      ],
+      "tipo": "midia",
+      "estilo": "tela-cheia",
+      "movimento": "pan-direita",
+      "descricao": "retrato de uma mulher de avental olhando a câmera, anos 60",
+      "busca": {
+        "consultas": [
+          "portrait woman apron looking at camera 1960s france",
+          "portrait femme en tablier annees 60"
+        ],
+        "tipo": "imagem",
+        "bancos": [
+          "archive",
+          "wikimedia",
+          "openverse"
+        ]
+      },
+      "texto_tela": {
+        "tipo": "destaque",
+        "texto": "Une personne",
+        "duracao": 2.2
+      },
+      "pb": true,
+      "transicao": "fade"
+    },
+    {
+      "id": "c227",
+      "frases": [
+        335
+      ],
+      "tipo": "midia",
+      "estilo": "tela-cheia",
+      "movimento": "zoom-out",
+      "descricao": "mão girando a colher de pau na panela num ritmo próprio",
+      "busca": {
+        "consultas": [
+          "hand stirring wooden spoon in pot own rhythm",
+          "main qui tourne la cuillere en bois casserole"
+        ],
+        "tipo": "video",
+        "bancos": [
+          "pexels",
+          "pixabay"
+        ]
+      },
+      "pb": false,
+      "transicao": "fade"
+    },
+    {
+      "id": "c228",
+      "frases": [
+        336
+      ],
+      "tipo": "midia",
+      "estilo": "moldura",
+      "movimento": "zoom-out",
+      "descricao": "mão baixando o fogo do fogão a gas antigo",
+      "busca": {
+        "consultas": [
+          "hand turning down flame old gas stove knob",
+          "main qui baisse le feu de la cuisiniere ancienne"
+        ],
+        "tipo": "imagem",
+        "bancos": [
+          "archive",
+          "wikimedia",
+          "pexels"
+        ]
+      },
+      "pb": false,
+      "fundo": "#F3E7CF",
+      "transicao": "fade"
+    },
+    {
+      "id": "c229",
+      "frases": [
+        337
+      ],
+      "tipo": "midia",
+      "estilo": "tela-cheia",
+      "movimento": "pan-esquerda",
+      "descricao": "caderno de receitas manuscrito a lápis, página manchada de gordura",
+      "busca": {
+        "consultas": [
+          "handwritten pencil recipe notebook greasy stained page",
+          "cahier de recettes au crayon page tachee de gras"
+        ],
+        "tipo": "imagem",
+        "bancos": [
+          "wikimedia",
+          "archive"
+        ]
+      },
+      "pb": false,
+      "transicao": "fade"
+    },
+    {
+      "id": "c230",
+      "frases": [
+        338
+      ],
+      "tipo": "midia",
+      "estilo": "tela-cheia",
+      "movimento": "zoom-in",
+      "descricao": "livro de cozinha francês grosso e antigo com páginas coladas sobre o buffet",
+      "busca": {
+        "consultas": [
+          "thick old french cookbook stuck pages on sideboard",
+          "gros livre de cuisine ancien pages collees buffet"
+        ],
+        "tipo": "imagem",
+        "bancos": [
+          "wikimedia",
+          "archive"
+        ]
+      },
+      "pb": false,
+      "transicao": "fade"
+    },
+    {
+      "id": "c231",
+      "frases": [
+        339,
+        340
+      ],
+      "tipo": "midia",
+      "estilo": "moldura",
+      "movimento": "pan-direita",
+      "descricao": "close extremo das mãos de uma cozinheira idosa",
+      "busca": {
+        "consultas": [
+          "extreme close up elderly cook hands",
+          "gros plan des mains d'une cuisiniere agee"
+        ],
+        "tipo": "imagem",
+        "bancos": [
+          "archive",
+          "wikimedia",
+          "openverse"
+        ]
+      },
+      "pb": true,
+      "fundo": "#4A2C1D",
+      "transicao": "fade"
+    },
+    {
+      "id": "c232",
+      "frases": [
+        341
+      ],
+      "tipo": "colagem",
+      "estilo": "moldura",
+      "movimento": "zoom-out",
+      "descricao": "colagem final: o hachis, o moinho, a maionese e o pot-au-feu, sempre ela",
+      "fundo": "#5A3522",
+      "camadas": [
+        {
+          "cena": "c011",
+          "x": 0.24,
+          "y": 0.34,
+          "largura": 0.3,
+          "rotacao": -5
+        },
+        {
+          "cena": "c020",
+          "x": 0.5,
+          "y": 0.28,
+          "largura": 0.26,
+          "rotacao": 4
+        },
+        {
+          "cena": "c049",
+          "x": 0.74,
+          "y": 0.42,
+          "largura": 0.28,
+          "rotacao": -3
+        },
+        {
+          "cena": "c160",
+          "x": 0.5,
+          "y": 0.72,
+          "largura": 0.32,
+          "rotacao": 2
+        }
+      ],
+      "transicao": "zoom"
+    },
+    {
+      "id": "c233",
+      "frases": [
+        342,
+        343
+      ],
+      "tipo": "midia",
+      "estilo": "tela-cheia",
+      "movimento": "zoom-out",
+      "descricao": "mulher servindo à mesa em silêncio, família sentada, anos 60",
+      "busca": {
+        "consultas": [
+          "woman serving family table silently 1960s",
+          "femme qui sert la table famille annees 60"
+        ],
+        "tipo": "imagem",
+        "bancos": [
+          "archive",
+          "wikimedia",
+          "openverse"
+        ]
+      },
+      "pb": true,
+      "transicao": "fade"
+    },
+    {
+      "id": "c234",
+      "frases": [
+        344
+      ],
+      "tipo": "citacao",
+      "titulo": "Elle laissait mijoter.",
+      "fundo": "#D9622B",
+      "transicao": "fade"
+    },
+    {
+      "id": "c235",
+      "frases": [
+        345,
+        346
+      ],
+      "tipo": "midia",
+      "estilo": "tela-cheia",
+      "movimento": "pan-esquerda",
+      "descricao": "cadeira vazia junto à mesa da cozinha antiga",
+      "busca": {
+        "consultas": [
+          "empty chair beside old kitchen table",
+          "chaise vide a cote de la table de cuisine"
+        ],
+        "tipo": "imagem",
+        "bancos": [
+          "archive",
+          "wikimedia",
+          "openverse"
+        ]
+      },
+      "pb": true,
+      "transicao": "fade"
+    },
+    {
+      "id": "c236",
+      "frases": [
+        347
+      ],
+      "tipo": "midia",
+      "estilo": "tela-cheia",
+      "movimento": "parado",
+      "descricao": "mãos cortando uma cebola numa tábua hoje, close sem rosto",
+      "busca": {
+        "consultas": [
+          "hands chopping onion cutting board close up today",
+          "mains qui coupent un oignon planche aujourd'hui"
+        ],
+        "tipo": "video",
+        "bancos": [
+          "pexels",
+          "pixabay"
+        ]
+      },
+      "pb": false,
+      "transicao": "fade"
+    },
+    {
+      "id": "c237",
+      "frases": [
+        348,
+        349
+      ],
+      "tipo": "midia",
+      "estilo": "moldura",
+      "movimento": "zoom-in",
+      "descricao": "duas gerações lado a lado no fogão, mãos e aventais",
+      "busca": {
+        "consultas": [
+          "two generations side by side cooking hands aprons",
+          "deux generations cote a cote au fourneau mains"
+        ],
+        "tipo": "imagem",
+        "bancos": [
+          "pexels",
+          "pixabay"
+        ]
+      },
+      "pb": false,
+      "fundo": "#E8A33D",
+      "transicao": "fade"
+    },
+    {
+      "id": "c238",
+      "frases": [
+        350,
+        351
+      ],
+      "tipo": "citacao",
+      "titulo": "Personne ne vous a écrit la recette.\nVous l'avez dans les mains.",
+      "fundo": "#5A3522",
+      "transicao": "fade"
+    },
+    {
+      "id": "c239",
+      "frases": [
+        352,
+        353
+      ],
+      "tipo": "midia",
+      "estilo": "tela-cheia",
+      "movimento": "pan-direita",
+      "descricao": "mão de adulto guiando a mão de uma criança que segura a colher",
+      "busca": {
+        "consultas": [
+          "adult hand guiding child hand holding spoon",
+          "main d'adulte guide la main d'un enfant cuillere"
+        ],
+        "tipo": "imagem",
+        "bancos": [
+          "pexels",
+          "pixabay"
+        ]
+      },
+      "pb": false,
+      "transicao": "fade"
+    },
+    {
+      "id": "c240",
+      "frases": [
+        354,
+        355
+      ],
+      "tipo": "titulo",
+      "titulo": "NON.",
+      "subtitulo": "PAS COMME ON LE CROIT",
+      "fundo": "#E8A33D",
+      "transicao": "slide"
+    },
+    {
+      "id": "c241",
+      "frases": [
+        356,
+        357
+      ],
+      "tipo": "midia",
+      "estilo": "tela-cheia",
+      "movimento": "zoom-out",
+      "descricao": "bandeja de refeição pronta sobre a mesa de hoje, sem rostos",
+      "busca": {
+        "consultas": [
+          "ready meal tray on table today no people",
+          "plateau repas tout prepare table aujourd'hui"
+        ],
+        "tipo": "imagem",
+        "bancos": [
+          "pexels",
+          "pixabay"
+        ]
+      },
+      "pb": false,
+      "transicao": "fade"
+    },
+    {
+      "id": "c242",
+      "frases": [
+        358
+      ],
+      "tipo": "midia",
+      "estilo": "moldura",
+      "movimento": "pan-esquerda",
+      "descricao": "legumes e carne com etiquetas de preço altas numa prateleira",
+      "busca": {
+        "consultas": [
+          "price labels on meat and vegetables shelf expensive",
+          "etiquettes de prix viande legumes rayon cher"
+        ],
+        "tipo": "imagem",
+        "bancos": [
+          "pexels",
+          "pixabay"
+        ]
+      },
+      "pb": false,
+      "fundo": "#D9622B",
+      "transicao": "fade"
+    },
+    {
+      "id": "c243",
+      "frases": [
+        359
+      ],
+      "tipo": "midia",
+      "estilo": "tela-cheia",
+      "movimento": "zoom-in",
+      "descricao": "corredor de supermercado com bandejas embaladas, sem rostos",
+      "busca": {
+        "consultas": [
+          "supermarket aisle packaged trays shelves",
+          "rayon de supermarche barquettes emballees"
+        ],
+        "tipo": "imagem",
+        "bancos": [
+          "pexels",
+          "pixabay"
+        ]
+      },
+      "pb": false,
+      "transicao": "fade"
+    },
+    {
+      "id": "c244",
+      "frases": [
+        360
+      ],
+      "tipo": "midia",
+      "estilo": "tela-cheia",
+      "movimento": "pan-direita",
+      "descricao": "mão de uma idosa e mão de um jovem juntas sobre a mesa da cozinha",
+      "busca": {
+        "consultas": [
+          "elderly hand and young hand together kitchen table",
+          "main agee et main jeune ensemble table de cuisine"
+        ],
+        "tipo": "imagem",
+        "bancos": [
+          "pexels",
+          "pixabay"
+        ]
+      },
+      "pb": false,
+      "transicao": "fade"
+    },
+    {
+      "id": "c245",
+      "frases": [
+        361,
+        362,
+        363
+      ],
+      "tipo": "midia",
+      "estilo": "moldura",
+      "movimento": "zoom-out",
+      "descricao": "mãos jovens cozinhando numa cozinha de hoje, sem rostos",
+      "busca": {
+        "consultas": [
+          "young hands cooking modern kitchen no faces",
+          "jeunes mains qui cuisinent cuisine aujourd'hui"
+        ],
+        "tipo": "imagem",
+        "bancos": [
+          "pexels",
+          "pixabay"
+        ]
+      },
+      "pb": false,
+      "fundo": "#F3E7CF",
+      "transicao": "fade"
+    },
+    {
+      "id": "c246",
+      "frases": [
+        364
+      ],
+      "tipo": "colagem",
+      "estilo": "moldura",
+      "movimento": "zoom-in",
+      "descricao": "colagem: o pot-au-feu do inverno e o pain perdu do dia seguinte",
+      "fundo": "#4A2C1D",
+      "camadas": [
+        {
+          "cena": "c160",
+          "x": 0.3,
+          "y": 0.4,
+          "largura": 0.36,
+          "rotacao": -4
+        },
+        {
+          "cena": "c026",
+          "x": 0.68,
+          "y": 0.58,
+          "largura": 0.36,
+          "rotacao": 3
+        }
+      ],
+      "transicao": "zoom"
+    },
+    {
+      "id": "c247",
+      "frases": [
+        365
+      ],
+      "tipo": "midia",
+      "estilo": "tela-cheia",
+      "movimento": "pan-esquerda",
+      "descricao": "retrato de um casal idoso francês na cozinha, geração que nos alimentou",
+      "busca": {
+        "consultas": [
+          "elderly french couple portrait kitchen 1960s",
+          "portrait couple age francais cuisine annees 60"
+        ],
+        "tipo": "imagem",
+        "bancos": [
+          "archive",
+          "wikimedia",
+          "openverse"
+        ]
+      },
+      "texto_tela": {
+        "tipo": "destaque",
+        "texto": "Merci",
+        "duracao": 3.0
+      },
+      "pb": true,
+      "transicao": "fade"
+    },
+    {
+      "id": "c248",
+      "frases": [
+        366
+      ],
+      "tipo": "midia",
+      "estilo": "tela-cheia",
+      "movimento": "zoom-in",
+      "descricao": "criança pequena na cozinha olhando a bancada, vista de costas",
+      "busca": {
+        "consultas": [
+          "small child in kitchen looking at counter from behind",
+          "petit-enfant dans la cuisine de dos"
+        ],
+        "tipo": "imagem",
+        "bancos": [
+          "pexels",
+          "pixabay"
+        ]
+      },
+      "pb": false,
+      "transicao": "fade"
+    },
+    {
+      "id": "c249",
+      "frases": [
+        367,
+        368
+      ],
+      "tipo": "midia",
+      "estilo": "moldura",
+      "movimento": "pan-direita",
+      "descricao": "mão de adulto guiando a mão da criança que mexe a panela",
+      "busca": {
+        "consultas": [
+          "adult hand guiding child hand stirring pot",
+          "main d'adulte guide la main de l'enfant casserole"
+        ],
+        "tipo": "imagem",
+        "bancos": [
+          "pexels",
+          "pixabay"
+        ]
+      },
+      "texto_tela": {
+        "tipo": "destaque",
+        "texto": "Donnez-lui le geste",
+        "duracao": 2.5
+      },
+      "pb": false,
+      "fundo": "#5A3522",
+      "transicao": "fade"
+    },
+    {
+      "id": "c250",
+      "frases": [
+        369
+      ],
+      "tipo": "midia",
+      "estilo": "moldura",
+      "movimento": "zoom-out",
+      "descricao": "caderno aberto e lápis sobre a mesa da cozinha, convite a escrever",
+      "busca": {
+        "consultas": [
+          "open notebook and pencil on kitchen table",
+          "cahier ouvert et crayon sur la table de cuisine"
+        ],
+        "tipo": "imagem",
+        "bancos": [
+          "pexels",
+          "pixabay"
+        ]
+      },
+      "pb": false,
+      "fundo": "#E8A33D",
+      "transicao": "fade"
+    },
+    {
+      "id": "c251",
+      "frases": [
+        370
+      ],
+      "tipo": "midia",
+      "estilo": "tela-cheia",
+      "movimento": "pan-esquerda",
+      "descricao": "família francesa à mesa nos anos 60, retrato de grupo caloroso",
+      "busca": {
+        "consultas": [
+          "french family around table group portrait 1960s",
+          "famille francaise a table portrait annees 60"
+        ],
+        "tipo": "imagem",
+        "bancos": [
+          "archive",
+          "wikimedia",
+          "openverse"
+        ]
+      },
+      "pb": true,
+      "transicao": "fade"
+    },
+    {
+      "id": "c252",
+      "frases": [
+        371
+      ],
+      "tipo": "titulo",
+      "titulo": "À TRÈS BIENTÔT…",
+      "subtitulo": "DANS LA FRANCE D'AUTREFOIS",
+      "fundo": "#D9622B",
+      "transicao": "slide"
+    }
+  ],
+  "musica": [
+    {
+      "arquivo": "04_visual/musica/trilha.mp3",
+      "de_cena": "c001",
+      "ate_cena": "c252",
+      "volume_db": -12
+    }
+  ],
+  "notas_v03": [
+    "Editor (etapa 7), a partir da revisao quadro a quadro da previa do gancho (c001-c009).",
+    "c007: pb=false, estilo=moldura, fundo marrom.",
+    "c009: pb=false.",
+    "musica: volume_db -22 -> -12. O valor e ganho absoluto sobre o arquivo; a trilha esta a -19,8 LUFS, entao -22 dB a deixava ~25 dB abaixo da voz (inaudivel). -12 dB a poe ~15 dB abaixo da narracao (-17 LUFS).",
+    "Sem mudanca nas cenas c010-c252 alem do volume da musica."
+  ]
+}
