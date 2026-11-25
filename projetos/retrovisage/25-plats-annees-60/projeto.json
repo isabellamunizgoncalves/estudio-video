@@ -31,9 +31,10 @@
       "faltas": []
     },
     "render": {
-      "atualizado_em": "2026-11-24T20:43:59+00:00",
-      "arquivo": "05_edicao/renders/video_v04_0-32.mp4",
-      "previa": false
+      "atualizado_em": "2026-11-25T01:10:32+00:00",
+      "arquivo": "05_edicao/renders/video_v05.mp4",
+      "previa": false,
+      "nota": "render em 6 partes + juncao ffmpeg (concat sem recodificar) com mixagem de audio continua"
     }
   }
 }
