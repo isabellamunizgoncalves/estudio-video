@@ -20,10 +20,15 @@ roteiro:
   despedida: "À très bientôt… dans la France d'autrefois."
 
 narracao:
-  provedor: gemini
-  modelo: gemini-2.5-pro-preview-tts       # melhor qualidade
+  provedor: edge              # Edge TTS: sem chave e sem cota. Ressalvas em ferramentas/narracao/edge.py
+  voz: fr-FR-RemyMultilingualNeural   # escolhida de ouvido por Isabella, ritmo normal
+  ritmo: ""                   # Edge: '-15%' deixa mais lento; vazio = ritmo natural da voz
+  tom_hz: ""                  # Edge: '-2Hz' deixa mais grave
+  # Se voltar para provedor: gemini, use voz: Charon e os modelos abaixo.
+  modelo: gemini-2.5-pro-preview-tts       # melhor qualidade (indisponível no plano gratuito)
   modelo_reserva: gemini-2.5-flash-preview-tts  # se o pro falhar ou estourar a cota
-  voz: Charon                 # teste outras com: python ferramentas/narracao/testar_vozes.py --canal retrovisage
+  # ATENÇÃO: só o provedor gemini usa esta direção e o tom do direcao_vNN.json.
+  # Com provedor: edge a voz não recebe atuação nenhuma, apenas ritmo e tom_hz.
   direcao: >-
     Tu es un narrateur français d'environ soixante ans, à la voix chaude et posée.
     Tu racontes des souvenirs d'enfance à de vieux amis, au coin du feu : lentement,
@@ -35,15 +40,31 @@ narracao:
   verificacao:
     similaridade_minima: 0.93 # texto transcrito x roteiro (0–1)
     desvio_duracao_max: 0.35  # duração real x esperada (±35%)
-    tentativas: 4
+    silencio_max_s: 5         # pausa longa é respiração deste canal ("laissant respirer
+                              # les points de suspension"); acima disso é a voz travando
+    tentativas: 4             # só no gemini; o edge é determinístico e faz 1 tomada
 
 visual:
   guia: visual.md             # identidade visual, regras de imagem
+  guia_edicao: edicao.md      # decisões de montagem: enquadramento, ritmo, o que nunca entra
   tema: tema.json             # cores, fontes e movimentos usados pelo Remotion
   legendas: false             # Rétrovisage não usa legenda; só destaques
   bancos: [wikimedia, archive, openverse, pexels, pixabay]
   idioma_busca: en            # buscas nos bancos funcionam melhor em inglês (+ termos em francês)
   plano_medio_segundos: 5     # duração média de cada plano
+  geracao:                    # ferramentas/midia/gerar.py — ÚLTIMO recurso, quando o acervo não tem
+    # Sufixo de estilo do prompt. Em inglês: é a língua em que o modelo foi treinado.
+    # Imagem gerada ilustra, não documenta: use só em cena encenada que não existe em
+    # acervo livre (gesto doméstico, família à mesa, retrato). Arquivo real sempre vence.
+    # Em COR. A regra «não colorir» do visual.md vale para arquivo histórico, que não se
+    # falsifica; imagem gerada não tem original para respeitar, e o canal é colagem
+    # colorida. A cor é a do filme da época (Kodachrome/Agfacolor desbotado), não a cor
+    # saturada de foto moderna — é isso que faz parecer 1962 e não 2026.
+    estilo: >-
+      Colour photograph on 1960s Kodachrome film, France, early 1960s, faded warm colour
+      palette with muted reds and ochres, modest working-class home, period-correct
+      objects only, nothing modern in frame, natural window light, 35mm film grain,
+      slight vignetting, no text anywhere
 
 musica:
   estilo: Accordéon, chanson française instrumentale, piano doux, années 50–60. Jamais de paroles.

@@ -1,0 +1,51 @@
+# QA da narração v03
+
+- Fonte: `02_roteiro/roteiro_narracao_v06.txt`
+- Voz: fr-FR-RemyMultilingualNeural · edge-tts
+- Duração: 20min36s · 29 blocos · 1 reprovados
+
+| Bloco | Início | Duração | Tomadas | Similaridade | Situação |
+|---|---|---|---|---|---|
+| 1 | 0:00 | 46.5s | 1 | 1.000 | ok |
+| 2 | 0:46 | 37.9s | 1 | 0.968 | ok |
+| 3 | 1:25 | 41.9s | 1 | 0.992 | ok |
+| 4 | 2:07 | 45.5s | 1 | 1.000 | ok |
+| 5 | 2:53 | 38.9s | 1 | 0.951 | ok |
+| 6 | 3:32 | 42.0s | 1 | 0.993 | ok |
+| 7 | 4:15 | 47.2s | 1 | 0.986 | ok |
+| 8 | 5:03 | 46.6s | 1 | 0.979 | ok |
+| 9 | 5:50 | 51.1s | 1 | 0.961 | ok |
+| 10 | 6:41 | 44.9s | 1 | 1.000 | ok |
+| 11 | 7:27 | 42.3s | 1 | 0.985 | ok |
+| 12 | 8:09 | 46.6s | 1 | 0.967 | ok |
+| 13 | 8:56 | 38.3s | 1 | 0.993 | ok |
+| 14 | 9:35 | 49.3s | 1 | 0.948 | ok |
+| 15 | 10:25 | 41.9s | 1 | 0.984 | ok |
+| 16 | 11:07 | 46.0s | 2 | 0.950 | ok |
+| 17 | 11:54 | 35.9s | 1 | 1.000 | ok |
+| 18 | 12:30 | 41.7s | 1 | 0.960 | ok |
+| 19 | 13:12 | 44.4s | 1 | 0.966 | ok |
+| 20 | 13:57 | 39.0s | 1 | 0.961 | ok |
+| 21 | 14:36 | 46.6s | 1 | 0.978 | ok |
+| 22 | 15:23 | 43.9s | 1 | 0.986 | ok |
+| 23 | 16:08 | 44.7s | 1 | 0.994 | ok |
+| 24 | 16:53 | 37.8s | 1 | 0.944 | ok |
+| 25 | 17:31 | 44.6s | 1 | 1.000 | ok |
+| 26 | 18:16 | 49.1s | 1 | 0.987 | ok |
+| 27 | 19:06 | 35.5s | 1 | 0.983 | ok |
+| 28 | 19:42 | 38.7s | 1 | 0.986 | ok |
+| 29 | 20:21 | 15.5s | 1 | 0.757 | ⚠ texto diverge (similaridade 0.76 < 0.93); final cortado: faltou «abonnez vous pour qu on continue ce voyage ensemble à très bientôt» |
+
+## Reprovados — ouvir e decidir
+
+### Bloco 29
+
+**Texto:** Et la prochaine fois qu'un petit-enfant traîne dans votre cuisine, montrez-lui. Ne lui donnez pas seulement la recette. Donnez-lui le geste.
+
+Écrivez-moi en commentaire votre année de naissance, et le plat de votre enfance qui manquait dans cette semaine. Et si ces souvenirs vous ont fait du bien, abonnez-vous, pour qu'on continue ce voyage ensemble.
+
+À très bientôt… dans la France d'autrefois.
+
+**Ouvido:** Et la prochaine fois qu 'un petit enfant traîne dans votre cuisine, montrez -lui. Ne lui donnez pas seulement la recette. Donnez -lui le geste. Écrivez -moi en commentaire votre année de naissance et le plat de votre enfance qui manquait dans cette semaine. Et si ces souvenirs vous ont fait du bien,
+
+Refazer: `python ferramentas/narracao/narrar.py retrovisage/25-plats-annees-60 --blocos 29`

@@ -90,6 +90,44 @@ const Fita: React.FC<{ cor: string; largura?: number; rotacao?: number; style?: 
 
 const faixasDo = (tema: Tema) => opcao<string[]>(tema, "faixas", [tema.cores.destaque, tema.cores.quente, tema.cores.detalhe]);
 
+// Luminância relativa (WCAG) de "#rgb" / "#rrggbb"; null se não for hex.
+const luminancia = (cor: string): number | null => {
+  const h = cor.trim().replace("#", "");
+  const hex = h.length === 3 ? h.split("").map((c) => c + c).join("") : h;
+  if (!/^[0-9a-fA-F]{6}$/.test(hex)) return null;
+  const canais = [0, 2, 4].map((i) => {
+    const v = parseInt(hex.slice(i, i + 2), 16) / 255;
+    return v <= 0.03928 ? v / 12.92 : Math.pow((v + 0.055) / 1.055, 2.4);
+  });
+  return 0.2126 * canais[0] + 0.7152 * canais[1] + 0.0722 * canais[2];
+};
+
+/** Devolve `cor` se ela se destacar do fundo; senão a `alternativa`.
+ *  Evita cartela com título laranja sobre fundo laranja (ou faixa invisível). */
+const legivel = (cor: string, fundo: string, alternativa: string, minimo = 1.25) => {
+  const a = luminancia(cor);
+  const b = luminancia(fundo);
+  if (a === null || b === null) return cor;
+  const razao = (Math.max(a, b) + 0.05) / (Math.min(a, b) + 0.05);
+  return razao >= minimo ? cor : alternativa;
+};
+
+const contraste = (cor: string, fundo: string): number => {
+  const a = luminancia(cor);
+  const b = luminancia(fundo);
+  if (a === null || b === null) return 0;
+  return (Math.max(a, b) + 0.05) / (Math.min(a, b) + 0.05);
+};
+
+/** Para o TÍTULO da cartela: escolhe, entre as cores da paleta, a de maior contraste com o
+ *  fundo — e não a primeira que passa de um limite. O limite binário errava em dois dos
+ *  quatro fundos do canal: sobre a mostarda o laranja dava 1,70:1 e ficava, porque passava
+ *  do mínimo de 1,25; o café dá 5,83:1. Sobre o café, o laranja dava 3,43:1 e o creme dá
+ *  10,27:1. Fita e faixas continuam com `legivel`, que preserva a cor de identidade do
+ *  canal: ali a cor importa mais que o contraste, no título é o contrário. */
+const maisLegivel = (fundo: string, candidatas: string[]): string =>
+  candidatas.reduce((a, b) => (contraste(b, fundo) > contraste(a, fundo) ? b : a));
+
 // ------------------------------------------------------------------ contrato
 const Fundo: EstiloVisual["Fundo"] = ({ tema, cor, idCena }) => {
   const base = cor || [tema.cores.fundo, tema.cores.quente, tema.cores.destaque, tema.cores.papel][Math.floor(semente(idCena) * 4)];
@@ -139,12 +177,16 @@ const CenaTitulo: EstiloVisual["CenaTitulo"] = ({ cena, tema }) => {
   const e2 = useEntrada(14, 18);
   const { width } = useVideoConfig();
   const tamanho = width * ((cena.titulo ?? "").length > 28 ? 0.055 : 0.075);
+  const fundoCartela = cena.fundo ?? tema.cores.fundo;
+  const corTitulo = maisLegivel(fundoCartela, [tema.cores.destaque, tema.cores.papel, tema.cores.textoEscuro]);
+  const corFita = legivel(tema.cores.quente, fundoCartela, tema.cores.papel);
+  const cores = faixasDo(tema).map((c) => legivel(c, fundoCartela, tema.cores.papel));
   return (
     <AbsoluteFill>
-      <Fundo tema={tema} cor={cena.fundo ?? tema.cores.fundo} idCena={cena.id} />
+      <Fundo tema={tema} cor={fundoCartela} idCena={cena.id} />
       <AbsoluteFill style={{ alignItems: "center", justifyContent: "center", padding: "0 8%" }}>
         {cena.subtitulo ? (
-          <Fita cor={tema.cores.quente} largura={width * 0.22} rotacao={-3} style={{ opacity: e2, marginBottom: 28 }}>
+          <Fita cor={corFita} largura={width * 0.22} rotacao={-3} style={{ opacity: e2, marginBottom: 28 }}>
             <span style={{ fontFamily: pilha(tema.fontes.rotulo), fontSize: width * 0.022, color: tema.cores.textoEscuro, letterSpacing: 2 }}>
               {cena.subtitulo}
             </span>
@@ -154,8 +196,10 @@ const CenaTitulo: EstiloVisual["CenaTitulo"] = ({ cena, tema }) => {
           style={{
             fontFamily: pilha(tema.fontes.titulo),
             fontSize: tamanho,
-            color: tema.cores.destaque,
-            textShadow: `5px 5px 0 ${tema.cores.textoEscuro}`,
+            color: corTitulo,
+            // A sombra deslocada é do logo do canal, mas sombra café sob título café
+            // (o que acontece sobre a mostarda) vira um borrão: ali ela vai de creme.
+            textShadow: `5px 5px 0 ${corTitulo === tema.cores.textoEscuro ? tema.cores.papel : tema.cores.textoEscuro}`,
             textAlign: "center",
             lineHeight: 1.1,
             transform: `scale(${0.85 + 0.15 * e})`,
@@ -165,7 +209,7 @@ const CenaTitulo: EstiloVisual["CenaTitulo"] = ({ cena, tema }) => {
           {cena.titulo}
         </div>
         <div style={{ marginTop: 30 }}>
-          <Faixas cores={faixasDo(tema)} largura={width * 0.28} atraso={10} />
+          <Faixas cores={cores} largura={width * 0.28} atraso={10} />
         </div>
       </AbsoluteFill>
     </AbsoluteFill>
@@ -176,7 +220,10 @@ const CenaCitacao: EstiloVisual["CenaCitacao"] = ({ cena, tema }) => {
   const frame = useCurrentFrame();
   const { width } = useVideoConfig();
   const texto = cena.titulo ?? "";
-  const letras = Math.floor(interpolate(frame, [6, 6 + texto.length * 1.6], [0, texto.length], { extrapolateLeft: "clamp", extrapolateRight: "clamp" }));
+  // A datilografia nunca passa de ~60% da cena: nas citações longas ela terminava junto
+  // com o corte e a frase inteira não chegava a ficar parada na tela para ser lida.
+  const fimDigitacao = Math.max(14, Math.min(6 + texto.length * 1.6, cena.duracao * 0.6));
+  const letras = Math.floor(interpolate(frame, [6, fimDigitacao], [0, texto.length], { extrapolateLeft: "clamp", extrapolateRight: "clamp" }));
   return (
     <AbsoluteFill>
       <Fundo tema={tema} cor={cena.fundo ?? tema.cores.fundo} idCena={cena.id} />

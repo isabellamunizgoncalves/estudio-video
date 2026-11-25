@@ -25,6 +25,10 @@ export type Tema = {
 export type Transicao = "fade" | "slide" | "wipe" | "zoom" | "corte";
 export type Movimento = "zoom-in" | "zoom-out" | "pan-esquerda" | "pan-direita" | "parado";
 
+/** Recorte fixo da mídia dentro do quadro, aplicado antes do movimento de câmera.
+ *  `zoom` amplia (1 = nada); `x`/`y` (0–1) dizem que ponto da mídia fica no centro. */
+export type Enquadramento = { zoom?: number; x?: number; y?: number };
+
 export type TextoTela = {
   tipo: "numero" | "destaque" | "data" | "lugar" | "rotulo";
   texto: string;
@@ -49,6 +53,9 @@ export type Cena = {
   duracao: number;
   tipo: "midia" | "titulo" | "citacao" | "cartela" | "colagem";
   estilo?: "tela-cheia" | "moldura";
+  /** "cobrir" (padrão) preenche o quadro e corta; "conter" mostra a mídia inteira sobre o fundo do estilo */
+  encaixe?: "cobrir" | "conter";
+  enquadramento?: Enquadramento | null;
   movimento?: Movimento;
   transicao?: Transicao;
   pb?: boolean;

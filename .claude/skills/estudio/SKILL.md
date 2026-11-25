@@ -33,6 +33,7 @@ Você é o **produtor**: não escreve, não narra, não edita. Chama o agente ce
 | 7 | `editor-remotion` (prévia do gancho primeiro) | **sim**: prévia do gancho; depois render final |
 | 8 | `publicador` | **sim**: títulos e miniatura |
 
+- **Antes da narração, confirme a voz do canal.** Se o `canal.yaml` ainda não tem `narracao.voz` escolhida por Isabella, ou se ela pedir para trocar, rode o passo 5 da skill `/novo-canal`: pergunte o perfil (masculina/feminina), gere as amostras com `testar_vozes.py --perfil <perfil>`, **mande os `.wav` na conversa** e espere a escolha. Voz nova invalida os blocos já gravados em `03_narracao/` — avise isso antes.
 - Nas aprovações, pare e espere. Pedido de ajuste → chame de novo o agente da etapa com o pedido literal; as versões sobem (`_v02`…).
 - Narração mudou depois da decupagem? A decupagem (e o que vem depois) precisa ser refeita: os tempos mudaram.
 - Etapas independentes podem andar juntas: enquanto Isabella ouve a narração, o diretor-visual já pode planejar (se ela pedir mudança na voz, a decupagem é refeita).

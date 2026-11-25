@@ -15,5 +15,11 @@ description: Cria um canal novo no estúdio (pasta canais/<id>/ com canal.yaml, 
    - **Partir do `padrao`** (documentário moderno e limpo) só com cores, fontes e `opcoes` próprias: `"estilo": "padrao"`. Rápido; bom para começar.
    - **Design próprio** (recomendado quando o canal tem identidade forte): chame o agente `editor-remotion` para criar `estudio-remotion/src/estilos/<id>/` copiando o `padrao` e redesenhando fundos, moldura, cartela de título, citação, textos na tela e acabamento a partir das referências que ela mandar; registre em `src/estilos/index.ts` e use `"estilo": "<id>"`.
    - Acrescente o tema em `TEMAS_EXEMPLO` de `estudio-remotion/src/exemplo.ts` e renderize `npx remotion render src/index.ts Exemplo-<id> out/<id>.mp4 --scale 0.5` para Isabella ver.
-5. **Voz:** `.venv/bin/python ferramentas/narracao/testar_vozes.py --canal <id>` gera amostras em `canais/<id>/amostras-voz/`; Isabella ouve e escolhe; atualize `narracao.voz`.
+5. **Voz — Isabella escolhe de ouvido, e isso é uma parada obrigatória.** Nenhum canal nasce com voz definida por você.
+   - Pergunte primeiro o **perfil**: voz masculina ou feminina, e que tipo de pessoa narra (idade, temperamento). Nunca deduza pelo tema do canal.
+   - Gere as amostras: `.venv/bin/python ferramentas/narracao/testar_vozes.py --canal <id> --perfil masculina` (ou `feminina`). São 8 vozes do gênero pedido, a mesma frase em cada, no idioma do canal. `--todas` abre as 16 masculinas ou 14 femininas; `--vozes A,B,C` escolhe na mão.
+   - **Mande os `.wav` para Isabella na conversa** (não basta dizer onde salvou: ela precisa ouvir). Diga o nome da voz em cada arquivo.
+   - **Pare e espere a escolha dela.** Só então grave `narracao.voz` no `canal.yaml`. Se nenhuma servir, gere outra rodada com `--todas` ou com outra frase.
+   - O Google não publica o timbre de cada voz, só o gênero — então não descreva voz que você não ouviu nem recomende uma por nome. Quem decide é o ouvido dela.
+   - **Trocar a voz depois invalida narração já gravada:** os blocos em `03_narracao/` são daquela voz. Avise isso antes de qualquer troca.
 6. Mostre o resumo do canal e sugira o primeiro `/estudio <id> ...`.

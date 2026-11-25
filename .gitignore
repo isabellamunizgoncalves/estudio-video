@@ -42,3 +42,11 @@ estudio-remotion/public/_projeto
 *.bak
 *~
 .DS_Store
+
+# Exceção à regra de mídia pesada, decidida por Isabella: as tomadas APROVADAS da narração
+# vão para o git. O container de cada sessão é descartado, e sem isso o progresso de um dia
+# some na virada — no plano gratuito do TTS, com cota diária, o vídeo nunca fecharia.
+# Em FLAC (sem perda, metade do WAV): ~1,4 MB por bloco, ~40 MB por vídeo.
+# As tomadas reprovadas e os arquivos de montagem continuam fora (blocos_*/ acima).
+!projetos/**/03_narracao/aprovados/
+!projetos/**/03_narracao/aprovados/**/*.flac

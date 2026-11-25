@@ -1,0 +1,16 @@
+{
+  "arquivo": "04_visual/musica/trilha.mp3",
+  "escolhida_por": "Isabella, de ouvido, entre 5 candidatas",
+  "faixa": "Bread Line Waltz",
+  "autor": "Helen Langfort",
+  "autor_url": "https://www.jamendo.com/artist/605823/Helen_Langfort",
+  "licenca": "BY 3.0",
+  "licenca_url": "https://creativecommons.org/licenses/by/3.0/",
+  "pagina": "https://www.jamendo.com/track/2327618",
+  "banco": "jamendo via openverse",
+  "duracao_original_s": 215,
+  "credito_obrigatorio": "Bread Line Waltz — Helen Langfort (BY 3.0)",
+  "montagem": "A faixa original tem 3min35s e o video 20min42s: repetida 5 vezes com crossfade de 4s entre as voltas, cortada em 1242,94s (duracao da narracao v04) e com fade-out de 5s no fim.",
+  "refazer": "ffmpeg: acrossfade d=4 entre copias ate passar da duracao, depois -t <duracao> e afade out 5s. A pasta musica/ fica fora do git (midia pesada); esta ficha permite baixar e remontar.",
+  "volume_sob_voz_db": -22
+}

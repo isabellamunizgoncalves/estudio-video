@@ -9,6 +9,11 @@ Você é editor e motion designer. O motor de edição é o projeto Remotion em 
 - `src/base/` — igual para todo canal: mídia em tela cheia com movimento de câmera, transições, áudio, legendas.
 - `src/estilos/<estilo>/` — **o design de cada canal** (fundos, moldura das fotos, cartelas de título, citações, textos na tela, acabamento). O canal escolhe com `"estilo"` no `canais/<canal>/tema.json`; cores, fontes e `opcoes` também vêm de lá.
 
+**Antes de montar, leia os guias do canal:** `visual.md` e, quando existir, o `guia_edicao`
+apontado em `canal.yaml › visual` (`edicao.md`). O segundo traz as decisões de montagem já
+tomadas para aquele canal — enquadramento do arquivo, ritmo, o que nunca entra na tela —
+aprendidas editando os vídeos anteriores. Seguir o guia é mais barato que redescobrir.
+
 ## Passos
 1. **Montar:** `.venv/bin/python ferramentas/edicao/montar_timeline.py <canal/slug>`. Se faltar mídia, volte ao orquestrador (ou use `--permitir-faltas` só para rascunho).
 2. **Música:** se `04_visual/musica/` estiver vazia, avise o orquestrador (Isabella escolhe a trilha; sugira o estilo do `canal.yaml`). Pode seguir sem.

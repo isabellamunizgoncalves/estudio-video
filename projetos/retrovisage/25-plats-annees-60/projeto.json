@@ -13,10 +13,28 @@
       "transcricao": false
     },
     "roteiro": {
-      "atualizado_em": "2026-11-22T09:57:32+00:00",
-      "arquivo": "02_roteiro/roteiro_v04.txt",
+      "atualizado_em": "2026-11-23T17:43:11+00:00",
+      "arquivo": "02_roteiro/roteiro_v06.txt",
       "palavras": 3683,
       "minutos": 26.3
+    },
+    "narracao": {
+      "atualizado_em": "2026-11-24T08:36:38+00:00",
+      "audio": "03_narracao/narracao_v05.wav",
+      "duracao": 1241.6,
+      "reprovados": 0
+    },
+    "timeline": {
+      "atualizado_em": "2026-11-24T22:15:42+00:00",
+      "arquivo": "05_edicao/timeline_v05.json",
+      "cenas": 252,
+      "faltas": []
+    },
+    "render": {
+      "atualizado_em": "2026-11-25T01:10:32+00:00",
+      "arquivo": "05_edicao/renders/video_v05.mp4",
+      "previa": false,
+      "nota": "render em 6 partes + juncao ffmpeg (concat sem recodificar) com mixagem de audio continua"
     }
   }
 }

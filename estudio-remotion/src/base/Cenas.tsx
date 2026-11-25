@@ -1,6 +1,6 @@
 // Cenas da base: só o que é igual em todo canal. O visual vem do pacote de estilo.
 import React from "react";
-import { AbsoluteFill, Img, interpolate, Loop, OffthreadVideo, staticFile, useCurrentFrame, useVideoConfig } from "remotion";
+import { AbsoluteFill, Freeze, Img, interpolate, Loop, OffthreadVideo, staticFile, useCurrentFrame, useVideoConfig } from "remotion";
 import type { Camada, Cena, Movimento, Tema } from "../tipos";
 import type { EstiloVisual } from "../estilos/tipos";
 import { useEntrada } from "./util";
@@ -11,13 +11,16 @@ export const useCamera = (movimento: Movimento = "zoom-in", duracao: number, zoo
   const frame = useCurrentFrame();
   const t = interpolate(frame, [0, Math.max(1, duracao)], [0, 1], { extrapolateRight: "clamp" });
   const z = zoom || 0.06;
+  // `translateX` vem depois do `scale` na lista, então o deslocamento também é ampliado:
+  // o máximo que pode andar sem mostrar o fundo é (z/2)/(1+z) da largura, não z/2.
+  const p = ((z / 2) / (1 + z)) * 100;
   switch (movimento) {
     case "zoom-out":
       return `scale(${1 + z - z * t})`;
     case "pan-esquerda":
-      return `scale(${1 + z}) translateX(${(z / 2) * 100 - t * z * 100}%)`;
+      return `scale(${1 + z}) translateX(${p - 2 * p * t}%)`;
     case "pan-direita":
-      return `scale(${1 + z}) translateX(${-(z / 2) * 100 + t * z * 100}%)`;
+      return `scale(${1 + z}) translateX(${-p + 2 * p * t}%)`;
     case "parado":
       return "scale(1)";
     default:
@@ -26,10 +29,17 @@ export const useCamera = (movimento: Movimento = "zoom-in", duracao: number, zoo
 };
 
 export const Midia: React.FC<{ cena: Cena; style?: React.CSSProperties }> = ({ cena, style }) => {
+  const enq = cena.enquadramento ?? undefined;
+  const fx = (enq?.x ?? 0.5) * 100;
+  const fy = (enq?.y ?? 0.5) * 100;
+  const zoom = enq?.zoom ?? 1;
   const css: React.CSSProperties = {
     width: "100%",
     height: "100%",
-    objectFit: "cover",
+    objectFit: cena.encaixe === "conter" ? "contain" : "cover",
+    objectPosition: `${fx}% ${fy}%`,
+    transform: zoom !== 1 ? `scale(${zoom})` : undefined,
+    transformOrigin: zoom !== 1 ? `${fx}% ${fy}%` : undefined,
     filter: cena.pb ? "grayscale(1) contrast(1.08)" : undefined,
     ...style,
   };
@@ -50,12 +60,29 @@ export const CenaMidia: React.FC<{ cena: Cena; tema: Tema; estilo: EstiloVisual 
       <AbsoluteFill>
         <Fundo tema={tema} cor={cena.fundo} idCena={cena.id} />
         <AbsoluteFill style={{ alignItems: "center", justifyContent: "center", transform }}>
-          <div style={{ width: "74%", aspectRatio: "16 / 10" }}>
+          {/* minHeight 0: como item de flex a caixa tem min-height:auto e uma mídia 4:3
+              esticava a moldura para além da tela (o "conter" acabava cortando em cima e
+              embaixo). Com 0, quem manda é o aspectRatio e a mídia cabe inteira dentro. */}
+          <div style={{ width: "74%", aspectRatio: "16 / 10", minHeight: 0, maxHeight: "100%" }}>
             <Moldura tema={tema} idCena={cena.id} entrada={entrada}>
               <Midia cena={cena} />
             </Moldura>
           </div>
         </AbsoluteFill>
+      </AbsoluteFill>
+    );
+  }
+  if (cena.encaixe === "conter") {
+    // Mídia inteira dentro do quadro (pillarbox/letterbox) sobre o fundo do estilo do canal.
+    // A margem deixa o zoom de câmera caber sem recortar de novo as bordas da mídia.
+    const margem = `${(tema.movimento.zoomPorPlano / (2 + 2 * tema.movimento.zoomPorPlano)) * 100}%`;
+    const { Fundo } = estilo;
+    return (
+      <AbsoluteFill style={{ overflow: "hidden" }}>
+        <Fundo tema={tema} cor={cena.fundo} idCena={cena.id} />
+        <div style={{ position: "absolute", inset: margem, transform }}>
+          <Midia cena={cena} />
+        </div>
       </AbsoluteFill>
     );
   }
@@ -66,6 +93,20 @@ export const CenaMidia: React.FC<{ cena: Cena; tema: Tema; estilo: EstiloVisual 
       </AbsoluteFill>
     </AbsoluteFill>
   );
+};
+
+/** Peça de colagem: foto, ou o 1º quadro parado se a cena de origem virou vídeo
+ *  (assim uma troca de mídia não quebra o render de quem a usa como camada). */
+const PecaMidia: React.FC<{ src: string }> = ({ src }) => {
+  const style: React.CSSProperties = { width: "100%", display: "block" };
+  if (/\.(mp4|mov|webm|mkv)$/i.test(src)) {
+    return (
+      <Freeze frame={0}>
+        <OffthreadVideo src={staticFile(src)} muted style={style} />
+      </Freeze>
+    );
+  }
+  return <Img src={staticFile(src)} style={style} />;
 };
 
 const PecaColagem: React.FC<{ camada: Camada; indice: number; tema: Tema; estilo: EstiloVisual; idCena: string }> = ({
@@ -90,7 +131,7 @@ const PecaColagem: React.FC<{ camada: Camada; indice: number; tema: Tema; estilo
       }}
     >
       <Moldura tema={tema} idCena={`${idCena}-${indice}`} entrada={e} compacta>
-        <Img src={staticFile(camada.src)} style={{ width: "100%", display: "block" }} />
+        <PecaMidia src={camada.src} />
       </Moldura>
     </div>
   );

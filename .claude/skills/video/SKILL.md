@@ -7,6 +7,7 @@ description: Só a etapa visual do estúdio — decupagem cena a cena sobre a na
 
 - Projeto `canal/slug` com `03_narracao/narracao_vNN.json` pronto.
 - Fluxo: `diretor-visual` (aprovação do resumo) → `pesquisador-midia` → `editor-remotion` (prévia do gancho para aprovação → render final).
+- Para a etapa de montagem e render, use **`/edicao`**, que traz o ofício: conferências baratas antes do render longo, render em partes (o container reinicia), áudio como mixagem à parte, e o que conferir depois.
 - Pedidos pontuais:
   - "troca a imagem da cena c012" → `pesquisador-midia` só para essa cena; depois `editor-remotion` remonta e renderiza o trecho.
   - "muda o texto / o movimento / a cor da cena" → `editor-remotion` (nova versão da decupagem).
