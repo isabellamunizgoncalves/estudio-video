@@ -46,6 +46,7 @@ narracao:
 
 visual:
   guia: visual.md             # identidade visual, regras de imagem
+  guia_edicao: edicao.md      # decisões de montagem: enquadramento, ritmo, o que nunca entra
   tema: tema.json             # cores, fontes e movimentos usados pelo Remotion
   legendas: false             # Rétrovisage não usa legenda; só destaques
   bancos: [wikimedia, archive, openverse, pexels, pixabay]
